@@ -1,0 +1,13 @@
+[
+  "form_diff_normalized",
+  "elo_diff_normalized",
+  "h2h_score",
+  "home_advantage",
+  "matchday_normalized",
+  "season_period_numeric",
+  "shots_diff_normalized",
+  "corners_diff_normalized",
+  "elo_home_advantage",
+  "form_momentum",
+  "h2h_recent_weight"
+]

@@ -647,12 +647,61 @@ Mean: 51.2% ± 7.0%
 
 **Lesson**: Always analyze feature correlations before ML training. Quality > quantity in feature engineering.
 
-### v1.1 Production Status: MISSION ACCOMPLISHED ✅
-- **Goal**: Beat baselines and achieve >50% accuracy → **EXCEEDED (51.2%)**
-- **Infrastructure**: Production-ready MLOps pipeline → **DELIVERED**
-- **Reproducibility**: Full versioning and testing → **IMPLEMENTED**
-- **Feature Engineering**: Clean, non-redundant feature set → **OPTIMIZED**
-- **Next Phase Ready**: Solid 51.2% baseline for v2 roadmap to 55%+ → **ESTABLISHED**
+### v1.2 Production Status: CAMP DE BASE AVANCÉ ÉTABLI ✅
+- **Goal**: Optimize performance with current infrastructure → **EXCEEDED (52.2%)**
+- **Hyperparameter Tuning**: Grid search optimization → **+1.0% GAIN**
+- **Algorithm Comparison**: RF vs XGBoost analysis → **RF MORE STABLE**
+- **Feature Engineering**: Quality > quantity principle → **VALIDATED**
+- **Infrastructure**: Production-ready MLOps pipeline → **ENHANCED**
+- **Next Phase Ready**: Solid 52.2% baseline for v2 roadmap to 55%+ → **READY**
+
+## v1.2 Results & Performance Analysis (August 2025)
+
+### v1.2 "Camp de Base Avancé" Strategy
+Following the **Everest climbing analogy**, v1.2 represents the consolidated advanced base camp before the major v2 summit assault (bookmaker odds integration).
+
+### Phase-by-Phase v1.2 Development
+**Phase 1 - Hyperparameter Optimization:**
+- **Method**: GridSearchCV with 324 parameter combinations
+- **Algorithm**: Random Forest optimization
+- **Result**: 51.2% → 52.2% (+1.0% gain)
+- **Best Parameters**: n_estimators=300, max_depth=12, max_features='log2'
+
+**Phase 2 - Algorithm Comparison:**
+- **Tested**: Random Forest vs XGBoost (Conservative & Tuned variants)
+- **Winner**: Random Forest (more stable, ±2.8% vs ±3.2% variance)
+- **Insight**: Performance near-identical, but RF more reliable for production
+
+**Phase 3 - Feature Engineering Experiment:**
+- **Added**: 3 new features (elo_home_advantage, form_momentum, h2h_recent_weight)
+- **Result**: Marginal/negative impact (+0.4pp for XGBoost, -0.2pp for RF)
+- **Decision**: **Reverted to 8 clean features** (quality > quantity principle)
+
+### v1.2 Final Performance (Validated)
+- **Cross-Validation Accuracy: 52.2% ± 2.8%** ✅ **SOLID BASELINE**
+- **Fold-by-fold Results:**
+```
+Fold 1: 47.1% (train on early data, test on later data)
+Fold 2: 53.9%
+Fold 3: 52.4%
+Fold 4: 55.5%
+Fold 5: 52.1%
+Mean: 52.2% ± 2.8%
+```
+
+### v1.2 Success Metrics ✅
+- ✅ **Beats Random Baseline (33.3%)** → +18.9 points
+- ✅ **Beats Majority Class Baseline (43.6%)** → +8.6 points
+- ✅ **Exceeds "Good Model" Target (50%)** → +2.2 points
+- ❌ **Does not achieve "Excellent" Target (55%)** → -2.8 points
+
+### Key Technical Insights from v1.2
+1. **Hyperparameter Tuning ROI**: +1.0% gain for minimal effort - highest ROI optimization
+2. **Algorithm Stability Matters**: Random Forest more consistent than XGBoost for this dataset  
+3. **Feature Engineering Paradox**: Adding features can hurt performance (overfitting/noise)
+4. **Parcimony Principle**: 8 clean features outperform 11 noisy features
+5. **Infrastructure Maturity**: Full experiment tracking and systematic comparison possible
+6. **Variance Analysis Critical**: Performance means less important than stability
 
 ## Production Transformation Summary
 
