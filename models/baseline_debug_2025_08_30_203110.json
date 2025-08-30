@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025_08_30_203110",
+  "current_performance": 0.5221052631578947,
+  "historical_average": 0.5221052631578947,
+  "performance_gap_pp": 0.0,
+  "majority_baseline": 0.4321052631578947,
+  "random_baseline": 0.3442105263157894,
+  "beats_majority": true,
+  "beats_random": true,
+  "issues_found": [
+    "ZERO_VARIANCE_FEATURES: ['home_advantage']",
+    "POSSIBLE_DATA_LEAKAGE"
+  ],
+  "recommendation": "FEATURE_ENGINEERING_BUG",
+  "feature_stats": {
+    "form_diff_normalized": {
+      "mean": 0.4946113547758284,
+      "std": 0.1656441866661895,
+      "min": 0.0,
+      "max": 1.0,
+      "mostly_neutral": false
+    },
+    "elo_diff_normalized": {
+      "mean": 0.4989866245266973,
+      "std": 0.0934959189423669,
+      "min": 0.2151166787689671,
+      "max": 0.8340557987567047,
+      "mostly_neutral": false
+    },
+    "h2h_score": {
+      "mean": 0.4564400584795322,
+      "std": 0.2835057900660533,
+      "min": 0.0,
+      "max": 1.0,
+      "mostly_neutral": false
+    },
+    "home_advantage": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0,
+      "mostly_neutral": false
+    },
+    "matchday_normalized": {
+      "mean": 0.5080014224751067,
+      "std": 0.2979053546925932,
+      "min": 0.0,
+      "max": 1.0,
+      "mostly_neutral": false
+    },
+    "season_period_numeric": {
+      "mean": 0.5076754385964912,
+      "std": 0.39751072732016113,
+      "min": 0.0,
+      "max": 1.0,
+      "mostly_neutral": false
+    },
+    "shots_diff_normalized": {
+      "mean": 0.4961186568571967,
+      "std": 0.07331169760927439,
+      "min": 0.0935483870967742,
+      "max": 0.7903225806451613,
+      "mostly_neutral": false
+    },
+    "corners_diff_normalized": {
+      "mean": 0.4962771512113617,
+      "std": 0.07806529046255761,
+      "min": 0.0357142857142857,
+      "max": 0.8214285714285714,
+      "mostly_neutral": false
+    }
+  }
+}
