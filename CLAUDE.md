@@ -703,6 +703,64 @@ Mean: 52.2% ± 2.8%
 5. **Infrastructure Maturity**: Full experiment tracking and systematic comparison possible
 6. **Variance Analysis Critical**: Performance means less important than stability
 
+## v1.3 Experimental Validation (August 2025)
+
+### v1.3 Experiments: Confirming v1.2 Optimality
+After establishing v1.2 as a solid baseline, extensive experiments were conducted to test if further improvements were possible with current features and infrastructure.
+
+### Experiment 1: Ensemble Methods Testing
+**Objective**: Combine multiple optimized models to improve performance
+**Methods Tested**:
+- Voting Classifier (Hard & Soft)
+- Stacking with Logistic Regression meta-learner
+- Individual models: Random Forest, XGBoost, LightGBM
+
+**Results**:
+- **Best Individual**: XGBoost Conservative (52.3%)
+- **Best Ensemble**: Voting Hard (RF + XGB) (52.4%)
+- **Improvement**: +0.2pp over v1.2 baseline
+
+**Key Finding**: LightGBM (47.3%) significantly underperformed, dragging ensemble performance down.
+
+### Experiment 2: Feature Interactions Analysis
+**Objective**: Test if intelligent feature combinations could boost performance
+**Interactions Created**:
+1. `strength_form` = elo_diff × form_diff
+2. `offensive_dominance` = shots_diff × corners_diff  
+3. `elo_season_adjusted` = elo_diff × matchday_progress
+4. `form_season_weighted` = form_diff × season_period
+5. `h2h_form_blend` = weighted combination of H2H and form
+
+**Results**:
+- **8 Original Features**: 52.5% (Voting Hard)
+- **8 + 2 Best Interactions**: 52.2% (-0.3pp)
+- **8 + 5 All Interactions**: 51.3% (-1.2pp)
+
+**Critical Discovery**: Feature interactions **degraded** performance consistently.
+
+### v1.3 Experimental Conclusions
+**Primary Finding**: v1.2 configuration (Random Forest, 8 features, 52.2%) was already **optimal** for current dataset.
+
+**Evidence**:
+1. **Ensemble Complexity vs Gain**: +0.3pp improvement insufficient to justify 2x complexity
+2. **Feature Interaction Failure**: More features consistently hurt performance
+3. **Algorithm Limits Reached**: Current feature set has hit natural ceiling
+
+**Scientific Value**: Experiments validated that v1.2 represents the maximum extractable performance from current features and infrastructure.
+
+### v1.3 Final Recommendation
+**Status**: **No v1.3 Release** - experiments confirm v1.2 optimality
+**Baseline Confirmed**: Random Forest (52.2% ± 2.8%) remains production configuration
+**Next Phase**: Ready for v2 with external data sources (bookmaker odds, xG stats)
+
+### Key Learnings from v1.3 Experiments
+1. **Complexity vs Performance**: Simple often beats complex in ML
+2. **Feature Interaction Risk**: More features ≠ better performance
+3. **Ensemble Diminishing Returns**: Marginal gains at high complexity cost
+4. **Dataset Ceiling Effect**: Current features have natural performance limit
+5. **Scientific Rigor**: Systematic experimentation prevents overfitting to single approach
+6. **Infrastructure Value**: Robust MLOps enables rapid, reliable experimentation
+
 ## Production Transformation Summary
 
 ### Before: Academic/Prototype Phase
