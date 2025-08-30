@@ -1,0 +1,11 @@
+feature,importance
+elo_diff_normalized,0.2297199411400244
+shots_diff_normalized,0.1435487476818184
+corners_diff_normalized,0.12086574376438385
+points_diff_normalized,0.11590795848394105
+position_diff_normalized,0.10501752942575314
+form_diff_normalized,0.09620403873986634
+matchday_normalized,0.09001588158760984
+h2h_score,0.08086292499570175
+season_period_numeric,0.017857234180901144
+home_advantage,0.0

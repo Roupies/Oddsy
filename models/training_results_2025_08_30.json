@@ -1,0 +1,66 @@
+{
+  "model_type": "RandomForestClassifier",
+  "parameters": {
+    "n_estimators": 100,
+    "max_depth": 10,
+    "min_samples_split": 10,
+    "min_samples_leaf": 5,
+    "random_state": 42,
+    "class_weight": "balanced"
+  },
+  "cv_scores": [
+    0.4421052631578947,
+    0.5052631578947369,
+    0.5026315789473684,
+    0.5368421052631579,
+    0.5105263157894737
+  ],
+  "mean_cv_accuracy": 0.49947368421052635,
+  "std_cv_accuracy": 0.031155049656734202,
+  "train_accuracy": 0.769298245614035,
+  "feature_importance": [
+    {
+      "feature": "elo_diff_normalized",
+      "importance": 0.2297199411400244
+    },
+    {
+      "feature": "shots_diff_normalized",
+      "importance": 0.1435487476818184
+    },
+    {
+      "feature": "corners_diff_normalized",
+      "importance": 0.12086574376438385
+    },
+    {
+      "feature": "points_diff_normalized",
+      "importance": 0.11590795848394105
+    },
+    {
+      "feature": "position_diff_normalized",
+      "importance": 0.10501752942575314
+    },
+    {
+      "feature": "form_diff_normalized",
+      "importance": 0.09620403873986634
+    },
+    {
+      "feature": "matchday_normalized",
+      "importance": 0.09001588158760984
+    },
+    {
+      "feature": "h2h_score",
+      "importance": 0.08086292499570175
+    },
+    {
+      "feature": "season_period_numeric",
+      "importance": 0.017857234180901144
+    },
+    {
+      "feature": "home_advantage",
+      "importance": 0.0
+    }
+  ],
+  "training_date": "2025_08_30",
+  "n_samples": 2280,
+  "n_features": 10
+}

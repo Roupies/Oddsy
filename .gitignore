@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.coverage
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ML Models & Large Files
+models/*.joblib
+models/*.pkl
+models/*.h5
+models/*.model
+*.weights
+
+# Data (keep structure but not actual data files)
+data/raw/*.csv
+data/cleaned/*.csv
+data/processed/*.csv
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+!data/processed/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Evaluation outputs (keep structure)
+evaluation/*.png
+evaluation/*.json
+!evaluation/.gitkeep
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+
+# Configuration secrets (if any)
+.env
+secrets/
+credentials/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# CLAUDE.md - INCLUDE in repository
+# This file contains project documentation and should be tracked
+!CLAUDE.md

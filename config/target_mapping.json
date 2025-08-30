@@ -1,0 +1,22 @@
+{
+  "label_mapping": {
+    "H": 0,
+    "D": 1,
+    "A": 2
+  },
+  "reverse_mapping": {
+    "0": "H",
+    "1": "D",
+    "2": "A"
+  },
+  "class_names": [
+    "Home",
+    "Draw",
+    "Away"
+  ],
+  "distribution": {
+    "0": 993,
+    "2": 762,
+    "1": 525
+  }
+}
