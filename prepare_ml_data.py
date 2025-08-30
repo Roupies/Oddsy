@@ -42,6 +42,7 @@ def prepare_ml_data(config_path='config/config.json'):
         logger.info(f"  {original} -> {encoded}: {count} samples")
     
     # Define feature columns (exclude non-ML columns)
+    # v1.1: Remove redundant features (points_diff, position_diff) to avoid multicollinearity with elo_diff
     feature_columns = [
         'form_diff_normalized',
         'elo_diff_normalized', 
@@ -50,9 +51,7 @@ def prepare_ml_data(config_path='config/config.json'):
         'matchday_normalized',
         'season_period_numeric',
         'shots_diff_normalized',
-        'corners_diff_normalized',
-        'points_diff_normalized',
-        'position_diff_normalized'
+        'corners_diff_normalized'
     ]
     
     # Separate features (X) and target (y)

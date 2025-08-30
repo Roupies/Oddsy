@@ -6,7 +6,5 @@
   "matchday_normalized",
   "season_period_numeric",
   "shots_diff_normalized",
-  "corners_diff_normalized",
-  "points_diff_normalized",
-  "position_diff_normalized"
+  "corners_diff_normalized"
 ]

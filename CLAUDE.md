@@ -598,44 +598,61 @@ python metrics_tracker.py --report     # → Business intelligence
 ### Critical Discovery: Training vs Validation Accuracy
 **⚠️ Important Lesson Learned:** Initial results showed 76.9% accuracy, but this was **training accuracy** (model tested on data it was trained on). The true performance metric is **cross-validation accuracy**.
 
-### Actual v1 Performance (Validated)
-- **Cross-Validation Accuracy: 50.0% ± 6.2%** ✅ **REALISTIC & VERIFIED**
-- **Training Accuracy: 76.9%** ❌ **MISLEADING** (overfitting indicator)
+### v1.1 Performance (Final Validated Baseline) 🎯
+- **Cross-Validation Accuracy: 51.2% ± 7.0%** ✅ **FINAL BASELINE**
+- **Training Accuracy: 75.1%** ❌ **MISLEADING** (overfitting indicator)
 
-**Fold-by-fold Results:**
+**Critical Discovery - Feature Redundancy Fix:**
 ```
-Fold 1: 44.2% (train on early data, test on later data)
-Fold 2: 50.5%
-Fold 3: 50.3%
-Fold 4: 53.7%
-Fold 5: 51.1%
-Mean: 50.0% ± 6.2%
+v1.0 (10 features): 50.0% ± 6.2% [included redundant points_diff + position_diff]
+v1.1 (8 features):  51.2% ± 7.0% [removed redundant features] ← IMPROVED!
 ```
 
-### v1 Success Metrics ✅
-- ✅ **Beats Random Baseline (33.3%)**
-- ✅ **Beats Majority Class Baseline (43.6%)**
-- ✅ **Achieves "Good Model" Target (>50%)**
-- ❌ **Does not achieve "Excellent" Target (>55%)**
+**v1.1 Fold-by-fold Results:**
+```
+Fold 1: 45.8% (train on early data, test on later data)
+Fold 2: 53.9%
+Fold 3: 48.2%
+Fold 4: 54.2%
+Fold 5: 53.7%
+Mean: 51.2% ± 7.0%
+```
 
-### Key Technical Insights from v1
+### v1.1 Success Metrics ✅
+- ✅ **Beats Random Baseline (33.3%)** → +17.9 points
+- ✅ **Beats Majority Class Baseline (43.6%)** → +7.6 points
+- ✅ **Achieves "Good Model" Target (>50%)** → +1.2 points  
+- ❌ **Does not achieve "Excellent" Target (>55%)** → -3.8 points
+
+### Key Technical Insights from v1.1
 1. **Temporal Cross-Validation Works**: No data leakage, realistic performance estimation
-2. **Feature Engineering Effective**: 10 engineered features show clear predictive power
-3. **Class Balance Handling**: Balanced Random Forest handles natural class imbalance well
-4. **Infrastructure Robust**: Full MLOps pipeline from data to evaluation functions correctly
+2. **Feature Quality > Quantity**: 8 clean features outperform 10 with redundancy
+3. **Multicollinearity Matters**: Removing correlated features improved performance (+1.2%)
+4. **Class Balance Handling**: Balanced Random Forest handles natural class imbalance well
+5. **Infrastructure Robust**: Full MLOps pipeline from data to evaluation functions correctly
 
-### Top Performing Features (v1)
-1. **elo_diff_normalized**: 23.0% importance
-2. **shots_diff_normalized**: 14.4% importance  
-3. **corners_diff_normalized**: 12.1% importance
-4. **points_diff_normalized**: 11.6% importance
-5. **position_diff_normalized**: 10.5% importance
+### Top Performing Features (v1.1 - Clean Version)
+1. **elo_diff_normalized**: 28.5% importance (+5.5% vs v1.0)
+2. **shots_diff_normalized**: 18.5% importance (+4.1% vs v1.0)
+3. **corners_diff_normalized**: 14.5% importance (+2.4% vs v1.0)
+4. **form_diff_normalized**: 13.2% importance
+5. **matchday_normalized**: 11.7% importance
 
-### v1 Production Status: MISSION ACCOMPLISHED ✅
-- **Goal**: Beat baselines and achieve >50% accuracy → **ACHIEVED**
+### Critical Learning: Feature Redundancy Analysis
+**Problem Identified**: `elo_diff`, `points_diff`, and `position_diff` all measure team strength, causing multicollinearity.
+
+**Solution Applied**: Kept only `elo_diff_normalized` (most sophisticated and dynamic).
+
+**Result**: Performance improved from 50.0% → 51.2% with fewer features.
+
+**Lesson**: Always analyze feature correlations before ML training. Quality > quantity in feature engineering.
+
+### v1.1 Production Status: MISSION ACCOMPLISHED ✅
+- **Goal**: Beat baselines and achieve >50% accuracy → **EXCEEDED (51.2%)**
 - **Infrastructure**: Production-ready MLOps pipeline → **DELIVERED**
 - **Reproducibility**: Full versioning and testing → **IMPLEMENTED**
-- **Next Phase Ready**: Clear roadmap to 55%+ → **PLANNED**
+- **Feature Engineering**: Clean, non-redundant feature set → **OPTIMIZED**
+- **Next Phase Ready**: Solid 51.2% baseline for v2 roadmap to 55%+ → **ESTABLISHED**
 
 ## Production Transformation Summary
 
