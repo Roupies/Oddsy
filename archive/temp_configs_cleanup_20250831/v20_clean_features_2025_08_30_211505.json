@@ -1,0 +1,71 @@
+{
+  "version": "v2.0 Clean (Multicollinearity Removed)",
+  "timestamp": "2025_08_30_211505",
+  "cleanup_process": {
+    "original_features": 12,
+    "removed_features": 4,
+    "final_features": 8,
+    "removed_list": [
+      "elo_market_interaction_norm",
+      "line_h2h_interaction_norm",
+      "velocity_elo_interaction_norm",
+      "form_sharp_interaction_norm"
+    ],
+    "correlation_threshold": 0.8
+  },
+  "performance": {
+    "original_score": 0.5105263157894736,
+    "clean_score": 0.5105263157894737,
+    "enhanced_score": 0.5136842105263159,
+    "improvement_vs_v13": -1.6315789473684172,
+    "breakthrough_achieved": false
+  },
+  "clean_features": [
+    "elo_diff_normalized",
+    "form_diff_normalized",
+    "line_movement_normalized",
+    "sharp_public_divergence_norm",
+    "market_inefficiency_norm",
+    "market_velocity_norm",
+    "time_weighted_form_diff_norm",
+    "volatility_diff_norm"
+  ],
+  "feature_importance": [
+    {
+      "feature": "elo_diff_normalized",
+      "importance": 0.1677709843322854
+    },
+    {
+      "feature": "time_weighted_form_diff_norm",
+      "importance": 0.1388373909511518
+    },
+    {
+      "feature": "market_inefficiency_norm",
+      "importance": 0.1370067965157178
+    },
+    {
+      "feature": "line_movement_normalized",
+      "importance": 0.12296308559869419
+    },
+    {
+      "feature": "sharp_public_divergence_norm",
+      "importance": 0.12197779935749489
+    },
+    {
+      "feature": "market_velocity_norm",
+      "importance": 0.1169897676325443
+    },
+    {
+      "feature": "volatility_diff_norm",
+      "importance": 0.10265467613227731
+    },
+    {
+      "feature": "form_diff_normalized",
+      "importance": 0.09179949947983419
+    }
+  ],
+  "data_quality": {
+    "total_matches": 2280,
+    "missing_values": 0
+  }
+}

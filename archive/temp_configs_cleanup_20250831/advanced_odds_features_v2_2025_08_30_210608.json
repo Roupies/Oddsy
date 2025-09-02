@@ -1,0 +1,25 @@
+{
+  "version": "v2.0.1 Advanced Odds Features",
+  "timestamp": "2025_08_30_210608",
+  "total_features_engineered": 4,
+  "features_kept": [
+    "line_movement_normalized",
+    "sharp_public_divergence_norm",
+    "market_inefficiency_norm",
+    "market_velocity_norm"
+  ],
+  "features_removed": [],
+  "correlation_threshold": 0.75,
+  "correlation_issues": [],
+  "feature_descriptions": {
+    "line_movement_normalized": "Early vs closing odds movement (market sentiment shift)",
+    "sharp_public_divergence_norm": "Pinnacle vs Bet365 divergence (smart vs public money)",
+    "market_inefficiency_norm": "Cross-bookmaker disagreement (potential value opportunities)",
+    "market_velocity_norm": "Rate of odds change (market momentum)"
+  },
+  "data_quality": {
+    "total_matches": 2280,
+    "missing_values": 0,
+    "correlation_controlled": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": "v2.0_cleaned",
+  "timestamp": "2025_08_30_213838",
+  "best_approach": "Top_7_features",
+  "best_features": [
+    "form_diff_normalized",
+    "elo_diff_normalized",
+    "h2h_score",
+    "matchday_normalized",
+    "shots_diff_normalized",
+    "corners_diff_normalized",
+    "market_entropy_norm"
+  ],
+  "removed_features": [
+    "market_home_advantage_norm",
+    "home_advantage",
+    "pinnacle_home_advantage_norm"
+  ],
+  "performance": 0.5305263157894736,
+  "target_achieved": true
+}

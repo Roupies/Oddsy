@@ -1,0 +1,63 @@
+{
+  "version": "v2.0 Advanced Feature Engineering",
+  "timestamp": "2025_08_30_210808",
+  "phases_completed": [
+    "2.0.1 Advanced Odds",
+    "2.0.2 Advanced Engineering"
+  ],
+  "feature_categories": {
+    "core_features": [
+      "elo_diff_normalized",
+      "form_diff_normalized",
+      "h2h_score",
+      "line_movement_normalized",
+      "sharp_public_divergence_norm",
+      "market_inefficiency_norm",
+      "market_velocity_norm"
+    ],
+    "interaction_features": [
+      "elo_market_interaction_norm",
+      "form_sharp_interaction_norm",
+      "line_h2h_interaction_norm",
+      "velocity_elo_interaction_norm"
+    ],
+    "temporal_features": [
+      "time_weighted_form_diff_norm",
+      "momentum_diff_norm",
+      "volatility_diff_norm"
+    ],
+    "selected_features": [
+      "elo_diff_normalized",
+      "form_diff_normalized",
+      "line_movement_normalized",
+      "sharp_public_divergence_norm",
+      "market_inefficiency_norm",
+      "market_velocity_norm",
+      "elo_market_interaction_norm",
+      "form_sharp_interaction_norm",
+      "line_h2h_interaction_norm",
+      "velocity_elo_interaction_norm",
+      "time_weighted_form_diff_norm",
+      "volatility_diff_norm"
+    ]
+  },
+  "feature_selection": {
+    "method": "SelectKBest with F-score",
+    "k_selected": 12,
+    "total_engineered": 14
+  },
+  "feature_descriptions": {
+    "elo_market_interaction_norm": "Elo strength modulated by market uncertainty",
+    "form_sharp_interaction_norm": "Recent form vs sharp money divergence",
+    "line_h2h_interaction_norm": "Line movement adjusted by historical H2H",
+    "velocity_elo_interaction_norm": "Market velocity vs strength differential surprise",
+    "time_weighted_form_diff_norm": "Exponentially weighted recent form (10-match decay)",
+    "momentum_diff_norm": "Performance momentum differential (trend slope)",
+    "volatility_diff_norm": "Performance consistency differential"
+  },
+  "data_quality": {
+    "total_matches": 2280,
+    "missing_values": 0,
+    "feature_count": 12
+  }
+}

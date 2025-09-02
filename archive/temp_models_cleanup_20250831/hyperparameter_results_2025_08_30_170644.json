@@ -1,0 +1,13 @@
+{
+  "best_score": 0.5221052631578947,
+  "best_params": {
+    "class_weight": "balanced",
+    "max_depth": 12,
+    "max_features": "log2",
+    "min_samples_leaf": 2,
+    "min_samples_split": 15,
+    "n_estimators": 300
+  },
+  "baseline_score": 0.512,
+  "improvement": 0.010105263157894728,
+  "total_combinations_tested": 

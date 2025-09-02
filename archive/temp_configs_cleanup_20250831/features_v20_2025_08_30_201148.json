@@ -1,0 +1,42 @@
+{
+  "version": "v2.0",
+  "timestamp": "2025_08_30_201148",
+  "baseline_features": [
+    "form_diff_normalized",
+    "elo_diff_normalized",
+    "h2h_score",
+    "home_advantage",
+    "matchday_normalized",
+    "season_period_numeric",
+    "shots_diff_normalized",
+    "corners_diff_normalized"
+  ],
+  "odds_features": [
+    "market_home_advantage_norm",
+    "market_entropy_norm",
+    "pinnacle_home_advantage_norm"
+  ],
+  "total_features": [
+    "form_diff_normalized",
+    "elo_diff_normalized",
+    "h2h_score",
+    "home_advantage",
+    "matchday_normalized",
+    "season_period_numeric",
+    "shots_diff_normalized",
+    "corners_diff_normalized",
+    "market_home_advantage_norm",
+    "market_entropy_norm",
+    "pinnacle_home_advantage_norm"
+  ],
+  "feature_count": {
+    "baseline": 8,
+    "odds": 3,
+    "total": 11
+  },
+  "merge_quality": {
+    "total_matches": 2280,
+    "missing_odds": 380,
+    "missing_percentage": 16.666666666666664
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "version": "v1.3 Stable Production",
+  "timestamp": "2025_08_30_214406",
+  "model_type": "Random Forest with SelectKBest",
+  "performance": {
+    "cv_mean": 0.5136842105263157,
+    "cv_std": 0.031199474390060898,
+    "cv_scores": [
+      0.4605263157894737,
+      0.5210526315789473,
+      0.5184210526315789,
+      0.5578947368421052,
+      0.5105263157894737
+    ],
+    "target_expected": 0.5305,
+    "validation_status": "\u26a0\ufe0f DEVIATION: -1.7pp from expected"
+  },
+  "features": {
+    "total_available": 8,
+    "selected_count": 7,
+    "selection_method": "SelectKBest k=7",
+    "all_features": [
+      "form_diff_normalized",
+      "elo_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "season_period_numeric",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "market_entropy_norm"
+    ],
+    "selected_features": [
+      "form_diff_normalized",
+      "elo_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "market_entropy_norm"
+    ],
+    "feature_importance": [
+      {
+        "feature": "elo_diff_normalized",
+        "importance": 0.23060200855606725
+      },
+      {
+        "feature": "market_entropy_norm",
+        "importance": 0.1834372291089653
+      },
+      {
+        "feature": "shots_diff_normalized",
+        "importance": 0.14902124440420947
+      },
+      {
+        "feature": "corners_diff_normalized",
+        "importance": 0.13007479662143712
+      },
+      {
+        "feature": "form_diff_normalized",
+        "importance": 0.11359070401257522
+      },
+      {
+        "feature": "matchday_normalized",
+        "importance": 0.10737963145854598
+      },
+      {
+        "feature": "h2h_score",
+        "importance": 0.0858943858381997
+      }
+    ]
+  },
+  "model_config": {
+    "algorithm": "RandomForestClassifier",
+    "n_estimators": 300,
+    "max_depth": 12,
+    "max_features": "log2",
+    "min_samples_leaf": 2,
+    "min_samples_split": 15,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "data_quality": {
+    "total_samples": 2280,
+    "training_samples": 2280,
+    "missing_values": 0,
+    "target_distribution": {
+      "0": 0.4355263157894737,
+      "2": 0.33421052631578946,
+      "1": 0.23026315789473684
+    }
+  },
+  "deployment": {
+    "status": "PRODUCTION_READY",
+    "baseline_beaten": {
+      "random_guess": 0.333,
+      "majority_class": 0.436,
+      "improvement_vs_random": 18.06842105263157,
+      "improvement_vs_majority": 7.768421052631575
+    }
+  }
+}

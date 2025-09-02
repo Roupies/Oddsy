@@ -1,0 +1,215 @@
+{
+  "version": "v1.3 Feature Interactions",
+  "timestamp": "2025_08_30_174314",
+  "best_config": "Baseline (8 original)",
+  "best_model": "Voting Hard (RF+XGB)",
+  "best_score": 0.5252631578947369,
+  "baseline_v12": 0.522,
+  "baseline_v13_ensemble": 0.524,
+  "improvement_vs_v12": 0.32631578947368567,
+  "improvement_vs_v13": 0.1263157894736855,
+  "interaction_features_created": [
+    "strength_form",
+    "offensive_dominance",
+    "elo_season_adjusted",
+    "form_season_weighted",
+    "h2h_form_blend"
+  ],
+  "all_configurations": {
+    "Baseline (8 original)": {
+      "features": [
+        "form_diff_normalized",
+        "elo_diff_normalized",
+        "h2h_score",
+        "home_advantage",
+        "matchday_normalized",
+        "season_period_numeric",
+        "shots_diff_normalized",
+        "corners_diff_normalized"
+      ],
+      "feature_count": 8,
+      "results": {
+        "Random Forest Optimized": {
+          "cv_scores": [
+            0.4710526315789474,
+            0.5394736842105263,
+            0.5236842105263158,
+            0.5552631578947368,
+            0.5210526315789473
+          ],
+          "mean": 0.5221052631578947,
+          "std": 0.02832341904647095
+        },
+        "Voting Hard (RF+XGB)": {
+          "cv_scores": [
+            0.4763157894736842,
+            0.5447368421052632,
+            0.5473684210526316,
+            0.5526315789473685,
+            0.5052631578947369
+          ],
+          "mean": 0.5252631578947369,
+          "std": 0.02970771745614757
+        }
+      }
+    },
+    "All Features (8+5)": {
+      "features": [
+        "form_diff_normalized",
+        "elo_diff_normalized",
+        "h2h_score",
+        "home_advantage",
+        "matchday_normalized",
+        "season_period_numeric",
+        "shots_diff_normalized",
+        "corners_diff_normalized",
+        "strength_form",
+        "offensive_dominance",
+        "elo_season_adjusted",
+        "form_season_weighted",
+        "h2h_form_blend"
+      ],
+      "feature_count": 13,
+      "results": {
+        "Random Forest Optimized": {
+          "cv_scores": [
+            0.4394736842105263,
+            0.5447368421052632,
+            0.49473684210526314,
+            0.531578947368421,
+            0.5052631578947369
+          ],
+          "mean": 0.5031578947368421,
+          "std": 0.03651736580779297
+        },
+        "Voting Hard (RF+XGB)": {
+          "cv_scores": [
+            0.43157894736842106,
+            0.5421052631578948,
+            0.5210526315789473,
+            0.5578947368421052,
+            0.5131578947368421
+          ],
+          "mean": 0.513157894736842,
+          "std": 0.043719072962726695
+        }
+      }
+    },
+    "Best Original + Top 2 Interactions": {
+      "features": [
+        "form_diff_normalized",
+        "elo_diff_normalized",
+        "h2h_score",
+        "home_advantage",
+        "matchday_normalized",
+        "season_period_numeric",
+        "shots_diff_normalized",
+        "corners_diff_normalized",
+        "strength_form",
+        "offensive_dominance"
+      ],
+      "feature_count": 10,
+      "results": {
+        "Random Forest Optimized": {
+          "cv_scores": [
+            0.47368421052631576,
+            0.5447368421052632,
+            0.5,
+            0.55,
+            0.5078947368421053
+          ],
+          "mean": 0.5152631578947369,
+          "std": 0.028605638403581476
+        },
+        "Voting Hard (RF+XGB)": {
+          "cv_scores": [
+            0.46578947368421053,
+            0.5394736842105263,
+            0.531578947368421,
+            0.5605263157894737,
+            0.5105263157894737
+          ],
+          "mean": 0.521578947368421,
+          "std": 0.032161297089373014
+        }
+      }
+    },
+    "Best Original + Top 3 Interactions": {
+      "features": [
+        "form_diff_normalized",
+        "elo_diff_normalized",
+        "h2h_score",
+        "home_advantage",
+        "matchday_normalized",
+        "season_period_numeric",
+        "shots_diff_normalized",
+        "corners_diff_normalized",
+        "strength_form",
+        "offensive_dominance",
+        "elo_season_adjusted"
+      ],
+      "feature_count": 11,
+      "results": {
+        "Random Forest Optimized": {
+          "cv_scores": [
+            0.45789473684210524,
+            0.5473684210526316,
+            0.49736842105263157,
+            0.5421052631578948,
+            0.5236842105263158
+          ],
+          "mean": 0.5136842105263157,
+          "std": 0.03292735225182539
+        },
+        "Voting Hard (RF+XGB)": {
+          "cv_scores": [
+            0.45526315789473687,
+            0.5394736842105263,
+            0.5131578947368421,
+            0.5710526315789474,
+            0.5236842105263158
+          ],
+          "mean": 0.5205263157894737,
+          "std": 0.038040654735984517
+        }
+      }
+    },
+    "Selective Mix": {
+      "features": [
+        "elo_diff_normalized",
+        "shots_diff_normalized",
+        "corners_diff_normalized",
+        "form_diff_normalized",
+        "matchday_normalized",
+        "strength_form",
+        "offensive_dominance",
+        "elo_season_adjusted"
+      ],
+      "feature_count": 8,
+      "results": {
+        "Random Forest Optimized": {
+          "cv_scores": [
+            0.45263157894736844,
+            0.5421052631578948,
+            0.49736842105263157,
+            0.5552631578947368,
+            0.5131578947368421
+          ],
+          "mean": 0.5121052631578947,
+          "std": 0.036105416602405245
+        },
+        "Voting Hard (RF+XGB)": {
+          "cv_scores": [
+            0.4421052631578947,
+            0.5421052631578948,
+            0.5236842105263158,
+            0.5684210526315789,
+            0.5131578947368421
+          ],
+          "mean": 0.5178947368421052,
+          "std": 0.04228252161767355
+        }
+      }
+    }
+  }
+}
