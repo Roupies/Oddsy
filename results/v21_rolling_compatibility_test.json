@@ -1,0 +1,115 @@
+{
+  "timestamp": "2025-09-01T10:54:48.400591",
+  "config": {
+    "version": "v2.1_rolling_compatible",
+    "timestamp": "2025_09_01_104500",
+    "description": "Configuration pipeline rolling pour compatibilit\u00e9 exacte avec mod\u00e8le v2.1 (54.2%)",
+    "target_model": "models/clean_xg_model_traditional_baseline_2025_08_31_235028.joblib",
+    "expected_features": 5,
+    "feature_config": {
+      "elo_features": true,
+      "form_features": true,
+      "goals_features": false,
+      "xg_features": false,
+      "shots_features": false,
+      "corners_features": true,
+      "h2h_features": true,
+      "normalize_features": true,
+      "contextual_features": true
+    },
+    "exact_features_required": [
+      "elo_diff_normalized",
+      "form_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "corners_diff_normalized"
+    ],
+    "normalization_config": {
+      "method": "robust",
+      "dynamic_normalization": true,
+      "fallback_to_static": true
+    },
+    "validation_target": {
+      "accuracy_min": 0.54,
+      "accuracy_max": 0.545,
+      "tolerance_pp": 0.5
+    }
+  },
+  "test_period": "2023-08-01 to 2024-05-31",
+  "n_matches": 380,
+  "feature_names": [
+    "elo_diff_normalized",
+    "form_diff_normalized",
+    "h2h_score",
+    "matchday_normalized",
+    "corners_diff_normalized"
+  ],
+  "accuracy": 0.5605263157894737,
+  "log_loss": 0.9759145387887389,
+  "target_validation": {
+    "passed": false,
+    "target_range": [
+      0.54,
+      0.545
+    ],
+    "actual_accuracy": 0.5605263157894737
+  },
+  "classification_report": {
+    "Home": {
+      "precision": 0.6153846153846154,
+      "recall": 0.7314285714285714,
+      "f1-score": 0.6684073107049608,
+      "support": 175.0
+    },
+    "Draw": {
+      "precision": 0.2857142857142857,
+      "recall": 0.07317073170731707,
+      "f1-score": 0.11650485436893204,
+      "support": 82.0
+    },
+    "Away": {
+      "precision": 0.5231788079470199,
+      "recall": 0.6422764227642277,
+      "f1-score": 0.5766423357664233,
+      "support": 123.0
+    },
+    "accuracy": 0.5605263157894737,
+    "macro avg": {
+      "precision": 0.47475923634864037,
+      "recall": 0.48229190863337207,
+      "f1-score": 0.4538515002801054,
+      "support": 380.0
+    },
+    "weighted avg": {
+      "precision": 0.5143996644693752,
+      "recall": 0.5605263157894737,
+      "f1-score": 0.5196096966602385,
+      "support": 380.0
+    }
+  },
+  "sample_features": {
+    "first_match": [
+      0.15615752456124432,
+      0.3814814814814815,
+      0.0,
+      0.5,
+      0.5
+    ],
+    "feature_stats": {
+      "mean": [
+        0.49506961880512035,
+        0.5000000000000001,
+        0.3913377192982456,
+        0.5,
+        0.5
+      ],
+      "std": [
+        0.13048467297967423,
+        0.0722797624869491,
+        0.2559826582520631,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

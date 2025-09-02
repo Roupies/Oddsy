@@ -1,0 +1,280 @@
+{
+  "timestamp": "2025_09_01_150122",
+  "analysis_summary": {
+    "n_original_features": 27,
+    "n_redundant_features": 16,
+    "n_low_variance_features": 0,
+    "n_low_mi_features": 1,
+    "n_selected_features": 10,
+    "reduction_percentage": 62.96296296296296
+  },
+  "feature_lists": {
+    "original_features": [
+      "form_diff_normalized",
+      "elo_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "market_entropy_norm",
+      "home_xg_roll_5",
+      "home_goals_sum_5",
+      "home_xg_sum_5",
+      "home_xg_eff_5",
+      "home_xg_roll_10",
+      "home_goals_sum_10",
+      "home_xg_sum_10",
+      "home_xg_eff_10",
+      "away_xg_roll_5",
+      "away_goals_sum_5",
+      "away_xg_sum_5",
+      "away_xg_eff_5",
+      "away_xg_roll_10",
+      "away_goals_sum_10",
+      "away_xg_sum_10",
+      "away_xg_eff_10",
+      "xg_roll_5_diff",
+      "xg_roll_10_diff",
+      "xg_roll_5_diff_normalized",
+      "xg_roll_10_diff_normalized"
+    ],
+    "redundant_features": [
+      "xg_roll_10_diff",
+      "home_xg_roll_10",
+      "xg_roll_10_diff_normalized",
+      "home_xg_roll_5",
+      "away_xg_roll_10",
+      "home_goals_sum_5",
+      "home_xg_eff_5",
+      "away_xg_sum_10",
+      "xg_roll_5_diff",
+      "home_xg_sum_5",
+      "home_xg_sum_10",
+      "away_xg_roll_5",
+      "xg_roll_5_diff_normalized",
+      "away_goals_sum_10",
+      "home_goals_sum_10",
+      "away_xg_sum_5"
+    ],
+    "low_variance_features": [],
+    "low_mi_features": [
+      "away_xg_eff_5"
+    ],
+    "selected_features": [
+      "form_diff_normalized",
+      "elo_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "market_entropy_norm",
+      "home_xg_eff_10",
+      "away_goals_sum_5",
+      "away_xg_eff_10"
+    ]
+  },
+  "performance_impact": {
+    "score_all_features": 0.525065963060686,
+    "score_selected_features": 0.5329815303430079,
+    "performance_diff": 0.0079155672823219,
+    "success": true,
+    "feature_importance": [
+      [
+        "elo_diff_normalized",
+        0.14376142968844494
+      ],
+      [
+        "market_entropy_norm",
+        0.12589750539717967
+      ],
+      [
+        "home_xg_eff_10",
+        0.11097608146433621
+      ],
+      [
+        "shots_diff_normalized",
+        0.10782978285077863
+      ],
+      [
+        "away_xg_eff_10",
+        0.10714554336288697
+      ],
+      [
+        "corners_diff_normalized",
+        0.09847065412618039
+      ],
+      [
+        "matchday_normalized",
+        0.08814694699004114
+      ],
+      [
+        "form_diff_normalized",
+        0.08296394187292042
+      ],
+      [
+        "away_goals_sum_5",
+        0.06763315327613628
+      ],
+      [
+        "h2h_score",
+        0.06717496097109535
+      ]
+    ]
+  },
+  "high_correlation_pairs": [
+    {
+      "feature1": "xg_roll_10_diff",
+      "feature2": "xg_roll_10_diff_normalized",
+      "pearson": 0.9971856587998992,
+      "spearman": 0.9999917345899971,
+      "max_abs_corr": 0.9999917345899971
+    },
+    {
+      "feature1": "xg_roll_5_diff",
+      "feature2": "xg_roll_5_diff_normalized",
+      "pearson": 0.9956469787196903,
+      "spearman": 0.9999868732911132,
+      "max_abs_corr": 0.9999868732911132
+    },
+    {
+      "feature1": "home_xg_roll_5",
+      "feature2": "home_xg_sum_5",
+      "pearson": 0.9757541404214718,
+      "spearman": 0.9802845286546952,
+      "max_abs_corr": 0.9802845286546952
+    },
+    {
+      "feature1": "away_xg_roll_5",
+      "feature2": "away_xg_sum_5",
+      "pearson": 0.9710610536401392,
+      "spearman": 0.9767420955187998,
+      "max_abs_corr": 0.9767420955187998
+    },
+    {
+      "feature1": "home_xg_roll_10",
+      "feature2": "home_xg_sum_10",
+      "pearson": 0.9272942834244086,
+      "spearman": 0.9484781129754306,
+      "max_abs_corr": 0.9484781129754306
+    },
+    {
+      "feature1": "away_xg_roll_10",
+      "feature2": "away_xg_sum_10",
+      "pearson": 0.9184063816486226,
+      "spearman": 0.9418047573769892,
+      "max_abs_corr": 0.9418047573769892
+    },
+    {
+      "feature1": "home_xg_roll_5",
+      "feature2": "home_xg_roll_10",
+      "pearson": 0.8846872304357647,
+      "spearman": 0.8757116969074117,
+      "max_abs_corr": 0.8846872304357647
+    },
+    {
+      "feature1": "xg_roll_5_diff",
+      "feature2": "xg_roll_10_diff",
+      "pearson": 0.880900788308395,
+      "spearman": 0.8707088601482347,
+      "max_abs_corr": 0.880900788308395
+    },
+    {
+      "feature1": "away_xg_roll_5",
+      "feature2": "away_xg_roll_10",
+      "pearson": 0.8802943599205462,
+      "spearman": 0.8682041049326968,
+      "max_abs_corr": 0.8802943599205462
+    },
+    {
+      "feature1": "xg_roll_5_diff_normalized",
+      "feature2": "xg_roll_10_diff_normalized",
+      "pearson": 0.8794308866854804,
+      "spearman": 0.8706511093563825,
+      "max_abs_corr": 0.8794308866854804
+    },
+    {
+      "feature1": "xg_roll_10_diff",
+      "feature2": "xg_roll_5_diff_normalized",
+      "pearson": 0.8780442843238112,
+      "spearman": 0.8706632273120202,
+      "max_abs_corr": 0.8780442843238112
+    },
+    {
+      "feature1": "xg_roll_5_diff",
+      "feature2": "xg_roll_10_diff_normalized",
+      "pearson": 0.8778873671817509,
+      "spearman": 0.8706929483635433,
+      "max_abs_corr": 0.8778873671817509
+    },
+    {
+      "feature1": "home_xg_sum_5",
+      "feature2": "home_xg_sum_10",
+      "pearson": 0.8666167792895343,
+      "spearman": 0.8563758877131535,
+      "max_abs_corr": 0.8666167792895343
+    },
+    {
+      "feature1": "away_xg_sum_5",
+      "feature2": "away_xg_sum_10",
+      "pearson": 0.8633646320715502,
+      "spearman": 0.8484980205133672,
+      "max_abs_corr": 0.8633646320715502
+    },
+    {
+      "feature1": "home_xg_sum_5",
+      "feature2": "home_xg_roll_10",
+      "pearson": 0.8625101097339489,
+      "spearman": 0.8586217331454141,
+      "max_abs_corr": 0.8625101097339489
+    },
+    {
+      "feature1": "away_goals_sum_10",
+      "feature2": "away_xg_sum_10",
+      "pearson": 0.8525846814439687,
+      "spearman": 0.831379364590021,
+      "max_abs_corr": 0.8525846814439687
+    },
+    {
+      "feature1": "away_xg_sum_5",
+      "feature2": "away_xg_roll_10",
+      "pearson": 0.8519586604699044,
+      "spearman": 0.8464018199905401,
+      "max_abs_corr": 0.8519586604699044
+    },
+    {
+      "feature1": "home_goals_sum_10",
+      "feature2": "home_xg_sum_10",
+      "pearson": 0.851792735988794,
+      "spearman": 0.8330516992997364,
+      "max_abs_corr": 0.851792735988794
+    },
+    {
+      "feature1": "home_xg_eff_5",
+      "feature2": "home_xg_eff_10",
+      "pearson": 0.8384208272961222,
+      "spearman": 0.7231384280128488,
+      "max_abs_corr": 0.8384208272961222
+    },
+    {
+      "feature1": "home_goals_sum_5",
+      "feature2": "home_goals_sum_10",
+      "pearson": 0.8338335684936685,
+      "spearman": 0.824460994452827,
+      "max_abs_corr": 0.8338335684936685
+    }
+  ],
+  "recommendations": {
+    "immediate": [
+      "Use 10 optimal features instead of 27",
+      "Remove redundant xG features",
+      "Test XGBoost/LightGBM on cleaned features",
+      "Implement cascade model for Draws",
+      "Add contextual features (weather, referees, fatigue)"
+    ],
+    "next_phases": [
+      "Train v2.3 with cleaned features",
+      "Develop innovative contextual features",
+      "Implement H/D/A specialized cascade architecture"
+    ]
+  }
+}
