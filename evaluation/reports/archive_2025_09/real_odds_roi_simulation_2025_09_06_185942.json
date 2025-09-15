@@ -1,0 +1,13 @@
+{
+  "initial_bankroll": 10000,
+  "final_bankroll": 9492.092783269427,
+  "total_profit": -507.90721673057305,
+  "roi_percent": -5.079072167305731,
+  "total_bets": 297,
+  "winning_bets": 113,
+  "hit_rate": 0.38047138047138046,
+  "total_staked": 33045.13171790302,
+  "yield_percent": -1.537010719359311,
+  "avg_edge": 0.09919090792013506,
+  "avg_odds": 3.400572390572391
+}

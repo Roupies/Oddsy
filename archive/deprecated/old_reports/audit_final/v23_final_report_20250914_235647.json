@@ -1,0 +1,46 @@
+{
+  "timestamp": "20250914_235647",
+  "model_type": "v2.3 Original with correct label mapping",
+  "fix_applied": "Corrected numeric to string label mapping (0\u2192H, 1\u2192D, 2\u2192A)",
+  "final_accuracy": 0.4,
+  "verdict": "\ud83d\udfe0 MINIMAL - Bat le baseline random",
+  "feature_order_used": [
+    "form_diff_normalized",
+    "elo_diff_normalized",
+    "h2h_score",
+    "matchday_normalized",
+    "shots_diff_normalized",
+    "corners_diff_normalized",
+    "market_entropy_norm",
+    "home_xg_eff_10",
+    "away_goals_sum_5",
+    "away_xg_eff_10"
+  ],
+  "label_mapping_used": {
+    "0": "H",
+    "1": "D",
+    "2": "A"
+  },
+  "performance_vs_targets": {
+    "baseline_naive": 0.333,
+    "baseline_majority": 0.436,
+    "target_good": 0.5,
+    "target_excellent": 0.55
+  },
+  "detailed_metrics": {
+    "pred_distribution": {
+      "H": 20,
+      "A": 10
+    },
+    "true_distribution": {
+      "H": 15,
+      "A": 9,
+      "D": 6
+    },
+    "avg_probabilities": {
+      "H": 0.4071287411805308,
+      "D": 0.24630792875374802,
+      "A": 0.34656333006572115
+    }
+  }
+}

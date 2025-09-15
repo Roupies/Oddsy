@@ -1,0 +1,173 @@
+{
+  "audit_metadata": {
+    "timestamp": "2025-09-12T15:01:13.652374",
+    "audit_version": "1.0",
+    "model_path": "archive/models_invalid_validation/randomforest_corrected_model_2025_09_02_113228.joblib",
+    "data_path": "data/processed/v13_xg_safe_features.csv"
+  },
+  "dataset_info": {
+    "shape": [
+      2280,
+      32
+    ],
+    "n_features": 10,
+    "target_distribution": {
+      "0": 993,
+      "2": 762,
+      "1": 525
+    },
+    "dataset_hash": "586ac0366b67afc032a128c2b96b2a6206105af681729c0137c7c71287dcbdea"
+  },
+  "system_info": {
+    "python_version": "3.13.3 (v3.13.3:6280bb54784, Apr  8 2025, 10:47:54) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "platform": "macOS-15.5-x86_64-i386-64bit-Mach-O",
+    "numpy_version": "2.3.2",
+    "pandas_version": "2.3.2",
+    "sklearn_version": "1.7.1"
+  },
+  "model_config": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "max_features": "sqrt",
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "feature_validation": {
+    "issues": [
+      "\u26a0\ufe0f Missing values detected: {'away_goals_sum_5': 13}"
+    ],
+    "feature_names": [
+      "form_diff_normalized",
+      "elo_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "market_entropy_norm",
+      "home_xg_eff_10",
+      "away_goals_sum_5",
+      "away_xg_eff_10"
+    ],
+    "feature_importance": {}
+  },
+  "temporal_validation": {
+    "cv_accuracy_mean": 0.5210526315789473,
+    "cv_accuracy_std": 0.03459300363190523,
+    "cv_balanced_accuracy": 0.46066515708125755,
+    "cv_logloss": 1.0216794314017283,
+    "cv_scores": [
+      0.4605263157894737,
+      0.5078947368421053,
+      0.5394736842105263,
+      0.5605263157894737,
+      0.5368421052631579
+    ]
+  },
+  "performance_metrics": {
+    "accuracy": 0.8736842105263158,
+    "balanced_accuracy": 0.8497757493304273,
+    "log_loss": 0.6245328257477432,
+    "classification_report": {
+      "Home": {
+        "precision": 0.8353982300884956,
+        "recall": 0.9506545820745217,
+        "f1-score": 0.8893075836081017,
+        "support": 993.0
+      },
+      "Draw": {
+        "precision": 0.989501312335958,
+        "recall": 0.7180952380952381,
+        "f1-score": 0.8322295805739515,
+        "support": 525.0
+      },
+      "Away": {
+        "precision": 0.8725617685305592,
+        "recall": 0.8805774278215223,
+        "f1-score": 0.8765512736773351,
+        "support": 762.0
+      },
+      "accuracy": 0.8736842105263158,
+      "macro avg": {
+        "precision": 0.8991537703183377,
+        "recall": 0.8497757493304273,
+        "f1-score": 0.8660294792864628,
+        "support": 2280.0
+      },
+      "weighted avg": {
+        "precision": 0.8833029381905879,
+        "recall": 0.8736842105263158,
+        "f1-score": 0.8719013293273241,
+        "support": 2280.0
+      }
+    },
+    "precision_recall_fscore": {
+      "precision": [
+        0.8353982300884956,
+        0.989501312335958,
+        0.8725617685305592
+      ],
+      "recall": [
+        0.9506545820745217,
+        0.7180952380952381,
+        0.8805774278215223
+      ],
+      "fscore": [
+        0.8893075836081017,
+        0.8322295805739515,
+        0.8765512736773351
+      ],
+      "support": [
+        993,
+        525,
+        762
+      ]
+    }
+  },
+  "robustness_analysis": {
+    "mean_accuracy": 1.0,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 1.0,
+    "std_balanced_accuracy": 0.0,
+    "mean_log_loss": 0.2474295080921978,
+    "std_log_loss": 0.000685885417341576,
+    "runs": 3,
+    "seeds_used": [
+      42,
+      123,
+      999
+    ],
+    "all_results": {
+      "accuracy": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "balanced_accuracy": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "log_loss": [
+        0.24839385327282912,
+        0.24685685352562375,
+        0.24703781747814058
+      ]
+    }
+  },
+  "baseline_comparisons": {
+    "majority_class": 0.4355263157894737,
+    "random_baseline": 0.33157894736842103
+  },
+  "audit_summary": {
+    "accuracy": 0.8736842105263158,
+    "accuracy_vs_majority": 0.43815789473684214,
+    "accuracy_stability": 0.0,
+    "cv_stability": 0.03459300363190523,
+    "major_issues": 0,
+    "warnings": 1
+  },
+  "verdict": "\u2705 AUDITED - PRODUCTION READY"
+}

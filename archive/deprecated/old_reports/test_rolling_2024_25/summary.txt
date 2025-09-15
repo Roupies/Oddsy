@@ -1,0 +1,12 @@
+Rolling Simulation - Saison 2024-2025
+==================================================
+
+Matches: 380
+Accuracy: 0.5447
+
+Draw Performance:
+  Count: 93
+  Predicted: 9
+  Correct: 3
+  Recall: 0.032
+  Precision: 0.333

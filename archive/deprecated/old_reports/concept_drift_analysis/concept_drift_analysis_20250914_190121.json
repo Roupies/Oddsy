@@ -1,0 +1,271 @@
+{
+  "timestamp": "2025-09-14T19:01:21.565823",
+  "analysis_scope": {
+    "season_2024_25_matches": 380,
+    "season_2025_26_matches": 30,
+    "season_2025_26_established_only": 22,
+    "features_analyzed": 8
+  },
+  "feature_drift_analysis": {
+    "elo_diff_normalized": {
+      "ks_statistic": 0.3598086124401914,
+      "ks_p_value": 0.006436642263721434,
+      "mw_statistic": 4261.0,
+      "mw_p_value": 0.879244963334353,
+      "drift_detected": "True",
+      "data_2024_mean": 0.49943885093081397,
+      "data_2024_std": 0.1088705841234386,
+      "data_2025_mean": 0.49766322028215665,
+      "data_2025_std": 0.02333249153243037,
+      "effect_size": 0.022553069835081103
+    },
+    "form_diff_normalized": {
+      "ks_statistic": 0.307177033492823,
+      "ks_p_value": 0.0305941273511102,
+      "mw_statistic": 4067.5,
+      "mw_p_value": 0.8323025251131058,
+      "drift_detected": "True",
+      "data_2024_mean": 0.4938888888888889,
+      "data_2024_std": 0.17018427095645428,
+      "data_2025_mean": 0.4954545454545455,
+      "data_2025_std": 0.05374391024486298,
+      "effect_size": 0.012406501280969776
+    },
+    "market_entropy_norm": {
+      "ks_statistic": 0.1937799043062201,
+      "ks_p_value": 0.3663875962985623,
+      "mw_statistic": 3580.0,
+      "mw_p_value": 0.25787803176552015,
+      "drift_detected": "False",
+      "data_2024_mean": 0.8802324418393835,
+      "data_2024_std": 0.12572727800809314,
+      "data_2025_mean": 0.9236769010888056,
+      "data_2025_std": 0.07553944241540368,
+      "effect_size": 0.41888354004890016
+    },
+    "home_xg_eff_10": {
+      "ks_statistic": 0.9710526315789474,
+      "ks_p_value": 3.978468508794286e-28,
+      "mw_statistic": 8323.0,
+      "mw_p_value": 5.3646672642807365e-15,
+      "drift_detected": "True",
+      "data_2024_mean": 0.9278479810156818,
+      "data_2024_std": 0.21247893811763954,
+      "data_2025_mean": 0.31923424952959045,
+      "data_2025_std": 0.07609950459434164,
+      "effect_size": 3.813589567954501
+    },
+    "away_xg_eff_10": {
+      "ks_statistic": 0.9842105263157894,
+      "ks_p_value": 7.744516007107888e-31,
+      "mw_statistic": 8319.0,
+      "mw_p_value": 5.6959875488266445e-15,
+      "drift_detected": "True",
+      "data_2024_mean": 0.9261180578042504,
+      "data_2024_std": 0.22195553777977725,
+      "data_2025_mean": 0.3191059287450846,
+      "data_2025_std": 0.055495078205178475,
+      "effect_size": 3.752140226937506
+    },
+    "shots_diff_normalized": {
+      "ks_statistic": 0.2966507177033493,
+      "ks_p_value": 0.04048639510418613,
+      "mw_statistic": 3634.0,
+      "mw_p_value": 0.3031797331977829,
+      "drift_detected": "True",
+      "data_2024_mean": 0.49683432371250713,
+      "data_2024_std": 0.07509999902928308,
+      "data_2025_mean": 0.5151515151515151,
+      "data_2025_std": 0.22624780924479954,
+      "effect_size": 0.10866567615079625
+    },
+    "corners_diff_normalized": {
+      "ks_statistic": 0.3485645933014354,
+      "ks_p_value": 0.009189066842708786,
+      "mw_statistic": 3591.5,
+      "mw_p_value": 0.2669463116358377,
+      "drift_detected": "True",
+      "data_2024_mean": 0.4976864035087719,
+      "data_2024_std": 0.07968284665330723,
+      "data_2025_mean": 0.5397727272727273,
+      "data_2025_std": 0.2676406051153179,
+      "effect_size": 0.21313855079238583
+    },
+    "away_goals_sum_5": {
+      "ks_statistic": 0.4483253588516746,
+      "ks_p_value": 0.00025263181647700516,
+      "mw_statistic": 6092.5,
+      "mw_p_value": 0.00028451684566952324,
+      "drift_detected": "True",
+      "data_2024_mean": 7.531578947368421,
+      "data_2024_std": 3.1658722085258857,
+      "data_2025_mean": 5.363636363636363,
+      "data_2025_std": 1.3988244910316507,
+      "effect_size": 0.885817408690025
+    }
+  },
+  "outcome_distribution_changes": {
+    "H": {
+      "perc_2024": 40.78947368421053,
+      "perc_2025": 36.36363636363637,
+      "change_pp": -4.425837320574161
+    },
+    "D": {
+      "perc_2024": 24.47368421052632,
+      "perc_2025": 22.727272727272727,
+      "change_pp": -1.746411483253592
+    },
+    "A": {
+      "perc_2024": 34.73684210526316,
+      "perc_2025": 40.909090909090914,
+      "change_pp": 6.172248803827756
+    },
+    "statistical_test": {
+      "chi2_statistic": 0.35235980026639263,
+      "p_value": 0.8384671294198975,
+      "drift_detected": "False"
+    }
+  },
+  "correlation_changes": {
+    "significant_changes": [
+      {
+        "feature_pair": "elo_diff_normalized <-> form_diff_normalized",
+        "corr_2024": 0.7334412558291911,
+        "corr_2025": 0.9722073157501544,
+        "change": 0.23876605992096334
+      },
+      {
+        "feature_pair": "elo_diff_normalized <-> home_xg_eff_10",
+        "corr_2024": 0.11504437916662616,
+        "corr_2025": 0.5365278942593927,
+        "change": 0.4214835150927666
+      },
+      {
+        "feature_pair": "elo_diff_normalized <-> shots_diff_normalized",
+        "corr_2024": 0.621665431282164,
+        "corr_2025": -0.1996184760337499,
+        "change": -0.8212839073159139
+      },
+      {
+        "feature_pair": "elo_diff_normalized <-> corners_diff_normalized",
+        "corr_2024": 0.5278767629613332,
+        "corr_2025": -0.10401131500091433,
+        "change": -0.6318880779622476
+      },
+      {
+        "feature_pair": "elo_diff_normalized <-> away_goals_sum_5",
+        "corr_2024": -0.4707801063615758,
+        "corr_2025": -0.17811165419733857,
+        "change": 0.2926684521642372
+      },
+      {
+        "feature_pair": "form_diff_normalized <-> home_xg_eff_10",
+        "corr_2024": 0.13050682443358919,
+        "corr_2025": 0.5989013593830915,
+        "change": 0.46839453494950234
+      },
+      {
+        "feature_pair": "form_diff_normalized <-> shots_diff_normalized",
+        "corr_2024": 0.45408976475422425,
+        "corr_2025": -0.22468816764860663,
+        "change": -0.6787779324028309
+      },
+      {
+        "feature_pair": "form_diff_normalized <-> corners_diff_normalized",
+        "corr_2024": 0.2816651407007233,
+        "corr_2025": -0.13856635472417747,
+        "change": -0.4202314954249008
+      },
+      {
+        "feature_pair": "form_diff_normalized <-> away_goals_sum_5",
+        "corr_2024": -0.5323475894793785,
+        "corr_2025": -0.25144648698872496,
+        "change": 0.2809011024906536
+      },
+      {
+        "feature_pair": "market_entropy_norm <-> shots_diff_normalized",
+        "corr_2024": -0.3470748855327183,
+        "corr_2025": -0.14556684643553222,
+        "change": 0.2015080390971861
+      },
+      {
+        "feature_pair": "home_xg_eff_10 <-> away_xg_eff_10",
+        "corr_2024": -0.047724963613446025,
+        "corr_2025": 0.3234720025156368,
+        "change": 0.3711969661290828
+      },
+      {
+        "feature_pair": "home_xg_eff_10 <-> shots_diff_normalized",
+        "corr_2024": -0.011874334633009577,
+        "corr_2025": -0.29338293276049876,
+        "change": -0.2815085981274892
+      },
+      {
+        "feature_pair": "home_xg_eff_10 <-> corners_diff_normalized",
+        "corr_2024": -0.07801032851230348,
+        "corr_2025": -0.31501357173261807,
+        "change": -0.23700324322031457
+      },
+      {
+        "feature_pair": "home_xg_eff_10 <-> away_goals_sum_5",
+        "corr_2024": 0.0161416611800234,
+        "corr_2025": 0.3382123580505736,
+        "change": 0.3220706968705502
+      },
+      {
+        "feature_pair": "away_xg_eff_10 <-> corners_diff_normalized",
+        "corr_2024": 0.09156881292157626,
+        "corr_2025": -0.13127008364372114,
+        "change": -0.2228388965652974
+      },
+      {
+        "feature_pair": "away_xg_eff_10 <-> away_goals_sum_5",
+        "corr_2024": 0.464362430743191,
+        "corr_2025": 0.9705686445687414,
+        "change": 0.5062062138255503
+      }
+    ],
+    "n_significant_changes": 16
+  },
+  "summary": {
+    "features_with_drift": 7,
+    "total_features": 8,
+    "drift_percentage": 87.5,
+    "outcome_distribution_changed": "False",
+    "major_concept_drift_detected": true
+  },
+  "key_insights": [
+    {
+      "type": "feature_drift",
+      "description": "Significant distributional changes detected in: elo_diff_normalized, form_diff_normalized, home_xg_eff_10, away_xg_eff_10, shots_diff_normalized, corners_diff_normalized, away_goals_sum_5",
+      "impact": "high",
+      "explanation": "Model trained on different feature distributions may not generalize well"
+    },
+    {
+      "type": "outcome_pattern_change",
+      "description": "Large changes in outcome frequency: ['A']",
+      "impact": "medium",
+      "explanation": "Model may need recalibration for new outcome patterns"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "data_preprocessing",
+      "priority": "high",
+      "action": "Recalibrate features with significant drift: elo_diff_normalized, form_diff_normalized, home_xg_eff_10, away_xg_eff_10, shots_diff_normalized, corners_diff_normalized, away_goals_sum_5",
+      "method": "Apply feature scaling/normalization based on recent data distribution"
+    },
+    {
+      "category": "model_training",
+      "priority": "high",
+      "action": "Consider domain adaptation techniques for drifted features",
+      "method": "Weight recent data more heavily or use transfer learning approaches"
+    },
+    {
+      "category": "feature_engineering",
+      "priority": "medium",
+      "action": "Review feature interactions given correlation changes",
+      "method": "Consider new interaction features or remove highly correlated pairs"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "validation_timestamp": "2025_09_06_001949",
+  "health_status": "HEALTHY",
+  "stage1_results": {
+    "cv_f1_mean": 0.20732371103348105,
+    "test_f1": 0.27586206896551724,
+    "overfitting_gap": -0.06853835793203619
+  },
+  "stage2_results": {
+    "cv_f1_mean": 0.6251340931818813,
+    "test_f1": 0.6779026217228464,
+    "overfitting_gap": -0.05276852854096514
+  },
+  "cascade_results": {
+    "overall_accuracy": 0.42945544554455445,
+    "f1_macro": 0.4288360231704223,
+    "draw_recall": 0.5268817204301075
+  }
+}

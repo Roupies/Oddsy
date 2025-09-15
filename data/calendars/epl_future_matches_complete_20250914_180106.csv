@@ -1,0 +1,381 @@
+match_id,date,time,datetime,home_team,away_team,home_score,away_score,result,status,is_played,season,league,source
+50000,2025-08-15,15:00:00,2025-08-15,Arsenal,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50001,2025-08-15,15:00:00,2025-08-15,Arsenal,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50002,2025-08-15,15:00:00,2025-08-15,Arsenal,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50003,2025-08-15,15:00:00,2025-08-15,Arsenal,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50004,2025-08-15,15:00:00,2025-08-15,Arsenal,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50005,2025-08-15,15:00:00,2025-08-15,Arsenal,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50006,2025-08-15,15:00:00,2025-08-15,Arsenal,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50007,2025-08-15,15:00:00,2025-08-15,Arsenal,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50008,2025-08-15,15:00:00,2025-08-15,Arsenal,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50009,2025-08-15,15:00:00,2025-08-15,Arsenal,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50010,2025-08-22,15:00:00,2025-08-22,Arsenal,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50011,2025-08-22,15:00:00,2025-08-22,Arsenal,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50012,2025-08-22,15:00:00,2025-08-22,Arsenal,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50013,2025-08-22,15:00:00,2025-08-22,Arsenal,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50014,2025-08-22,15:00:00,2025-08-22,Arsenal,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50015,2025-08-22,15:00:00,2025-08-22,Arsenal,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50016,2025-08-22,15:00:00,2025-08-22,Arsenal,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50017,2025-08-22,15:00:00,2025-08-22,Arsenal,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50018,2025-08-22,15:00:00,2025-08-22,Arsenal,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50019,2025-08-22,15:00:00,2025-08-22,Chelsea,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50020,2025-08-29,15:00:00,2025-08-29,Chelsea,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50021,2025-08-29,15:00:00,2025-08-29,Chelsea,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50022,2025-08-29,15:00:00,2025-08-29,Chelsea,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50023,2025-08-29,15:00:00,2025-08-29,Chelsea,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50024,2025-08-29,15:00:00,2025-08-29,Chelsea,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50025,2025-08-29,15:00:00,2025-08-29,Chelsea,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50026,2025-08-29,15:00:00,2025-08-29,Chelsea,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50027,2025-08-29,15:00:00,2025-08-29,Chelsea,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50028,2025-08-29,15:00:00,2025-08-29,Chelsea,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50029,2025-08-29,15:00:00,2025-08-29,Chelsea,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50030,2025-09-05,15:00:00,2025-09-05,Chelsea,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50031,2025-09-05,15:00:00,2025-09-05,Chelsea,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50032,2025-09-05,15:00:00,2025-09-05,Chelsea,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50033,2025-09-05,15:00:00,2025-09-05,Chelsea,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50034,2025-09-05,15:00:00,2025-09-05,Chelsea,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50035,2025-09-05,15:00:00,2025-09-05,Chelsea,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50036,2025-09-05,15:00:00,2025-09-05,Chelsea,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50037,2025-09-05,15:00:00,2025-09-05,Chelsea,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50038,2025-09-05,15:00:00,2025-09-05,Liverpool,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50039,2025-09-05,15:00:00,2025-09-05,Liverpool,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50040,2025-09-12,15:00:00,2025-09-12,Liverpool,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50041,2025-09-12,15:00:00,2025-09-12,Liverpool,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50042,2025-09-12,15:00:00,2025-09-12,Liverpool,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50043,2025-09-12,15:00:00,2025-09-12,Liverpool,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50044,2025-09-12,15:00:00,2025-09-12,Liverpool,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50045,2025-09-12,15:00:00,2025-09-12,Liverpool,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50046,2025-09-12,15:00:00,2025-09-12,Liverpool,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50047,2025-09-12,15:00:00,2025-09-12,Liverpool,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50048,2025-09-12,15:00:00,2025-09-12,Liverpool,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50049,2025-09-12,15:00:00,2025-09-12,Liverpool,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50050,2025-09-19,15:00:00,2025-09-19,Liverpool,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50051,2025-09-19,15:00:00,2025-09-19,Liverpool,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50052,2025-09-19,15:00:00,2025-09-19,Liverpool,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50053,2025-09-19,15:00:00,2025-09-19,Liverpool,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50054,2025-09-19,15:00:00,2025-09-19,Liverpool,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50055,2025-09-19,15:00:00,2025-09-19,Liverpool,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50056,2025-09-19,15:00:00,2025-09-19,Liverpool,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50057,2025-09-19,15:00:00,2025-09-19,Manchester City,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50058,2025-09-19,15:00:00,2025-09-19,Manchester City,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50059,2025-09-19,15:00:00,2025-09-19,Manchester City,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50060,2025-09-26,15:00:00,2025-09-26,Manchester City,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50061,2025-09-26,15:00:00,2025-09-26,Manchester City,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50062,2025-09-26,15:00:00,2025-09-26,Manchester City,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50063,2025-09-26,15:00:00,2025-09-26,Manchester City,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50064,2025-09-26,15:00:00,2025-09-26,Manchester City,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50065,2025-09-26,15:00:00,2025-09-26,Manchester City,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50066,2025-09-26,15:00:00,2025-09-26,Manchester City,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50067,2025-09-26,15:00:00,2025-09-26,Manchester City,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50068,2025-09-26,15:00:00,2025-09-26,Manchester City,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50069,2025-09-26,15:00:00,2025-09-26,Manchester City,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50070,2025-10-03,15:00:00,2025-10-03,Manchester City,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50071,2025-10-03,15:00:00,2025-10-03,Manchester City,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50072,2025-10-03,15:00:00,2025-10-03,Manchester City,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50073,2025-10-03,15:00:00,2025-10-03,Manchester City,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50074,2025-10-03,15:00:00,2025-10-03,Manchester City,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50075,2025-10-03,15:00:00,2025-10-03,Manchester City,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50076,2025-10-03,15:00:00,2025-10-03,Manchester United,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50077,2025-10-03,15:00:00,2025-10-03,Manchester United,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50078,2025-10-03,15:00:00,2025-10-03,Manchester United,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50079,2025-10-03,15:00:00,2025-10-03,Manchester United,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50080,2025-10-10,15:00:00,2025-10-10,Manchester United,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50081,2025-10-10,15:00:00,2025-10-10,Manchester United,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50082,2025-10-10,15:00:00,2025-10-10,Manchester United,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50083,2025-10-10,15:00:00,2025-10-10,Manchester United,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50084,2025-10-10,15:00:00,2025-10-10,Manchester United,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50085,2025-10-10,15:00:00,2025-10-10,Manchester United,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50086,2025-10-10,15:00:00,2025-10-10,Manchester United,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50087,2025-10-10,15:00:00,2025-10-10,Manchester United,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50088,2025-10-10,15:00:00,2025-10-10,Manchester United,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50089,2025-10-10,15:00:00,2025-10-10,Manchester United,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50090,2025-10-17,15:00:00,2025-10-17,Manchester United,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50091,2025-10-17,15:00:00,2025-10-17,Manchester United,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50092,2025-10-17,15:00:00,2025-10-17,Manchester United,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50093,2025-10-17,15:00:00,2025-10-17,Manchester United,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50094,2025-10-17,15:00:00,2025-10-17,Manchester United,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50095,2025-10-17,15:00:00,2025-10-17,Tottenham Hotspur,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50096,2025-10-17,15:00:00,2025-10-17,Tottenham Hotspur,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50097,2025-10-17,15:00:00,2025-10-17,Tottenham Hotspur,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50098,2025-10-17,15:00:00,2025-10-17,Tottenham Hotspur,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50099,2025-10-17,15:00:00,2025-10-17,Tottenham Hotspur,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50100,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50101,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50102,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50103,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50104,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50105,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50106,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50107,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50108,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50109,2025-10-24,15:00:00,2025-10-24,Tottenham Hotspur,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50110,2025-10-31,15:00:00,2025-10-31,Tottenham Hotspur,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50111,2025-10-31,15:00:00,2025-10-31,Tottenham Hotspur,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50112,2025-10-31,15:00:00,2025-10-31,Tottenham Hotspur,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50113,2025-10-31,15:00:00,2025-10-31,Tottenham Hotspur,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50114,2025-10-31,15:00:00,2025-10-31,Newcastle United,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50115,2025-10-31,15:00:00,2025-10-31,Newcastle United,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50116,2025-10-31,15:00:00,2025-10-31,Newcastle United,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50117,2025-10-31,15:00:00,2025-10-31,Newcastle United,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50118,2025-10-31,15:00:00,2025-10-31,Newcastle United,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50119,2025-10-31,15:00:00,2025-10-31,Newcastle United,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50120,2025-11-07,15:00:00,2025-11-07,Newcastle United,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50121,2025-11-07,15:00:00,2025-11-07,Newcastle United,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50122,2025-11-07,15:00:00,2025-11-07,Newcastle United,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50123,2025-11-07,15:00:00,2025-11-07,Newcastle United,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50124,2025-11-07,15:00:00,2025-11-07,Newcastle United,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50125,2025-11-07,15:00:00,2025-11-07,Newcastle United,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50126,2025-11-07,15:00:00,2025-11-07,Newcastle United,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50127,2025-11-07,15:00:00,2025-11-07,Newcastle United,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50128,2025-11-07,15:00:00,2025-11-07,Newcastle United,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50129,2025-11-07,15:00:00,2025-11-07,Newcastle United,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50130,2025-11-14,15:00:00,2025-11-14,Newcastle United,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50131,2025-11-14,15:00:00,2025-11-14,Newcastle United,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50132,2025-11-14,15:00:00,2025-11-14,Newcastle United,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50133,2025-11-14,15:00:00,2025-11-14,West Ham United,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50134,2025-11-14,15:00:00,2025-11-14,West Ham United,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50135,2025-11-14,15:00:00,2025-11-14,West Ham United,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50136,2025-11-14,15:00:00,2025-11-14,West Ham United,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50137,2025-11-14,15:00:00,2025-11-14,West Ham United,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50138,2025-11-14,15:00:00,2025-11-14,West Ham United,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50139,2025-11-14,15:00:00,2025-11-14,West Ham United,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50140,2025-11-21,15:00:00,2025-11-21,West Ham United,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50141,2025-11-21,15:00:00,2025-11-21,West Ham United,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50142,2025-11-21,15:00:00,2025-11-21,West Ham United,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50143,2025-11-21,15:00:00,2025-11-21,West Ham United,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50144,2025-11-21,15:00:00,2025-11-21,West Ham United,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50145,2025-11-21,15:00:00,2025-11-21,West Ham United,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50146,2025-11-21,15:00:00,2025-11-21,West Ham United,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50147,2025-11-21,15:00:00,2025-11-21,West Ham United,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50148,2025-11-21,15:00:00,2025-11-21,West Ham United,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50149,2025-11-21,15:00:00,2025-11-21,West Ham United,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50150,2025-11-28,15:00:00,2025-11-28,West Ham United,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50151,2025-11-28,15:00:00,2025-11-28,West Ham United,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50152,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50153,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50154,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50155,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50156,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50157,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50158,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50159,2025-11-28,15:00:00,2025-11-28,Brighton and Hove Albion,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50160,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50161,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50162,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50163,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50164,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50165,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50166,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50167,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50168,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50169,2025-12-05,15:00:00,2025-12-05,Brighton and Hove Albion,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50170,2025-12-12,15:00:00,2025-12-12,Brighton and Hove Albion,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50171,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50172,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50173,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50174,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50175,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50176,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50177,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50178,2025-12-12,15:00:00,2025-12-12,Crystal Palace,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50179,2025-12-12,15:00:00,2025-12-12,Crystal Palace,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50180,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50181,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50182,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50183,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50184,2025-12-19,15:00:00,2025-12-19,Crystal Palace,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50185,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50186,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50187,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50188,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50189,2025-12-19,15:00:00,2025-12-19,Crystal Palace,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50190,2025-12-26,15:00:00,2025-12-26,Brentford,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50191,2025-12-26,15:00:00,2025-12-26,Brentford,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50192,2025-12-26,15:00:00,2025-12-26,Brentford,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50193,2025-12-26,15:00:00,2025-12-26,Brentford,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50194,2025-12-26,15:00:00,2025-12-26,Brentford,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50195,2025-12-26,15:00:00,2025-12-26,Brentford,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50196,2025-12-26,15:00:00,2025-12-26,Brentford,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50197,2025-12-26,15:00:00,2025-12-26,Brentford,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50198,2025-12-26,15:00:00,2025-12-26,Brentford,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50199,2025-12-26,15:00:00,2025-12-26,Brentford,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50200,2026-01-02,15:00:00,2026-01-02,Brentford,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50201,2026-01-02,15:00:00,2026-01-02,Brentford,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50202,2026-01-02,15:00:00,2026-01-02,Brentford,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50203,2026-01-02,15:00:00,2026-01-02,Brentford,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50204,2026-01-02,15:00:00,2026-01-02,Brentford,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50205,2026-01-02,15:00:00,2026-01-02,Brentford,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50206,2026-01-02,15:00:00,2026-01-02,Brentford,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50207,2026-01-02,15:00:00,2026-01-02,Brentford,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50208,2026-01-02,15:00:00,2026-01-02,Brentford,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50209,2026-01-02,15:00:00,2026-01-02,Fulham,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50210,2026-01-09,15:00:00,2026-01-09,Fulham,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50211,2026-01-09,15:00:00,2026-01-09,Fulham,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50212,2026-01-09,15:00:00,2026-01-09,Fulham,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50213,2026-01-09,15:00:00,2026-01-09,Fulham,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50214,2026-01-09,15:00:00,2026-01-09,Fulham,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50215,2026-01-09,15:00:00,2026-01-09,Fulham,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50216,2026-01-09,15:00:00,2026-01-09,Fulham,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50217,2026-01-09,15:00:00,2026-01-09,Fulham,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50218,2026-01-09,15:00:00,2026-01-09,Fulham,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50219,2026-01-09,15:00:00,2026-01-09,Fulham,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50220,2026-01-16,15:00:00,2026-01-16,Fulham,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50221,2026-01-16,15:00:00,2026-01-16,Fulham,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50222,2026-01-16,15:00:00,2026-01-16,Fulham,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50223,2026-01-16,15:00:00,2026-01-16,Fulham,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50224,2026-01-16,15:00:00,2026-01-16,Fulham,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50225,2026-01-16,15:00:00,2026-01-16,Fulham,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50226,2026-01-16,15:00:00,2026-01-16,Fulham,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50227,2026-01-16,15:00:00,2026-01-16,Fulham,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50228,2026-01-16,15:00:00,2026-01-16,Everton,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50229,2026-01-16,15:00:00,2026-01-16,Everton,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50230,2026-01-23,15:00:00,2026-01-23,Everton,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50231,2026-01-23,15:00:00,2026-01-23,Everton,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50232,2026-01-23,15:00:00,2026-01-23,Everton,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50233,2026-01-23,15:00:00,2026-01-23,Everton,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50234,2026-01-23,15:00:00,2026-01-23,Everton,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50235,2026-01-23,15:00:00,2026-01-23,Everton,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50236,2026-01-23,15:00:00,2026-01-23,Everton,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50237,2026-01-23,15:00:00,2026-01-23,Everton,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50238,2026-01-23,15:00:00,2026-01-23,Everton,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50239,2026-01-23,15:00:00,2026-01-23,Everton,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50240,2026-01-30,15:00:00,2026-01-30,Everton,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50241,2026-01-30,15:00:00,2026-01-30,Everton,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50242,2026-01-30,15:00:00,2026-01-30,Everton,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50243,2026-01-30,15:00:00,2026-01-30,Everton,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50244,2026-01-30,15:00:00,2026-01-30,Everton,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50245,2026-01-30,15:00:00,2026-01-30,Everton,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50246,2026-01-30,15:00:00,2026-01-30,Everton,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50247,2026-01-30,15:00:00,2026-01-30,Aston Villa,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50248,2026-01-30,15:00:00,2026-01-30,Aston Villa,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50249,2026-01-30,15:00:00,2026-01-30,Aston Villa,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50250,2026-02-06,15:00:00,2026-02-06,Aston Villa,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50251,2026-02-06,15:00:00,2026-02-06,Aston Villa,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50252,2026-02-06,15:00:00,2026-02-06,Aston Villa,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50253,2026-02-06,15:00:00,2026-02-06,Aston Villa,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50254,2026-02-06,15:00:00,2026-02-06,Aston Villa,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50255,2026-02-06,15:00:00,2026-02-06,Aston Villa,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50256,2026-02-06,15:00:00,2026-02-06,Aston Villa,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50257,2026-02-06,15:00:00,2026-02-06,Aston Villa,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50258,2026-02-06,15:00:00,2026-02-06,Aston Villa,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50259,2026-02-06,15:00:00,2026-02-06,Aston Villa,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50260,2026-02-13,15:00:00,2026-02-13,Aston Villa,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50261,2026-02-13,15:00:00,2026-02-13,Aston Villa,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50262,2026-02-13,15:00:00,2026-02-13,Aston Villa,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50263,2026-02-13,15:00:00,2026-02-13,Aston Villa,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50264,2026-02-13,15:00:00,2026-02-13,Aston Villa,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50265,2026-02-13,15:00:00,2026-02-13,Aston Villa,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50266,2026-02-13,15:00:00,2026-02-13,AFC Bournemouth,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50267,2026-02-13,15:00:00,2026-02-13,AFC Bournemouth,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50268,2026-02-13,15:00:00,2026-02-13,AFC Bournemouth,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50269,2026-02-13,15:00:00,2026-02-13,AFC Bournemouth,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50270,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50271,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50272,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50273,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50274,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50275,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50276,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50277,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50278,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50279,2026-02-20,15:00:00,2026-02-20,AFC Bournemouth,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50280,2026-02-27,15:00:00,2026-02-27,AFC Bournemouth,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50281,2026-02-27,15:00:00,2026-02-27,AFC Bournemouth,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50282,2026-02-27,15:00:00,2026-02-27,AFC Bournemouth,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50283,2026-02-27,15:00:00,2026-02-27,AFC Bournemouth,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50284,2026-02-27,15:00:00,2026-02-27,AFC Bournemouth,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50285,2026-02-27,15:00:00,2026-02-27,Wolverhampton Wanderers,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50286,2026-02-27,15:00:00,2026-02-27,Wolverhampton Wanderers,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50287,2026-02-27,15:00:00,2026-02-27,Wolverhampton Wanderers,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50288,2026-02-27,15:00:00,2026-02-27,Wolverhampton Wanderers,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50289,2026-02-27,15:00:00,2026-02-27,Wolverhampton Wanderers,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50290,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50291,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50292,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50293,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50294,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50295,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50296,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50297,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50298,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50299,2026-03-06,15:00:00,2026-03-06,Wolverhampton Wanderers,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50300,2026-03-13,15:00:00,2026-03-13,Wolverhampton Wanderers,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50301,2026-03-13,15:00:00,2026-03-13,Wolverhampton Wanderers,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50302,2026-03-13,15:00:00,2026-03-13,Wolverhampton Wanderers,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50303,2026-03-13,15:00:00,2026-03-13,Wolverhampton Wanderers,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50304,2026-03-13,15:00:00,2026-03-13,Nottingham Forest,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50305,2026-03-13,15:00:00,2026-03-13,Nottingham Forest,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50306,2026-03-13,15:00:00,2026-03-13,Nottingham Forest,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50307,2026-03-13,15:00:00,2026-03-13,Nottingham Forest,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50308,2026-03-13,15:00:00,2026-03-13,Nottingham Forest,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50309,2026-03-13,15:00:00,2026-03-13,Nottingham Forest,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50310,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50311,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50312,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50313,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50314,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50315,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50316,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50317,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50318,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50319,2026-03-20,15:00:00,2026-03-20,Nottingham Forest,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50320,2026-03-27,15:00:00,2026-03-27,Nottingham Forest,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50321,2026-03-27,15:00:00,2026-03-27,Nottingham Forest,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50322,2026-03-27,15:00:00,2026-03-27,Nottingham Forest,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50323,2026-03-27,15:00:00,2026-03-27,Leeds United,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50324,2026-03-27,15:00:00,2026-03-27,Leeds United,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50325,2026-03-27,15:00:00,2026-03-27,Leeds United,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50326,2026-03-27,15:00:00,2026-03-27,Leeds United,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50327,2026-03-27,15:00:00,2026-03-27,Leeds United,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50328,2026-03-27,15:00:00,2026-03-27,Leeds United,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50329,2026-03-27,15:00:00,2026-03-27,Leeds United,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50330,2026-04-03,15:00:00,2026-04-03,Leeds United,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50331,2026-04-03,15:00:00,2026-04-03,Leeds United,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50332,2026-04-03,15:00:00,2026-04-03,Leeds United,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50333,2026-04-03,15:00:00,2026-04-03,Leeds United,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50334,2026-04-03,15:00:00,2026-04-03,Leeds United,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50335,2026-04-03,15:00:00,2026-04-03,Leeds United,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50336,2026-04-03,15:00:00,2026-04-03,Leeds United,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50337,2026-04-03,15:00:00,2026-04-03,Leeds United,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50338,2026-04-03,15:00:00,2026-04-03,Leeds United,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50339,2026-04-03,15:00:00,2026-04-03,Leeds United,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50340,2026-04-10,15:00:00,2026-04-10,Leeds United,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50341,2026-04-10,15:00:00,2026-04-10,Leeds United,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50342,2026-04-10,15:00:00,2026-04-10,Sunderland,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50343,2026-04-10,15:00:00,2026-04-10,Sunderland,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50344,2026-04-10,15:00:00,2026-04-10,Sunderland,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50345,2026-04-10,15:00:00,2026-04-10,Sunderland,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50346,2026-04-10,15:00:00,2026-04-10,Sunderland,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50347,2026-04-10,15:00:00,2026-04-10,Sunderland,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50348,2026-04-10,15:00:00,2026-04-10,Sunderland,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50349,2026-04-10,15:00:00,2026-04-10,Sunderland,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50350,2026-04-17,15:00:00,2026-04-17,Sunderland,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50351,2026-04-17,15:00:00,2026-04-17,Sunderland,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50352,2026-04-17,15:00:00,2026-04-17,Sunderland,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50353,2026-04-17,15:00:00,2026-04-17,Sunderland,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50354,2026-04-17,15:00:00,2026-04-17,Sunderland,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50355,2026-04-17,15:00:00,2026-04-17,Sunderland,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50356,2026-04-17,15:00:00,2026-04-17,Sunderland,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50357,2026-04-17,15:00:00,2026-04-17,Sunderland,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50358,2026-04-17,15:00:00,2026-04-17,Sunderland,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50359,2026-04-17,15:00:00,2026-04-17,Sunderland,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50360,2026-04-24,15:00:00,2026-04-24,Sunderland,Burnley,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50361,2026-04-24,15:00:00,2026-04-24,Burnley,Arsenal,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50362,2026-04-24,15:00:00,2026-04-24,Burnley,Chelsea,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50363,2026-04-24,15:00:00,2026-04-24,Burnley,Liverpool,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50364,2026-04-24,15:00:00,2026-04-24,Burnley,Manchester City,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50365,2026-04-24,15:00:00,2026-04-24,Burnley,Manchester United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50366,2026-04-24,15:00:00,2026-04-24,Burnley,Tottenham Hotspur,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50367,2026-04-24,15:00:00,2026-04-24,Burnley,Newcastle United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50368,2026-04-24,15:00:00,2026-04-24,Burnley,West Ham United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50369,2026-04-24,15:00:00,2026-04-24,Burnley,Brighton and Hove Albion,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50370,2026-05-01,15:00:00,2026-05-01,Burnley,Crystal Palace,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50371,2026-05-01,15:00:00,2026-05-01,Burnley,Brentford,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50372,2026-05-01,15:00:00,2026-05-01,Burnley,Fulham,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50373,2026-05-01,15:00:00,2026-05-01,Burnley,Everton,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50374,2026-05-01,15:00:00,2026-05-01,Burnley,Aston Villa,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50375,2026-05-01,15:00:00,2026-05-01,Burnley,AFC Bournemouth,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50376,2026-05-01,15:00:00,2026-05-01,Burnley,Wolverhampton Wanderers,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50377,2026-05-01,15:00:00,2026-05-01,Burnley,Nottingham Forest,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50378,2026-05-01,15:00:00,2026-05-01,Burnley,Leeds United,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule
+50379,2026-05-01,15:00:00,2026-05-01,Burnley,Sunderland,,,,SCHEDULED,False,2025-2026,EPL,generated_schedule

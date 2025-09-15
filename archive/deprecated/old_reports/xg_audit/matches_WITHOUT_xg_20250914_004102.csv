@@ -1,0 +1,7 @@
+date,home_team_epl,away_team_epl,home_team_mapped,away_team_mapped,home_goals,away_goals,result,has_xg,home_xg,away_xg,xg_source,match_id
+2025-08-17,Nott'm Forest,Brentford,Nott'm Forest,Brentford,3,1,H,False,,,,
+2025-08-18,Leeds,Everton,Leeds United,Everton,1,0,H,False,,,,
+2025-08-23,Arsenal,Leeds,Arsenal,Leeds United,5,0,H,False,,,,
+2025-08-24,Crystal Palace,Nott'm Forest,Crystal Palace,Nott'm Forest,1,1,D,False,,,,
+2025-08-30,Leeds,Newcastle,Leeds United,Newcastle United,0,0,D,False,,,,
+2025-08-31,Nott'm Forest,West Ham,Nott'm Forest,West Ham,0,3,A,False,,,,

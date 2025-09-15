@@ -1,0 +1,53 @@
+{
+  "evaluation_timestamp": "2025_09_06_005207",
+  "roadmap_success": "COMPLETE SUCCESS",
+  "baseline_accuracy": 0.5482673267326733,
+  "best_accuracy": 0.5829207920792079,
+  "best_configuration": "v2.7 + Bogey Teams Only",
+  "total_improvement_pp": 3.4653465346534573,
+  "target_achieved": true,
+  "all_results": [
+    {
+      "name": "v2.4 BASELINE",
+      "accuracy": 0.5482673267326733,
+      "f1_macro": 0.42556727623090956,
+      "improvement_pp": 0.0
+    },
+    {
+      "name": "v2.6 + Optimized Momentum",
+      "accuracy": 0.5594059405940595,
+      "f1_macro": 0.4305492485876954,
+      "improvement_pp": 1.1138613861386149
+    },
+    {
+      "name": "v2.7 + Bogey Teams Only",
+      "accuracy": 0.5829207920792079,
+      "f1_macro": 0.45273363942599887,
+      "improvement_pp": 3.4653465346534573
+    },
+    {
+      "name": "v2.7 + Context H2H Only",
+      "accuracy": 0.5532178217821783,
+      "f1_macro": 0.4266296257185484,
+      "improvement_pp": 0.4950495049504955
+    },
+    {
+      "name": "v2.6+v2.7 Momentum + Bogey",
+      "accuracy": 0.5705445544554455,
+      "f1_macro": 0.44366725113656647,
+      "improvement_pp": 2.2277227722772186
+    },
+    {
+      "name": "v2.6+v2.7 Momentum + Context H2H",
+      "accuracy": 0.5482673267326733,
+      "f1_macro": 0.41924259842354017,
+      "improvement_pp": 0.0
+    },
+    {
+      "name": "\ud83c\udfc6 ULTIMATE v2.7 (All Features)",
+      "accuracy": 0.5668316831683168,
+      "f1_macro": 0.4378328495635054,
+      "improvement_pp": 1.856435643564347
+    }
+  ]
+}

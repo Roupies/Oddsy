@@ -1,0 +1,166 @@
+{
+  "audit_metadata": {
+    "timestamp": "2025-09-12T15:00:43.545068",
+    "audit_version": "1.0",
+    "model_path": "archive/models_invalid_validation/clean_xg_model_traditional_baseline_2025_08_31_235028.joblib",
+    "data_path": "data/processed/v13_xg_safe_features.csv"
+  },
+  "dataset_info": {
+    "shape": [
+      2280,
+      32
+    ],
+    "n_features": 5,
+    "target_distribution": {
+      "0": 993,
+      "2": 762,
+      "1": 525
+    },
+    "dataset_hash": "586ac0366b67afc032a128c2b96b2a6206105af681729c0137c7c71287dcbdea"
+  },
+  "system_info": {
+    "python_version": "3.13.3 (v3.13.3:6280bb54784, Apr  8 2025, 10:47:54) [Clang 15.0.0 (clang-1500.3.9.4)]",
+    "platform": "macOS-15.5-x86_64-i386-64bit-Mach-O",
+    "numpy_version": "2.3.2",
+    "pandas_version": "2.3.2",
+    "sklearn_version": "1.7.1"
+  },
+  "model_config": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "max_features": "sqrt",
+    "min_samples_split": 2,
+    "min_samples_leaf": 1,
+    "class_weight": null,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "feature_validation": {
+    "issues": [],
+    "feature_names": [
+      "elo_diff_normalized",
+      "form_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "corners_diff_normalized"
+    ],
+    "feature_importance": {}
+  },
+  "temporal_validation": {
+    "cv_accuracy_mean": 0.5115789473684211,
+    "cv_accuracy_std": 0.02885631613025853,
+    "cv_balanced_accuracy": 0.45580881572121773,
+    "cv_logloss": 1.06279124102744,
+    "cv_scores": [
+      0.45789473684210524,
+      0.5078947368421053,
+      0.531578947368421,
+      0.5394736842105263,
+      0.5210526315789473
+    ]
+  },
+  "performance_metrics": {
+    "accuracy": 0.5807017543859649,
+    "balanced_accuracy": 0.5021717149404662,
+    "log_loss": 0.9109865053394688,
+    "classification_report": {
+      "Home": {
+        "precision": 0.5832137733142038,
+        "recall": 0.8187311178247734,
+        "f1-score": 0.6811897779639715,
+        "support": 993.0
+      },
+      "Draw": {
+        "precision": 0.8285714285714286,
+        "recall": 0.05523809523809524,
+        "f1-score": 0.10357142857142858,
+        "support": 525.0
+      },
+      "Away": {
+        "precision": 0.5663924794359577,
+        "recall": 0.6325459317585301,
+        "f1-score": 0.5976441413515189,
+        "support": 762.0
+      },
+      "accuracy": 0.5807017543859649,
+      "macro avg": {
+        "precision": 0.65939256044053,
+        "recall": 0.5021717149404662,
+        "f1-score": 0.460801782628973,
+        "support": 2280.0
+      },
+      "weighted avg": {
+        "precision": 0.6340887483470193,
+        "recall": 0.5807017543859649,
+        "f1-score": 0.5202637215912636,
+        "support": 2280.0
+      }
+    },
+    "precision_recall_fscore": {
+      "precision": [
+        0.5832137733142038,
+        0.8285714285714286,
+        0.5663924794359577
+      ],
+      "recall": [
+        0.8187311178247734,
+        0.05523809523809524,
+        0.6325459317585301
+      ],
+      "fscore": [
+        0.6811897779639715,
+        0.10357142857142858,
+        0.5976441413515189
+      ],
+      "support": [
+        993,
+        525,
+        762
+      ]
+    }
+  },
+  "robustness_analysis": {
+    "mean_accuracy": 0.9973684210526316,
+    "std_accuracy": 0.0,
+    "mean_balanced_accuracy": 0.9967829021372329,
+    "std_balanced_accuracy": 0.0,
+    "mean_log_loss": 0.25021934423554515,
+    "std_log_loss": 0.0011814737238166214,
+    "runs": 3,
+    "seeds_used": [
+      42,
+      123,
+      999
+    ],
+    "all_results": {
+      "accuracy": [
+        0.9973684210526316,
+        0.9973684210526316,
+        0.9973684210526316
+      ],
+      "balanced_accuracy": [
+        0.9967829021372329,
+        0.9967829021372329,
+        0.9967829021372329
+      ],
+      "log_loss": [
+        0.2508766259803563,
+        0.2485603628912839,
+        0.2512210438349952
+      ]
+    }
+  },
+  "baseline_comparisons": {
+    "majority_class": 0.4355263157894737,
+    "random_baseline": 0.3280701754385965
+  },
+  "audit_summary": {
+    "accuracy": 0.5807017543859649,
+    "accuracy_vs_majority": 0.14517543859649124,
+    "accuracy_stability": 0.0,
+    "cv_stability": 0.02885631613025853,
+    "major_issues": 0,
+    "warnings": 0
+  },
+  "verdict": "\u2705 AUDITED - PRODUCTION READY"
+}

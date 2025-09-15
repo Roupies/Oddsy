@@ -1,0 +1,513 @@
+date,season,home_team,away_team,home_goals,away_goals,result,home_xg,away_xg,source,match_id
+2024-08-09 00:00:00,2024-2025,Preston,Sheffield United,0.0,2.0,A,1.52,1.57,championship_dataset_estimated_xg,
+2024-08-10 00:00:00,2024-2025,Leeds,Portsmouth,3.0,3.0,D,3.3,0.7100000000000001,championship_dataset_estimated_xg,
+2024-08-10 00:00:00,2024-2025,Cardiff,Sunderland,0.0,2.0,A,1.64,1.5299999999999998,championship_dataset_estimated_xg,
+2024-08-17 00:00:00,2024-2025,West Brom,Leeds,0.0,0.0,D,1.12,1.08,championship_dataset_estimated_xg,
+2024-08-17 00:00:00,2024-2025,Sheffield United,QPR,2.0,2.0,D,1.82,2.02,championship_dataset_estimated_xg,
+2024-08-18 00:00:00,2024-2025,Sunderland,Sheffield Weds,4.0,0.0,H,2.09,1.43,championship_dataset_estimated_xg,
+2024-08-23 00:00:00,2024-2025,Sheffield Weds,Leeds,0.0,2.0,A,1.08,1.71,championship_dataset_estimated_xg,
+2024-08-24 00:00:00,2024-2025,Sunderland,Burnley,1.0,0.0,H,1.7800000000000002,0.52,championship_dataset_estimated_xg,
+2024-08-24 00:00:00,2024-2025,Norwich,Sheffield United,1.0,1.0,D,1.01,1.68,championship_dataset_estimated_xg,
+2024-08-31 00:00:00,2024-2025,Leeds,Hull,2.0,0.0,H,2.28,1.35,championship_dataset_estimated_xg,
+2024-08-31 00:00:00,2024-2025,Portsmouth,Sunderland,1.0,3.0,A,0.94,1.5699999999999998,championship_dataset_estimated_xg,
+2024-09-01 00:00:00,2024-2025,Sheffield United,Watford,1.0,0.0,H,2.5799999999999996,1.01,championship_dataset_estimated_xg,
+2024-09-13 00:00:00,2024-2025,Hull,Sheffield United,0.0,2.0,A,1.8200000000000003,1.27,championship_dataset_estimated_xg,
+2024-09-14 00:00:00,2024-2025,Leeds,Burnley,0.0,1.0,A,2.39,1.01,championship_dataset_estimated_xg,
+2024-09-14 00:00:00,2024-2025,Plymouth,Sunderland,3.0,2.0,H,1.79,2.3500000000000005,championship_dataset_estimated_xg,
+2024-09-21 00:00:00,2024-2025,Sunderland,Middlesbrough,1.0,0.0,H,1.19,1.45,championship_dataset_estimated_xg,
+2024-09-21 00:00:00,2024-2025,Cardiff,Leeds,0.0,2.0,A,0.41000000000000003,2.09,championship_dataset_estimated_xg,
+2024-09-21 00:00:00,2024-2025,Sheffield United,Derby,1.0,0.0,H,2.62,0.41000000000000003,championship_dataset_estimated_xg,
+2024-09-28 00:00:00,2024-2025,Watford,Sunderland,2.0,1.0,H,1.7899999999999998,2.3100000000000005,championship_dataset_estimated_xg,
+2024-09-28 00:00:00,2024-2025,Leeds,Coventry,3.0,0.0,H,2.0300000000000002,0.97,championship_dataset_estimated_xg,
+2024-09-28 00:00:00,2024-2025,Portsmouth,Sheffield United,0.0,0.0,D,1.67,1.8399999999999999,championship_dataset_estimated_xg,
+2024-10-01 00:00:00,2024-2025,Norwich,Leeds,1.0,1.0,D,1.17,1.9000000000000001,championship_dataset_estimated_xg,
+2024-10-01 00:00:00,2024-2025,Sunderland,Derby,2.0,0.0,H,1.15,1.95,championship_dataset_estimated_xg,
+2024-10-02 00:00:00,2024-2025,Sheffield United,Swansea,1.0,0.0,H,1.97,1.01,championship_dataset_estimated_xg,
+2024-10-04 00:00:00,2024-2025,Sunderland,Leeds,2.0,2.0,D,2.02,1.8499999999999999,championship_dataset_estimated_xg,
+2024-10-05 00:00:00,2024-2025,Sheffield United,Luton,2.0,0.0,H,2.13,1.2,championship_dataset_estimated_xg,
+2024-10-18 00:00:00,2024-2025,Leeds,Sheffield United,2.0,0.0,H,1.8699999999999999,0.67,championship_dataset_estimated_xg,
+2024-10-20 00:00:00,2024-2025,Hull,Sunderland,0.0,1.0,A,1.04,1.34,championship_dataset_estimated_xg,
+2024-10-22 00:00:00,2024-2025,Leeds,Watford,2.0,1.0,H,3.32,1.2699999999999998,championship_dataset_estimated_xg,
+2024-10-23 00:00:00,2024-2025,Luton,Sunderland,1.0,2.0,A,2.65,1.31,championship_dataset_estimated_xg,
+2024-10-23 00:00:00,2024-2025,Middlesbrough,Sheffield United,1.0,0.0,H,2.5399999999999996,1.43,championship_dataset_estimated_xg,
+2024-10-26 00:00:00,2024-2025,Bristol City,Leeds,0.0,0.0,D,0.72,2.3100000000000005,championship_dataset_estimated_xg,
+2024-10-26 00:00:00,2024-2025,Sheffield United,Stoke,2.0,0.0,H,2.5300000000000002,1.01,championship_dataset_estimated_xg,
+2024-10-26 00:00:00,2024-2025,Sunderland,Oxford,2.0,0.0,H,1.99,0.71,championship_dataset_estimated_xg,
+2024-11-02 00:00:00,2024-2025,QPR,Sunderland,0.0,0.0,D,2.2300000000000004,1.1600000000000001,championship_dataset_estimated_xg,
+2024-11-02 00:00:00,2024-2025,Blackburn,Sheffield United,0.0,2.0,A,1.19,2.88,championship_dataset_estimated_xg,
+2024-11-02 00:00:00,2024-2025,Leeds,Plymouth,3.0,0.0,H,3.1699999999999995,0.1,championship_dataset_estimated_xg,
+2024-11-05 00:00:00,2024-2025,Bristol City,Sheffield United,1.0,2.0,A,1.4800000000000002,1.5699999999999998,championship_dataset_estimated_xg,
+2024-11-06 00:00:00,2024-2025,Millwall,Leeds,1.0,0.0,H,0.86,2.1799999999999997,championship_dataset_estimated_xg,
+2024-11-06 00:00:00,2024-2025,Preston,Sunderland,0.0,0.0,D,1.78,1.34,championship_dataset_estimated_xg,
+2024-11-09 00:00:00,2024-2025,Leeds,QPR,2.0,0.0,H,2.83,0.5900000000000001,championship_dataset_estimated_xg,
+2024-11-09 00:00:00,2024-2025,Sunderland,Coventry,2.0,2.0,D,1.27,1.28,championship_dataset_estimated_xg,
+2024-11-10 00:00:00,2024-2025,Sheffield United,Sheffield Weds,1.0,0.0,H,1.12,1.34,championship_dataset_estimated_xg,
+2024-11-23 00:00:00,2024-2025,Coventry,Sheffield United,2.0,2.0,D,2.9200000000000004,0.9299999999999999,championship_dataset_estimated_xg,
+2024-11-23 00:00:00,2024-2025,Millwall,Sunderland,1.0,1.0,D,1.81,1.31,championship_dataset_estimated_xg,
+2024-11-24 00:00:00,2024-2025,Swansea,Leeds,3.0,4.0,A,1.34,1.67,championship_dataset_estimated_xg,
+2024-11-26 00:00:00,2024-2025,Sheffield United,Oxford,3.0,0.0,H,2.14,1.39,championship_dataset_estimated_xg,
+2024-11-26 00:00:00,2024-2025,Sunderland,West Brom,0.0,0.0,D,2.58,0.3,championship_dataset_estimated_xg,
+2024-11-27 00:00:00,2024-2025,Leeds,Luton,3.0,0.0,H,3.0,0.9700000000000001,championship_dataset_estimated_xg,
+2024-11-29 00:00:00,2024-2025,Sheffield United,Sunderland,1.0,0.0,H,2.02,2.16,championship_dataset_estimated_xg,
+2024-11-30 00:00:00,2024-2025,Blackburn,Leeds,1.0,0.0,H,1.4100000000000001,1.9899999999999998,championship_dataset_estimated_xg,
+2024-12-07 00:00:00,2024-2025,Leeds,Derby,2.0,0.0,H,2.6199999999999997,0.45,championship_dataset_estimated_xg,
+2024-12-07 00:00:00,2024-2025,Sunderland,Stoke,2.0,1.0,H,3.51,1.49,championship_dataset_estimated_xg,
+2024-12-08 00:00:00,2024-2025,West Brom,Sheffield United,2.0,2.0,D,1.6099999999999999,1.72,championship_dataset_estimated_xg,
+2024-12-10 00:00:00,2024-2025,Sunderland,Bristol City,1.0,1.0,D,2.83,1.01,championship_dataset_estimated_xg,
+2024-12-10 00:00:00,2024-2025,Leeds,Middlesbrough,3.0,1.0,H,2.3500000000000005,0.9,championship_dataset_estimated_xg,
+2024-12-11 00:00:00,2024-2025,Millwall,Sheffield United,0.0,1.0,A,1.61,1.15,championship_dataset_estimated_xg,
+2024-12-14 00:00:00,2024-2025,Preston,Leeds,1.0,1.0,D,0.71,2.46,championship_dataset_estimated_xg,
+2024-12-14 00:00:00,2024-2025,Sheffield United,Plymouth,2.0,0.0,H,1.3000000000000003,1.6,championship_dataset_estimated_xg,
+2024-12-14 00:00:00,2024-2025,Swansea,Sunderland,2.0,3.0,A,1.34,1.7899999999999998,championship_dataset_estimated_xg,
+2024-12-21 00:00:00,2024-2025,Cardiff,Sheffield United,0.0,2.0,A,1.08,1.76,championship_dataset_estimated_xg,
+2024-12-21 00:00:00,2024-2025,Leeds,Oxford,4.0,0.0,H,3.09,0.66,championship_dataset_estimated_xg,
+2024-12-21 00:00:00,2024-2025,Sunderland,Norwich,2.0,1.0,H,1.09,1.01,championship_dataset_estimated_xg,
+2024-12-26 00:00:00,2024-2025,Blackburn,Sunderland,2.0,2.0,D,1.64,1.7499999999999998,championship_dataset_estimated_xg,
+2024-12-26 00:00:00,2024-2025,Sheffield United,Burnley,0.0,2.0,A,1.3499999999999999,1.24,championship_dataset_estimated_xg,
+2024-12-26 00:00:00,2024-2025,Stoke,Leeds,0.0,2.0,A,0.45,2.6800000000000006,championship_dataset_estimated_xg,
+2024-12-29 00:00:00,2024-2025,Derby,Leeds,0.0,1.0,A,0.5599999999999999,2.47,championship_dataset_estimated_xg,
+2024-12-29 00:00:00,2024-2025,Stoke,Sunderland,1.0,0.0,H,1.5299999999999998,3.18,championship_dataset_estimated_xg,
+2024-12-29 00:00:00,2024-2025,Sheffield United,West Brom,1.0,1.0,D,1.7000000000000002,1.4200000000000002,championship_dataset_estimated_xg,
+2025-01-01 00:00:00,2024-2025,Sunderland,Sheffield United,2.0,1.0,H,1.94,2.28,championship_dataset_estimated_xg,
+2025-01-01 00:00:00,2024-2025,Leeds,Blackburn,1.0,1.0,D,1.8,0.64,championship_dataset_estimated_xg,
+2025-01-04 00:00:00,2024-2025,Hull,Leeds,3.0,3.0,D,2.09,2.51,championship_dataset_estimated_xg,
+2025-01-04 00:00:00,2024-2025,Watford,Sheffield United,1.0,2.0,A,1.09,1.01,championship_dataset_estimated_xg,
+2025-01-05 00:00:00,2024-2025,Sunderland,Portsmouth,1.0,0.0,H,3.24,0.8200000000000001,championship_dataset_estimated_xg,
+2025-01-17 00:00:00,2024-2025,Burnley,Sunderland,0.0,0.0,D,1.3499999999999999,1.82,championship_dataset_estimated_xg,
+2025-01-18 00:00:00,2024-2025,Sheffield United,Norwich,2.0,0.0,H,2.9400000000000004,1.45,championship_dataset_estimated_xg,
+2025-01-19 00:00:00,2024-2025,Leeds,Sheffield Weds,3.0,0.0,H,2.32,1.02,championship_dataset_estimated_xg,
+2025-01-21 00:00:00,2024-2025,Derby,Sunderland,0.0,1.0,A,1.43,1.16,championship_dataset_estimated_xg,
+2025-01-21 00:00:00,2024-2025,Swansea,Sheffield United,1.0,2.0,A,1.12,1.7400000000000002,championship_dataset_estimated_xg,
+2025-01-22 00:00:00,2024-2025,Leeds,Norwich,2.0,0.0,H,2.18,0.49,championship_dataset_estimated_xg,
+2025-01-24 00:00:00,2024-2025,Sheffield United,Hull,0.0,3.0,A,2.2800000000000002,1.12,championship_dataset_estimated_xg,
+2025-01-25 00:00:00,2024-2025,Sunderland,Plymouth,2.0,2.0,D,1.8,0.97,championship_dataset_estimated_xg,
+2025-01-27 00:00:00,2024-2025,Burnley,Leeds,0.0,0.0,D,0.48,1.12,championship_dataset_estimated_xg,
+2025-02-01 00:00:00,2024-2025,Derby,Sheffield United,0.0,1.0,A,1.2600000000000002,0.86,championship_dataset_estimated_xg,
+2025-02-01 00:00:00,2024-2025,Leeds,Cardiff,7.0,0.0,H,4.0,0.33999999999999997,championship_dataset_estimated_xg,
+2025-02-03 00:00:00,2024-2025,Middlesbrough,Sunderland,2.0,3.0,A,1.52,1.8800000000000001,championship_dataset_estimated_xg,
+2025-02-05 00:00:00,2024-2025,Coventry,Leeds,0.0,2.0,A,1.27,2.84,championship_dataset_estimated_xg,
+2025-02-08 00:00:00,2024-2025,Sheffield United,Portsmouth,2.0,1.0,H,1.53,2.16,championship_dataset_estimated_xg,
+2025-02-08 00:00:00,2024-2025,Sunderland,Watford,2.0,2.0,D,2.1,1.5299999999999998,championship_dataset_estimated_xg,
+2025-02-11 00:00:00,2024-2025,Watford,Leeds,0.0,4.0,A,1.02,2.7600000000000007,championship_dataset_estimated_xg,
+2025-02-12 00:00:00,2024-2025,Sunderland,Luton,2.0,0.0,H,1.7899999999999998,0.52,championship_dataset_estimated_xg,
+2025-02-12 00:00:00,2024-2025,Sheffield United,Middlesbrough,3.0,1.0,H,2.7399999999999998,1.42,championship_dataset_estimated_xg,
+2025-02-15 00:00:00,2024-2025,Luton,Sheffield United,0.0,1.0,A,1.94,1.6,championship_dataset_estimated_xg,
+2025-02-17 00:00:00,2024-2025,Leeds,Sunderland,2.0,1.0,H,2.87,0.9,championship_dataset_estimated_xg,
+2025-02-22 00:00:00,2024-2025,Sunderland,Hull,0.0,1.0,A,2.1500000000000004,1.1600000000000001,championship_dataset_estimated_xg,
+2025-02-24 00:00:00,2024-2025,Sheffield United,Leeds,1.0,3.0,A,1.38,2.5,championship_dataset_estimated_xg,
+2025-02-28 00:00:00,2024-2025,Sheffield Weds,Sunderland,1.0,2.0,A,1.3499999999999999,1.73,championship_dataset_estimated_xg,
+2025-03-01 00:00:00,2024-2025,Leeds,West Brom,1.0,1.0,D,2.13,1.01,championship_dataset_estimated_xg,
+2025-03-01 00:00:00,2024-2025,QPR,Sheffield United,1.0,2.0,A,2.16,1.04,championship_dataset_estimated_xg,
+2025-03-08 00:00:00,2024-2025,Sunderland,Cardiff,2.0,1.0,H,2.41,0.86,championship_dataset_estimated_xg,
+2025-03-08 00:00:00,2024-2025,Sheffield United,Preston,1.0,0.0,H,1.69,1.12,championship_dataset_estimated_xg,
+2025-03-09 00:00:00,2024-2025,Portsmouth,Leeds,1.0,0.0,H,1.8299999999999998,1.8299999999999998,championship_dataset_estimated_xg,
+2025-03-11 00:00:00,2024-2025,Sunderland,Preston,1.0,1.0,D,2.5600000000000005,1.81,championship_dataset_estimated_xg,
+2025-03-11 00:00:00,2024-2025,Sheffield United,Bristol City,1.0,1.0,D,1.8299999999999998,2.85,championship_dataset_estimated_xg,
+2025-03-12 00:00:00,2024-2025,Leeds,Millwall,2.0,0.0,H,2.22,0.56,championship_dataset_estimated_xg,
+2025-03-15 00:00:00,2024-2025,QPR,Leeds,2.0,2.0,D,1.08,1.5400000000000003,championship_dataset_estimated_xg,
+2025-03-15 00:00:00,2024-2025,Coventry,Sunderland,3.0,0.0,H,2.75,0.7400000000000001,championship_dataset_estimated_xg,
+2025-03-16 00:00:00,2024-2025,Sheffield Weds,Sheffield United,0.0,1.0,A,1.9400000000000002,1.1500000000000001,championship_dataset_estimated_xg,
+2025-03-28 00:00:00,2024-2025,Sheffield United,Coventry,3.0,1.0,H,2.32,1.45,championship_dataset_estimated_xg,
+2025-03-29 00:00:00,2024-2025,Leeds,Swansea,2.0,2.0,D,2.13,1.39,championship_dataset_estimated_xg,
+2025-03-29 00:00:00,2024-2025,Sunderland,Millwall,1.0,0.0,H,1.91,0.67,championship_dataset_estimated_xg,
+2025-04-05 00:00:00,2024-2025,Luton,Leeds,1.0,1.0,D,1.0,1.28,championship_dataset_estimated_xg,
+2025-04-05 00:00:00,2024-2025,West Brom,Sunderland,0.0,1.0,A,2.67,1.13,championship_dataset_estimated_xg,
+2025-04-05 00:00:00,2024-2025,Oxford,Sheffield United,1.0,0.0,H,1.19,2.21,championship_dataset_estimated_xg,
+2025-04-08 00:00:00,2024-2025,Middlesbrough,Leeds,0.0,1.0,A,2.1100000000000003,0.8300000000000001,championship_dataset_estimated_xg,
+2025-04-08 00:00:00,2024-2025,Norwich,Sunderland,0.0,0.0,D,1.5299999999999998,1.05,championship_dataset_estimated_xg,
+2025-04-08 00:00:00,2024-2025,Sheffield United,Millwall,0.0,1.0,A,3.39,1.01,championship_dataset_estimated_xg,
+2025-04-12 00:00:00,2024-2025,Plymouth,Sheffield United,2.0,1.0,H,1.12,1.3599999999999999,championship_dataset_estimated_xg,
+2025-04-12 00:00:00,2024-2025,Sunderland,Swansea,0.0,1.0,A,1.5999999999999999,1.11,championship_dataset_estimated_xg,
+2025-04-12 00:00:00,2024-2025,Leeds,Preston,2.0,1.0,H,2.6400000000000006,0.6100000000000001,championship_dataset_estimated_xg,
+2025-04-18 00:00:00,2024-2025,Bristol City,Sunderland,2.0,1.0,H,3.45,0.6,championship_dataset_estimated_xg,
+2025-04-18 00:00:00,2024-2025,Sheffield United,Cardiff,2.0,0.0,H,2.13,1.37,championship_dataset_estimated_xg,
+2025-04-18 00:00:00,2024-2025,Oxford,Leeds,0.0,1.0,A,1.1500000000000001,1.5699999999999998,championship_dataset_estimated_xg,
+2025-04-21 00:00:00,2024-2025,Leeds,Stoke,6.0,0.0,H,2.62,0.6300000000000001,championship_dataset_estimated_xg,
+2025-04-21 00:00:00,2024-2025,Sunderland,Blackburn,0.0,1.0,A,2.24,0.34,championship_dataset_estimated_xg,
+2025-04-21 00:00:00,2024-2025,Burnley,Sheffield United,2.0,1.0,H,1.38,1.9699999999999998,championship_dataset_estimated_xg,
+2025-04-25 00:00:00,2024-2025,Stoke,Sheffield United,0.0,2.0,A,1.5400000000000003,1.75,championship_dataset_estimated_xg,
+2025-04-26 00:00:00,2024-2025,Oxford,Sunderland,2.0,0.0,H,2.1500000000000004,1.34,championship_dataset_estimated_xg,
+2025-04-28 00:00:00,2024-2025,Leeds,Bristol City,4.0,0.0,H,3.4499999999999997,0.41,championship_dataset_estimated_xg,
+2025-05-03 00:00:00,2024-2025,Sunderland,QPR,0.0,1.0,A,1.8499999999999999,0.6300000000000001,championship_dataset_estimated_xg,
+2025-05-03 00:00:00,2024-2025,Plymouth,Leeds,1.0,2.0,A,0.7000000000000001,3.1900000000000004,championship_dataset_estimated_xg,
+2025-05-03 00:00:00,2024-2025,Sheffield United,Blackburn,1.0,1.0,D,2.5,1.01,championship_dataset_estimated_xg,
+2025-08-15 19:00:00,2025-2026,Liverpool,Bournemouth,4.0,2.0,H,2.33007,1.57303,understat_api,28778
+2025-08-16 11:30:00,2025-2026,Aston Villa,Newcastle United,0.0,0.0,D,0.318601,1.40098,understat_api,28779
+2025-08-16 14:00:00,2025-2026,Tottenham,Burnley,3.0,0.0,H,1.97858,0.734138,understat_api,28782
+2025-08-16 14:00:00,2025-2026,Sunderland,West Ham,3.0,0.0,H,0.724368,0.558948,understat_api,28781
+2025-08-16 14:00:00,2025-2026,Brighton,Fulham,1.0,1.0,D,1.44008,0.902883,understat_api,28780
+2025-08-16 16:30:00,2025-2026,Wolverhampton Wanderers,Manchester City,0.0,4.0,A,0.519436,2.29903,understat_api,28783
+2025-08-17 13:00:00,2025-2026,Nottingham Forest,Brentford,3.0,1.0,H,1.7555,1.32516,understat_api,28785
+2025-08-17 13:00:00,2025-2026,Chelsea,Crystal Palace,0.0,0.0,D,1.36793,1.03414,understat_api,28784
+2025-08-17 15:30:00,2025-2026,Manchester United,Arsenal,0.0,1.0,A,1.37653,1.3304,understat_api,28786
+2025-08-18 19:00:00,2025-2026,Leeds,Everton,1.0,0.0,H,2.3812,0.674338,understat_api,28787
+2025-08-22 19:00:00,2025-2026,West Ham,Chelsea,1.0,5.0,A,0.978572,3.94997,understat_api,28788
+2025-08-23 11:30:00,2025-2026,Manchester City,Tottenham,0.0,2.0,A,1.2475,1.28015,understat_api,28789
+2025-08-23 14:00:00,2025-2026,Brentford,Aston Villa,1.0,0.0,H,1.12964,0.976852,understat_api,28790
+2025-08-23 14:00:00,2025-2026,Burnley,Sunderland,2.0,0.0,H,1.00381,1.12127,understat_api,28791
+2025-08-23 14:00:00,2025-2026,Bournemouth,Wolverhampton Wanderers,1.0,0.0,H,1.78462,0.373367,understat_api,28792
+2025-08-23 16:30:00,2025-2026,Arsenal,Leeds,5.0,0.0,H,2.73761,0.156761,understat_api,28793
+2025-08-24 13:00:00,2025-2026,Crystal Palace,Nottingham Forest,1.0,1.0,D,1.10188,1.32987,understat_api,28794
+2025-08-24 13:00:00,2025-2026,Everton,Brighton,2.0,0.0,H,1.80116,2.08487,understat_api,28795
+2025-08-24 15:30:00,2025-2026,Fulham,Manchester United,1.0,1.0,D,1.65333,1.54603,understat_api,28796
+2025-08-25 19:00:00,2025-2026,Newcastle United,Liverpool,2.0,3.0,A,1.96342,0.646559,understat_api,28797
+2025-08-30 11:30:00,2025-2026,Chelsea,Fulham,2.0,0.0,H,2.4324,0.736228,understat_api,28798
+2025-08-30 14:00:00,2025-2026,Manchester United,Burnley,3.0,2.0,H,4.02237,1.32618,understat_api,28802
+2025-08-30 14:00:00,2025-2026,Sunderland,Brentford,2.0,1.0,H,1.57127,1.44604,understat_api,28801
+2025-08-30 14:00:00,2025-2026,Wolverhampton Wanderers,Everton,2.0,3.0,A,0.943257,2.03791,understat_api,28800
+2025-08-30 14:00:00,2025-2026,Tottenham,Bournemouth,0.0,1.0,A,0.17067,2.1201,understat_api,28799
+2025-08-30 16:30:00,2025-2026,Leeds,Newcastle United,0.0,0.0,D,0.6773,0.303635,understat_api,28803
+2025-08-31 13:00:00,2025-2026,Nottingham Forest,West Ham,0.0,3.0,A,0.716018,2.236,understat_api,28804
+2025-08-31 13:00:00,2025-2026,Brighton,Manchester City,2.0,1.0,H,2.20864,2.13418,understat_api,28805
+2025-08-31 15:30:00,2025-2026,Liverpool,Arsenal,1.0,0.0,H,0.481404,0.485679,understat_api,28806
+2025-08-31 18:00:00,2025-2026,Aston Villa,Crystal Palace,0.0,3.0,A,1.20586,2.59713,understat_api,28807
+2025-09-13 11:30:00,2025-2026,Arsenal,Nottingham Forest,3.0,0.0,H,2.8817,0.293681,understat_api,28808
+2025-09-13 14:00:00,2025-2026,Bournemouth,Brighton,2.0,1.0,H,1.44187,0.624923,understat_api,28810
+2025-09-13 14:00:00,2025-2026,Everton,Aston Villa,0.0,0.0,D,1.8927,0.354327,understat_api,28812
+2025-09-13 14:00:00,2025-2026,Crystal Palace,Sunderland,0.0,0.0,D,1.75805,0.354129,understat_api,28811
+2025-09-13 14:00:00,2025-2026,Newcastle United,Wolverhampton Wanderers,1.0,0.0,H,1.19186,0.375942,understat_api,28809
+2025-09-13 14:00:00,2025-2026,Fulham,Leeds,1.0,0.0,H,1.13979,0.830398,understat_api,28813
+2025-09-13 16:30:00,2025-2026,West Ham,Tottenham,0.0,3.0,A,0.793248,1.51402,understat_api,28814
+2025-09-13 19:00:00,2025-2026,Brentford,Chelsea,2.0,2.0,D,1.17533,0.755999,understat_api,28815
+2025-09-14 13:00:00,2025-2026,Burnley,Liverpool,,,,0.0,0.0,understat_api,28816
+2025-09-14 15:30:00,2025-2026,Manchester City,Manchester United,,,,0.0,0.0,understat_api,28817
+2025-09-20 11:30:00,2025-2026,Liverpool,Everton,,,,0.0,0.0,understat_api,28818
+2025-09-20 14:00:00,2025-2026,West Ham,Crystal Palace,,,,0.0,0.0,understat_api,28819
+2025-09-20 14:00:00,2025-2026,Wolverhampton Wanderers,Leeds,,,,0.0,0.0,understat_api,28820
+2025-09-20 14:00:00,2025-2026,Brighton,Tottenham,,,,0.0,0.0,understat_api,28821
+2025-09-20 14:00:00,2025-2026,Burnley,Nottingham Forest,,,,0.0,0.0,understat_api,28822
+2025-09-20 14:00:00,2025-2026,Bournemouth,Newcastle United,,,,0.0,0.0,understat_api,28823
+2025-09-20 16:30:00,2025-2026,Manchester United,Chelsea,,,,0.0,0.0,understat_api,28824
+2025-09-20 19:00:00,2025-2026,Fulham,Brentford,,,,0.0,0.0,understat_api,28825
+2025-09-21 13:00:00,2025-2026,Sunderland,Aston Villa,,,,0.0,0.0,understat_api,28826
+2025-09-21 15:30:00,2025-2026,Arsenal,Manchester City,,,,0.0,0.0,understat_api,28827
+2025-09-27 11:30:00,2025-2026,Brentford,Manchester United,,,,0.0,0.0,understat_api,28828
+2025-09-27 14:00:00,2025-2026,Chelsea,Brighton,,,,0.0,0.0,understat_api,28829
+2025-09-27 14:00:00,2025-2026,Crystal Palace,Liverpool,,,,0.0,0.0,understat_api,28830
+2025-09-27 14:00:00,2025-2026,Aston Villa,Fulham,,,,0.0,0.0,understat_api,28831
+2025-09-27 14:00:00,2025-2026,Leeds,Bournemouth,,,,0.0,0.0,understat_api,28832
+2025-09-27 14:00:00,2025-2026,Manchester City,Burnley,,,,0.0,0.0,understat_api,28833
+2025-09-27 16:30:00,2025-2026,Nottingham Forest,Sunderland,,,,0.0,0.0,understat_api,28834
+2025-09-28 13:00:00,2025-2026,Tottenham,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28835
+2025-09-28 15:30:00,2025-2026,Newcastle United,Arsenal,,,,0.0,0.0,understat_api,28836
+2025-09-29 19:00:00,2025-2026,Everton,West Ham,,,,0.0,0.0,understat_api,28837
+2025-10-04 14:00:00,2025-2026,Aston Villa,Burnley,,,,0.0,0.0,understat_api,28840
+2025-10-04 14:00:00,2025-2026,Arsenal,West Ham,,,,0.0,0.0,understat_api,28839
+2025-10-04 14:00:00,2025-2026,Brentford,Manchester City,,,,0.0,0.0,understat_api,28841
+2025-10-04 14:00:00,2025-2026,Bournemouth,Fulham,,,,0.0,0.0,understat_api,28838
+2025-10-04 14:00:00,2025-2026,Chelsea,Liverpool,,,,0.0,0.0,understat_api,28842
+2025-10-04 14:00:00,2025-2026,Leeds,Tottenham,,,,0.0,0.0,understat_api,28844
+2025-10-04 14:00:00,2025-2026,Manchester United,Sunderland,,,,0.0,0.0,understat_api,28845
+2025-10-04 14:00:00,2025-2026,Newcastle United,Nottingham Forest,,,,0.0,0.0,understat_api,28846
+2025-10-04 14:00:00,2025-2026,Everton,Crystal Palace,,,,0.0,0.0,understat_api,28843
+2025-10-04 14:00:00,2025-2026,Wolverhampton Wanderers,Brighton,,,,0.0,0.0,understat_api,28847
+2025-10-18 14:00:00,2025-2026,West Ham,Brentford,,,,0.0,0.0,understat_api,28857
+2025-10-18 14:00:00,2025-2026,Tottenham,Aston Villa,,,,0.0,0.0,understat_api,28856
+2025-10-18 14:00:00,2025-2026,Sunderland,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28855
+2025-10-18 14:00:00,2025-2026,Nottingham Forest,Chelsea,,,,0.0,0.0,understat_api,28854
+2025-10-18 14:00:00,2025-2026,Manchester City,Everton,,,,0.0,0.0,understat_api,28853
+2025-10-18 14:00:00,2025-2026,Liverpool,Manchester United,,,,0.0,0.0,understat_api,28852
+2025-10-18 14:00:00,2025-2026,Fulham,Arsenal,,,,0.0,0.0,understat_api,28851
+2025-10-18 14:00:00,2025-2026,Crystal Palace,Bournemouth,,,,0.0,0.0,understat_api,28850
+2025-10-18 14:00:00,2025-2026,Burnley,Leeds,,,,0.0,0.0,understat_api,28849
+2025-10-18 14:00:00,2025-2026,Brighton,Newcastle United,,,,0.0,0.0,understat_api,28848
+2025-10-25 14:00:00,2025-2026,Newcastle United,Fulham,,,,0.0,0.0,understat_api,28866
+2025-10-25 14:00:00,2025-2026,Manchester United,Brighton,,,,0.0,0.0,understat_api,28865
+2025-10-25 14:00:00,2025-2026,Leeds,West Ham,,,,0.0,0.0,understat_api,28864
+2025-10-25 14:00:00,2025-2026,Everton,Tottenham,,,,0.0,0.0,understat_api,28863
+2025-10-25 14:00:00,2025-2026,Chelsea,Sunderland,,,,0.0,0.0,understat_api,28862
+2025-10-25 14:00:00,2025-2026,Wolverhampton Wanderers,Burnley,,,,0.0,0.0,understat_api,28867
+2025-10-25 14:00:00,2025-2026,Aston Villa,Manchester City,,,,0.0,0.0,understat_api,28860
+2025-10-25 14:00:00,2025-2026,Arsenal,Crystal Palace,,,,0.0,0.0,understat_api,28859
+2025-10-25 14:00:00,2025-2026,Bournemouth,Nottingham Forest,,,,0.0,0.0,understat_api,28858
+2025-10-25 14:00:00,2025-2026,Brentford,Liverpool,,,,0.0,0.0,understat_api,28861
+2025-11-01 14:00:00,2025-2026,Manchester City,Bournemouth,,,,0.0,0.0,understat_api,28873
+2025-11-01 14:00:00,2025-2026,Tottenham,Chelsea,,,,0.0,0.0,understat_api,28876
+2025-11-01 14:00:00,2025-2026,Sunderland,Everton,,,,0.0,0.0,understat_api,28875
+2025-11-01 14:00:00,2025-2026,West Ham,Newcastle United,,,,0.0,0.0,understat_api,28877
+2025-11-01 14:00:00,2025-2026,Liverpool,Aston Villa,,,,0.0,0.0,understat_api,28872
+2025-11-01 14:00:00,2025-2026,Nottingham Forest,Manchester United,,,,0.0,0.0,understat_api,28874
+2025-11-01 14:00:00,2025-2026,Crystal Palace,Brentford,,,,0.0,0.0,understat_api,28870
+2025-11-01 14:00:00,2025-2026,Burnley,Arsenal,,,,0.0,0.0,understat_api,28869
+2025-11-01 14:00:00,2025-2026,Brighton,Leeds,,,,0.0,0.0,understat_api,28868
+2025-11-01 14:00:00,2025-2026,Fulham,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28871
+2025-11-08 14:00:00,2025-2026,West Ham,Burnley,,,,0.0,0.0,understat_api,28887
+2025-11-08 14:00:00,2025-2026,Tottenham,Manchester United,,,,0.0,0.0,understat_api,28886
+2025-11-08 14:00:00,2025-2026,Sunderland,Arsenal,,,,0.0,0.0,understat_api,28885
+2025-11-08 14:00:00,2025-2026,Nottingham Forest,Leeds,,,,0.0,0.0,understat_api,28884
+2025-11-08 14:00:00,2025-2026,Manchester City,Liverpool,,,,0.0,0.0,understat_api,28883
+2025-11-08 14:00:00,2025-2026,Everton,Fulham,,,,0.0,0.0,understat_api,28882
+2025-11-08 14:00:00,2025-2026,Chelsea,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28880
+2025-11-08 14:00:00,2025-2026,Brentford,Newcastle United,,,,0.0,0.0,understat_api,28879
+2025-11-08 14:00:00,2025-2026,Aston Villa,Bournemouth,,,,0.0,0.0,understat_api,28878
+2025-11-08 14:00:00,2025-2026,Crystal Palace,Brighton,,,,0.0,0.0,understat_api,28881
+2025-11-22 14:00:00,2025-2026,Newcastle United,Manchester City,,,,0.0,0.0,understat_api,28896
+2025-11-22 14:00:00,2025-2026,Leeds,Aston Villa,,,,0.0,0.0,understat_api,28893
+2025-11-22 14:00:00,2025-2026,Manchester United,Everton,,,,0.0,0.0,understat_api,28895
+2025-11-22 14:00:00,2025-2026,Liverpool,Nottingham Forest,,,,0.0,0.0,understat_api,28894
+2025-11-22 14:00:00,2025-2026,Fulham,Sunderland,,,,0.0,0.0,understat_api,28892
+2025-11-22 14:00:00,2025-2026,Wolverhampton Wanderers,Crystal Palace,,,,0.0,0.0,understat_api,28897
+2025-11-22 14:00:00,2025-2026,Brighton,Brentford,,,,0.0,0.0,understat_api,28890
+2025-11-22 14:00:00,2025-2026,Arsenal,Tottenham,,,,0.0,0.0,understat_api,28889
+2025-11-22 14:00:00,2025-2026,Bournemouth,West Ham,,,,0.0,0.0,understat_api,28888
+2025-11-22 14:00:00,2025-2026,Burnley,Chelsea,,,,0.0,0.0,understat_api,28891
+2025-11-29 14:00:00,2025-2026,Chelsea,Arsenal,,,,0.0,0.0,understat_api,28900
+2025-11-29 14:00:00,2025-2026,Crystal Palace,Manchester United,,,,0.0,0.0,understat_api,28901
+2025-11-29 14:00:00,2025-2026,Everton,Newcastle United,,,,0.0,0.0,understat_api,28902
+2025-11-29 14:00:00,2025-2026,Manchester City,Leeds,,,,0.0,0.0,understat_api,28903
+2025-11-29 14:00:00,2025-2026,Nottingham Forest,Brighton,,,,0.0,0.0,understat_api,28904
+2025-11-29 14:00:00,2025-2026,Sunderland,Bournemouth,,,,0.0,0.0,understat_api,28905
+2025-11-29 14:00:00,2025-2026,Aston Villa,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28898
+2025-11-29 14:00:00,2025-2026,Tottenham,Fulham,,,,0.0,0.0,understat_api,28906
+2025-11-29 14:00:00,2025-2026,Brentford,Burnley,,,,0.0,0.0,understat_api,28899
+2025-11-29 14:00:00,2025-2026,West Ham,Liverpool,,,,0.0,0.0,understat_api,28907
+2025-12-03 19:00:00,2025-2026,Arsenal,Brentford,,,,0.0,0.0,understat_api,28909
+2025-12-03 19:00:00,2025-2026,Fulham,Manchester City,,,,0.0,0.0,understat_api,28912
+2025-12-03 19:00:00,2025-2026,Leeds,Chelsea,,,,0.0,0.0,understat_api,28913
+2025-12-03 19:00:00,2025-2026,Liverpool,Sunderland,,,,0.0,0.0,understat_api,28914
+2025-12-03 19:00:00,2025-2026,Manchester United,West Ham,,,,0.0,0.0,understat_api,28915
+2025-12-03 19:00:00,2025-2026,Newcastle United,Tottenham,,,,0.0,0.0,understat_api,28916
+2025-12-03 19:00:00,2025-2026,Wolverhampton Wanderers,Nottingham Forest,,,,0.0,0.0,understat_api,28917
+2025-12-03 19:00:00,2025-2026,Brighton,Aston Villa,,,,0.0,0.0,understat_api,28910
+2025-12-03 19:00:00,2025-2026,Bournemouth,Everton,,,,0.0,0.0,understat_api,28908
+2025-12-03 19:00:00,2025-2026,Burnley,Crystal Palace,,,,0.0,0.0,understat_api,28911
+2025-12-06 14:00:00,2025-2026,Wolverhampton Wanderers,Manchester United,,,,0.0,0.0,understat_api,28927
+2025-12-06 14:00:00,2025-2026,Bournemouth,Chelsea,,,,0.0,0.0,understat_api,28918
+2025-12-06 14:00:00,2025-2026,Aston Villa,Arsenal,,,,0.0,0.0,understat_api,28919
+2025-12-06 14:00:00,2025-2026,Brighton,West Ham,,,,0.0,0.0,understat_api,28920
+2025-12-06 14:00:00,2025-2026,Everton,Nottingham Forest,,,,0.0,0.0,understat_api,28921
+2025-12-06 14:00:00,2025-2026,Fulham,Crystal Palace,,,,0.0,0.0,understat_api,28922
+2025-12-06 14:00:00,2025-2026,Leeds,Liverpool,,,,0.0,0.0,understat_api,28923
+2025-12-06 14:00:00,2025-2026,Manchester City,Sunderland,,,,0.0,0.0,understat_api,28924
+2025-12-06 14:00:00,2025-2026,Newcastle United,Burnley,,,,0.0,0.0,understat_api,28925
+2025-12-06 14:00:00,2025-2026,Tottenham,Brentford,,,,0.0,0.0,understat_api,28926
+2025-12-13 14:00:00,2025-2026,Sunderland,Newcastle United,,,,0.0,0.0,understat_api,28936
+2025-12-13 14:00:00,2025-2026,Nottingham Forest,Tottenham,,,,0.0,0.0,understat_api,28935
+2025-12-13 14:00:00,2025-2026,Manchester United,Bournemouth,,,,0.0,0.0,understat_api,28934
+2025-12-13 14:00:00,2025-2026,Liverpool,Brighton,,,,0.0,0.0,understat_api,28933
+2025-12-13 14:00:00,2025-2026,Crystal Palace,Manchester City,,,,0.0,0.0,understat_api,28932
+2025-12-13 14:00:00,2025-2026,Brentford,Leeds,,,,0.0,0.0,understat_api,28929
+2025-12-13 14:00:00,2025-2026,Burnley,Fulham,,,,0.0,0.0,understat_api,28930
+2025-12-13 14:00:00,2025-2026,Arsenal,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28928
+2025-12-13 14:00:00,2025-2026,West Ham,Aston Villa,,,,0.0,0.0,understat_api,28937
+2025-12-13 14:00:00,2025-2026,Chelsea,Everton,,,,0.0,0.0,understat_api,28931
+2025-12-20 14:00:00,2025-2026,Newcastle United,Chelsea,,,,0.0,0.0,understat_api,28945
+2025-12-20 14:00:00,2025-2026,Tottenham,Liverpool,,,,0.0,0.0,understat_api,28946
+2025-12-20 14:00:00,2025-2026,Fulham,Nottingham Forest,,,,0.0,0.0,understat_api,28942
+2025-12-20 14:00:00,2025-2026,Manchester City,West Ham,,,,0.0,0.0,understat_api,28944
+2025-12-20 14:00:00,2025-2026,Wolverhampton Wanderers,Brentford,,,,0.0,0.0,understat_api,28947
+2025-12-20 14:00:00,2025-2026,Leeds,Crystal Palace,,,,0.0,0.0,understat_api,28943
+2025-12-20 14:00:00,2025-2026,Bournemouth,Burnley,,,,0.0,0.0,understat_api,28938
+2025-12-20 14:00:00,2025-2026,Everton,Arsenal,,,,0.0,0.0,understat_api,28941
+2025-12-20 14:00:00,2025-2026,Brighton,Sunderland,,,,0.0,0.0,understat_api,28940
+2025-12-20 14:00:00,2025-2026,Aston Villa,Manchester United,,,,0.0,0.0,understat_api,28939
+2025-12-27 14:00:00,2025-2026,West Ham,Fulham,,,,0.0,0.0,understat_api,28957
+2025-12-27 14:00:00,2025-2026,Sunderland,Leeds,,,,0.0,0.0,understat_api,28956
+2025-12-27 14:00:00,2025-2026,Nottingham Forest,Manchester City,,,,0.0,0.0,understat_api,28955
+2025-12-27 14:00:00,2025-2026,Manchester United,Newcastle United,,,,0.0,0.0,understat_api,28954
+2025-12-27 14:00:00,2025-2026,Liverpool,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28953
+2025-12-27 14:00:00,2025-2026,Crystal Palace,Tottenham,,,,0.0,0.0,understat_api,28952
+2025-12-27 14:00:00,2025-2026,Chelsea,Aston Villa,,,,0.0,0.0,understat_api,28951
+2025-12-27 14:00:00,2025-2026,Burnley,Everton,,,,0.0,0.0,understat_api,28950
+2025-12-27 14:00:00,2025-2026,Brentford,Bournemouth,,,,0.0,0.0,understat_api,28949
+2025-12-27 14:00:00,2025-2026,Arsenal,Brighton,,,,0.0,0.0,understat_api,28948
+2025-12-30 19:00:00,2025-2026,Liverpool,Leeds,,,,0.0,0.0,understat_api,28963
+2025-12-30 19:00:00,2025-2026,Manchester United,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28964
+2025-12-30 19:00:00,2025-2026,Sunderland,Manchester City,,,,0.0,0.0,understat_api,28966
+2025-12-30 19:00:00,2025-2026,Crystal Palace,Fulham,,,,0.0,0.0,understat_api,28962
+2025-12-30 19:00:00,2025-2026,Nottingham Forest,Everton,,,,0.0,0.0,understat_api,28965
+2025-12-30 19:00:00,2025-2026,Burnley,Newcastle United,,,,0.0,0.0,understat_api,28960
+2025-12-30 19:00:00,2025-2026,Brentford,Tottenham,,,,0.0,0.0,understat_api,28959
+2025-12-30 19:00:00,2025-2026,Arsenal,Aston Villa,,,,0.0,0.0,understat_api,28958
+2025-12-30 19:00:00,2025-2026,West Ham,Brighton,,,,0.0,0.0,understat_api,28967
+2025-12-30 19:00:00,2025-2026,Chelsea,Bournemouth,,,,0.0,0.0,understat_api,28961
+2026-01-03 14:00:00,2025-2026,Newcastle United,Crystal Palace,,,,0.0,0.0,understat_api,28968
+2026-01-03 14:00:00,2025-2026,Tottenham,Sunderland,,,,0.0,0.0,understat_api,28969
+2026-01-03 14:00:00,2025-2026,Manchester City,Chelsea,,,,0.0,0.0,understat_api,28977
+2026-01-03 14:00:00,2025-2026,Wolverhampton Wanderers,West Ham,,,,0.0,0.0,understat_api,28970
+2026-01-03 14:00:00,2025-2026,Bournemouth,Arsenal,,,,0.0,0.0,understat_api,28971
+2026-01-03 14:00:00,2025-2026,Aston Villa,Nottingham Forest,,,,0.0,0.0,understat_api,28972
+2026-01-03 14:00:00,2025-2026,Brighton,Burnley,,,,0.0,0.0,understat_api,28973
+2026-01-03 14:00:00,2025-2026,Everton,Brentford,,,,0.0,0.0,understat_api,28974
+2026-01-03 14:00:00,2025-2026,Fulham,Liverpool,,,,0.0,0.0,understat_api,28975
+2026-01-03 14:00:00,2025-2026,Leeds,Manchester United,,,,0.0,0.0,understat_api,28976
+2026-01-07 19:00:00,2025-2026,Fulham,Chelsea,,,,0.0,0.0,understat_api,28984
+2026-01-07 19:00:00,2025-2026,Crystal Palace,Aston Villa,,,,0.0,0.0,understat_api,28983
+2026-01-07 19:00:00,2025-2026,Burnley,Manchester United,,,,0.0,0.0,understat_api,28982
+2026-01-07 19:00:00,2025-2026,Brentford,Sunderland,,,,0.0,0.0,understat_api,28981
+2026-01-07 19:00:00,2025-2026,Bournemouth,Tottenham,,,,0.0,0.0,understat_api,28979
+2026-01-07 19:00:00,2025-2026,West Ham,Nottingham Forest,,,,0.0,0.0,understat_api,28987
+2026-01-07 19:00:00,2025-2026,Everton,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,28978
+2026-01-07 19:00:00,2025-2026,Manchester City,Brighton,,,,0.0,0.0,understat_api,28985
+2026-01-07 19:00:00,2025-2026,Arsenal,Liverpool,,,,0.0,0.0,understat_api,28980
+2026-01-07 19:00:00,2025-2026,Newcastle United,Leeds,,,,0.0,0.0,understat_api,28986
+2026-01-17 14:00:00,2025-2026,Sunderland,Crystal Palace,,,,0.0,0.0,understat_api,28995
+2026-01-17 14:00:00,2025-2026,Tottenham,West Ham,,,,0.0,0.0,understat_api,28996
+2026-01-17 14:00:00,2025-2026,Wolverhampton Wanderers,Newcastle United,,,,0.0,0.0,understat_api,28997
+2026-01-17 14:00:00,2025-2026,Nottingham Forest,Arsenal,,,,0.0,0.0,understat_api,28994
+2026-01-17 14:00:00,2025-2026,Liverpool,Burnley,,,,0.0,0.0,understat_api,28992
+2026-01-17 14:00:00,2025-2026,Manchester United,Manchester City,,,,0.0,0.0,understat_api,28993
+2026-01-17 14:00:00,2025-2026,Chelsea,Brentford,,,,0.0,0.0,understat_api,28990
+2026-01-17 14:00:00,2025-2026,Brighton,Bournemouth,,,,0.0,0.0,understat_api,28989
+2026-01-17 14:00:00,2025-2026,Aston Villa,Everton,,,,0.0,0.0,understat_api,28988
+2026-01-17 14:00:00,2025-2026,Leeds,Fulham,,,,0.0,0.0,understat_api,28991
+2026-01-24 14:00:00,2025-2026,West Ham,Sunderland,,,,0.0,0.0,understat_api,29007
+2026-01-24 14:00:00,2025-2026,Newcastle United,Aston Villa,,,,0.0,0.0,understat_api,29006
+2026-01-24 14:00:00,2025-2026,Fulham,Brighton,,,,0.0,0.0,understat_api,29004
+2026-01-24 14:00:00,2025-2026,Everton,Leeds,,,,0.0,0.0,understat_api,29003
+2026-01-24 14:00:00,2025-2026,Crystal Palace,Chelsea,,,,0.0,0.0,understat_api,29002
+2026-01-24 14:00:00,2025-2026,Manchester City,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29005
+2026-01-24 14:00:00,2025-2026,Brentford,Nottingham Forest,,,,0.0,0.0,understat_api,29000
+2026-01-24 14:00:00,2025-2026,Arsenal,Manchester United,,,,0.0,0.0,understat_api,28999
+2026-01-24 14:00:00,2025-2026,Bournemouth,Liverpool,,,,0.0,0.0,understat_api,28998
+2026-01-24 14:00:00,2025-2026,Burnley,Tottenham,,,,0.0,0.0,understat_api,29001
+2026-01-31 14:00:00,2025-2026,Wolverhampton Wanderers,Bournemouth,,,,0.0,0.0,understat_api,29017
+2026-01-31 14:00:00,2025-2026,Tottenham,Manchester City,,,,0.0,0.0,understat_api,29016
+2026-01-31 14:00:00,2025-2026,Leeds,Arsenal,,,,0.0,0.0,understat_api,29015
+2026-01-31 14:00:00,2025-2026,Liverpool,Newcastle United,,,,0.0,0.0,understat_api,29014
+2026-01-31 14:00:00,2025-2026,Nottingham Forest,Crystal Palace,,,,0.0,0.0,understat_api,29013
+2026-01-31 14:00:00,2025-2026,Manchester United,Fulham,,,,0.0,0.0,understat_api,29012
+2026-01-31 14:00:00,2025-2026,Brighton,Everton,,,,0.0,0.0,understat_api,29010
+2026-01-31 14:00:00,2025-2026,Chelsea,West Ham,,,,0.0,0.0,understat_api,29009
+2026-01-31 14:00:00,2025-2026,Aston Villa,Brentford,,,,0.0,0.0,understat_api,29008
+2026-01-31 14:00:00,2025-2026,Sunderland,Burnley,,,,0.0,0.0,understat_api,29011
+2026-02-07 14:00:00,2025-2026,Manchester United,Tottenham,,,,0.0,0.0,understat_api,29025
+2026-02-07 14:00:00,2025-2026,Newcastle United,Brentford,,,,0.0,0.0,understat_api,29026
+2026-02-07 14:00:00,2025-2026,Wolverhampton Wanderers,Chelsea,,,,0.0,0.0,understat_api,29027
+2026-02-07 14:00:00,2025-2026,Liverpool,Manchester City,,,,0.0,0.0,understat_api,29024
+2026-02-07 14:00:00,2025-2026,Brighton,Crystal Palace,,,,0.0,0.0,understat_api,29020
+2026-02-07 14:00:00,2025-2026,Fulham,Everton,,,,0.0,0.0,understat_api,29022
+2026-02-07 14:00:00,2025-2026,Burnley,West Ham,,,,0.0,0.0,understat_api,29021
+2026-02-07 14:00:00,2025-2026,Arsenal,Sunderland,,,,0.0,0.0,understat_api,29019
+2026-02-07 14:00:00,2025-2026,Leeds,Nottingham Forest,,,,0.0,0.0,understat_api,29023
+2026-02-07 14:00:00,2025-2026,Bournemouth,Aston Villa,,,,0.0,0.0,understat_api,29018
+2026-02-11 19:00:00,2025-2026,Manchester City,Fulham,,,,0.0,0.0,understat_api,29033
+2026-02-11 19:00:00,2025-2026,Aston Villa,Brighton,,,,0.0,0.0,understat_api,29028
+2026-02-11 19:00:00,2025-2026,Brentford,Arsenal,,,,0.0,0.0,understat_api,29029
+2026-02-11 19:00:00,2025-2026,Chelsea,Leeds,,,,0.0,0.0,understat_api,29030
+2026-02-11 19:00:00,2025-2026,Crystal Palace,Burnley,,,,0.0,0.0,understat_api,29031
+2026-02-11 19:00:00,2025-2026,Everton,Bournemouth,,,,0.0,0.0,understat_api,29032
+2026-02-11 19:00:00,2025-2026,Nottingham Forest,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29034
+2026-02-11 19:00:00,2025-2026,Sunderland,Liverpool,,,,0.0,0.0,understat_api,29035
+2026-02-11 19:00:00,2025-2026,Tottenham,Newcastle United,,,,0.0,0.0,understat_api,29036
+2026-02-11 19:00:00,2025-2026,West Ham,Manchester United,,,,0.0,0.0,understat_api,29037
+2026-02-21 14:00:00,2025-2026,Nottingham Forest,Liverpool,,,,0.0,0.0,understat_api,29044
+2026-02-21 14:00:00,2025-2026,West Ham,Bournemouth,,,,0.0,0.0,understat_api,29047
+2026-02-21 14:00:00,2025-2026,Tottenham,Arsenal,,,,0.0,0.0,understat_api,29046
+2026-02-21 14:00:00,2025-2026,Sunderland,Fulham,,,,0.0,0.0,understat_api,29045
+2026-02-21 14:00:00,2025-2026,Manchester City,Newcastle United,,,,0.0,0.0,understat_api,29043
+2026-02-21 14:00:00,2025-2026,Brentford,Brighton,,,,0.0,0.0,understat_api,29039
+2026-02-21 14:00:00,2025-2026,Crystal Palace,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29041
+2026-02-21 14:00:00,2025-2026,Chelsea,Burnley,,,,0.0,0.0,understat_api,29040
+2026-02-21 14:00:00,2025-2026,Aston Villa,Leeds,,,,0.0,0.0,understat_api,29038
+2026-02-21 14:00:00,2025-2026,Everton,Manchester United,,,,0.0,0.0,understat_api,29042
+2026-02-28 14:00:00,2025-2026,Wolverhampton Wanderers,Aston Villa,,,,0.0,0.0,understat_api,29057
+2026-02-28 14:00:00,2025-2026,Leeds,Manchester City,,,,0.0,0.0,understat_api,29053
+2026-02-28 14:00:00,2025-2026,Newcastle United,Everton,,,,0.0,0.0,understat_api,29056
+2026-02-28 14:00:00,2025-2026,Manchester United,Crystal Palace,,,,0.0,0.0,understat_api,29055
+2026-02-28 14:00:00,2025-2026,Fulham,Tottenham,,,,0.0,0.0,understat_api,29052
+2026-02-28 14:00:00,2025-2026,Liverpool,West Ham,,,,0.0,0.0,understat_api,29054
+2026-02-28 14:00:00,2025-2026,Brighton,Nottingham Forest,,,,0.0,0.0,understat_api,29050
+2026-02-28 14:00:00,2025-2026,Arsenal,Chelsea,,,,0.0,0.0,understat_api,29049
+2026-02-28 14:00:00,2025-2026,Bournemouth,Sunderland,,,,0.0,0.0,understat_api,29048
+2026-02-28 14:00:00,2025-2026,Burnley,Brentford,,,,0.0,0.0,understat_api,29051
+2026-03-04 19:00:00,2025-2026,Wolverhampton Wanderers,Liverpool,,,,0.0,0.0,understat_api,29067
+2026-03-04 19:00:00,2025-2026,Manchester City,Nottingham Forest,,,,0.0,0.0,understat_api,29064
+2026-03-04 19:00:00,2025-2026,Tottenham,Crystal Palace,,,,0.0,0.0,understat_api,29066
+2026-03-04 19:00:00,2025-2026,Newcastle United,Manchester United,,,,0.0,0.0,understat_api,29065
+2026-03-04 19:00:00,2025-2026,Leeds,Sunderland,,,,0.0,0.0,understat_api,29063
+2026-03-04 19:00:00,2025-2026,Fulham,West Ham,,,,0.0,0.0,understat_api,29062
+2026-03-04 19:00:00,2025-2026,Everton,Burnley,,,,0.0,0.0,understat_api,29061
+2026-03-04 19:00:00,2025-2026,Brighton,Arsenal,,,,0.0,0.0,understat_api,29060
+2026-03-04 19:00:00,2025-2026,Aston Villa,Chelsea,,,,0.0,0.0,understat_api,29059
+2026-03-04 19:00:00,2025-2026,Bournemouth,Brentford,,,,0.0,0.0,understat_api,29058
+2026-03-14 14:00:00,2025-2026,West Ham,Manchester City,,,,0.0,0.0,understat_api,29077
+2026-03-14 14:00:00,2025-2026,Sunderland,Brighton,,,,0.0,0.0,understat_api,29076
+2026-03-14 14:00:00,2025-2026,Nottingham Forest,Fulham,,,,0.0,0.0,understat_api,29075
+2026-03-14 14:00:00,2025-2026,Manchester United,Aston Villa,,,,0.0,0.0,understat_api,29074
+2026-03-14 14:00:00,2025-2026,Liverpool,Tottenham,,,,0.0,0.0,understat_api,29073
+2026-03-14 14:00:00,2025-2026,Crystal Palace,Leeds,,,,0.0,0.0,understat_api,29072
+2026-03-14 14:00:00,2025-2026,Chelsea,Newcastle United,,,,0.0,0.0,understat_api,29071
+2026-03-14 14:00:00,2025-2026,Burnley,Bournemouth,,,,0.0,0.0,understat_api,29070
+2026-03-14 14:00:00,2025-2026,Brentford,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29069
+2026-03-14 14:00:00,2025-2026,Arsenal,Everton,,,,0.0,0.0,understat_api,29068
+2026-03-21 14:00:00,2025-2026,Leeds,Brentford,,,,0.0,0.0,understat_api,29083
+2026-03-21 14:00:00,2025-2026,Newcastle United,Sunderland,,,,0.0,0.0,understat_api,29085
+2026-03-21 14:00:00,2025-2026,Manchester City,Crystal Palace,,,,0.0,0.0,understat_api,29084
+2026-03-21 14:00:00,2025-2026,Tottenham,Nottingham Forest,,,,0.0,0.0,understat_api,29086
+2026-03-21 14:00:00,2025-2026,Fulham,Burnley,,,,0.0,0.0,understat_api,29082
+2026-03-21 14:00:00,2025-2026,Wolverhampton Wanderers,Arsenal,,,,0.0,0.0,understat_api,29087
+2026-03-21 14:00:00,2025-2026,Brighton,Liverpool,,,,0.0,0.0,understat_api,29080
+2026-03-21 14:00:00,2025-2026,Aston Villa,West Ham,,,,0.0,0.0,understat_api,29079
+2026-03-21 14:00:00,2025-2026,Bournemouth,Manchester United,,,,0.0,0.0,understat_api,29078
+2026-03-21 14:00:00,2025-2026,Everton,Chelsea,,,,0.0,0.0,understat_api,29081
+2026-04-11 14:00:00,2025-2026,Liverpool,Fulham,,,,0.0,0.0,understat_api,29097
+2026-04-11 14:00:00,2025-2026,Crystal Palace,Newcastle United,,,,0.0,0.0,understat_api,29096
+2026-04-11 14:00:00,2025-2026,Chelsea,Manchester City,,,,0.0,0.0,understat_api,29095
+2026-04-11 14:00:00,2025-2026,Burnley,Brighton,,,,0.0,0.0,understat_api,29094
+2026-04-11 14:00:00,2025-2026,Brentford,Everton,,,,0.0,0.0,understat_api,29093
+2026-04-11 14:00:00,2025-2026,Arsenal,Bournemouth,,,,0.0,0.0,understat_api,29092
+2026-04-11 14:00:00,2025-2026,Manchester United,Leeds,,,,0.0,0.0,understat_api,29088
+2026-04-11 14:00:00,2025-2026,Sunderland,Tottenham,,,,0.0,0.0,understat_api,29090
+2026-04-11 14:00:00,2025-2026,Nottingham Forest,Aston Villa,,,,0.0,0.0,understat_api,29089
+2026-04-11 14:00:00,2025-2026,West Ham,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29091
+2026-04-18 14:00:00,2025-2026,Chelsea,Manchester United,,,,0.0,0.0,understat_api,29100
+2026-04-18 14:00:00,2025-2026,Aston Villa,Sunderland,,,,0.0,0.0,understat_api,29098
+2026-04-18 14:00:00,2025-2026,Brentford,Fulham,,,,0.0,0.0,understat_api,29099
+2026-04-18 14:00:00,2025-2026,Crystal Palace,West Ham,,,,0.0,0.0,understat_api,29101
+2026-04-18 14:00:00,2025-2026,Everton,Liverpool,,,,0.0,0.0,understat_api,29102
+2026-04-18 14:00:00,2025-2026,Leeds,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29103
+2026-04-18 14:00:00,2025-2026,Manchester City,Arsenal,,,,0.0,0.0,understat_api,29104
+2026-04-18 14:00:00,2025-2026,Newcastle United,Bournemouth,,,,0.0,0.0,understat_api,29105
+2026-04-18 14:00:00,2025-2026,Nottingham Forest,Burnley,,,,0.0,0.0,understat_api,29106
+2026-04-18 14:00:00,2025-2026,Tottenham,Brighton,,,,0.0,0.0,understat_api,29107
+2026-04-25 14:00:00,2025-2026,Wolverhampton Wanderers,Tottenham,,,,0.0,0.0,understat_api,29117
+2026-04-25 14:00:00,2025-2026,West Ham,Everton,,,,0.0,0.0,understat_api,29116
+2026-04-25 14:00:00,2025-2026,Manchester United,Brentford,,,,0.0,0.0,understat_api,29114
+2026-04-25 14:00:00,2025-2026,Liverpool,Crystal Palace,,,,0.0,0.0,understat_api,29113
+2026-04-25 14:00:00,2025-2026,Sunderland,Nottingham Forest,,,,0.0,0.0,understat_api,29115
+2026-04-25 14:00:00,2025-2026,Burnley,Manchester City,,,,0.0,0.0,understat_api,29111
+2026-04-25 14:00:00,2025-2026,Brighton,Chelsea,,,,0.0,0.0,understat_api,29110
+2026-04-25 14:00:00,2025-2026,Arsenal,Newcastle United,,,,0.0,0.0,understat_api,29109
+2026-04-25 14:00:00,2025-2026,Bournemouth,Leeds,,,,0.0,0.0,understat_api,29108
+2026-04-25 14:00:00,2025-2026,Fulham,Aston Villa,,,,0.0,0.0,understat_api,29112
+2026-05-02 14:00:00,2025-2026,Wolverhampton Wanderers,Sunderland,,,,0.0,0.0,understat_api,29127
+2026-05-02 14:00:00,2025-2026,Newcastle United,Brighton,,,,0.0,0.0,understat_api,29126
+2026-05-02 14:00:00,2025-2026,Manchester United,Liverpool,,,,0.0,0.0,understat_api,29125
+2026-05-02 14:00:00,2025-2026,Leeds,Burnley,,,,0.0,0.0,understat_api,29124
+2026-05-02 14:00:00,2025-2026,Everton,Manchester City,,,,0.0,0.0,understat_api,29123
+2026-05-02 14:00:00,2025-2026,Chelsea,Nottingham Forest,,,,0.0,0.0,understat_api,29122
+2026-05-02 14:00:00,2025-2026,Aston Villa,Tottenham,,,,0.0,0.0,understat_api,29120
+2026-05-02 14:00:00,2025-2026,Arsenal,Fulham,,,,0.0,0.0,understat_api,29119
+2026-05-02 14:00:00,2025-2026,Bournemouth,Crystal Palace,,,,0.0,0.0,understat_api,29118
+2026-05-02 14:00:00,2025-2026,Brentford,West Ham,,,,0.0,0.0,understat_api,29121
+2026-05-09 14:00:00,2025-2026,Nottingham Forest,Newcastle United,,,,0.0,0.0,understat_api,29134
+2026-05-09 14:00:00,2025-2026,West Ham,Arsenal,,,,0.0,0.0,understat_api,29137
+2026-05-09 14:00:00,2025-2026,Tottenham,Leeds,,,,0.0,0.0,understat_api,29136
+2026-05-09 14:00:00,2025-2026,Sunderland,Manchester United,,,,0.0,0.0,understat_api,29135
+2026-05-09 14:00:00,2025-2026,Manchester City,Brentford,,,,0.0,0.0,understat_api,29133
+2026-05-09 14:00:00,2025-2026,Brighton,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29128
+2026-05-09 14:00:00,2025-2026,Fulham,Bournemouth,,,,0.0,0.0,understat_api,29131
+2026-05-09 14:00:00,2025-2026,Crystal Palace,Everton,,,,0.0,0.0,understat_api,29130
+2026-05-09 14:00:00,2025-2026,Burnley,Aston Villa,,,,0.0,0.0,understat_api,29129
+2026-05-09 14:00:00,2025-2026,Liverpool,Chelsea,,,,0.0,0.0,understat_api,29132
+2026-05-17 14:00:00,2025-2026,Wolverhampton Wanderers,Fulham,,,,0.0,0.0,understat_api,29147
+2026-05-17 14:00:00,2025-2026,Newcastle United,West Ham,,,,0.0,0.0,understat_api,29146
+2026-05-17 14:00:00,2025-2026,Leeds,Brighton,,,,0.0,0.0,understat_api,29144
+2026-05-17 14:00:00,2025-2026,Everton,Sunderland,,,,0.0,0.0,understat_api,29143
+2026-05-17 14:00:00,2025-2026,Manchester United,Nottingham Forest,,,,0.0,0.0,understat_api,29145
+2026-05-17 14:00:00,2025-2026,Brentford,Crystal Palace,,,,0.0,0.0,understat_api,29141
+2026-05-17 14:00:00,2025-2026,Aston Villa,Liverpool,,,,0.0,0.0,understat_api,29140
+2026-05-17 14:00:00,2025-2026,Arsenal,Burnley,,,,0.0,0.0,understat_api,29139
+2026-05-17 14:00:00,2025-2026,Bournemouth,Manchester City,,,,0.0,0.0,understat_api,29138
+2026-05-17 14:00:00,2025-2026,Chelsea,Tottenham,,,,0.0,0.0,understat_api,29142
+2026-05-24 15:00:00,2025-2026,West Ham,Leeds,,,,0.0,0.0,understat_api,29157
+2026-05-24 15:00:00,2025-2026,Brighton,Manchester United,,,,0.0,0.0,understat_api,29148
+2026-05-24 15:00:00,2025-2026,Burnley,Wolverhampton Wanderers,,,,0.0,0.0,understat_api,29149
+2026-05-24 15:00:00,2025-2026,Crystal Palace,Arsenal,,,,0.0,0.0,understat_api,29150
+2026-05-24 15:00:00,2025-2026,Fulham,Newcastle United,,,,0.0,0.0,understat_api,29151
+2026-05-24 15:00:00,2025-2026,Liverpool,Brentford,,,,0.0,0.0,understat_api,29152
+2026-05-24 15:00:00,2025-2026,Manchester City,Aston Villa,,,,0.0,0.0,understat_api,29153
+2026-05-24 15:00:00,2025-2026,Nottingham Forest,Bournemouth,,,,0.0,0.0,understat_api,29154
+2026-05-24 15:00:00,2025-2026,Sunderland,Chelsea,,,,0.0,0.0,understat_api,29155
+2026-05-24 15:00:00,2025-2026,Tottenham,Everton,,,,0.0,0.0,understat_api,29156

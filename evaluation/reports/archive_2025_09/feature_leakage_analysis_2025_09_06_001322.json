@@ -1,0 +1,132 @@
+{
+  "analysis_timestamp": "2025_09_06_001322",
+  "dataset_path": "/Users/maxime/Desktop/Oddsy/data/processed/v13_xg_corrected_features_2025_09_02_113048.csv",
+  "temporal_cutoff": "2023-05-01",
+  "train_matches": 1472,
+  "test_matches": 808,
+  "features_analyzed": 10,
+  "critical_features": 0,
+  "high_risk_features": 0,
+  "feature_results": [
+    {
+      "feature": "home_xg_eff_10",
+      "train_cv_f1": 0.17021905140638857,
+      "test_f1": 0.29004329004329005,
+      "overfitting_gap": -0.11982423863690148,
+      "train_mean": 0.9730835806566599,
+      "test_mean": 0.949302947170371,
+      "distribution_shift": 0.023780633486288894,
+      "missing_values": 0,
+      "temporal_stability": 0.02563133457167972,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "away_xg_eff_10",
+      "train_cv_f1": 0.17992153941235475,
+      "test_f1": 0.31261101243339257,
+      "overfitting_gap": -0.1326894730210378,
+      "train_mean": 0.9664490240932847,
+      "test_mean": 0.9478505308087297,
+      "distribution_shift": 0.018598493284554984,
+      "missing_values": 0,
+      "temporal_stability": 0.018039463177968604,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "market_entropy_norm",
+      "train_cv_f1": 0.1609834208713013,
+      "test_f1": 0.34576271186440677,
+      "overfitting_gap": -0.18477929099310547,
+      "train_mean": 0.8817555272378925,
+      "test_mean": 0.8724793343720775,
+      "distribution_shift": 0.009276192865815047,
+      "missing_values": 0,
+      "temporal_stability": 0.008527522854995785,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "shots_diff_normalized",
+      "train_cv_f1": 0.10944857931774939,
+      "test_f1": 0.3010033444816054,
+      "overfitting_gap": -0.191554765163856,
+      "train_mean": 0.4957569980130902,
+      "test_mean": 0.4967775204939849,
+      "distribution_shift": 0.0010205224808946811,
+      "missing_values": 0,
+      "temporal_stability": 0.002054234968088865,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "elo_diff_normalized",
+      "train_cv_f1": 0.08483701366982123,
+      "test_f1": 0.3111954459203036,
+      "overfitting_gap": -0.2263584322504824,
+      "train_mean": 0.4986677063450259,
+      "test_mean": 0.49956762398637566,
+      "distribution_shift": 0.0008999176413497789,
+      "missing_values": 0,
+      "temporal_stability": 0.003384820276955912,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "h2h_score",
+      "train_cv_f1": 0.0011757789535567313,
+      "test_f1": 0.2792607802874743,
+      "overfitting_gap": -0.27808500133391756,
+      "train_mean": 0.45553291062801937,
+      "test_mean": 0.4580926842684268,
+      "distribution_shift": 0.0025597736404074367,
+      "missing_values": 0,
+      "temporal_stability": 0.026649522843796968,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "matchday_normalized",
+      "train_cv_f1": 0.02820078962210942,
+      "test_f1": 0.32078559738134205,
+      "overfitting_gap": -0.2925848077592326,
+      "train_mean": 0.4963462103407756,
+      "test_mean": 0.5292346802247793,
+      "distribution_shift": 0.03288846988400368,
+      "missing_values": 0,
+      "temporal_stability": 0.018976301357390996,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "corners_diff_normalized",
+      "train_cv_f1": 0.03147594254274214,
+      "test_f1": 0.3270868824531516,
+      "overfitting_gap": -0.29561093991040943,
+      "train_mean": 0.49614753170289855,
+      "test_mean": 0.49651328972182934,
+      "distribution_shift": 0.0003657580189307952,
+      "missing_values": 0,
+      "temporal_stability": 0.0027635092348788654,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "form_diff_normalized",
+      "train_cv_f1": 0.024943310657596373,
+      "test_f1": 0.3378995433789954,
+      "overfitting_gap": -0.31295623272139905,
+      "train_mean": 0.49387643417874394,
+      "test_mean": 0.4959502200220022,
+      "distribution_shift": 0.0020737858432582357,
+      "missing_values": 0,
+      "temporal_stability": 0.00814639053263989,
+      "leakage_risk": "LOW"
+    },
+    {
+      "feature": "away_goals_sum_5",
+      "train_cv_f1": 0.010434782608695653,
+      "test_f1": 0.3344947735191638,
+      "overfitting_gap": -0.3240599909104681,
+      "train_mean": 6.846575342465753,
+      "test_mean": 7.83271375464684,
+      "distribution_shift": 0.986138412181087,
+      "missing_values": 13,
+      "temporal_stability": 0.03822250587782534,
+      "leakage_risk": "LOW"
+    }
+  ]
+}

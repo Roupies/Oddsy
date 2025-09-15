@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025_08_31_235028",
+  "model_type": "RandomForestClassifier_Calibrated",
+  "feature_set": "traditional_baseline",
+  "hyperparameters": {
+    "max_depth": 8,
+    "min_samples_leaf": 2,
+    "min_samples_split": 20,
+    "n_estimators": 200
+  },
+  "performance": {
+    "feature_set": "traditional_baseline",
+    "cv_accuracy": {
+      "mean": 0.5316455696202531,
+      "std": 0.038080022674661596,
+      "scores": [
+        0.4651898734177215,
+        0.5158227848101266,
+        0.5664556962025317,
+        0.5664556962025317,
+        0.5443037974683544
+      ]
+    },
+    "train_accuracy": 0.588421052631579,
+    "test_accuracy": 0.5421052631578948,
+    "accuracy_gap": 0.0463157894736842,
+    "train_log_loss": 0.8927078704222674,
+    "test_log_loss": 1.0023796799254754,
+    "calibration_gap": 0.10967180950320798,
+    "num_features": 5
+  },
+  "validation": {
+    "no_data_leakage": true,
+    "temporal_validation": true,
+    "proper_calibration": true
+  },
+  "dataset": {
+    "source": "data/processed/v13_xg_safe_features.csv",
+    "features_used": 5,
+    "train_cutoff": "2024-08-01"
+  },
+  "production_ready": true
+}

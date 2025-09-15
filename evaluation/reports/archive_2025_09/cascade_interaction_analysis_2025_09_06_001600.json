@@ -1,0 +1,131 @@
+{
+  "analysis_timestamp": "2025_09_06_001600",
+  "combination_results": [
+    {
+      "features": [
+        "market_entropy_norm"
+      ],
+      "cv_f1": 0.2559714013075137,
+      "test_f1": 0.34210526315789475,
+      "overfitting_gap": -0.08613386185038102,
+      "train_samples": 2266,
+      "test_samples": 808,
+      "combination": "single_best",
+      "n_features": 1
+    },
+    {
+      "features": [
+        "market_entropy_norm",
+        "home_xg_eff_10"
+      ],
+      "cv_f1": 0.22915087025435138,
+      "test_f1": 0.29010989010989013,
+      "overfitting_gap": -0.060959019855538754,
+      "train_samples": 2266,
+      "test_samples": 808,
+      "combination": "top_2",
+      "n_features": 2
+    },
+    {
+      "features": [
+        "market_entropy_norm",
+        "home_xg_eff_10",
+        "away_xg_eff_10",
+        "shots_diff_normalized",
+        "elo_diff_normalized"
+      ],
+      "cv_f1": 0.1996780927885967,
+      "test_f1": 0.2518891687657431,
+      "overfitting_gap": -0.05221107597714639,
+      "train_samples": 2266,
+      "test_samples": 808,
+      "combination": "top_5",
+      "n_features": 5
+    },
+    {
+      "features": [
+        "elo_diff_normalized",
+        "market_entropy_norm",
+        "home_xg_eff_10",
+        "away_xg_eff_10",
+        "shots_diff_normalized",
+        "corners_diff_normalized",
+        "matchday_normalized",
+        "form_diff_normalized",
+        "h2h_score",
+        "away_goals_sum_5"
+      ],
+      "cv_f1": 0.20732371103348105,
+      "test_f1": 0.27586206896551724,
+      "overfitting_gap": -0.06853835793203619,
+      "train_samples": 2266,
+      "test_samples": 808,
+      "combination": "all_10",
+      "n_features": 10
+    }
+  ],
+  "smote_results": [
+    {
+      "cv_f1": 0.028169014084507043,
+      "test_f1": 0.0,
+      "overfitting_gap": 0.028169014084507043,
+      "use_smote": false,
+      "train_samples": 1472,
+      "variant": "no_smote"
+    },
+    {
+      "cv_f1": 0.20732371103348105,
+      "test_f1": 0.27586206896551724,
+      "overfitting_gap": -0.06853835793203619,
+      "use_smote": true,
+      "train_samples": 2266,
+      "variant": "with_smote"
+    }
+  ],
+  "synthetic_analysis": {
+    "original_count": 1472,
+    "synthetic_count": 794,
+    "feature_stats": {
+      "elo_diff_normalized": {
+        "original_mean": 0.4986677063450259,
+        "synthetic_mean": 0.49059498953901287
+      },
+      "market_entropy_norm": {
+        "original_mean": 0.8817555272378925,
+        "synthetic_mean": 0.9157184790018846
+      },
+      "home_xg_eff_10": {
+        "original_mean": 0.9730835806566599,
+        "synthetic_mean": 0.9756281611279687
+      },
+      "away_xg_eff_10": {
+        "original_mean": 0.9664490240932847,
+        "synthetic_mean": 0.9655297599959396
+      },
+      "shots_diff_normalized": {
+        "original_mean": 0.4957569980130902,
+        "synthetic_mean": 0.4937686933612932
+      },
+      "corners_diff_normalized": {
+        "original_mean": 0.49614753170289855,
+        "synthetic_mean": 0.49371966806557055
+      },
+      "matchday_normalized": {
+        "original_mean": 0.4963462103407756,
+        "synthetic_mean": 0.4789880724997191
+      },
+      "form_diff_normalized": {
+        "original_mean": 0.49387643417874394,
+        "synthetic_mean": 0.48044446226420845
+      },
+      "h2h_score": {
+        "original_mean": 0.45553291062801937,
+        "synthetic_mean": 0.43552333109274305
+      },
+      "away_goals_sum_5": {
+        "original_mean": 6.8396739130434785,
+        "synthetic_mean": 6.981295125003818
+      }
+    }
+  }
+}

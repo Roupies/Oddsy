@@ -1,0 +1,160 @@
+{
+  "timestamp": "2025_09_05_152240",
+  "version": "v2.5_local_cascade_optimization",
+  "execution_time_seconds": 98.155173,
+  "features_count": 10,
+  "features_used": [
+    "elo_diff_normalized",
+    "market_entropy_norm",
+    "home_xg_eff_10",
+    "away_xg_eff_10",
+    "shots_diff_normalized",
+    "corners_diff_normalized",
+    "matchday_normalized",
+    "form_diff_normalized",
+    "h2h_score",
+    "away_goals_sum_5"
+  ],
+  "optimization_results": {
+    "stage1": {
+      "best_params": {
+        "class_weight": "balanced",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "min_samples_split": 5,
+        "n_estimators": 500
+      },
+      "cv_score": 0.8252917572265374,
+      "test_f1": 0.02127659574468085,
+      "test_precision": 1.0,
+      "test_recall": 0.010752688172043012,
+      "roc_auc": 0.5332321756397287
+    },
+    "stage2": {
+      "best_params": {
+        "class_weight": "balanced",
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 4,
+        "min_samples_split": 10,
+        "n_estimators": 300
+      },
+      "cv_score": 0.6886145404663924,
+      "test_accuracy": 0.7317073170731707
+    },
+    "threshold_optimization": {
+      "optimal_threshold": 0.25,
+      "best_score": 0.4777167316100775,
+      "metric_optimized": "f1_macro",
+      "top_thresholds": [
+        {
+          "threshold": 0.25,
+          "metric_score": 0.4777167316100775,
+          "accuracy": 0.5210526315789473,
+          "draw_recall": 0.22580645161290322,
+          "f1_macro": 0.4777167316100775
+        },
+        {
+          "threshold": 0.3,
+          "metric_score": 0.4349657592067046,
+          "accuracy": 0.55,
+          "draw_recall": 0.03225806451612903,
+          "f1_macro": 0.4349657592067046
+        },
+        {
+          "threshold": 0.49999999999999994,
+          "metric_score": 0.4259145686234425,
+          "accuracy": 0.5552631578947368,
+          "draw_recall": 0.010752688172043012,
+          "f1_macro": 0.4259145686234425
+        },
+        {
+          "threshold": 0.44999999999999996,
+          "metric_score": 0.4252268572920747,
+          "accuracy": 0.5526315789473685,
+          "draw_recall": 0.010752688172043012,
+          "f1_macro": 0.4252268572920747
+        },
+        {
+          "threshold": 0.35,
+          "metric_score": 0.42358250588142937,
+          "accuracy": 0.55,
+          "draw_recall": 0.010752688172043012,
+          "f1_macro": 0.42358250588142937
+        }
+      ]
+    },
+    "final_evaluation": {
+      "accuracy": 0.5210526315789473,
+      "f1_macro": 0.4777167316100775,
+      "draw_recall": 0.22580645161290322,
+      "draw_f1": 0.25766871165644173,
+      "home_f1": 0.6272189349112426,
+      "away_f1": 0.5482625482625483,
+      "optimal_threshold": 0.25,
+      "vs_v24_baseline": {
+        "accuracy_gain": -0.008947368421052704,
+        "draw_recall_gain": -0.11819354838709675,
+        "f1_macro_gain": -0.029283268389922512
+      },
+      "confusion_matrix": [
+        [
+          106,
+          24,
+          25
+        ],
+        [
+          41,
+          21,
+          31
+        ],
+        [
+          36,
+          25,
+          71
+        ]
+      ],
+      "classification_report": {
+        "Home": {
+          "precision": 0.5792349726775956,
+          "recall": 0.6838709677419355,
+          "f1-score": 0.6272189349112426,
+          "support": 155.0
+        },
+        "Draw": {
+          "precision": 0.3,
+          "recall": 0.22580645161290322,
+          "f1-score": 0.25766871165644173,
+          "support": 93.0
+        },
+        "Away": {
+          "precision": 0.5590551181102362,
+          "recall": 0.5378787878787878,
+          "f1-score": 0.5482625482625483,
+          "support": 132.0
+        },
+        "accuracy": 0.5210526315789473,
+        "macro avg": {
+          "precision": 0.4794300302626106,
+          "recall": 0.4825187357445422,
+          "f1-score": 0.4777167316100775,
+          "support": 380.0
+        },
+        "weighted avg": {
+          "precision": 0.503886043040996,
+          "recall": 0.5210526315789473,
+          "f1-score": 0.5093494249103896,
+          "support": 380.0
+        }
+      },
+      "success_criteria": {
+        "maintain_draw_recall": false,
+        "improve_vs_v24": false,
+        "balanced_performance": true
+      },
+      "overall_success": false
+    }
+  },
+  "model_path": "models/v25_local_optimized_cascade_2025_09_05_152240.joblib"
+}

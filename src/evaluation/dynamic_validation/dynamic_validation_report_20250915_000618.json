@@ -1,0 +1,25 @@
+{
+  "timestamp": "20250915_000618",
+  "method": "Rolling validation with dynamically calculated features",
+  "accuracy_dynamic": 0.5,
+  "accuracy_static": 0.4,
+  "improvement": 0.09999999999999998,
+  "verdict": "\u2705 SUCC\u00c8S - Objectif 50% atteint!",
+  "classes_predicted": 2,
+  "distributions": {
+    "predictions": {
+      "H": 17,
+      "A": 13
+    },
+    "reality": {
+      "H": 15,
+      "A": 9,
+      "D": 6
+    }
+  },
+  "avg_probabilities": {
+    "H": 0.4226277522943395,
+    "D": 0.22501548941578875,
+    "A": 0.35235675828987173
+  }
+}

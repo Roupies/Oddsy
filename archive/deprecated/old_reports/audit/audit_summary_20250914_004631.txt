@@ -1,0 +1,25 @@
+ODDSY MODEL AUDIT SUMMARY
+==================================================
+Model: v23_retrained_2025_09_11_154613.joblib
+Dataset: v15_final_enhanced.csv
+Audit Date: 2025-09-14 00:46:31
+
+PERFORMANCE METRICS:
+Accuracy: 0.8831
+Balanced Accuracy: 0.8654
+LogLoss: 0.6152
+vs Majority Baseline: +44.68pp
+
+TEMPORAL VALIDATION:
+CV Accuracy (mean±std): 0.5106 ± 0.0302
+CV Balanced Accuracy: 0.4494
+
+ROBUSTNESS CHECK (3 runs):
+Accuracy mean ± std: 1.0000 ± 0.0000
+Balanced Accuracy mean ± std: 1.0000 ± 0.0000
+LogLoss mean ± std: 0.2476 ± 0.0009
+
+VALIDATION ISSUES:
+⚠️ Missing values detected: {'away_goals_sum_5': 13}
+
+FINAL VERDICT: ✅ AUDITED - PRODUCTION READY

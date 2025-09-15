@@ -1,0 +1,31 @@
+{
+  "timestamp": "20250914_235301",
+  "rolling_accuracy": 0.36666666666666664,
+  "best_hyperparams": {
+    "max_depth": 8,
+    "max_features": "sqrt",
+    "min_samples_leaf": 5,
+    "min_samples_split": 8,
+    "n_estimators": 300
+  },
+  "class_weights": {
+    "H": 1.0,
+    "D": 1.3,
+    "A": 1.1
+  },
+  "precision_by_class": {
+    "H": 0.47368421052631576,
+    "D": 0.0,
+    "A": 0.18181818181818182
+  },
+  "recall_by_class": {
+    "H": 0.6,
+    "D": 0.0,
+    "A": 0.2222222222222222
+  },
+  "f1_by_class": {
+    "H": 0.5294117647058824,
+    "D": 0.0,
+    "A": 0.2
+  }
+}

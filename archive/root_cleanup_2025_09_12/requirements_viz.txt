@@ -1,0 +1,24 @@
+# Dépendances pour visualisation d'arbres de décision
+# Installation: pip install -r requirements_viz.txt
+
+# Visualisation avancée avec dtreeviz
+dtreeviz>=2.2.0
+
+# Graphviz pour export_graphviz
+graphviz>=0.20.0
+
+# Dépendances de base (déjà installées normalement)
+scikit-learn>=1.0.0
+pandas>=1.3.0
+numpy>=1.20.0
+matplotlib>=3.5.0
+joblib>=1.1.0
+
+# Optionnel pour visualisations interactives
+ipython>=7.0.0
+jupyter>=1.0.0
+
+# Note: Vous devez aussi installer Graphviz système:
+# - macOS: brew install graphviz
+# - Ubuntu: sudo apt-get install graphviz
+# - Windows: télécharger depuis https://graphviz.org/download/

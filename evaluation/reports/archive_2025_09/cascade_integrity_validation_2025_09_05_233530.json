@@ -1,0 +1,110 @@
+{
+  "timestamp": "2025-09-05T23:35:30.290950",
+  "model_info": {
+    "features_count": 10,
+    "optimal_threshold": 0.25,
+    "has_optimization_results": true
+  },
+  "validation_results": {
+    "test_1_architecture": {
+      "test_name": "cascade_architecture",
+      "status": "passed",
+      "details": {
+        "components_present": {
+          "stage1_classifier": true,
+          "stage2_classifier": true,
+          "scaler": true,
+          "threshold": true
+        },
+        "functional_tests": {
+          "stage1_predictions": true,
+          "stage2_predictions": true,
+          "cascade_complete": true
+        },
+        "architecture_score": 1.0
+      },
+      "score": 1.0
+    },
+    "test_2_independence": {
+      "test_name": "stage_independence",
+      "status": "passed",
+      "details": {
+        "home_prob_on_draws": 0.5525156469881307,
+        "home_prob_on_nondraws": 0.5674458410805869,
+        "independence_bias": 0.014930194092456217,
+        "stage_correlation": -0.27257257236024146,
+        "independence_score": 0.9701396118150876,
+        "correlation_independence": 0.7274274276397585,
+        "final_score": 0.848783519727423
+      },
+      "score": 0.848783519727423
+    },
+    "test_3_temporal": {
+      "test_name": "temporal_integrity",
+      "status": "passed",
+      "details": {
+        "gap_days": 89,
+        "proper_gap": true,
+        "no_overlap": true,
+        "chronological": true,
+        "temporal_leakage_score": 1.0,
+        "temporal_stability": 0.985372614880065,
+        "periods_performance": [
+          0.5396825396825397,
+          0.5039370078740157,
+          0.5196850393700787
+        ],
+        "earliest_test_date": "2024-08-16",
+        "latest_test_date": "2025-05-25"
+      },
+      "score": 0.9951242049600216
+    },
+    "test_4_overfitting": {
+      "test_name": "overfitting_diagnostic",
+      "status": "failed",
+      "details": {
+        "stage1": {
+          "cv_score": 0.8252917572265374,
+          "test_score": 0.02127659574468085,
+          "gap": 0.8040151614818565,
+          "status": "overfitting",
+          "overfitting_score": 0.0
+        },
+        "stage2": {
+          "cv_score": 0.6886145404663924,
+          "test_score": 0.7317073170731707,
+          "gap": -0.04309277660677835,
+          "status": "good",
+          "overfitting_score": 1.0
+        },
+        "overall_overfitting_score": 0.5
+      },
+      "score": 0.5
+    },
+    "test_5_performance": {
+      "test_name": "performance_validation",
+      "status": "passed",
+      "details": {
+        "metrics": {
+          "accuracy": 0.5210526315789473,
+          "draw_recall": 0.22580645161290322,
+          "f1_macro": 0.4777167316100775,
+          "precision_per_class": [
+            0.5792349726775956,
+            0.3,
+            0.5590551181102362
+          ],
+          "recall_per_class": [
+            0.6838709677419355,
+            0.22580645161290322,
+            0.5378787878787878
+          ],
+          "f1_per_class": [
+            0.6272189349112426,
+            0.25766871165644173,
+            0.5482625482625483
+          ]
+        },
+        "threshold_tests": {
+          "accuracy_pass": true,
+          "draw_recall_pass": 

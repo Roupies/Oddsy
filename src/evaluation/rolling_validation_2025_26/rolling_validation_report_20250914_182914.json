@@ -1,0 +1,1504 @@
+{
+  "timestamp": "2025-09-14T18:29:14.883514",
+  "validation_info": {
+    "model": "models/v23_retrained_2025_09_11_154613.joblib",
+    "dataset": "data/processed/v15_final_enhanced.csv",
+    "gameweeks_validated": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "promoted_teams": [
+      "Leeds",
+      "Sunderland",
+      "Burnley"
+    ]
+  },
+  "summary": {
+    "overall": 0.5,
+    "total_correct": 19,
+    "total_predictions": 38,
+    "class_breakdown": {
+      "H": {
+        "correct": 18,
+        "total": 19
+      },
+      "D": {
+        "correct": 0,
+        "total": 9
+      },
+      "A": {
+        "correct": 1,
+        "total": 10
+      }
+    },
+    "promoted_accuracy": 0.7,
+    "established_accuracy": 0.42857142857142855
+  },
+  "gameweek_breakdown": {
+    "1": {
+      "accuracy": 0.6,
+      "correct": 6,
+      "total": 10,
+      "matches": [
+        {
+          "gameweek": 1,
+          "match_id": 1,
+          "date": "2025-08-15 20:00:00",
+          "home_team": "Liverpool",
+          "away_team": "Bournemouth",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6127261265831142,
+            "D": 0.20569793537959072,
+            "A": 0.1815759380372951
+          },
+          "confidence": 0.6127261265831142,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 1,
+          "match_id": 2,
+          "date": "2025-08-16 12:30:00",
+          "home_team": "Aston Villa",
+          "away_team": "Newcastle",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6161095294933506,
+            "D": 0.16700477916278858,
+            "A": 0.21688569134386093
+          },
+          "confidence": 0.6161095294933506,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 1,
+          "match_id": 3,
+          "date": "2025-08-16 15:00:00",
+          "home_team": "Brighton",
+          "away_team": "Fulham",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6276218576763012,
+            "D": 0.17079309520817665,
+            "A": 0.20158504711552214
+          },
+          "confidence": 0.6276218576763012,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 1,
+          "match_id": 5,
+          "date": "2025-08-16 15:00:00",
+          "home_team": "Sunderland",
+          "away_team": "West Ham",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.4086860523868905,
+            "D": 0.21423256724973183,
+            "A": 0.3770813803633777
+          },
+          "confidence": 0.4086860523868905,
+          "correct": true,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Sunderland"
+          ]
+        },
+        {
+          "gameweek": 1,
+          "match_id": 6,
+          "date": "2025-08-16 15:00:00",
+          "home_team": "Tottenham",
+          "away_team": "Burnley",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.5801210743297439,
+            "D": 0.19506774850789668,
+            "A": 0.2248111771623594
+          },
+          "confidence": 0.5801210743297439,
+          "correct": true,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Burnley"
+          ]
+        },
+        {
+          "gameweek": 1,
+          "match_id": 7,
+          "date": "2025-08-16 17:30:00",
+          "home_team": "Wolves",
+          "away_team": "Man City",
+          "actual_result": "A",
+          "predicted_result": "A",
+          "predicted_probas": {
+            "H": 0.3850660623824241,
+            "D": 0.20819308211651302,
+            "A": 0.4067408555010629
+          },
+          "confidence": 0.4067408555010629,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 1,
+          "match_id": 4,
+          "date": "2025-08-17 14:00:00",
+          "home_team": "Nott'm Forest",
+          "away_team": "Brentford",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6601368866207344,
+            "D": 0.1792025607249076,
+            "A": 0.1606605526543581
+          },
+          "confidence": 0.6601368866207344,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 1,
+          "match_id": 8,
+          "date": "2025-08-17 14:00:00",
+          "home_team": "Chelsea",
+          "away_team": "Crystal Palace",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6601368866207344,
+            "D": 0.1792025607249076,
+            "A": 0.1606605526543581
+          },
+          "confidence": 0.6601368866207344,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 1,
+          "match_id": 9,
+          "date": "2025-08-17 16:30:00",
+          "home_team": "Man United",
+          "away_team": "Arsenal",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.4115627699041022,
+            "D": 0.19940743034918637,
+            "A": 0.3890297997467114
+          },
+          "confidence": 0.4115627699041022,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 1,
+          "match_id": 10,
+          "date": "2025-08-18 20:00:00",
+          "home_team": "Leeds",
+          "away_team": "Everton",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6035028567551927,
+            "D": 0.18312103969548074,
+            "A": 0.21337610354932668
+          },
+          "confidence": 0.6035028567551927,
+          "correct": true,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Leeds"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "accuracy": 0.5,
+      "correct": 5,
+      "total": 10,
+      "matches": [
+        {
+          "gameweek": 2,
+          "match_id": 20,
+          "date": "2025-08-22 20:00:00",
+          "home_team": "West Ham",
+          "away_team": "Chelsea",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.49921756731829925,
+            "D": 0.1937554626661442,
+            "A": 0.30702697001555657
+          },
+          "confidence": 0.49921756731829925,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 2,
+          "match_id": 18,
+          "date": "2025-08-23 12:30:00",
+          "home_team": "Man City",
+          "away_team": "Tottenham",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6495767566587107,
+            "D": 0.19728469343406463,
+            "A": 0.15313854990722464
+          },
+          "confidence": 0.6495767566587107,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 2,
+          "match_id": 12,
+          "date": "2025-08-23 15:00:00",
+          "home_team": "Bournemouth",
+          "away_team": "Wolves",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.64887179586599,
+            "D": 0.19211676300996883,
+            "A": 0.1590114411240412
+          },
+          "confidence": 0.64887179586599,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 2,
+          "match_id": 13,
+          "date": "2025-08-23 15:00:00",
+          "home_team": "Brentford",
+          "away_team": "Aston Villa",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.5411114096430921,
+            "D": 0.18181046739902948,
+            "A": 0.27707812295787854
+          },
+          "confidence": 0.5411114096430921,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 2,
+          "match_id": 14,
+          "date": "2025-08-23 15:00:00",
+          "home_team": "Burnley",
+          "away_team": "Sunderland",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.5461260874496308,
+            "D": 0.1973354632323678,
+            "A": 0.2565384493180014
+          },
+          "confidence": 0.5461260874496308,
+          "correct": true,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Burnley",
+            "Sunderland"
+          ]
+        },
+        {
+          "gameweek": 2,
+          "match_id": 11,
+          "date": "2025-08-23 17:30:00",
+          "home_team": "Arsenal",
+          "away_team": "Leeds",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6455700466942286,
+            "D": 0.19624106534716212,
+            "A": 0.1581888879586094
+          },
+          "confidence": 0.6455700466942286,
+          "correct": true,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Leeds"
+          ]
+        },
+        {
+          "gameweek": 2,
+          "match_id": 15,
+          "date": "2025-08-24 14:00:00",
+          "home_team": "Crystal Palace",
+          "away_team": "Nott'm Forest",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6079775864071716,
+            "D": 0.1711612590795248,
+            "A": 0.22086115451330365
+          },
+          "confidence": 0.6079775864071716,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 2,
+          "match_id": 16,
+          "date": "2025-08-24 14:00:00",
+          "home_team": "Everton",
+          "away_team": "Brighton",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.5801210743297439,
+            "D": 0.19506774850789668,
+            "A": 0.2248111771623594
+          },
+          "confidence": 0.5801210743297439,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 2,
+          "match_id": 17,
+          "date": "2025-08-24 16:30:00",
+          "home_team": "Fulham",
+          "away_team": "Man United",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6161095294933506,
+            "D": 0.16700477916278858,
+            "A": 0.21688569134386093
+          },
+          "confidence": 0.6161095294933506,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 2,
+          "match_id": 19,
+          "date": "2025-08-25 20:00:00",
+          "home_team": "Newcastle",
+          "away_team": "Liverpool",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.44498126855178466,
+            "D": 0.19992955573819335,
+            "A": 0.3550891757100219
+          },
+          "confidence": 0.44498126855178466,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        }
+      ]
+    },
+    "3": {
+      "accuracy": 0.4,
+      "correct": 4,
+      "total": 10,
+      "matches": [
+        {
+          "gameweek": 3,
+          "match_id": 23,
+          "date": "2025-08-30 12:30:00",
+          "home_team": "Chelsea",
+          "away_team": "Fulham",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6455700466942286,
+            "D": 0.19624106534716212,
+            "A": 0.1581888879586094
+          },
+          "confidence": 0.6455700466942286,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 3,
+          "match_id": 26,
+          "date": "2025-08-30 15:00:00",
+          "home_team": "Man United",
+          "away_team": "Burnley",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.5801210743297439,
+            "D": 0.19506774850789668,
+            "A": 0.2248111771623594
+          },
+          "confidence": 0.5801210743297439,
+          "correct": true,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Burnley"
+          ]
+        },
+        {
+          "gameweek": 3,
+          "match_id": 28,
+          "date": "2025-08-30 15:00:00",
+          "home_team": "Sunderland",
+          "away_team": "Brentford",
+          "actual_result": "H",
+          "predicted_result": "A",
+          "predicted_probas": {
+            "H": 0.39613639806204576,
+            "D": 0.20120018354951005,
+            "A": 0.40266341838844416
+          },
+          "confidence": 0.40266341838844416,
+          "correct": false,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Sunderland"
+          ]
+        },
+        {
+          "gameweek": 3,
+          "match_id": 29,
+          "date": "2025-08-30 15:00:00",
+          "home_team": "Tottenham",
+          "away_team": "Bournemouth",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6042400752508527,
+            "D": 0.18273980402059262,
+            "A": 0.21302012072855483
+          },
+          "confidence": 0.6042400752508527,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 3,
+          "match_id": 30,
+          "date": "2025-08-30 15:00:00",
+          "home_team": "Wolves",
+          "away_team": "Everton",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.5737225821592592,
+            "D": 0.20363931349099892,
+            "A": 0.22263810434974193
+          },
+          "confidence": 0.5737225821592592,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 3,
+          "match_id": 24,
+          "date": "2025-08-30 17:30:00",
+          "home_team": "Leeds",
+          "away_team": "Newcastle",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.5335810440296864,
+            "D": 0.1793678341654192,
+            "A": 0.2870511218048944
+          },
+          "confidence": 0.5335810440296864,
+          "correct": false,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Leeds"
+          ]
+        },
+        {
+          "gameweek": 3,
+          "match_id": 22,
+          "date": "2025-08-31 14:00:00",
+          "home_team": "Brighton",
+          "away_team": "Man City",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.4135943545428525,
+            "D": 0.2002948533095196,
+            "A": 0.3861107921476279
+          },
+          "confidence": 0.4135943545428525,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 3,
+          "match_id": 27,
+          "date": "2025-08-31 14:00:00",
+          "home_team": "Nott'm Forest",
+          "away_team": "West Ham",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6127261265831142,
+            "D": 0.20569793537959072,
+            "A": 0.1815759380372951
+          },
+          "confidence": 0.6127261265831142,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 3,
+          "match_id": 25,
+          "date": "2025-08-31 16:30:00",
+          "home_team": "Liverpool",
+          "away_team": "Arsenal",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6012137984001634,
+            "D": 0.20190961933420268,
+            "A": 0.1968765822656339
+          },
+          "confidence": 0.6012137984001634,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 3,
+          "match_id": 21,
+          "date": "2025-08-31 19:00:00",
+          "home_team": "Aston Villa",
+          "away_team": "Crystal Palace",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6368451275042228,
+            "D": 0.19336999089228665,
+            "A": 0.16978488160349056
+          },
+          "confidence": 0.6368451275042228,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        }
+      ]
+    },
+    "4": {
+      "accuracy": 0.5,
+      "correct": 4,
+      "total": 8,
+      "matches": [
+        {
+          "gameweek": 4,
+          "match_id": 31,
+          "date": "2025-09-13 12:30:00",
+          "home_team": "Arsenal",
+          "away_team": "Nott'm Forest",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6455700466942286,
+            "D": 0.19624106534716212,
+            "A": 0.1581888879586094
+          },
+          "confidence": 0.6455700466942286,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 4,
+          "match_id": 32,
+          "date": "2025-09-13 15:00:00",
+          "home_team": "Bournemouth",
+          "away_team": "Brighton",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6253327993212722,
+            "D": 0.18958167484689858,
+            "A": 0.18508552583182936
+          },
+          "confidence": 0.6253327993212722,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 4,
+          "match_id": 35,
+          "date": "2025-09-13 15:00:00",
+          "home_team": "Crystal Palace",
+          "away_team": "Sunderland",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6127261265831142,
+            "D": 0.20569793537959072,
+            "A": 0.1815759380372951
+          },
+          "confidence": 0.6127261265831142,
+          "correct": false,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Sunderland"
+          ]
+        },
+        {
+          "gameweek": 4,
+          "match_id": 36,
+          "date": "2025-09-13 15:00:00",
+          "home_team": "Everton",
+          "away_team": "Aston Villa",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.49921756731829925,
+            "D": 0.1937554626661442,
+            "A": 0.30702697001555657
+          },
+          "confidence": 0.49921756731829925,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 4,
+          "match_id": 37,
+          "date": "2025-09-13 15:00:00",
+          "home_team": "Fulham",
+          "away_team": "Leeds",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6368451275042228,
+            "D": 0.19336999089228665,
+            "A": 0.16978488160349056
+          },
+          "confidence": 0.6368451275042228,
+          "correct": true,
+          "involves_promoted": true,
+          "promoted_teams": [
+            "Leeds"
+          ]
+        },
+        {
+          "gameweek": 4,
+          "match_id": 39,
+          "date": "2025-09-13 15:00:00",
+          "home_team": "Newcastle",
+          "away_team": "Wolves",
+          "actual_result": "H",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6608209343592065,
+            "D": 0.18855573803805473,
+            "A": 0.15062332760273875
+          },
+          "confidence": 0.6608209343592065,
+          "correct": true,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 4,
+          "match_id": 40,
+          "date": "2025-09-13 17:30:00",
+          "home_team": "West Ham",
+          "away_team": "Tottenham",
+          "actual_result": "A",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.6042400752508527,
+            "D": 0.18273980402059262,
+            "A": 0.21302012072855483
+          },
+          "confidence": 0.6042400752508527,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        },
+        {
+          "gameweek": 4,
+          "match_id": 33,
+          "date": "2025-09-13 20:00:00",
+          "home_team": "Brentford",
+          "away_team": "Chelsea",
+          "actual_result": "D",
+          "predicted_result": "H",
+          "predicted_probas": {
+            "H": 0.49921756731829925,
+            "D": 0.1937554626661442,
+            "A": 0.30702697001555657
+          },
+          "confidence": 0.49921756731829925,
+          "correct": false,
+          "involves_promoted": false,
+          "promoted_teams": []
+        }
+      ]
+    }
+  },
+  "all_predictions": [
+    {
+      "gameweek": 1,
+      "match_id": 1,
+      "date": "2025-08-15 20:00:00",
+      "home_team": "Liverpool",
+      "away_team": "Bournemouth",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6127261265831142,
+        "D": 0.20569793537959072,
+        "A": 0.1815759380372951
+      },
+      "confidence": 0.6127261265831142,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 1,
+      "match_id": 2,
+      "date": "2025-08-16 12:30:00",
+      "home_team": "Aston Villa",
+      "away_team": "Newcastle",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6161095294933506,
+        "D": 0.16700477916278858,
+        "A": 0.21688569134386093
+      },
+      "confidence": 0.6161095294933506,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 1,
+      "match_id": 3,
+      "date": "2025-08-16 15:00:00",
+      "home_team": "Brighton",
+      "away_team": "Fulham",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6276218576763012,
+        "D": 0.17079309520817665,
+        "A": 0.20158504711552214
+      },
+      "confidence": 0.6276218576763012,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 1,
+      "match_id": 5,
+      "date": "2025-08-16 15:00:00",
+      "home_team": "Sunderland",
+      "away_team": "West Ham",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.4086860523868905,
+        "D": 0.21423256724973183,
+        "A": 0.3770813803633777
+      },
+      "confidence": 0.4086860523868905,
+      "correct": true,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Sunderland"
+      ]
+    },
+    {
+      "gameweek": 1,
+      "match_id": 6,
+      "date": "2025-08-16 15:00:00",
+      "home_team": "Tottenham",
+      "away_team": "Burnley",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.5801210743297439,
+        "D": 0.19506774850789668,
+        "A": 0.2248111771623594
+      },
+      "confidence": 0.5801210743297439,
+      "correct": true,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Burnley"
+      ]
+    },
+    {
+      "gameweek": 1,
+      "match_id": 7,
+      "date": "2025-08-16 17:30:00",
+      "home_team": "Wolves",
+      "away_team": "Man City",
+      "actual_result": "A",
+      "predicted_result": "A",
+      "predicted_probas": {
+        "H": 0.3850660623824241,
+        "D": 0.20819308211651302,
+        "A": 0.4067408555010629
+      },
+      "confidence": 0.4067408555010629,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 1,
+      "match_id": 4,
+      "date": "2025-08-17 14:00:00",
+      "home_team": "Nott'm Forest",
+      "away_team": "Brentford",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6601368866207344,
+        "D": 0.1792025607249076,
+        "A": 0.1606605526543581
+      },
+      "confidence": 0.6601368866207344,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 1,
+      "match_id": 8,
+      "date": "2025-08-17 14:00:00",
+      "home_team": "Chelsea",
+      "away_team": "Crystal Palace",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6601368866207344,
+        "D": 0.1792025607249076,
+        "A": 0.1606605526543581
+      },
+      "confidence": 0.6601368866207344,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 1,
+      "match_id": 9,
+      "date": "2025-08-17 16:30:00",
+      "home_team": "Man United",
+      "away_team": "Arsenal",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.4115627699041022,
+        "D": 0.19940743034918637,
+        "A": 0.3890297997467114
+      },
+      "confidence": 0.4115627699041022,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 1,
+      "match_id": 10,
+      "date": "2025-08-18 20:00:00",
+      "home_team": "Leeds",
+      "away_team": "Everton",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6035028567551927,
+        "D": 0.18312103969548074,
+        "A": 0.21337610354932668
+      },
+      "confidence": 0.6035028567551927,
+      "correct": true,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Leeds"
+      ]
+    },
+    {
+      "gameweek": 2,
+      "match_id": 20,
+      "date": "2025-08-22 20:00:00",
+      "home_team": "West Ham",
+      "away_team": "Chelsea",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.49921756731829925,
+        "D": 0.1937554626661442,
+        "A": 0.30702697001555657
+      },
+      "confidence": 0.49921756731829925,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 2,
+      "match_id": 18,
+      "date": "2025-08-23 12:30:00",
+      "home_team": "Man City",
+      "away_team": "Tottenham",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6495767566587107,
+        "D": 0.19728469343406463,
+        "A": 0.15313854990722464
+      },
+      "confidence": 0.6495767566587107,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 2,
+      "match_id": 12,
+      "date": "2025-08-23 15:00:00",
+      "home_team": "Bournemouth",
+      "away_team": "Wolves",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.64887179586599,
+        "D": 0.19211676300996883,
+        "A": 0.1590114411240412
+      },
+      "confidence": 0.64887179586599,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 2,
+      "match_id": 13,
+      "date": "2025-08-23 15:00:00",
+      "home_team": "Brentford",
+      "away_team": "Aston Villa",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.5411114096430921,
+        "D": 0.18181046739902948,
+        "A": 0.27707812295787854
+      },
+      "confidence": 0.5411114096430921,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 2,
+      "match_id": 14,
+      "date": "2025-08-23 15:00:00",
+      "home_team": "Burnley",
+      "away_team": "Sunderland",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.5461260874496308,
+        "D": 0.1973354632323678,
+        "A": 0.2565384493180014
+      },
+      "confidence": 0.5461260874496308,
+      "correct": true,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Burnley",
+        "Sunderland"
+      ]
+    },
+    {
+      "gameweek": 2,
+      "match_id": 11,
+      "date": "2025-08-23 17:30:00",
+      "home_team": "Arsenal",
+      "away_team": "Leeds",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6455700466942286,
+        "D": 0.19624106534716212,
+        "A": 0.1581888879586094
+      },
+      "confidence": 0.6455700466942286,
+      "correct": true,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Leeds"
+      ]
+    },
+    {
+      "gameweek": 2,
+      "match_id": 15,
+      "date": "2025-08-24 14:00:00",
+      "home_team": "Crystal Palace",
+      "away_team": "Nott'm Forest",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6079775864071716,
+        "D": 0.1711612590795248,
+        "A": 0.22086115451330365
+      },
+      "confidence": 0.6079775864071716,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 2,
+      "match_id": 16,
+      "date": "2025-08-24 14:00:00",
+      "home_team": "Everton",
+      "away_team": "Brighton",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.5801210743297439,
+        "D": 0.19506774850789668,
+        "A": 0.2248111771623594
+      },
+      "confidence": 0.5801210743297439,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 2,
+      "match_id": 17,
+      "date": "2025-08-24 16:30:00",
+      "home_team": "Fulham",
+      "away_team": "Man United",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6161095294933506,
+        "D": 0.16700477916278858,
+        "A": 0.21688569134386093
+      },
+      "confidence": 0.6161095294933506,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 2,
+      "match_id": 19,
+      "date": "2025-08-25 20:00:00",
+      "home_team": "Newcastle",
+      "away_team": "Liverpool",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.44498126855178466,
+        "D": 0.19992955573819335,
+        "A": 0.3550891757100219
+      },
+      "confidence": 0.44498126855178466,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 3,
+      "match_id": 23,
+      "date": "2025-08-30 12:30:00",
+      "home_team": "Chelsea",
+      "away_team": "Fulham",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6455700466942286,
+        "D": 0.19624106534716212,
+        "A": 0.1581888879586094
+      },
+      "confidence": 0.6455700466942286,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 3,
+      "match_id": 26,
+      "date": "2025-08-30 15:00:00",
+      "home_team": "Man United",
+      "away_team": "Burnley",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.5801210743297439,
+        "D": 0.19506774850789668,
+        "A": 0.2248111771623594
+      },
+      "confidence": 0.5801210743297439,
+      "correct": true,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Burnley"
+      ]
+    },
+    {
+      "gameweek": 3,
+      "match_id": 28,
+      "date": "2025-08-30 15:00:00",
+      "home_team": "Sunderland",
+      "away_team": "Brentford",
+      "actual_result": "H",
+      "predicted_result": "A",
+      "predicted_probas": {
+        "H": 0.39613639806204576,
+        "D": 0.20120018354951005,
+        "A": 0.40266341838844416
+      },
+      "confidence": 0.40266341838844416,
+      "correct": false,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Sunderland"
+      ]
+    },
+    {
+      "gameweek": 3,
+      "match_id": 29,
+      "date": "2025-08-30 15:00:00",
+      "home_team": "Tottenham",
+      "away_team": "Bournemouth",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6042400752508527,
+        "D": 0.18273980402059262,
+        "A": 0.21302012072855483
+      },
+      "confidence": 0.6042400752508527,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 3,
+      "match_id": 30,
+      "date": "2025-08-30 15:00:00",
+      "home_team": "Wolves",
+      "away_team": "Everton",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.5737225821592592,
+        "D": 0.20363931349099892,
+        "A": 0.22263810434974193
+      },
+      "confidence": 0.5737225821592592,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 3,
+      "match_id": 24,
+      "date": "2025-08-30 17:30:00",
+      "home_team": "Leeds",
+      "away_team": "Newcastle",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.5335810440296864,
+        "D": 0.1793678341654192,
+        "A": 0.2870511218048944
+      },
+      "confidence": 0.5335810440296864,
+      "correct": false,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Leeds"
+      ]
+    },
+    {
+      "gameweek": 3,
+      "match_id": 22,
+      "date": "2025-08-31 14:00:00",
+      "home_team": "Brighton",
+      "away_team": "Man City",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.4135943545428525,
+        "D": 0.2002948533095196,
+        "A": 0.3861107921476279
+      },
+      "confidence": 0.4135943545428525,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 3,
+      "match_id": 27,
+      "date": "2025-08-31 14:00:00",
+      "home_team": "Nott'm Forest",
+      "away_team": "West Ham",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6127261265831142,
+        "D": 0.20569793537959072,
+        "A": 0.1815759380372951
+      },
+      "confidence": 0.6127261265831142,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 3,
+      "match_id": 25,
+      "date": "2025-08-31 16:30:00",
+      "home_team": "Liverpool",
+      "away_team": "Arsenal",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6012137984001634,
+        "D": 0.20190961933420268,
+        "A": 0.1968765822656339
+      },
+      "confidence": 0.6012137984001634,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 3,
+      "match_id": 21,
+      "date": "2025-08-31 19:00:00",
+      "home_team": "Aston Villa",
+      "away_team": "Crystal Palace",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6368451275042228,
+        "D": 0.19336999089228665,
+        "A": 0.16978488160349056
+      },
+      "confidence": 0.6368451275042228,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 4,
+      "match_id": 31,
+      "date": "2025-09-13 12:30:00",
+      "home_team": "Arsenal",
+      "away_team": "Nott'm Forest",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6455700466942286,
+        "D": 0.19624106534716212,
+        "A": 0.1581888879586094
+      },
+      "confidence": 0.6455700466942286,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 4,
+      "match_id": 32,
+      "date": "2025-09-13 15:00:00",
+      "home_team": "Bournemouth",
+      "away_team": "Brighton",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6253327993212722,
+        "D": 0.18958167484689858,
+        "A": 0.18508552583182936
+      },
+      "confidence": 0.6253327993212722,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 4,
+      "match_id": 35,
+      "date": "2025-09-13 15:00:00",
+      "home_team": "Crystal Palace",
+      "away_team": "Sunderland",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6127261265831142,
+        "D": 0.20569793537959072,
+        "A": 0.1815759380372951
+      },
+      "confidence": 0.6127261265831142,
+      "correct": false,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Sunderland"
+      ]
+    },
+    {
+      "gameweek": 4,
+      "match_id": 36,
+      "date": "2025-09-13 15:00:00",
+      "home_team": "Everton",
+      "away_team": "Aston Villa",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.49921756731829925,
+        "D": 0.1937554626661442,
+        "A": 0.30702697001555657
+      },
+      "confidence": 0.49921756731829925,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 4,
+      "match_id": 37,
+      "date": "2025-09-13 15:00:00",
+      "home_team": "Fulham",
+      "away_team": "Leeds",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6368451275042228,
+        "D": 0.19336999089228665,
+        "A": 0.16978488160349056
+      },
+      "confidence": 0.6368451275042228,
+      "correct": true,
+      "involves_promoted": true,
+      "promoted_teams": [
+        "Leeds"
+      ]
+    },
+    {
+      "gameweek": 4,
+      "match_id": 39,
+      "date": "2025-09-13 15:00:00",
+      "home_team": "Newcastle",
+      "away_team": "Wolves",
+      "actual_result": "H",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6608209343592065,
+        "D": 0.18855573803805473,
+        "A": 0.15062332760273875
+      },
+      "confidence": 0.6608209343592065,
+      "correct": true,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 4,
+      "match_id": 40,
+      "date": "2025-09-13 17:30:00",
+      "home_team": "West Ham",
+      "away_team": "Tottenham",
+      "actual_result": "A",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.6042400752508527,
+        "D": 0.18273980402059262,
+        "A": 0.21302012072855483
+      },
+      "confidence": 0.6042400752508527,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    },
+    {
+      "gameweek": 4,
+      "match_id": 33,
+      "date": "2025-09-13 20:00:00",
+      "home_team": "Brentford",
+      "away_team": "Chelsea",
+      "actual_result": "D",
+      "predicted_result": "H",
+      "predicted_probas": {
+        "H": 0.49921756731829925,
+        "D": 0.1937554626661442,
+        "A": 0.30702697001555657
+      },
+      "confidence": 0.49921756731829925,
+      "correct": false,
+      "involves_promoted": false,
+      "promoted_teams": []
+    }
+  ],
+  "insights": {
+    "Leeds_performance": {
+      "accuracy": 0.75,
+      "matches": 4,
+      "correct": 3
+    },
+    "Sunderland_performance": {
+      "accuracy": 0.5,
+      "matches": 4,
+      "correct": 2
+    },
+    "Burnley_performance": {
+      "accuracy": 1.0,
+      "matches": 3,
+      "correct": 3
+    },
+    "draw_analysis": {
+      "predicted_draws": 0,
+      "actual_draws": 9,
+      "draw_recall": 0.0,
+      "draw_precision": 0
+    }
+  }
+}

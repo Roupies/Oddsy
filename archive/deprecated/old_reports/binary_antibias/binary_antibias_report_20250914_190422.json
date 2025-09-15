@@ -1,0 +1,183 @@
+{
+  "timestamp": "2025-09-14T19:04:23.449736",
+  "model_info": {
+    "type": "Binary Anti-Bias RandomForest + Calibration",
+    "target": "Home Win (1) vs Not Home Win (0)",
+    "features_used": 15,
+    "core_features": [
+      "elo_diff_normalized",
+      "form_diff_normalized",
+      "market_entropy_norm",
+      "home_xg_eff_10",
+      "away_xg_eff_10",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "h2h_score",
+      "away_goals_sum_5"
+    ],
+    "antibias_features": [
+      "uncertainty_amplified",
+      "elo_confidence_zone",
+      "away_strength_composite",
+      "home_vulnerability",
+      "form_momentum",
+      "historical_home_disadvantage"
+    ],
+    "training_samples": 2018
+  },
+  "cross_validation_results": {
+    "test_accuracy": {
+      "mean": 0.6714529641549761,
+      "std": 0.012965889357163805,
+      "scores": [
+        0.693069306930693,
+        0.6534653465346535,
+        0.6757425742574258,
+        0.6674937965260546,
+        0.6674937965260546
+      ]
+    },
+    "test_precision": {
+      "mean": 0.6480975234988111,
+      "std": 0.014675281981596277,
+      "scores": [
+        0.6622516556291391,
+        0.625,
+        0.6493506493506493,
+        0.6394557823129252,
+        0.6644295302013423
+      ]
+    },
+    "test_recall": {
+      "mean": 0.5596111948233331,
+      "std": 0.017433731409201285,
+      "scores": [
+        0.5780346820809249,
+        0.5769230769230769,
+        0.5649717514124294,
+        0.5371428571428571,
+        0.5409836065573771
+      ]
+    },
+    "test_f1": {
+      "mean": 0.6003500063427465,
+      "std": 0.010861571869221195,
+      "scores": [
+        0.6172839506172839,
+        0.6,
+        0.6042296072507553,
+        0.5838509316770186,
+        0.5963855421686747
+      ]
+    },
+    "test_roc_auc": {
+      "mean": 0.7182099339901928,
+      "std": 0.016528178046375103,
+      "scores": [
+        0.735818131771889,
+        0.7008217008217008,
+        0.7296971054530974,
+        0.7289849624060151,
+        0.6957277694982615
+      ]
+    }
+  },
+  "epl_2025_26_test": {
+    "accuracy": 0.6818181818181818,
+    "precision": 0.6,
+    "recall": 0.375,
+    "f1_score": 0.46153846153846156,
+    "log_loss": 0.6609631956533207,
+    "targets_met": {
+      "precision": false,
+      "recall": false,
+      "f1_score": false,
+      "log_loss": false
+    },
+    "targets_achieved": 0,
+    "test_matches": 22
+  },
+  "target_metrics": {
+    "f1_score": 0.72,
+    "log_loss": 0.65,
+    "precision": 0.7,
+    "recall": 0.75
+  },
+  "feature_importance": [
+    {
+      "feature": "elo_diff_normalized",
+      "importance": 0.14875211168479283
+    },
+    {
+      "feature": "uncertainty_amplified",
+      "importance": 0.100769595599968
+    },
+    {
+      "feature": "market_entropy_norm",
+      "importance": 0.08570633575520717
+    },
+    {
+      "feature": "shots_diff_normalized",
+      "importance": 0.08385182613342744
+    },
+    {
+      "feature": "corners_diff_normalized",
+      "importance": 0.07585755763917285
+    },
+    {
+      "feature": "away_strength_composite",
+      "importance": 0.06900286032158634
+    },
+    {
+      "feature": "away_xg_eff_10",
+      "importance": 0.0640577865728545
+    },
+    {
+      "feature": "elo_confidence_zone",
+      "importance": 0.0638053767649713
+    },
+    {
+      "feature": "home_vulnerability",
+      "importance": 0.06161078631560766
+    },
+    {
+      "feature": "home_xg_eff_10",
+      "importance": 0.06115737003147977
+    },
+    {
+      "feature": "form_diff_normalized",
+      "importance": 0.0485716488919802
+    },
+    {
+      "feature": "form_momentum",
+      "importance": 0.04707864601474796
+    },
+    {
+      "feature": "h2h_score",
+      "importance": 0.04327890580389561
+    },
+    {
+      "feature": "away_goals_sum_5",
+      "importance": 0.03261726863851627
+    },
+    {
+      "feature": "historical_home_disadvantage",
+      "importance": 0.01388192383179207
+    }
+  ],
+  "model_path": "models/binary_antibias/binary_antibias_model_20250914_190422.joblib",
+  "recommendations": [
+    {
+      "type": "model_performance",
+      "status": "improvement_needed",
+      "message": "F1-Score below target (0.600 < 0.720)",
+      "action": "Consider hyperparameter tuning or additional feature engineering"
+    },
+    {
+      "type": "concept_drift_handling",
+      "status": "warning",
+      "message": "Moderate performance on EPL 2025-26 data (0/4 targets)",
+      "action": "Consider domain adaptation or additional 2025-26 training data"
+    }
+  ]
+}
