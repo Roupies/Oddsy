@@ -55,6 +55,13 @@ evaluation/*.png
 evaluation/*.json
 !evaluation/.gitkeep
 
+# Results and analysis outputs
+results/*/
+predictions/
+temp_analysis/
+test_results/
+tree_visualizations/
+
 # Temporary files
 temp/
 tmp/
