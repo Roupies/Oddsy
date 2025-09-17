@@ -31,8 +31,10 @@ pip-delete-this-directory.txt
 ehthumbs.db
 Thumbs.db
 
-# ML Models & Large Files
+# ML Models & Large Files (keep production models)
 models/*.joblib
+!models/v23_retrained_2025_09_11_154613.joblib
+!models/*production*.joblib
 models/*.pkl
 models/*.h5
 models/*.model
