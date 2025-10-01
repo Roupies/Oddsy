@@ -1,0 +1,21 @@
+Date,Round,HomeTeam,AwayTeam,HomeTeam_FD,AwayTeam_FD,H_xG,A_xG,fixture_id,source
+2025-08-15,1,Liverpool,Bournemouth,Liverpool,Bournemouth,1.83,1.11,demo_Liverpool_Bournemouth_20250815,understat_real
+2025-08-16,1,Aston Villa,Newcastle,Aston Villa,Newcastle,0.3,2.69,demo_Aston Villa_Newcastle_20250816,understat_real
+2025-08-16,1,Brighton,Fulham,Brighton,Fulham,1.75,1.21,demo_Brighton_Fulham_20250816,understat_real
+2025-08-16,1,Sunderland,West Ham,Sunderland,West Ham,1.01,1.24,demo_Sunderland_West Ham_20250816,understat_real
+2025-08-16,1,Tottenham,Burnley,Tottenham,Burnley,1.55,2.01,demo_Tottenham_Burnley_20250816,understat_real
+2025-08-16,1,Wolverhampton,Manchester City,Wolves,Man City,1.54,2.51,demo_Wolves_Man City_20250816,understat_real
+2025-08-17,1,Chelsea,Crystal Palace,Chelsea,Crystal Palace,3.13,1.68,demo_Chelsea_Crystal Palace_20250817,understat_real
+2025-08-17,1,Nottingham Forest,Brentford,Nott'm Forest,Brentford,1.73,1.78,demo_Nott'm Forest_Brentford_20250817,understat_real
+2025-08-17,1,Manchester United,Arsenal,Man United,Arsenal,2.05,1.28,demo_Man United_Arsenal_20250817,understat_real
+2025-08-18,1,Leeds,Everton,Leeds,Everton,2.31,1.14,demo_Leeds_Everton_20250818,understat_real
+2025-08-22,2,West Ham,Chelsea,West Ham,Chelsea,2.11,2.06,demo_West Ham_Chelsea_20250822,understat_real
+2025-08-23,2,Manchester City,Tottenham,Man City,Tottenham,1.57,2.11,demo_Man City_Tottenham_20250823,understat_real
+2025-08-23,2,Bournemouth,Wolverhampton,Bournemouth,Wolves,2.22,1.0,demo_Bournemouth_Wolves_20250823,understat_real
+2025-08-23,2,Brentford,Aston Villa,Brentford,Aston Villa,1.35,2.94,demo_Brentford_Aston Villa_20250823,understat_real
+2025-08-23,2,Burnley,Sunderland,Burnley,Sunderland,0.6,1.05,demo_Burnley_Sunderland_20250823,understat_real
+2025-08-23,2,Arsenal,Leeds,Arsenal,Leeds,1.54,0.41,demo_Arsenal_Leeds_20250823,understat_real
+2025-08-24,2,Crystal Palace,Nottingham Forest,Crystal Palace,Nott'm Forest,0.88,0.92,demo_Crystal Palace_Nott'm Forest_20250824,understat_real
+2025-08-24,2,Everton,Brighton,Everton,Brighton,1.15,2.06,demo_Everton_Brighton_20250824,understat_real
+2025-08-24,2,Fulham,Manchester United,Fulham,Man United,2.32,1.75,demo_Fulham_Man United_20250824,understat_real
+2025-08-25,2,Newcastle,Liverpool,Newcastle,Liverpool,1.76,0.78,demo_Newcastle_Liverpool_20250825,understat_real

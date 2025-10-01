@@ -1,0 +1,143 @@
+{
+  "weekly_performance": [
+    {
+      "timestamp": "2025-09-15T17:13:42.985242",
+      "matches_evaluated": 24,
+      "accuracy": 0.5,
+      "avg_confidence": 0.4358968857498255,
+      "class_performance": {
+        "H": {
+          "precision": 0.5384615384615384,
+          "recall": 0.5833333333333334,
+          "support": 12.0
+        },
+        "D": {
+          "precision": 1.0,
+          "recall": 0.25,
+          "support": 4.0
+        },
+        "A": {
+          "precision": 0.4,
+          "recall": 0.5,
+          "support": 8.0
+        }
+      },
+      "date_range": {
+        "start": "2025-08-17T00:00:00",
+        "end": "2025-08-31T00:00:00"
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "type": "FEATURE_DRIFT_HIGH",
+      "severity": "MEDIUM",
+      "message": "4 features avec drift \u00e9lev\u00e9",
+      "features": [
+        "shots_diff_normalized",
+        "corners_diff_normalized",
+        "home_xg_eff_10",
+        "away_xg_eff_10"
+      ],
+      "max_drift": 2.399215890126974,
+      "timestamp": "2025-09-15T17:13:43.004823"
+    }
+  ],
+  "feature_drift": [
+    {
+      "timestamp": "2025-09-15T17:13:43.004832",
+      "drift_features": [
+        {
+          "feature": "form_diff_normalized",
+          "train_mean": 0.4946113547758284,
+          "recent_mean": 0.5041666666666668,
+          "train_std": 0.16564418666618946,
+          "recent_std": 0.1197067673313733,
+          "drift_score": 0.057685766601000464,
+          "drift_level": "LOW"
+        },
+        {
+          "feature": "elo_diff_normalized",
+          "train_mean": 0.4989866245266973,
+          "recent_mean": 0.5010120051107784,
+          "train_std": 0.0934959189423669,
+          "recent_std": 0.05615407266915993,
+          "drift_score": 0.021662769958222184,
+          "drift_level": "LOW"
+        },
+        {
+          "feature": "h2h_score",
+          "train_mean": 0.4564400584795322,
+          "recent_mean": 0.5,
+          "train_std": 0.2835057900660533,
+          "recent_std": 0.0,
+          "drift_score": 0.1536474493530411,
+          "drift_level": "LOW"
+        },
+        {
+          "feature": "matchday_normalized",
+          "train_mean": 0.5080014224751067,
+          "recent_mean": 0.5833333333333334,
+          "train_std": 0.2979053546925932,
+          "recent_std": 0.23570226039551584,
+          "drift_score": 0.2528719597402377,
+          "drift_level": "LOW"
+        },
+        {
+          "feature": "shots_diff_normalized",
+          "train_mean": 0.4961186568571967,
+          "recent_mean": 0.5916666666666667,
+          "train_std": 0.07331169760927439,
+          "recent_std": 0.2381997700141262,
+          "drift_score": 1.3033119259999588,
+          "drift_level": "HIGH"
+        },
+        {
+          "feature": "corners_diff_normalized",
+          "train_mean": 0.4962771512113617,
+          "recent_mean": 0.578125,
+          "train_std": 0.07806529046255761,
+          "recent_std": 0.26210503412380975,
+          "drift_score": 1.048453778928741,
+          "drift_level": "HIGH"
+        },
+        {
+          "feature": "market_entropy_norm",
+          "train_mean": 0.8784681746784282,
+          "recent_mean": 0.926151585070942,
+          "train_std": 0.13481414959552182,
+          "recent_std": 0.08613952985366834,
+          "drift_score": 0.3536973717935146,
+          "drift_level": "LOW"
+        },
+        {
+          "feature": "home_xg_eff_10",
+          "train_mean": 0.9674872861600462,
+          "recent_mean": 0.3564616858162979,
+          "train_std": 0.3334056008781993,
+          "recent_std": 0.18847526744226933,
+          "drift_score": 1.8326794712934948,
+          "drift_level": "HIGH"
+        },
+        {
+          "feature": "away_goals_sum_5",
+          "train_mean": 7.197617997353331,
+          "recent_mean": 5.583333333333333,
+          "train_std": 3.5103847412234885,
+          "recent_std": 2.124733572385768,
+          "drift_score": 0.45985975413548674,
+          "drift_level": "LOW"
+        },
+        {
+          "feature": "away_xg_eff_10",
+          "train_mean": 0.9592139389504641,
+          "recent_mean": 0.33394435521198124,
+          "train_std": 0.2606141391075031,
+          "recent_std": 0.1185177568694022,
+          "drift_score": 2.399215890126974,
+          "drift_level": "HIGH"
+        }
+      ]
+    }
+  ]
+}

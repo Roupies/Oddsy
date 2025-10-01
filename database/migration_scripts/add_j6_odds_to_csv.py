@@ -212,13 +212,7 @@ class J6OddsIntegrator:
             new_row['B365D'] = odds['D']
             new_row['B365A'] = odds['A']
             
-            # Dupliquer sur autres bookmakers (approximation)
-            bookmaker_suffixes = ['BFD', 'BMGM', 'BV', 'BW', 'CL', 'LB', 'PS']
-            for suffix in bookmaker_suffixes:
-                if f'{suffix}H' in new_row:
-                    new_row[f'{suffix}H'] = odds['H'] * np.random.uniform(0.98, 1.02)  # Légère variation
-                    new_row[f'{suffix}D'] = odds['D'] * np.random.uniform(0.98, 1.02)
-                    new_row[f'{suffix}A'] = odds['A'] * np.random.uniform(0.98, 1.02)
+            # Other bookmaker columns left blank (no fake data generation)
             
             new_rows.append(new_row)
         

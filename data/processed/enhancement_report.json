@@ -1,0 +1,15 @@
+{
+  "source": "Football-Data E0 (14).csv",
+  "matches_processed": 60,
+  "shots_variance_improvement": 26399.598791212757,
+  "corners_variance_improvement": 48304.705112056174,
+  "constants_eliminated_percentage": 96.66666666666667,
+  "new_features_added": [
+    "shot_accuracy",
+    "sot_diff_normalized"
+  ],
+  "approximations_eliminated": [
+    "shots_diff_normalized=0.5",
+    "corners_diff_normalized=0.5"
+  ]
+}

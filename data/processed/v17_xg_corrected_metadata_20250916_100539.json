@@ -1,0 +1,18 @@
+{
+  "timestamp": "20250916_100539",
+  "corrections_applied": [
+    "Suppression 5 features contextuelles non validées",
+    "Correction rolling xG début saison",
+    "Équipes promues: valeur neutre 0.5",
+    "Équipes existantes: rolling 10 derniers matchs 2024-25"
+  ],
+  "promoted_teams_2025": [
+    "Leeds",
+    "Sunderland",
+    "Burnley"
+  ],
+  "methodology": "Production realistic xG features",
+  "features_count": 20,
+  "matches_count": 2310,
+  "test_period": "J1-J4 (40 matches EPL 2025-26)"
+}

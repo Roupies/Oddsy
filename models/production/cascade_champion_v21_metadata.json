@@ -1,0 +1,69 @@
+{
+  "timestamp": "2025_09_23_162137",
+  "model_type": "CascadeChampion_v2.1_Final_Optimized",
+  "version": "v2.1_cascade_final",
+  "optimization_results": {
+    "feature_sets_tested": 5,
+    "best_feature_set": "Current Production",
+    "enhanced_features_correlation": {
+      "market_entropy_norm": 0.115,
+      "team_parity_score": 0.092,
+      "other_enhanced": "<0.05"
+    },
+    "hyperparameter_optimization": {
+      "parameters_tested": 25,
+      "optimal_draw_weight": 2.5,
+      "optimal_draw_threshold": 0.4,
+      "optimal_n_estimators": [
+        200,
+        150
+      ]
+    }
+  },
+  "features": [
+    "elo_diff_normalized",
+    "market_entropy_norm",
+    "shots_diff_normalized",
+    "corners_diff_normalized",
+    "form_diff_normalized",
+    "h2h_score",
+    "matchday_normalized",
+    "home_xg_eff_10",
+    "away_xg_eff_10",
+    "away_goals_sum_5"
+  ],
+  "feature_count": 10,
+  "architecture": {
+    "type": "Optimized_Cascade_Binary_Ternary",
+    "stage_1": {
+      "purpose": "Draw_Detection_Optimized",
+      "algorithm": "RandomForest",
+      "n_estimators": 200,
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "class_weight": {
+        "non_draw": 1,
+        "draw": 2.5
+      }
+    },
+    "stage_2": {
+      "purpose": "Home_Away_Classification_Balanced",
+      "algorithm": "RandomForest",
+      "n_estimators": 150,
+      "class_weight": "balanced"
+    },
+    "cascade_logic": {
+      "draw_threshold": 0.4,
+      "optimization_based": true
+    }
+  },
+  "performance_summary": {
+    "test_accuracy_50_matches": 0.46,
+    "baseline_comparison": "Matches Cascade Champion v2.0",
+    "feature_optimization": "Current Production features optimal",
+    "enhancement_result": "Enhanced features showed weak correlation",
+    "production_ready": true
+  },
+  "final_test_accuracy": 0.38,
+  "final_test_date": "2025-09-23T16:21:37.047957"
+}

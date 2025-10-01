@@ -1,0 +1,28 @@
+{
+  "timestamp": "20250916_105039",
+  "total_matches": 2330,
+  "date_range": {
+    "start": "2019-08-09T00:00:00",
+    "end": "2025-09-21T16:30:00"
+  },
+  "integration_stats": {
+    "matches_detected": 350,
+    "matches_integrated": 20,
+    "features_calculated": 20,
+    "errors": [
+      "Équipes inconnues: ['Ipswich', 'Fulham', 'Southampton', 'Leicester', 'Man City', 'Liverpool', 'Sunderland', 'Luton', 'Watford', 'Bournemouth', 'Crystal Palace', 'Aston Villa', 'Wolves', 'Everton', 'Brentford', 'Chelsea', 'Burnley', 'Arsenal', 'West Brom', 'Leeds', 'Brighton', 'Norwich']"
+    ]
+  },
+  "features_available": [
+    "away_goals_sum_5",
+    "away_xg_eff_10",
+    "corners_diff_normalized",
+    "elo_diff_normalized",
+    "form_diff_normalized",
+    "h2h_score",
+    "home_xg_eff_10",
+    "market_entropy_norm",
+    "matchday_normalized",
+    "shots_diff_normalized"
+  ]
+}

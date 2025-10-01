@@ -1,0 +1,203 @@
+{
+  "baseline": {
+    "timestamp": "2025_09_11_154613",
+    "model_type": "RandomForest_Calibrated_v2.3_Retrained",
+    "version": "v2.3_exact_split_1900_380",
+    "accuracy": 0.5447368421052632,
+    "features": [
+      "form_diff_normalized",
+      "elo_diff_normalized",
+      "h2h_score",
+      "matchday_normalized",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "market_entropy_norm",
+      "home_xg_eff_10",
+      "away_goals_sum_5",
+      "away_xg_eff_10"
+    ],
+    "feature_count": 10,
+    "hyperparameters": {
+      "n_estimators": 300,
+      "max_depth": 20,
+      "max_features": "sqrt",
+      "min_samples_split": 5,
+      "class_weight": "balanced"
+    },
+    "training_time_seconds": 2.502807,
+    "data_split": {
+      "train_size": 1900,
+      "test_size": 380,
+      "split_method": "temporal_exact_indices"
+    },
+    "audit_results": {
+      "timestamp": "2025-09-11T15:46:10.455076",
+      "model_info": {
+        "version": "v2.3_retrained",
+        "features_count": 10,
+        "train_size": 1900,
+        "test_size": 380
+      },
+      "test_performance": {
+        "accuracy": 0.5447368421052632,
+        "classification_report": {
+          "HOME": {
+            "precision": 0.5545023696682464,
+            "recall": 0.7548387096774194,
+            "f1-score": 0.639344262295082,
+            "support": 155.0
+          },
+          "DRAW": {
+            "precision": 0.3333333333333333,
+            "recall": 0.03225806451612903,
+            "f1-score": 0.058823529411764705,
+            "support": 93.0
+          },
+          "AWAY": {
+            "precision": 0.54375,
+            "recall": 0.6590909090909091,
+            "f1-score": 0.5958904109589042,
+            "support": 132.0
+          },
+          "accuracy": 0.5447368421052632,
+          "macro avg": {
+            "precision": 0.4771952343338599,
+            "recall": 0.4820625610948192,
+            "f1-score": 0.431352734221917,
+            "support": 380.0
+          },
+          "weighted avg": {
+            "precision": 0.4966391244699426,
+            "recall": 0.5447368421052632,
+            "f1-score": 0.48217495562528206,
+            "support": 380.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            117,
+            3,
+            35
+          ],
+          [
+            52,
+            3,
+            38
+          ],
+          [
+            42,
+            3,
+            87
+          ]
+        ]
+      },
+      "cross_validation": {
+        "cv_scores": [
+          0.44936708860759494,
+          0.49050632911392406,
+          0.5474683544303798,
+          0.5506329113924051,
+          0.5221518987341772
+        ],
+        "cv_mean": 0.5120253164556963,
+        "cv_std": 0.03804845155744087,
+        "stability": "GOOD"
+      },
+      "feature_importance": [
+        {
+          "feature": "elo_diff_normalized",
+          "importance": 0.1530545133008796
+        },
+        {
+          "feature": "market_entropy_norm",
+          "importance": 0.1254378182095428
+        },
+        {
+          "feature": "home_xg_eff_10",
+          "importance": 0.11406518057354206
+        },
+        {
+          "feature": "away_xg_eff_10",
+          "importance": 0.10739231216888076
+        },
+        {
+          "feature": "shots_diff_normalized",
+          "importance": 0.10187692330652329
+        },
+        {
+          "feature": "corners_diff_normalized",
+          "importance": 0.09616255450149806
+        },
+        {
+          "feature": "matchday_normalized",
+          "importance": 0.08459595719831668
+        },
+        {
+          "feature": "form_diff_normalized",
+          "importance": 0.08010634733287585
+        },
+        {
+          "feature": "h2h_score",
+          "importance": 0.07411235763643823
+        },
+        {
+          "feature": "away_goals_sum_5",
+          "importance": 0.06319603577150286
+        }
+      ],
+      "distributions": {
+        "train": {
+          "0": 0.44105263157894736,
+          "1": 0.22736842105263158,
+          "2": 0.33157894736842103
+        },
+        "test": {
+          "0": 0.40789473684210525,
+          "1": 0.24473684210526317,
+          "2": 0.3473684210526316
+        },
+        "predicted": {
+          "0": 0.5552631578947368,
+          "1": 0.02368421052631579,
+          "2": 0.42105263157894735
+        }
+      },
+      "baseline_comparisons": {
+        "Random (33.3%)": {
+          "baseline_score": 0.3333333333333333,
+          "improvement_pp": 21.140350877192986,
+          "beaten": true
+        },
+        "Majority Class": {
+          "baseline_score": 0.40789473684210525,
+          "improvement_pp": 13.684210526315793,
+          "beaten": "True"
+        },
+        "Good Target (50%)": {
+          "baseline_score": 0.5,
+          "improvement_pp": 4.473684210526319,
+          "beaten": true
+        },
+        "Excellent Target (55%)": {
+          "baseline_score": 0.55,
+          "improvement_pp": -0.5263157894736858,
+          "beaten": false
+        }
+      },
+      "audit_score": {
+        "detailed_scores": {
+          "Performance": 30,
+          "Stability": 15,
+          "Calibration": 15,
+          "Features": 18
+        },
+        "total_score": 78,
+        "max_possible": 100,
+        "percentage": 78.0,
+        "grade": "GOOD - Production Candidate"
+      }
+    }
+  },
+  "cascade": null,
+  "generation_time": "2025-09-18T11:02:00.476054"
+}

@@ -1,0 +1,7 @@
+Phase,Model,Accuracy,Precision_H,Precision_D,Precision_A,Recall_H,Recall_D,Recall_A,Train_Size,Test_Size
+phase1,baseline_champion_v23,0.5316,0.544,0.333,0.526,0.745,0.032,0.636,1900,380
+phase1,cascade_champion_v20_production,0.4658,0.559,0.254,0.552,0.605,0.309,0.411,1900,380
+phase1,cascade_champion_v21_final,0.4737,0.571,0.254,0.563,0.592,0.309,0.450,1900,380
+phase2,baseline_champion_v23,0.4200,0.500,0.000,0.278,0.696,0.000,0.385,2267,50
+phase2,cascade_champion_v20_production,0.4200,0.520,0.250,0.353,0.565,0.143,0.462,2267,50
+phase2,cascade_champion_v21_final,0.3600,0.462,0.250,0.250,0.522,0.143,0.308,2267,50

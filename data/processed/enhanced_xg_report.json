@@ -1,0 +1,70 @@
+{
+  "generation_date": "2025-10-01T15:04:58.458181",
+  "dataset_path": "data/processed/enhanced_features_xg_real.csv",
+  "matches_processed": 4,
+  "improvements": {
+    "constants_eliminated_pct": 100.0,
+    "xg_real_coverage_pct": 0.0,
+    "shots_variance_added": 0.007949459728625577,
+    "corners_variance_added": 0.0727303974084277
+  },
+  "feature_types": {
+    "xg_efficiency_real": [
+      "home_xg_eff_10",
+      "away_xg_eff_10"
+    ],
+    "constants_eliminated": [
+      "shots_diff_normalized",
+      "corners_diff_normalized"
+    ],
+    "new_features": [
+      "sot_diff_normalized",
+      "home_shot_accuracy",
+      "away_shot_accuracy"
+    ],
+    "xg_features": [
+      "home_xg_avg_10",
+      "away_xg_avg_10",
+      "xg_diff_avg_10"
+    ]
+  },
+  "anti_leak_validation": {
+    "min_k_required": 3,
+    "date_filtering": "strict_before_match",
+    "nan_handling": "when_k_insufficient"
+  },
+  "feature_log": [
+    {
+      "match": "Chelsea vs Fulham",
+      "date": "2025-08-16",
+      "xg_coverage": false,
+      "shots_replaced_constants": true,
+      "home_k": 0,
+      "away_k": 0
+    },
+    {
+      "match": "Crystal Palace vs Nott'm Forest",
+      "date": "2025-09-01",
+      "xg_coverage": false,
+      "shots_replaced_constants": true,
+      "home_k": 0,
+      "away_k": 0
+    },
+    {
+      "match": "Aston Villa vs Crystal Palace",
+      "date": "2025-09-08",
+      "xg_coverage": false,
+      "shots_replaced_constants": true,
+      "home_k": 0,
+      "away_k": 1
+    },
+    {
+      "match": "Liverpool vs Everton",
+      "date": "2025-09-22",
+      "xg_coverage": false,
+      "shots_replaced_constants": true,
+      "home_k": 0,
+      "away_k": 0
+    }
+  ]
+}

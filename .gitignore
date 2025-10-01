@@ -71,8 +71,16 @@ tmp/
 
 # Configuration secrets (if any)
 .env
+.env.local
 secrets/
 credentials/
+
+# Database
+*.sql.backup
+database/backups/
+
+# Docker
+docker-compose.override.yml
 
 # Build artifacts
 build/

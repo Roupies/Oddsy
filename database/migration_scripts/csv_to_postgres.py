@@ -162,8 +162,11 @@ class CSVToPostgresqlMigrator:
         if len(df_clean) < initial_count:
             logging.warning(f"⚠️ {initial_count - len(df_clean)} lignes supprimées (équipes manquantes)")
         
-        # Valider FTR
-        df_clean = df_clean[df_clean['full_time_result'].isin(['H', 'D', 'A'])]
+        # Valider FTR (permettre NaN pour matchs futurs)
+        df_clean = df_clean[
+            df_clean['full_time_result'].isin(['H', 'D', 'A']) | 
+            df_clean['full_time_result'].isna()
+        ]
         
         # Convertir types
         numeric_columns = ['home_goals', 'away_goals', 'home_shots', 'away_shots', 
@@ -189,7 +192,16 @@ class CSVToPostgresqlMigrator:
         
         # Filtrer colonnes existantes
         available_columns = [col for col in columns_order if col in df.columns]
-        df_ordered = df[available_columns]
+        df_ordered = df[available_columns].copy()
+        
+        # Convertir les colonnes numériques en entiers pour éviter le format float
+        integer_columns = ['home_team_id', 'away_team_id', 'home_goals', 'away_goals', 
+                          'home_shots', 'away_shots', 'home_shots_target', 'away_shots_target',
+                          'home_corners', 'away_corners']
+        
+        for col in integer_columns:
+            if col in df_ordered.columns:
+                df_ordered[col] = df_ordered[col].astype('Int64')
         
         # Préparer pour COPY
         output = io.StringIO()

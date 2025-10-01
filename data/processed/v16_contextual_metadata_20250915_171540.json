@@ -1,0 +1,21 @@
+{
+  "timestamp": "20250915_171540",
+  "original_features": 15,
+  "contextual_features_added": 5,
+  "total_features": 20,
+  "contextual_features": [
+    "rest_days_diff",
+    "promoted_team_factor",
+    "early_season_volatility",
+    "manager_continuity",
+    "transfer_window_impact"
+  ],
+  "description": "Features contextuelles d\u00e9but saison pour am\u00e9liorer pr\u00e9diction J1-J6",
+  "promoted_teams_2025": [
+    "Leeds",
+    "Sunderland",
+    "Burnley"
+  ],
+  "season_start_2025": "2025-08-01 00:00:00",
+  "transfer_deadline": "2025-08-31 00:00:00"
+}

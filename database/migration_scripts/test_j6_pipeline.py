@@ -102,7 +102,7 @@ def test_csv_migration():
             ('West Ham', 'WHU'), ('Fulham', 'FUL'), ('Brentford', 'BRE'),
             ('Crystal Palace', 'CRY'), ('Bournemouth', 'BOU'), ('Wolves', 'WOL'),
             ('Everton', 'EVE'), ('Leicester', 'LEI'), ('Leeds', 'LEE'),
-            ('Sunderland', 'SUN'), ('Burnley', 'BUR'), ('Nott''m Forest', 'NFO'),
+            ('Sunderland', 'SUN'), ('Burnley', 'BUR'), ("Nott'm Forest", 'NFO'),
             ('Southampton', 'SOU')
         ]
         
@@ -121,7 +121,7 @@ def test_csv_migration():
         matches_count = db.execute_query("SELECT COUNT(*) as count FROM matches")
         total_matches = matches_count.iloc[0]['count']
         
-        assert total_matches >= 50, f"Expected >=50 matches, got {total_matches}"
+        assert total_matches >= 58, f"Expected >=58 matches, got {total_matches}"
         
         # Vérifier données J6 spécifiquement
         j6_matches = db.execute_query("""

@@ -1,0 +1,44 @@
+{
+  "version": "pipeline-durci-v1.0",
+  "season": "2025-26",
+  "last_updated": "2025-10-01T16:11:32Z",
+  "understat_to_football_data": {
+    "Arsenal": "Arsenal",
+    "Aston Villa": "Aston Villa", 
+    "Bournemouth": "Bournemouth",
+    "Brentford": "Brentford",
+    "Brighton": "Brighton",
+    "Burnley": "Burnley",
+    "Chelsea": "Chelsea",
+    "Crystal Palace": "Crystal Palace",
+    "Everton": "Everton",
+    "Fulham": "Fulham",
+    "Leeds": "Leeds",
+    "Liverpool": "Liverpool",
+    "Manchester City": "Man City",
+    "Manchester United": "Man United",
+    "Newcastle": "Newcastle",
+    "Nottingham Forest": "Nott'm Forest",
+    "Southampton": "Southampton",
+    "Tottenham": "Tottenham",
+    "West Ham": "West Ham",
+    "Wolverhampton": "Wolves"
+  },
+  "aliases": {
+    "Wolverhampton Wanderers": "Wolves",
+    "Manchester United": "Man United",
+    "Manchester City": "Man City",
+    "Tottenham Hotspur": "Tottenham",
+    "Newcastle United": "Newcastle",
+    "West Ham United": "West Ham",
+    "Crystal Palace": "Crystal Palace",
+    "Brighton & Hove Albion": "Brighton",
+    "Nottingham Forest": "Nott'm Forest"
+  },
+  "validation": {
+    "total_epl_teams": 20,
+    "mapping_coverage": 100,
+    "season_start": "2025-08-01",
+    "season_end": "2026-05-31"
+  }
+}

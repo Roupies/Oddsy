@@ -1,0 +1,5 @@
+Model,Scenario,Test_Period,Test_Size,Accuracy,Precision_H,Precision_D,Precision_A,Recall_H,Recall_D,Recall_A,Status
+Baseline Champion v2.3,"Phase 1 (1,900/380)",2024-08-24 to 2025-08-23,380,0.5316,0.544,0.333,0.526,0.745,0.032,0.636,Above 50% target ✅
+Baseline Champion v2.3,"Phase 2 (2,280/50)",2025-08-15 to 2025-09-21,50,0.42,0.5,0.0,0.278,0.696,0.0,0.385,Below baseline ❌
+Baseline Champion v2.3 (Original),EPL 2025-26 only,2025 season,50,0.42,0.5,0.0,0.278,0.696,0.0,0.385,Below baseline ❌
+Optimized Baseline (Fresh),EPL 2025-26 only,2025 season,50,0.4,0.5,0.0,0.4,0.652,0.0,0.769,Below baseline ❌
