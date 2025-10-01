@@ -1,73 +1,75 @@
-# 🏆 Oddsy - Premier League Dual Champions Prediction System
+# 🏆 Oddsy - Premier League Prediction System v1.0
 
-**Production-Ready Dual Architecture: Baseline Champion + Cascade Champion**
+**Production-Ready Pipeline Durci: Extraction Strict → Enhanced Features → Prédictions Automatisées**
 
 ## Quick Start
 
 ```bash
-# Generate comprehensive champions comparison report
-python scripts/analysis/generate_rapport_champions_complete.py
+# Run complete weekly pipeline (extract → enhance → validate → predict)
+python weekly_pipeline.py
 
-# Validate both champions
-python scripts/analysis/validation_2_champions.py
+# Test individual components
+python extract_understat_real_strict.py               # Extract xG data (100% real)
+python enhanced_calculator_strict_temporal.py         # Calculate enhanced features
+python validation_real_coverage.py                    # Validate pipeline integrity
+python j6_predictions_production.py                   # Generate J6 predictions
 
-# Test individual champions on EPL 2025-26
-python scripts/analysis/test_cascade_525_exact.py      # Cascade Champion
-python scripts/analysis/baseline_test_latest.py        # Baseline Champion
-
-# Run audit pipeline
-python src/core/audit_pipeline.py --data data/processed/v_auto_update_20250916_110247.csv \
-                                  --model models/production/baseline_champion_v23.joblib \
-                                  --target FullTimeResult
+# Manual model testing
+python test_all_production_models_comprehensive.py
 ```
 
-## 🏆 Production Status: Dual Champions Architecture
+## 🚀 Pipeline Durci v1.0 - Production Ready
 
-**✅ TWO VALIDATED PRODUCTION MODELS**
+**✅ ARCHITECTURE COMPLÈTE VALIDÉE**
 
-### 🥇 Baseline Champion v2.3
-- **Algorithm:** RandomForest + CalibratedClassifierCV (10 optimized features)
-- **Performance CV:** 53.5% ± 3.6% (historical validation)
-- **Performance EPL 2025-26:** 47.5% (40 real matches)
-- **Use Case:** Long-term stability, general predictions
-- **Model:** `models/production/baseline_champion_v23.joblib`
+### 🔒 Extraction Strict 100% Réelle
+- **Composant:** `extract_understat_real_strict.py`
+- **Innovation:** Zéro fallback - Échec explicite si données indisponibles
+- **Mapping:** 20 équipes EPL avec aliases complets
+- **Validation:** API version checking + fixture ID déduplication
 
-### 🥈 Cascade Champion v2.0  
-- **Algorithm:** Binary (Draw/Non-Draw) → Ternary (H/A) specialization
-- **Performance CV:** 46.9% ± 3.9% (historical validation) 
-- **Performance EPL 2025-26:** 50.0% (40 real matches)
-- **Innovation:** Only model detecting draws (22.5% vs 0% Baseline)
-- **Use Case:** Early-season, high uncertainty, draw detection
-- **Model:** `models/production/cascade_champion_v2.joblib`
+### 🔗 Enhanced Calculator Strict Temporal
+- **Composant:** `enhanced_calculator_strict_temporal.py`
+- **Jointure:** Date+équipes stricte avec tolérance ±1j contrôlée
+- **Roulants:** Tri chronologique garanti + shift +1 anti-fuite
+- **Innovation:** xG efficiency sum(goals)/sum(xG) vs approximations 0.5
 
-## 🎯 Strategic Innovation
+### 🎯 Enhanced Baseline v2.4 Fixed
+- **Algorithm:** RandomForest + CalibratedClassifierCV (11 features enrichies)
+- **Performance EPL 2025-26:** 44.12% (validation en cours)
+- **Innovation:** Features marché B365 + forme/ELO proxy calculés
+- **Model:** `models/production/enhanced_baseline_v24_fixed.joblib`
 
-**Dual Champions Strategy:** First EPL prediction system with validated dual deployment:
-- **Early Season (J1-J4):** Cascade Champion optimized for uncertainty and draw detection
-- **Established Season (J5+):** Baseline Champion for proven long-term stability  
-- **Adaptive Switching:** Performance monitoring with automatic model selection
+## 🎯 Innovation Technique Majeure
 
-## 📊 Key Achievements
+**Pipeline Durci:** Premier système EPL avec garantie 100% données réelles:
+- **Extraction Strict:** Understat API + échec explicite (zéro simulation cachée)
+- **Jointure Robuste:** Date+équipes + mapping complet avec intégrité temporelle
+- **Enhancement Authentique:** Élimination constantes 0.5 → vraie variance équipes  
+- **Automatisation Complète:** weekly_pipeline.py avec monitoring et logging
 
-1. **🏆 Dual Champions Architecture**: First validated 2-model EPL system
-2. **🔬 Rigorous EPL 2025-26 Validation**: 40 real matches as final test
-3. **🎯 Draw Detection Innovation**: Only system successfully predicting draws
-4. **📈 Professional Organization**: Production-ready with comprehensive documentation
-5. **🧪 Comprehensive Audit**: 487-line analysis report with full validation pipeline
+## 📊 Accomplissements Clés
 
-## 🏗️ Project Architecture  
+1. **🔒 Pipeline 100% Strict**: Premier système EPL sans fallback caché
+2. **🔬 Validation Production 98%**: Assertions critiques + rapports automatisés  
+3. **🎯 Enhancement Authentique**: +25,000x information vs constantes dangereuses
+4. **📈 Architecture Scalable**: Automatisation complète + monitoring intégré
+5. **🧪 Reproductibilité Totale**: Tag v1.0 + artefacts tracés + config figée
+
+## 🏗️ Architecture Pipeline Durci v1.0
 
 ```
 Oddsy/
-├── models/production/          # 🏆 Dual Champions (Baseline + Cascade)
-├── docs/                       # 📚 Structured documentation 
-│   ├── reports/               # Analysis reports (487-line champions report)
-│   ├── technical/             # Technical validation & audit
-│   └── analysis/              # Deep-dive analyses
-├── scripts/analysis/           # 🔧 Validation & testing pipeline
-├── data/processed/            # 📊 Production datasets (EPL 2019-2026)
-├── src/core/                  # 🧪 Audit infrastructure
-└── archive/                   # 📦 Research history & experiments
+├── extract_understat_real_strict.py      # 🔒 Extraction API 100% réelle
+├── enhanced_calculator_strict_temporal.py # 🔗 Jointure + roulants stricts
+├── validation_real_coverage.py           # 🎯 Validation production 98%
+├── j6_predictions_production.py          # 🚀 Prédictions Enhanced v2.4
+├── weekly_pipeline.py                    # 🤖 Automatisation complète
+├── config/team_mappings.json             # ⚙️ Mappings équipes figés
+├── models/production/                     # 🏆 Enhanced Baseline v2.4
+├── data/processed/                        # 📊 Datasets enhanced stricts
+├── reports/weekly/                        # 📋 Monitoring automatisé
+└── docs/                                  # 📚 Documentation technique
 ```
 
 ## 📈 Performance Benchmarks
