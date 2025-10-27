@@ -23,11 +23,8 @@ oddsy/                           # 🎯 PRODUCTION CODE (< 50 files)
 ├── backend/                     # FastAPI prediction API
 ├── frontend/                    # Next.js 14 interface  
 ├── predictions/                 # Generated gameweek predictions
-│   ├── gw5/                     # Gameweek 5 predictions
-│   ├── gw7/                     # Gameweek 7 predictions 
-│   ├── gw8/                     # Gameweek 8 predictions
-│   ├── gw9/                     # Gameweek 9 predictions
-│   └── archive/                 # Historical predictions
+│   ├── gw9/                     # Current gameweek predictions
+│   └── archive/                 # Historical predictions & gameweeks
 ├── config/                      # Team mappings and settings
 ├── requirements.txt             # Production dependencies
 └── run_pipeline.py             # Main prediction pipeline
@@ -64,13 +61,13 @@ uvicorn backend.main:app --host 0.0.0.0 --port 8000
 
 #### 📊 Prediction Analysis
 ```bash
-# View latest predictions
-ls predictions/gw9/              # Most recent gameweek
+# View current predictions
+ls predictions/gw9/              # Current gameweek
 cat predictions/gw9/predictions.json
 
-# Browse historical predictions  
+# Browse historical data  
 ls predictions/archive/          # All historical predictions
-ls predictions/gw{5,7,8}/        # Previous gameweeks
+ls predictions/archive/gw{5,7,8}/  # Previous gameweeks
 ```
 
 ## 📊 Key Features
@@ -122,8 +119,8 @@ CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
    - New developers immediately see production architecture
 
 3. **🧪 Predictions Organized**
+   - Current gameweek (GW9) readily accessible
    - Historical predictions in `/predictions/archive`
-   - Current gameweek predictions in organized structure
    - Clean separation of active vs historical data
 
 4. **📁 Logical Organization**
@@ -141,8 +138,8 @@ CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ### Prediction Management
 ```bash
-# Access latest predictions
-ls predictions/gw9/              # Current gameweek
+# Access current predictions
+ls predictions/gw9/              # Current gameweek (GW9)
 python run_pipeline.py           # Generate new predictions
 ```
 
