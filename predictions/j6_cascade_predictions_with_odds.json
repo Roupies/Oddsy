@@ -1,0 +1,102 @@
+[
+  {
+    "Match": "Brentford vs Man United",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.362,
+    "Prob_H": 0.362,
+    "Prob_D": 0.295,
+    "Prob_A": 0.343,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Chelsea vs Brighton",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.399,
+    "Prob_H": 0.399,
+    "Prob_D": 0.288,
+    "Prob_A": 0.313,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Crystal Palace vs Liverpool",
+    "Date": "2025-09-27",
+    "Final_Pred": "A",
+    "Final_Conf": 0.434,
+    "Prob_H": 0.275,
+    "Prob_D": 0.291,
+    "Prob_A": 0.434,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Leeds vs Bournemouth",
+    "Date": "2025-09-27",
+    "Final_Pred": "A",
+    "Final_Conf": 0.394,
+    "Prob_H": 0.307,
+    "Prob_D": 0.299,
+    "Prob_A": 0.394,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Man City vs Burnley",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.467,
+    "Prob_H": 0.467,
+    "Prob_D": 0.238,
+    "Prob_A": 0.295,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Nott'm Forest vs Sunderland",
+    "Date": "2025-09-27",
+    "Final_Pred": "A",
+    "Final_Conf": 0.382,
+    "Prob_H": 0.327,
+    "Prob_D": 0.291,
+    "Prob_A": 0.382,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Tottenham vs Wolves",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.4,
+    "Prob_H": 0.4,
+    "Prob_D": 0.273,
+    "Prob_A": 0.327,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Aston Villa vs Fulham",
+    "Date": "2025-09-28",
+    "Final_Pred": "A",
+    "Final_Conf": 0.365,
+    "Prob_H": 0.337,
+    "Prob_D": 0.299,
+    "Prob_A": 0.365,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Newcastle vs Arsenal",
+    "Date": "2025-09-28",
+    "Final_Pred": "A",
+    "Final_Conf": 0.411,
+    "Prob_H": 0.292,
+    "Prob_D": 0.297,
+    "Prob_A": 0.411,
+    "Model": "Cascade"
+  },
+  {
+    "Match": "Everton vs West Ham",
+    "Date": "2025-09-29",
+    "Final_Pred": "H",
+    "Final_Conf": 0.384,
+    "Prob_H": 0.384,
+    "Prob_D": 0.289,
+    "Prob_A": 0.326,
+    "Model": "Cascade"
+  }
+]

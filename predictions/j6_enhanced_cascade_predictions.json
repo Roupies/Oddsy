@@ -1,0 +1,102 @@
+[
+  {
+    "Match": "Brentford vs Man United",
+    "Date": "2025-09-27",
+    "Final_Pred": "D",
+    "Final_Conf": 0.462,
+    "Prob_H": 0.276,
+    "Prob_D": 0.462,
+    "Prob_A": 0.262,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Chelsea vs Brighton",
+    "Date": "2025-09-27",
+    "Final_Pred": "D",
+    "Final_Conf": 0.53,
+    "Prob_H": 0.263,
+    "Prob_D": 0.53,
+    "Prob_A": 0.207,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Crystal Palace vs Liverpool",
+    "Date": "2025-09-27",
+    "Final_Pred": "D",
+    "Final_Conf": 0.454,
+    "Prob_H": 0.211,
+    "Prob_D": 0.454,
+    "Prob_A": 0.334,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Leeds vs Bournemouth",
+    "Date": "2025-09-27",
+    "Final_Pred": "D",
+    "Final_Conf": 0.549,
+    "Prob_H": 0.197,
+    "Prob_D": 0.549,
+    "Prob_A": 0.254,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Man City vs Burnley",
+    "Date": "2025-09-27",
+    "Final_Pred": "D",
+    "Final_Conf": 0.446,
+    "Prob_H": 0.339,
+    "Prob_D": 0.446,
+    "Prob_A": 0.215,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Nott'm Forest vs Sunderland",
+    "Date": "2025-09-27",
+    "Final_Pred": "D",
+    "Final_Conf": 0.535,
+    "Prob_H": 0.215,
+    "Prob_D": 0.535,
+    "Prob_A": 0.25,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Tottenham vs Wolves",
+    "Date": "2025-09-27",
+    "Final_Pred": "D",
+    "Final_Conf": 0.424,
+    "Prob_H": 0.317,
+    "Prob_D": 0.424,
+    "Prob_A": 0.259,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Aston Villa vs Fulham",
+    "Date": "2025-09-28",
+    "Final_Pred": "D",
+    "Final_Conf": 0.468,
+    "Prob_H": 0.256,
+    "Prob_D": 0.468,
+    "Prob_A": 0.277,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Newcastle vs Arsenal",
+    "Date": "2025-09-28",
+    "Final_Pred": "D",
+    "Final_Conf": 0.465,
+    "Prob_H": 0.222,
+    "Prob_D": 0.465,
+    "Prob_A": 0.313,
+    "Model": "Enhanced_Cascade"
+  },
+  {
+    "Match": "Everton vs West Ham",
+    "Date": "2025-09-29",
+    "Final_Pred": "D",
+    "Final_Conf": 0.452,
+    "Prob_H": 0.296,
+    "Prob_D": 0.452,
+    "Prob_A": 0.252,
+    "Model": "Enhanced_Cascade"
+  }
+]

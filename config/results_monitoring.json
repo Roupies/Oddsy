@@ -1,0 +1,28 @@
+{
+  "auto_start_current_gw": true,
+  "auto_start_next_gw": true,
+  "notification_methods": ["console", "webhook"],
+  "webhook_url": "http://localhost:3000/api/notifications/results",
+  "slack_webhook": null,
+  "discord_webhook": null,
+  "email_settings": null,
+  "max_concurrent_gameweeks": 2,
+  "startup_delay": 10,
+  "health_check_interval": 300,
+  "auto_restart": true,
+  "data_sources": {
+    "football_data_api_key": "",
+    "api_football_key": "",
+    "backup_sources": ["openfootball"]
+  },
+  "performance_thresholds": {
+    "min_accuracy_alert": 0.4,
+    "max_brier_score_alert": 0.35,
+    "market_beat_threshold": 0.5
+  },
+  "polling_intervals": {
+    "scheduled_matches": 300,
+    "live_matches": 60,
+    "finished_matches": 900
+  }
+}

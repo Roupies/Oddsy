@@ -1,0 +1,11 @@
+Date,HomeTeam,AwayTeam,Predicted,Prob_Home,Prob_Draw,Prob_Away,Confidence
+2025-10-24,Leeds,West Ham,A,0.2478,0.2924,0.4598,0.4598
+2025-10-25,Chelsea,Sunderland,D,0.2538,0.3883,0.3579,0.3883
+2025-10-25,Newcastle,Fulham,D,0.2847,0.3638,0.3516,0.3638
+2025-10-25,Man Utd,Brighton,A,0.1439,0.2235,0.6326,0.6326
+2025-10-25,Brentford,Liverpool,A,0.3078,0.2059,0.4863,0.4863
+2025-10-26,Arsenal,Crystal Palace,A,0.2809,0.2738,0.4453,0.4453
+2025-10-26,Aston Villa,Man City,A,0.2587,0.3287,0.4126,0.4126
+2025-10-26,Wolves,Burnley,A,0.3284,0.1902,0.4814,0.4814
+2025-10-26,Bournemouth,Nott'm Forest,A,0.241,0.3224,0.4366,0.4366
+2025-10-26,Everton,Spurs,A,0.1959,0.1481,0.6561,0.6561

@@ -1,0 +1,373 @@
+#!/usr/bin/env python3
+"""
+Endpoints prédictions avec ETag et cache headers
+===============================================
+"""
+
+from fastapi import APIRouter, HTTPException, Depends
+from fastapi.responses import JSONResponse
+from typing import Optional
+import hashlib
+from datetime import datetime
+import logging
+
+from core.config import settings
+from services.pipeline_interface import PipelineDurciInterface
+from schemas.common import APIResponse, APIMetadata
+from schemas.predictions import RoundPredictions
+
+logger = logging.getLogger(__name__)
+router = APIRouter(prefix="/predictions", tags=["predictions"])
+
+def get_pipeline_interface() -> PipelineDurciInterface:
+    """Dependency injection pour interface pipeline"""
+    return PipelineDurciInterface()
+
+def normalize_team_name(team_name: str) -> str:
+    """Normalise nom d'équipe pour éviter les variations"""
+    return team_name.strip().replace("Wolverhampton Wanderers", "Wolves")\
+                            .replace("Nottingham Forest", "Nott'm Forest")\
+                            .replace("Brighton and Hove Albion", "Brighton")
+
+def create_fixture_id(home_team: str, away_team: str, match_date: str, round_num: int) -> str:
+    """Crée un fixture_id canonique pour déduplication"""
+    home_norm = normalize_team_name(home_team)
+    away_norm = normalize_team_name(away_team)
+    
+    # Tri alphabétique pour éviter home/away inversions
+    team_pair = tuple(sorted([home_norm, away_norm]))
+    return f"j{round_num}_{team_pair[0]}_{team_pair[1]}_{match_date}".replace(" ", "_").lower()
+
+@router.get("/j{round}")
+async def get_round_predictions(
+    round: int, 
+    date_filter: Optional[str] = None,
+    allow_multi_gw: bool = False
+) -> dict:
+    """Prédictions journée avec déduplication et validation stricte"""
+    
+    logger.info(f"Request prédictions J{round}")
+    
+    # Validation round EPL
+    if not (1 <= round <= 38):
+        raise HTTPException(
+            status_code=400,
+            detail=f"Round invalide: {round}. EPL rounds valides: 1-38"
+        )
+    
+    # Recherche fichier prédictions (supporte v1 et v2)
+    predictions_dir = settings.PIPELINE_PREDICTIONS_DIR
+    prediction_files = list(predictions_dir.glob(f"j{round}_*_dual_champions_*.json")) + \
+                      list(predictions_dir.glob(f"j{round}_*pipeline_v2_predictions_*.json"))
+    
+    if not prediction_files:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Aucune prédiction disponible pour J{round}"
+        )
+    
+    # Chargement du fichier le plus récent
+    latest_file = max(prediction_files, key=lambda f: f.stat().st_mtime)
+    logger.info(f"Lecture fichier: {latest_file.name}")
+    
+    try:
+        import json
+        with open(latest_file, 'r', encoding='utf-8') as f:
+            raw_data = json.load(f)
+        
+        # Déduplication et extraction des matchs
+        unique_matches = {}
+        processed_fixtures = set()
+        duplicates_found = []
+        
+        if "predictions" in raw_data:
+            for match_data in raw_data["predictions"]:
+                match_info_data = match_data.get("match_info", {})
+                ensemble_data = match_data.get("ensemble_prediction", {})
+                models_data = match_data.get("individual_models", {})
+                
+                # Support format pipeline v2
+                if "match_info" in match_data and "ensemble_prediction" in match_data:
+                    home_team = match_info_data.get("home_team", "Unknown")
+                    away_team = match_info_data.get("away_team", "Unknown")
+                    match_date = match_info_data.get("date", "TBD")
+                else:
+                    # Format pipeline v1 (fallback)
+                    home_team = match_data.get("home_team", "Unknown")
+                    away_team = match_data.get("away_team", "Unknown") 
+                    match_date = match_data.get("date", "TBD")
+                
+                # Création fixture_id canonique
+                fixture_id = create_fixture_id(home_team, away_team, match_date, round)
+                
+                # Détection doublons
+                if fixture_id in processed_fixtures:
+                    duplicates_found.append(f"{home_team} vs {away_team}")
+                    logger.warning(f"Doublon détecté et ignoré: {home_team} vs {away_team}")
+                    continue
+                    
+                processed_fixtures.add(fixture_id)
+                
+                # Déterminer si le match est joué (logique temporelle simple)
+                from datetime import datetime, timedelta
+                try:
+                    match_datetime = datetime.fromisoformat(match_date)
+                    now = datetime.now()
+                    # Considérer joué si date passée + 24h de marge
+                    is_played = match_datetime < (now - timedelta(hours=24))
+                except:
+                    is_played = False
+                
+                # Construction match validé avec champs métier
+                match_info = {
+                    "id": fixture_id,
+                    "home_team": home_team,
+                    "away_team": away_team, 
+                    "date": match_date,
+                    "round": round,
+                    "played": is_played,
+                    "status": "played" if is_played else "upcoming",
+                    "final_score": None,  # À implémenter avec source de résultats
+                    "ensemble": {
+                        "prediction": ensemble_data.get("predicted_outcome", "UNKNOWN"),
+                        "confidence": ensemble_data.get("confidence", 0.5),
+                        "probabilities": {
+                            "home": ensemble_data.get("probabilities", {}).get("home", 0.33),
+                            "draw": ensemble_data.get("probabilities", {}).get("draw", 0.33),
+                            "away": ensemble_data.get("probabilities", {}).get("away", 0.33)
+                        }
+                    },
+                    "models": {
+                        "baseline": {
+                            "prediction": models_data.get("enhanced_v24", {}).get("prediction", ensemble_data.get("predicted_outcome", "UNKNOWN")),
+                            "confidence": models_data.get("enhanced_v24", {}).get("confidence", ensemble_data.get("confidence", 0.5)),
+                            "probabilities": {
+                                "home": models_data.get("enhanced_v24", {}).get("probabilities", {}).get("home", ensemble_data.get("probabilities", {}).get("home", 0.33)),
+                                "draw": models_data.get("enhanced_v24", {}).get("probabilities", {}).get("draw", ensemble_data.get("probabilities", {}).get("draw", 0.33)),
+                                "away": models_data.get("enhanced_v24", {}).get("probabilities", {}).get("away", ensemble_data.get("probabilities", {}).get("away", 0.33))
+                            }
+                        },
+                        "cascade": {
+                            "prediction": models_data.get("cascade_v21_optimized", {}).get("prediction", ensemble_data.get("predicted_outcome", "UNKNOWN")),
+                            "confidence": models_data.get("cascade_v21_optimized", {}).get("confidence", ensemble_data.get("confidence", 0.5)),
+                            "probabilities": {
+                                "home": models_data.get("cascade_v21_optimized", {}).get("probabilities", {}).get("home", ensemble_data.get("probabilities", {}).get("home", 0.33)),
+                                "draw": models_data.get("cascade_v21_optimized", {}).get("probabilities", {}).get("draw", ensemble_data.get("probabilities", {}).get("draw", 0.33)),
+                                "away": models_data.get("cascade_v21_optimized", {}).get("probabilities", {}).get("away", ensemble_data.get("probabilities", {}).get("away", 0.33))
+                            }
+                        }
+                    },
+                    "disagreement": 0.0
+                }
+                unique_matches[fixture_id] = match_info
+        
+        # Conversion en liste et filtrage intelligent
+        matches = list(unique_matches.values())
+        
+        # ⚠️ MODE COMPATIBILITÉ TEMPORAIRE ACTIVÉ
+        # Suite à réparation sources Understat corrompues (Leeds/Sunderland supprimés)
+        # Sources actuelles: 8/10 matchs par GW (Ipswich/Leicester manquants)
+        # Ce mode sera DÉPRÉCIÉ une fois sources complètes disponibles
+        
+        # Si trop de matchs, essayer filtrage par date
+        if len(matches) > 10 and not allow_multi_gw:
+            # Grouper par date pour identifier la date principale du GW
+            date_groups = {}
+            for match in matches:
+                match_date = match["date"]
+                if match_date not in date_groups:
+                    date_groups[match_date] = []
+                date_groups[match_date].append(match)
+            
+            # Si date_filter spécifiée, l'utiliser
+            if date_filter and date_filter in date_groups:
+                matches = date_groups[date_filter]
+                logger.info(f"Filtrage par date {date_filter}: {len(matches)} matchs")
+            
+            # Sinon, prendre la date avec le plus de matchs
+            elif date_groups:
+                primary_date = max(date_groups.keys(), key=lambda d: len(date_groups[d]))
+                matches = date_groups[primary_date]
+                logger.info(f"Date principale détectée {primary_date}: {len(matches)} matchs")
+        
+        # Validation selon mode
+        expected_matches = 10
+        if allow_multi_gw:
+            # Mode multi-GW : accepter 10-20 matchs
+            if not (10 <= len(matches) <= 20):
+                error_details = {
+                    "total_raw_predictions": len(raw_data.get("predictions", [])),
+                    "unique_matches_found": len(matches),
+                    "expected_range": "10-20 (multi-GW mode)",
+                    "duplicates_ignored": duplicates_found,
+                    "fixture_ids": list(unique_matches.keys())
+                }
+                
+                logger.error(f"❌ J{round} multi-GW: {len(matches)} matchs hors plage 10-20. Détails: {error_details}")
+                
+                raise HTTPException(
+                    status_code=422,
+                    detail=f"Multi-GW J{round}: {len(matches)} matchs trouvés (attendu: 10-20). "
+                           f"Utiliser date_filter ou allow_multi_gw=false."
+                )
+        else:
+            # Mode standard : exactement 10 matchs
+            if len(matches) != expected_matches:
+                error_details = {
+                    "total_raw_predictions": len(raw_data.get("predictions", [])),
+                    "unique_matches_found": len(matches),
+                    "duplicates_ignored": duplicates_found,
+                    "fixture_ids": list(unique_matches.keys())
+                }
+                
+                logger.error(f"❌ J{round}: {len(matches)} matchs au lieu de 10. Détails: {error_details}")
+                
+                raise HTTPException(
+                    status_code=422,
+                    detail=f"Incohérence journée J{round}: {len(matches)} matchs uniques trouvés au lieu de 10. "
+                           f"Raw predictions: {len(raw_data.get('predictions', []))}, "
+                           f"Doublons ignorés: {len(duplicates_found)}. "
+                           f"Vérifier la logique de génération pipeline."
+                )
+        
+        # Calculer métadonnées enrichies pour transparence
+        all_dates = list(set(match["date"] for match in matches))
+        all_dates.sort()
+        
+        # Séparation résultats vs prédictions
+        played_matches = [m for m in matches if m.get("played", False)]
+        upcoming_matches = [m for m in matches if not m.get("played", False)]
+        
+        # Déterminer mode effectif et date principale
+        mode_effective = "multi_gw_compat" if allow_multi_gw and len(matches) > 10 else "strict_epl"
+        primary_date = None
+        if len(all_dates) > 1:
+            # Date avec le plus de matchs
+            date_counts = {}
+            for match in matches:
+                date_counts[match["date"]] = date_counts.get(match["date"], 0) + 1
+            primary_date = max(date_counts.keys(), key=lambda d: date_counts[d])
+        elif all_dates:
+            primary_date = all_dates[0]
+        
+        logger.info(f"✅ J{round}: {len(matches)} matchs validés (mode: {mode_effective}, dates: {len(all_dates)})")
+        
+        # Structure de réponse avec métadonnées enrichies
+        return {
+            "meta": {
+                "api_version": settings.API_VERSION,
+                "pipeline_version": raw_data.get("pipeline_metadata", {}).get("pipeline_version", "Pipeline_Durci_v1.0"),
+                "generated_at": raw_data.get("pipeline_metadata", {}).get("generation_timestamp", datetime.utcnow().isoformat()),
+                "git_sha": settings.GIT_SHA,
+                "mode_effective": mode_effective,
+                "strict_timing_applied": not allow_multi_gw,
+                "compat_mode_warning": mode_effective == "multi_gw_compat"
+            },
+            "data": {
+                "matches": matches,
+                "results_played": played_matches,
+                "predictions_upcoming": upcoming_matches,
+                "meta": {
+                    "pipeline_version": raw_data.get("pipeline_metadata", {}).get("pipeline_version", "Pipeline_Durci_v1.0"),
+                    "generated_at": raw_data.get("pipeline_metadata", {}).get("generation_timestamp", datetime.utcnow().isoformat()),
+                    "api_version": settings.API_VERSION,
+                    "git_sha": settings.GIT_SHA,
+                    "distinct_dates": all_dates,
+                    "primary_date": primary_date,
+                    "date_distribution": {date: sum(1 for m in matches if m["date"] == date) for date in all_dates},
+                    "temporal_breakdown": {
+                        "played_count": len(played_matches),
+                        "upcoming_count": len(upcoming_matches),
+                        "total_count": len(matches)
+                    },
+                    "validation": {
+                        "raw_predictions_count": len(raw_data.get("predictions", [])),
+                        "duplicates_removed": len(duplicates_found),
+                        "final_matches_count": len(matches),
+                        "expected_epl_matches": 10,
+                        "mode_effective": mode_effective
+                    }
+                }
+            }
+        }
+        
+    except HTTPException:
+        # Re-raise HTTPException as-is
+        raise
+    except Exception as e:
+        logger.error(f"Erreur lecture prédictions J{round}: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Erreur lecture des prédictions: {str(e)}"
+        )
+
+@router.get("/")
+async def list_available_rounds(
+    pipeline: PipelineDurciInterface = Depends(get_pipeline_interface)
+) -> APIResponse[dict]:
+    """Liste journées disponibles avec métadonnées"""
+    
+    # Scan prédictions disponibles (v1 et v2)
+    predictions_dir = settings.PIPELINE_PREDICTIONS_DIR
+    
+    # Pattern files v1 et v2
+    prediction_files = list(predictions_dir.glob("j*_*_dual_champions_*.json")) + \
+                      list(predictions_dir.glob("j*_*pipeline_v2_predictions_*.json"))
+    
+    available_rounds = []
+    
+    for file_path in prediction_files:
+        try:
+            # Extract round number from filename
+            parts = file_path.name.split('_')
+            if parts[0].startswith('j'):
+                round_num = int(parts[0][1:])  # Remove 'j' prefix
+                
+                file_stats = file_path.stat()
+                file_size_kb = round(file_stats.st_size / 1024, 2)
+                
+                # Parse generation timestamp from file if possible
+                try:
+                    import json
+                    with open(file_path, 'r') as f:
+                        file_data = json.load(f)
+                    
+                    generation_timestamp = file_data.get("pipeline_metadata", {}).get("generation_timestamp") or \
+                                         file_data.get("prediction_metadata", {}).get("generation_timestamp")
+                    
+                    if not generation_timestamp:
+                        generation_timestamp = datetime.fromtimestamp(file_stats.st_mtime).isoformat()
+                        
+                except:
+                    generation_timestamp = datetime.fromtimestamp(file_stats.st_mtime).isoformat()
+                
+                available_rounds.append({
+                    "round": round_num,
+                    "file_name": file_path.name,
+                    "generated_at": generation_timestamp,
+                    "file_size_kb": file_size_kb
+                })
+                
+        except (ValueError, IndexError) as e:
+            logger.warning(f"Could not parse round from filename {file_path.name}: {e}")
+            continue
+    
+    # Sort by round number
+    available_rounds.sort(key=lambda x: x["round"])
+    
+    # Find latest round
+    latest_round = max(available_rounds, key=lambda x: x["round"])["round"] if available_rounds else 0
+    
+    return APIResponse(
+        meta=APIMetadata(
+            api_version=settings.API_VERSION,
+            pipeline_version="Pipeline_Durci_v1.0",
+            generated_at=datetime.utcnow().isoformat(),
+            git_sha=settings.GIT_SHA
+        ),
+        data={
+            "available_rounds": available_rounds,
+            "total_rounds": len(available_rounds),
+            "latest_round": latest_round
+        }
+    )

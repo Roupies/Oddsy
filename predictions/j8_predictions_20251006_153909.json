@@ -1,0 +1,152 @@
+{
+  "Arsenal_vs_Bournemouth": {
+    "prediction": "H",
+    "confidence": 0.6868615709756957,
+    "probabilities": {
+      "home": 0.6868615709756957,
+      "draw": 0.1849242691088411,
+      "away": 0.12821415991546317
+    },
+    "match_info": {
+      "home": "Arsenal",
+      "away": "Bournemouth",
+      "date": "19/10/2025",
+      "time": "15:00"
+    }
+  },
+  "Aston Villa_vs_Wolves": {
+    "prediction": "H",
+    "confidence": 0.4543429844097996,
+    "probabilities": {
+      "home": 0.4543429844097996,
+      "draw": 0.28062360801781744,
+      "away": 0.26503340757238314
+    },
+    "match_info": {
+      "home": "Aston Villa",
+      "away": "Wolves",
+      "date": "19/10/2025",
+      "time": "15:00"
+    }
+  },
+  "Brighton_vs_Tottenham": {
+    "prediction": "A",
+    "confidence": 0.35612082670906203,
+    "probabilities": {
+      "home": 0.34340222575516693,
+      "draw": 0.3004769475357711,
+      "away": 0.35612082670906203
+    },
+    "match_info": {
+      "home": "Brighton",
+      "away": "Tottenham",
+      "date": "19/10/2025",
+      "time": "15:00"
+    }
+  },
+  "Crystal Palace_vs_Liverpool": {
+    "prediction": "A",
+    "confidence": 0.629757785467128,
+    "probabilities": {
+      "home": 0.1453287197231834,
+      "draw": 0.22491349480968856,
+      "away": 0.629757785467128
+    },
+    "match_info": {
+      "home": "Crystal Palace",
+      "away": "Liverpool",
+      "date": "19/10/2025",
+      "time": "17:30"
+    }
+  },
+  "Everton_vs_Newcastle": {
+    "prediction": "A",
+    "confidence": 0.3997655334114889,
+    "probabilities": {
+      "home": 0.3094958968347011,
+      "draw": 0.2907385697538101,
+      "away": 0.3997655334114889
+    },
+    "match_info": {
+      "home": "Everton",
+      "away": "Newcastle",
+      "date": "20/10/2025",
+      "time": "14:00"
+    }
+  },
+  "Fulham_vs_Chelsea": {
+    "prediction": "A",
+    "confidence": 0.5050100200400802,
+    "probabilities": {
+      "home": 0.22845691382765534,
+      "draw": 0.2665330661322646,
+      "away": 0.5050100200400802
+    },
+    "match_info": {
+      "home": "Fulham",
+      "away": "Chelsea",
+      "date": "20/10/2025",
+      "time": "16:30"
+    }
+  },
+  "Leicester_vs_Nott'm Forest": {
+    "prediction": "H",
+    "confidence": 0.36559577063847093,
+    "probabilities": {
+      "home": 0.36559577063847093,
+      "draw": 0.3066287108580724,
+      "away": 0.3277755185034567
+    },
+    "match_info": {
+      "home": "Leicester",
+      "away": "Nott'm Forest",
+      "date": "19/10/2025",
+      "time": "15:00"
+    }
+  },
+  "Man City_vs_Southampton": {
+    "prediction": "H",
+    "confidence": 0.7865168539325843,
+    "probabilities": {
+      "home": 0.7865168539325843,
+      "draw": 0.1348314606741573,
+      "away": 0.07865168539325842
+    },
+    "match_info": {
+      "home": "Man City",
+      "away": "Southampton",
+      "date": "20/10/2025",
+      "time": "16:30"
+    }
+  },
+  "Man United_vs_Brentford": {
+    "prediction": "H",
+    "confidence": 0.5337078651685394,
+    "probabilities": {
+      "home": 0.5337078651685394,
+      "draw": 0.25280898876404495,
+      "away": 0.21348314606741575
+    },
+    "match_info": {
+      "home": "Man United",
+      "away": "Brentford",
+      "date": "19/10/2025",
+      "time": "15:00"
+    }
+  },
+  "West Ham_vs_Ipswich": {
+    "prediction": "H",
+    "confidence": 0.56657223796034,
+    "probabilities": {
+      "home": 0.56657223796034,
+      "draw": 0.24079320113314445,
+      "away": 0.19263456090651557
+    },
+    "match_info": {
+      "home": "West Ham",
+      "away": "Ipswich",
+      "date": "19/10/2025",
+      "time": "15:00"
+    }
+  }
+}

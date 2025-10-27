@@ -1,0 +1,315 @@
+{
+  "model_info": {
+    "version": "enhanced_baseline_v2.4_realistic_v2",
+    "model_type": "enhanced_baseline_v2.4_realistic_v2",
+    "features_count": 9,
+    "features_used": [
+      "elo_diff_normalized",
+      "market_entropy_norm",
+      "form_diff_normalized",
+      "matchday_normalized",
+      "shots_diff_normalized",
+      "corners_diff_normalized",
+      "home_xg_eff_10",
+      "away_goals_sum_5",
+      "away_xg_eff_10"
+    ],
+    "threshold_strategy": {
+      "preserve_draw_if": {
+        "draw_min": 0.32
+      },
+      "force_home_if": {
+        "home_min": 0.38,
+        "draw_max": 0.31,
+        "away_max": 0.38
+      },
+      "force_away_if": {
+        "away_min": 0.33,
+        "draw_max": 0.31,
+        "home_max": 0.38
+      }
+    },
+    "target_distribution": {
+      "home": 45,
+      "draw": 27,
+      "away": 28
+    },
+    "optimization_gap": 21.999999999999996
+  },
+  "generation_info": {
+    "timestamp": "20251008_114625",
+    "datetime": "2025-10-08T11:46:25.102502",
+    "matches_predicted": 10,
+    "data_source": "j8_features_comprehensive_v3_20251007_215325.csv"
+  },
+  "distribution_summary": {
+    "home": 4,
+    "draw": 6,
+    "away": 0,
+    "percentages": {
+      "home": 40.0,
+      "draw": 60.0,
+      "away": 0.0
+    }
+  },
+  "epl_comparison": {
+    "target": {
+      "home": 45,
+      "draw": 27,
+      "away": 28
+    },
+    "gaps": {
+      "home": 5.0,
+      "draw": 33.0,
+      "away": 28.0
+    },
+    "total_gap": 66.0
+  },
+  "strategy_applications": {
+    "draws_preserved": 0,
+    "home_forced": 0,
+    "away_forced": 0,
+    "standard_predictions": 10,
+    "total_applications": 0,
+    "application_ratio": 0.0
+  },
+  "probability_analysis": {
+    "mean_probabilities": {
+      "home": 0.37421475168534013,
+      "draw": 0.38514703493522057,
+      "away": 0.24063821337943922
+    }
+  },
+  "predictions": {
+    "Nottingham Forest_vs_Chelsea": {
+      "match_info": {
+        "home_team": "Nottingham Forest",
+        "away_team": "Chelsea",
+        "match_index": 1
+      },
+      "prediction": "Draw",
+      "prediction_code": "D",
+      "confidence": 0.3576697183784754,
+      "probabilities": {
+        "home": 0.2950373949273522,
+        "draw": 0.3576697183784754,
+        "away": 0.3472928866941723
+      },
+      "model_info": {
+        "base_prediction": "D",
+        "enhanced_prediction": "D",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Crystal Palace_vs_Bournemouth": {
+      "match_info": {
+        "home_team": "Crystal Palace",
+        "away_team": "Bournemouth",
+        "match_index": 2
+      },
+      "prediction": "Draw",
+      "prediction_code": "D",
+      "confidence": 0.41572385361085007,
+      "probabilities": {
+        "home": 0.3110730446002883,
+        "draw": 0.41572385361085007,
+        "away": 0.27320310178886165
+      },
+      "model_info": {
+        "base_prediction": "D",
+        "enhanced_prediction": "D",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Brighton and Hove Albion_vs_Newcastle United": {
+      "match_info": {
+        "home_team": "Brighton and Hove Albion",
+        "away_team": "Newcastle United",
+        "match_index": 3
+      },
+      "prediction": "Draw",
+      "prediction_code": "D",
+      "confidence": 0.4015808988557583,
+      "probabilities": {
+        "home": 0.38772737079370007,
+        "draw": 0.4015808988557583,
+        "away": 0.21069173035054156
+      },
+      "model_info": {
+        "base_prediction": "D",
+        "enhanced_prediction": "D",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Burnley_vs_Leeds United": {
+      "match_info": {
+        "home_team": "Burnley",
+        "away_team": "Leeds United",
+        "match_index": 4
+      },
+      "prediction": "Home",
+      "prediction_code": "H",
+      "confidence": 0.363992343626095,
+      "probabilities": {
+        "home": 0.363992343626095,
+        "draw": 0.33386191327795045,
+        "away": 0.3021457430959545
+      },
+      "model_info": {
+        "base_prediction": "H",
+        "enhanced_prediction": "H",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Manchester City_vs_Everton": {
+      "match_info": {
+        "home_team": "Manchester City",
+        "away_team": "Everton",
+        "match_index": 5
+      },
+      "prediction": "Draw",
+      "prediction_code": "D",
+      "confidence": 0.42613413903504915,
+      "probabilities": {
+        "home": 0.320628432427305,
+        "draw": 0.42613413903504915,
+        "away": 0.25323742853764597
+      },
+      "model_info": {
+        "base_prediction": "D",
+        "enhanced_prediction": "D",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Sunderland_vs_Wolverhampton Wanderers": {
+      "match_info": {
+        "home_team": "Sunderland",
+        "away_team": "Wolverhampton Wanderers",
+        "match_index": 6
+      },
+      "prediction": "Draw",
+      "prediction_code": "D",
+      "confidence": 0.5030758287906656,
+      "probabilities": {
+        "home": 0.32842750213915894,
+        "draw": 0.5030758287906656,
+        "away": 0.1684966690701756
+      },
+      "model_info": {
+        "base_prediction": "D",
+        "enhanced_prediction": "D",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Fulham_vs_Arsenal": {
+      "match_info": {
+        "home_team": "Fulham",
+        "away_team": "Arsenal",
+        "match_index": 7
+      },
+      "prediction": "Draw",
+      "prediction_code": "D",
+      "confidence": 0.4604608354420549,
+      "probabilities": {
+        "home": 0.30345118564745976,
+        "draw": 0.4604608354420549,
+        "away": 0.2360879789104853
+      },
+      "model_info": {
+        "base_prediction": "D",
+        "enhanced_prediction": "D",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Tottenham Hotspur_vs_Aston Villa": {
+      "match_info": {
+        "home_team": "Tottenham Hotspur",
+        "away_team": "Aston Villa",
+        "match_index": 8
+      },
+      "prediction": "Home",
+      "prediction_code": "H",
+      "confidence": 0.46470830611843084,
+      "probabilities": {
+        "home": 0.46470830611843084,
+        "draw": 0.29961766689902897,
+        "away": 0.23567402698254025
+      },
+      "model_info": {
+        "base_prediction": "H",
+        "enhanced_prediction": "H",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "Liverpool_vs_Manchester United": {
+      "match_info": {
+        "home_team": "Liverpool",
+        "away_team": "Manchester United",
+        "match_index": 9
+      },
+      "prediction": "Home",
+      "prediction_code": "H",
+      "confidence": 0.5277118136465014,
+      "probabilities": {
+        "home": 0.5277118136465014,
+        "draw": 0.31262545341154235,
+        "away": 0.15966273294195613
+      },
+      "model_info": {
+        "base_prediction": "H",
+        "enhanced_prediction": "H",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    },
+    "West Ham United_vs_Brentford": {
+      "match_info": {
+        "home_team": "West Ham United",
+        "away_team": "Brentford",
+        "match_index": 10
+      },
+      "prediction": "Home",
+      "prediction_code": "H",
+      "confidence": 0.4393901229271103,
+      "probabilities": {
+        "home": 0.4393901229271103,
+        "draw": 0.3407200416508304,
+        "away": 0.2198898354220592
+      },
+      "model_info": {
+        "base_prediction": "H",
+        "enhanced_prediction": "H",
+        "rule_applied": "realistic_strategy",
+        "threshold_applied": false,
+        "threshold_reason": null,
+        "prediction_changed": false
+      }
+    }
+  }
+}

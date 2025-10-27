@@ -1,0 +1,102 @@
+[
+  {
+    "Match": "Liverpool vs Everton",
+    "Date": "2025-09-20",
+    "Final_Pred": "H",
+    "Final_Conf": 0.6976412654042533,
+    "Prob_H": 0.6976412654042533,
+    "Prob_D": 0.1084645610398769,
+    "Prob_A": 0.19389417355586971,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Brighton vs Tottenham",
+    "Date": "2025-09-20",
+    "Final_Pred": "H",
+    "Final_Conf": 0.5882996239460191,
+    "Prob_H": 0.5882996239460191,
+    "Prob_D": 0.2176921060953351,
+    "Prob_A": 0.19400826995864584,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Burnley vs Nott'm Forest",
+    "Date": "2025-09-20",
+    "Final_Pred": "H",
+    "Final_Conf": 0.43067956706783656,
+    "Prob_H": 0.43067956706783656,
+    "Prob_D": 0.24822544652629452,
+    "Prob_A": 0.3210949864058688,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "West Ham vs Crystal Palace",
+    "Date": "2025-09-20",
+    "Final_Pred": "H",
+    "Final_Conf": 0.4254402319031246,
+    "Prob_H": 0.4254402319031246,
+    "Prob_D": 0.23237925231833337,
+    "Prob_A": 0.342180515778542,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Wolves vs Leeds",
+    "Date": "2025-09-20",
+    "Final_Pred": "H",
+    "Final_Conf": 0.4250259449506186,
+    "Prob_H": 0.4250259449506186,
+    "Prob_D": 0.23283516020331174,
+    "Prob_A": 0.3421388948460697,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Man United vs Chelsea",
+    "Date": "2025-09-20",
+    "Final_Pred": "A",
+    "Final_Conf": 0.38112692799927345,
+    "Prob_H": 0.3686223639269481,
+    "Prob_D": 0.2502507080737785,
+    "Prob_A": 0.38112692799927345,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Fulham vs Brentford",
+    "Date": "2025-09-20",
+    "Final_Pred": "H",
+    "Final_Conf": 0.5686337920073257,
+    "Prob_H": 0.5686337920073257,
+    "Prob_D": 0.19086714829457074,
+    "Prob_A": 0.2404990596981037,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Bournemouth vs Newcastle",
+    "Date": "2025-09-21",
+    "Final_Pred": "H",
+    "Final_Conf": 0.570930087211167,
+    "Prob_H": 0.570930087211167,
+    "Prob_D": 0.18638361482136165,
+    "Prob_A": 0.2426862979674714,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Sunderland vs Aston Villa",
+    "Date": "2025-09-21",
+    "Final_Pred": "H",
+    "Final_Conf": 0.6561006103513142,
+    "Prob_H": 0.6561006103513142,
+    "Prob_D": 0.16485934807643046,
+    "Prob_A": 0.17904004157225542,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Arsenal vs Man City",
+    "Date": "2025-09-21",
+    "Final_Pred": "H",
+    "Final_Conf": 0.5174147530316783,
+    "Prob_H": 0.5174147530316783,
+    "Prob_D": 0.2036976395711354,
+    "Prob_A": 0.27888760739718615,
+    "Model": "Baseline"
+  }
+]

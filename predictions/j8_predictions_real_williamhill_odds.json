@@ -1,0 +1,447 @@
+{
+  "timestamp": "2025-10-12T17:04:46.983942",
+  "gameweek": "J8",
+  "model_info": {
+    "file": "enhanced_baseline_v24_bias_fixed_BACKUP.joblib",
+    "version": "v2.4_fixed_target_bias",
+    "validation_accuracy": 0.562,
+    "validation_source": "pipeline_v3_j1_j6_2025"
+  },
+  "odds_source": {
+    "bookmaker": "williamhill",
+    "api": "the_odds_api",
+    "cache_file": "j8_odds_cache_20251010_154457.json",
+    "timestamp": "2025-10-10T15:44:57",
+    "quality_score": 1.0
+  },
+  "methodology": {
+    "pipeline": "enhanced_pipeline_v3",
+    "features_count": 9,
+    "market_features": "real_williamhill_odds",
+    "temporal_guards": "KO-2h_strict",
+    "simulation_level": "minimal_only_historical_context"
+  },
+  "predictions": [
+    {
+      "fixture_id": "j8_real_1",
+      "match_key": "Nottingham Forest_vs_Chelsea",
+      "date": "2025-10-18",
+      "kickoff": "11:30",
+      "match": "Nottingham Forest vs Chelsea",
+      "home_team": "Nottingham Forest",
+      "away_team": "Chelsea",
+      "prediction": "A",
+      "prediction_name": "Away Win",
+      "confidence": 0.4147833319918732,
+      "prob_home": 0.28858873310974614,
+      "prob_draw": 0.29662793489838063,
+      "prob_away": 0.4147833319918732,
+      "market_data": {
+        "odds": {
+          "odds_home": 3.6,
+          "odds_draw": 3.5,
+          "odds_away": 2.0
+        },
+        "market_probs": {
+          "p_home": 0.2611940298507463,
+          "p_draw": 0.26865671641791045,
+          "p_away": 0.4701492537313433
+        },
+        "market_favorite": "A",
+        "prediction_matches_market": "True",
+        "market_entropy": 0.9635573822712273
+      },
+      "features": {
+        "elo_diff_normalized": 0.0,
+        "market_entropy_norm": 0.9635573822712273,
+        "form_diff_normalized": 0.3955223880597015,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.3955223880597015,
+        "corners_diff_normalized": 0.4851517382562866,
+        "home_xg_eff_10": 0.6917910447761195,
+        "away_goals_sum_5": 3.9342161110468443,
+        "away_xg_eff_10": 1.0582089552238805
+      }
+    },
+    {
+      "fixture_id": "j8_real_2",
+      "match_key": "Crystal Palace_vs_Bournemouth",
+      "date": "2025-10-18",
+      "kickoff": "14:00",
+      "match": "Crystal Palace vs Bournemouth",
+      "home_team": "Crystal Palace",
+      "away_team": "Bournemouth",
+      "prediction": "D",
+      "prediction_name": "Draw",
+      "confidence": 0.3842078160061332,
+      "prob_home": 0.3674636836167974,
+      "prob_draw": 0.3842078160061332,
+      "prob_away": 0.2483285003770695,
+      "market_data": {
+        "odds": {
+          "odds_home": 2.25,
+          "odds_draw": 3.3,
+          "odds_away": 3.2
+        },
+        "market_probs": {
+          "p_home": 0.41929720071471116,
+          "p_draw": 0.2858844550327576,
+          "p_away": 0.2948183442525313
+        },
+        "market_favorite": "H",
+        "prediction_matches_market": "False",
+        "market_entropy": 0.9853411756967753
+      },
+      "features": {
+        "elo_diff_normalized": 0.125,
+        "market_entropy_norm": 0.9853411756967753,
+        "form_diff_normalized": 0.56223942823109,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.56223942823109,
+        "corners_diff_normalized": 0.5986148019586007,
+        "home_xg_eff_10": 0.9289458010720668,
+        "away_goals_sum_5": 1.7554925350820336,
+        "away_xg_eff_10": 0.8127456819535438
+      }
+    },
+    {
+      "fixture_id": "j8_real_3",
+      "match_key": "Brighton and Hove Albion_vs_Newcastle United",
+      "date": "2025-10-18",
+      "kickoff": "14:00",
+      "match": "Brighton vs Newcastle",
+      "home_team": "Brighton",
+      "away_team": "Newcastle",
+      "prediction": "D",
+      "prediction_name": "Draw",
+      "confidence": 0.44517520180131176,
+      "prob_home": 0.2870023057728797,
+      "prob_draw": 0.44517520180131176,
+      "prob_away": 0.2678224924258085,
+      "market_data": {
+        "odds": {
+          "odds_home": 2.45,
+          "odds_draw": 3.4,
+          "odds_away": 2.75
+        },
+        "market_probs": {
+          "p_home": 0.3829220845704924,
+          "p_draw": 0.2759291491757961,
+          "p_away": 0.3411487662537115
+        },
+        "market_favorite": "H",
+        "prediction_matches_market": "False",
+        "market_entropy": 0.9919325883522265
+      },
+      "features": {
+        "elo_diff_normalized": 0.05000000000000003,
+        "market_entropy_norm": 0.9919325883522265,
+        "form_diff_normalized": 0.5208866591583905,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.5208866591583905,
+        "corners_diff_normalized": 0.3924862328904311,
+        "home_xg_eff_10": 0.8743831268557387,
+        "away_goals_sum_5": 2.2219646814904914,
+        "away_xg_eff_10": 0.8776082727551962
+      }
+    },
+    {
+      "fixture_id": "j8_real_4",
+      "match_key": "Burnley_vs_Leeds United",
+      "date": "2025-10-18",
+      "kickoff": "14:00",
+      "match": "Burnley vs Leeds",
+      "home_team": "Burnley",
+      "away_team": "Leeds",
+      "prediction": "H",
+      "prediction_name": "Home Win",
+      "confidence": 0.3820749337409445,
+      "prob_home": 0.3820749337409445,
+      "prob_draw": 0.2682221868829308,
+      "prob_away": 0.3497028793761247,
+      "market_data": {
+        "odds": {
+          "odds_home": 3.1,
+          "odds_draw": 3.25,
+          "odds_away": 2.3
+        },
+        "market_probs": {
+          "p_home": 0.3028768233387358,
+          "p_draw": 0.28889789303079416,
+          "p_away": 0.40822528363047
+        },
+        "market_favorite": "A",
+        "prediction_matches_market": "False",
+        "market_entropy": 0.988727292260024
+      },
+      "features": {
+        "elo_diff_normalized": 0.05500000000000001,
+        "market_entropy_norm": 0.988727292260024,
+        "form_diff_normalized": 0.44732576985413286,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.44732576985413286,
+        "corners_diff_normalized": 0.6491090793307857,
+        "home_xg_eff_10": 0.7543152350081037,
+        "away_goals_sum_5": 4.076456999181906,
+        "away_xg_eff_10": 0.971515397082658
+      }
+    },
+    {
+      "fixture_id": "j8_real_5",
+      "match_key": "Manchester City_vs_Everton",
+      "date": "2025-10-18",
+      "kickoff": "14:00",
+      "match": "Man City vs Everton",
+      "home_team": "Man City",
+      "away_team": "Everton",
+      "prediction": "A",
+      "prediction_name": "Away Win",
+      "confidence": 0.40650365768498903,
+      "prob_home": 0.35726236140281487,
+      "prob_draw": 0.2362339809121962,
+      "prob_away": 0.40650365768498903,
+      "market_data": {
+        "odds": {
+          "odds_home": 1.4,
+          "odds_draw": 4.4,
+          "odds_away": 7.5
+        },
+        "market_probs": {
+          "p_home": 0.6645187273459524,
+          "p_draw": 0.21143777688280302,
+          "p_away": 0.12404349577124445
+        },
+        "market_favorite": "H",
+        "prediction_matches_market": "False",
+        "market_entropy": 0.7819090298553854
+      },
+      "features": {
+        "elo_diff_normalized": 0.35,
+        "market_entropy_norm": 0.7819090298553854,
+        "form_diff_normalized": 0.7702376157873541,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.7702376157873541,
+        "corners_diff_normalized": 0.4945155451682108,
+        "home_xg_eff_10": 1.2967780910189286,
+        "away_goals_sum_5": 1.9190046426215803,
+        "away_xg_eff_10": 0.5736608940797423
+      }
+    },
+    {
+      "fixture_id": "j8_real_6",
+      "match_key": "Sunderland_vs_Wolverhampton Wanderers",
+      "date": "2025-10-18",
+      "kickoff": "14:00",
+      "match": "Sunderland vs Wolves",
+      "home_team": "Sunderland",
+      "away_team": "Wolves",
+      "prediction": "H",
+      "prediction_name": "Home Win",
+      "confidence": 0.37147273489474447,
+      "prob_home": 0.37147273489474447,
+      "prob_draw": 0.338090721969875,
+      "prob_away": 0.2904365431353806,
+      "market_data": {
+        "odds": {
+          "odds_home": 2.4,
+          "odds_draw": 3.1,
+          "odds_away": 3.1
+        },
+        "market_probs": {
+          "p_home": 0.3924050632911393,
+          "p_draw": 0.3037974683544304,
+          "p_away": 0.3037974683544304
+        },
+        "market_favorite": "H",
+        "prediction_matches_market": "True",
+        "market_entropy": 0.9930386553977759
+      },
+      "features": {
+        "elo_diff_normalized": 0.05499999999999998,
+        "market_entropy_norm": 0.9930386553977759,
+        "form_diff_normalized": 0.5443037974683544,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.5443037974683544,
+        "corners_diff_normalized": 0.5244795288865444,
+        "home_xg_eff_10": 0.8886075949367089,
+        "away_goals_sum_5": 1.490601322113002,
+        "away_xg_eff_10": 0.8253164556962025
+      }
+    },
+    {
+      "fixture_id": "j8_real_7",
+      "match_key": "Fulham_vs_Arsenal",
+      "date": "2025-10-18",
+      "kickoff": "16:30",
+      "match": "Fulham vs Arsenal",
+      "home_team": "Fulham",
+      "away_team": "Arsenal",
+      "prediction": "A",
+      "prediction_name": "Away Win",
+      "confidence": 0.48686034153759183,
+      "prob_home": 0.24901334324056568,
+      "prob_draw": 0.26412631522184254,
+      "prob_away": 0.48686034153759183,
+      "market_data": {
+        "odds": {
+          "odds_home": 5.5,
+          "odds_draw": 3.9,
+          "odds_away": 1.62
+        },
+        "market_probs": {
+          "p_home": 0.17225584819237694,
+          "p_draw": 0.24292491411745465,
+          "p_away": 0.5848192376901685
+        },
+        "market_favorite": "A",
+        "prediction_matches_market": "True",
+        "market_entropy": 0.8742177463104286
+      },
+      "features": {
+        "elo_diff_normalized": 0.0,
+        "market_entropy_norm": 0.8742177463104286,
+        "form_diff_normalized": 0.2937183052511042,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.2937183052511042,
+        "corners_diff_normalized": 0.3918081054827577,
+        "home_xg_eff_10": 0.5583837722885654,
+        "away_goals_sum_5": 4.304754535653091,
+        "away_xg_eff_10": 1.218746932766236
+      }
+    },
+    {
+      "fixture_id": "j8_real_8",
+      "match_key": "Tottenham Hotspur_vs_Aston Villa",
+      "date": "2025-10-19",
+      "kickoff": "13:00",
+      "match": "Tottenham vs Aston Villa",
+      "home_team": "Tottenham",
+      "away_team": "Aston Villa",
+      "prediction": "D",
+      "prediction_name": "Draw",
+      "confidence": 0.4390096051942163,
+      "prob_home": 0.32556895762914895,
+      "prob_draw": 0.4390096051942163,
+      "prob_away": 0.23542143717663477,
+      "market_data": {
+        "odds": {
+          "odds_home": 2.1,
+          "odds_draw": 3.5,
+          "odds_away": 3.25
+        },
+        "market_probs": {
+          "p_home": 0.4452054794520548,
+          "p_draw": 0.2671232876712329,
+          "p_away": 0.28767123287671237
+        },
+        "market_favorite": "H",
+        "prediction_matches_market": "False",
+        "market_entropy": 0.9751428123172428
+      },
+      "features": {
+        "elo_diff_normalized": 0.12499999999999999,
+        "market_entropy_norm": 0.9751428123172428,
+        "form_diff_normalized": 0.5787671232876712,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.5787671232876712,
+        "corners_diff_normalized": 0.4190555854945296,
+        "home_xg_eff_10": 0.9678082191780821,
+        "away_goals_sum_5": 1.1575479049884225,
+        "away_xg_eff_10": 0.8027397260273973
+      }
+    },
+    {
+      "fixture_id": "j8_real_9",
+      "match_key": "Liverpool_vs_Manchester United",
+      "date": "2025-10-19",
+      "kickoff": "15:30",
+      "match": "Liverpool vs Man United",
+      "home_team": "Liverpool",
+      "away_team": "Man United",
+      "prediction": "H",
+      "prediction_name": "Home Win",
+      "confidence": 0.37512136421779463,
+      "prob_home": 0.37512136421779463,
+      "prob_draw": 0.3199975231898829,
+      "prob_away": 0.3048811125923224,
+      "market_data": {
+        "odds": {
+          "odds_home": 1.57,
+          "odds_draw": 4.4,
+          "odds_away": 5.0
+        },
+        "market_probs": {
+          "p_home": 0.5985091680722563,
+          "p_draw": 0.2135589531530551,
+          "p_away": 0.1879318787746885
+        },
+        "market_favorite": "H",
+        "prediction_matches_market": "True",
+        "market_entropy": 0.8657151616793674
+      },
+      "features": {
+        "elo_diff_normalized": 0.2,
+        "market_entropy_norm": 0.8657151616793674,
+        "form_diff_normalized": 0.7052886446487838,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.7052886446487838,
+        "corners_diff_normalized": 0.6367930340065909,
+        "home_xg_eff_10": 1.1977637521083844,
+        "away_goals_sum_5": 2.2693900092988875,
+        "away_xg_eff_10": 0.6631046302845639
+      }
+    },
+    {
+      "fixture_id": "j8_real_10",
+      "match_key": "West Ham United_vs_Brentford",
+      "date": "2025-10-20",
+      "kickoff": "19:00",
+      "match": "West Ham vs Brentford",
+      "home_team": "West Ham",
+      "away_team": "Brentford",
+      "prediction": "H",
+      "prediction_name": "Home Win",
+      "confidence": 0.3522234285265165,
+      "prob_home": 0.3522234285265165,
+      "prob_draw": 0.3487568975539242,
+      "prob_away": 0.2990196739195593,
+      "market_data": {
+        "odds": {
+          "odds_home": 2.4,
+          "odds_draw": 3.5,
+          "odds_away": 2.8
+        },
+        "market_probs": {
+          "p_home": 0.39325842696629215,
+          "p_draw": 0.2696629213483146,
+          "p_away": 0.33707865168539325
+        },
+        "market_favorite": "H",
+        "prediction_matches_market": "True",
+        "market_entropy": 0.9894222803119759
+      },
+      "features": {
+        "elo_diff_normalized": 0.09999999999999999,
+        "market_entropy_norm": 0.9894222803119759,
+        "form_diff_normalized": 0.5280898876404494,
+        "matchday_normalized": 0.21052631578947367,
+        "shots_diff_normalized": 0.5280898876404494,
+        "corners_diff_normalized": 0.9625787716174543,
+        "home_xg_eff_10": 0.8898876404494382,
+        "away_goals_sum_5": 3.2060116593285715,
+        "away_xg_eff_10": 0.8719101123595505
+      }
+    }
+  ],
+  "analysis": {
+    "total_matches": 10,
+    "market_agreement_rate": 0.5,
+    "avg_confidence": 0.4057432415596115,
+    "distribution": {
+      "home_wins": 4,
+      "draws": 3,
+      "away_wins": 3
+    },
+    "epl_deviation": 10.0
+  }
+}

@@ -1,0 +1,45 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="eplGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#37003c;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00ff87;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e90052;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#eplGradient)"/>
+  
+  <!-- Overlay -->
+  <rect width="1920" height="1080" fill="rgba(55,0,60,0.7)"/>
+  
+  <!-- Soccer Ball -->
+  <circle cx="960" cy="400" r="80" fill="white" opacity="0.9"/>
+  <circle cx="960" cy="400" r="75" fill="none" stroke="#37003c" stroke-width="3"/>
+  
+  <!-- Main Text -->
+  <text x="960" y="550" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="72" font-weight="bold">
+    ⚽ Oddsy
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="960" y="620" text-anchor="middle" fill="#00ff87" font-family="Inter, sans-serif" font-size="36" font-weight="600">
+    AI Premier League Predictions
+  </text>
+  
+  <!-- Performance Badge -->
+  <text x="960" y="680" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="24" opacity="0.9">
+    Enhanced Baseline v2.4 • 53.5% Accuracy
+  </text>
+  
+  <!-- Pipeline Badge -->
+  <text x="960" y="720" text-anchor="middle" fill="#e90052" font-family="Inter, sans-serif" font-size="18">
+    Pipeline Durci v1.0 Active
+  </text>
+  
+  <!-- Particles -->
+  <circle cx="200" cy="200" r="4" fill="white" opacity="0.6"/>
+  <circle cx="1720" cy="300" r="3" fill="#00ff87" opacity="0.8"/>
+  <circle cx="300" cy="800" r="5" fill="#e90052" opacity="0.7"/>
+  <circle cx="1600" cy="900" r="2" fill="white" opacity="0.5"/>
+</svg>

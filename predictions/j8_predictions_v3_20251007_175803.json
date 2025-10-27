@@ -1,0 +1,732 @@
+{
+  "pipeline_metadata": {
+    "version": "v3.0_production",
+    "prediction_method": "dual_champions",
+    "dual_champions_available": true,
+    "features_file": "data/processed/j8_features_comprehensive_v3_20251007_175802.csv",
+    "generation_timestamp": "2025-10-07T17:58:03.248035",
+    "total_predictions": 10
+  },
+  "predictions": {
+    "Nottingham Forest_vs_Chelsea": {
+      "prediction": "H",
+      "confidence": 0.40999928386758483,
+      "probabilities": {
+        "home": 0.40999928386758483,
+        "draw": 0.39936393227888006,
+        "away": 0.1906367838535351
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.5301249648821615,
+        "market_favorite": "A",
+        "home_advantage_market": -0.2
+      },
+      "match_info": {
+        "home": "Nottingham Forest",
+        "away": "Chelsea",
+        "date": "18/10/2025"
+      }
+    },
+    "Crystal Palace_vs_Bournemouth": {
+      "prediction": "H",
+      "confidence": 0.4163310126300378,
+      "probabilities": {
+        "home": 0.4163310126300378,
+        "draw": 0.40177875466184,
+        "away": 0.1818902327081222
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.561728813895885,
+        "market_favorite": "H",
+        "home_advantage_market": 0.12447885646217988
+      },
+      "match_info": {
+        "home": "Crystal Palace",
+        "away": "Bournemouth",
+        "date": "18/10/2025"
+      }
+    },
+    "Brighton and Hove Albion_vs_Newcastle United": {
+      "prediction": "D",
+      "confidence": 0.44806538795399586,
+      "probabilities": {
+        "home": 0.38033990556546937,
+        "draw": 0.44806538795399586,
+        "away": 0.17159470648053476
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.572175955781554,
+        "market_favorite": "H",
+        "home_advantage_market": 0.04177331831678094
+      },
+      "match_info": {
+        "home": "Brighton and Hove Albion",
+        "away": "Newcastle United",
+        "date": "18/10/2025"
+      }
+    },
+    "Burnley_vs_Leeds United": {
+      "prediction": "A",
+      "confidence": 0.37403635170419475,
+      "probabilities": {
+        "home": 0.28313323543681396,
+        "draw": 0.3428304128589914,
+        "away": 0.37403635170419475
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.567095681671705,
+        "market_favorite": "A",
+        "home_advantage_market": -0.10534846029173422
+      },
+      "match_info": {
+        "home": "Burnley",
+        "away": "Leeds United",
+        "date": "18/10/2025"
+      }
+    },
+    "Manchester City_vs_Everton": {
+      "prediction": "H",
+      "confidence": 0.40999928386758483,
+      "probabilities": {
+        "home": 0.40999928386758483,
+        "draw": 0.39936393227888006,
+        "away": 0.1906367838535351
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.2392964912960447,
+        "market_favorite": "H",
+        "home_advantage_market": 0.540475231574708
+      },
+      "match_info": {
+        "home": "Manchester City",
+        "away": "Everton",
+        "date": "18/10/2025"
+      }
+    },
+    "Sunderland_vs_Wolverhampton Wanderers": {
+      "prediction": "A",
+      "confidence": 0.37403635170419475,
+      "probabilities": {
+        "home": 0.28313323543681396,
+        "draw": 0.3428304128589914,
+        "away": 0.37403635170419475
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.5739290305720333,
+        "market_favorite": "H",
+        "home_advantage_market": 0.08860759493670889
+      },
+      "match_info": {
+        "home": "Sunderland",
+        "away": "Wolverhampton Wanderers",
+        "date": "18/10/2025"
+      }
+    },
+    "Fulham_vs_Arsenal": {
+      "prediction": "H",
+      "confidence": 0.4163310126300378,
+      "probabilities": {
+        "home": 0.4163310126300378,
+        "draw": 0.40177875466184,
+        "away": 0.1818902327081222
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.4041328281239047,
+        "market_favorite": "A",
+        "home_advantage_market": -0.3886431983017866
+      },
+      "match_info": {
+        "home": "Fulham",
+        "away": "Arsenal",
+        "date": "18/10/2025"
+      }
+    },
+    "Tottenham Hotspur_vs_Aston Villa": {
+      "prediction": "H",
+      "confidence": 0.40999928386758483,
+      "probabilities": {
+        "home": 0.40999928386758483,
+        "draw": 0.39936393227888006,
+        "away": 0.1906367838535351
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.545564790370598,
+        "market_favorite": "H",
+        "home_advantage_market": 0.15753424657534243
+      },
+      "match_info": {
+        "home": "Tottenham Hotspur",
+        "away": "Aston Villa",
+        "date": "19/10/2025"
+      }
+    },
+    "Liverpool_vs_Manchester United": {
+      "prediction": "A",
+      "confidence": 0.37403635170419475,
+      "probabilities": {
+        "home": 0.28313323543681396,
+        "draw": 0.3428304128589914,
+        "away": 0.37403635170419475
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.3943954397948224,
+        "market_favorite": "H",
+        "home_advantage_market": 0.3870570575635426
+      },
+      "match_info": {
+        "home": "Liverpool",
+        "away": "Manchester United",
+        "date": "19/10/2025"
+      }
+    },
+    "West Ham United_vs_Brentford": {
+      "prediction": "H",
+      "confidence": 0.40999928386758483,
+      "probabilities": {
+        "home": 0.40999928386758483,
+        "draw": 0.39936393227888006,
+        "away": 0.1906367838535351
+      },
+      "model_info": {
+        "prediction_mode": "dual",
+        "enhanced_metadata": {
+          "accuracy_epl_2025_26": 0.4411764705882353,
+          "improvement_vs_baseline": 0.021176470588235297,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "form_diff_normalized",
+            "matchday_normalized",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "home_xg_eff_10",
+            "away_goals_sum_5",
+            "away_xg_eff_10",
+            "favorite_side_b365",
+            "market_prob_away_b365"
+          ],
+          "class_weight_strategy": "balanced",
+          "calibration_method": "cv=prefit sigmoid",
+          "draw_threshold": 0.25,
+          "rolling_features": "HBP/ABP robust pipeline"
+        },
+        "cascade_metadata": {
+          "version": "v2.1_real_epl_data",
+          "accuracy_test": 0.46551724137931033,
+          "features_used": [
+            "elo_diff_normalized",
+            "market_entropy_norm",
+            "shots_diff_normalized",
+            "corners_diff_normalized",
+            "form_diff_normalized",
+            "h2h_score",
+            "matchday_normalized",
+            "home_xg_eff_10",
+            "away_xg_eff_10",
+            "away_goals_sum_5"
+          ],
+          "training_samples": 1856,
+          "test_samples": 464,
+          "training_data": "data/processed/v_auto_update_20250916_105039.csv",
+          "target_distribution": {
+            "0.0": 1013,
+            "2.0": 773,
+            "1.0": 534
+          }
+        },
+        "ensemble_weights": {
+          "enhanced": 0.5,
+          "cascade": 0.5
+        }
+      },
+      "market_features": {
+        "market_confidence": 0.5,
+        "market_entropy": 1.568197211672498,
+        "market_favorite": "H",
+        "home_advantage_market": 0.0561797752808989
+      },
+      "match_info": {
+        "home": "West Ham United",
+        "away": "Brentford",
+        "date": "20/10/2025"
+      }
+    }
+  }
+}

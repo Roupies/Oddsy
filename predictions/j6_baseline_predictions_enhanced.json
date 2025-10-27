@@ -1,0 +1,102 @@
+[
+  {
+    "Match": "Brentford vs Man United",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.406,
+    "Prob_H": 0.406,
+    "Prob_D": 0.241,
+    "Prob_A": 0.352,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Chelsea vs Brighton",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.657,
+    "Prob_H": 0.657,
+    "Prob_D": 0.197,
+    "Prob_A": 0.146,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Crystal Palace vs Liverpool",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.417,
+    "Prob_H": 0.417,
+    "Prob_D": 0.259,
+    "Prob_A": 0.324,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Leeds vs Bournemouth",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.512,
+    "Prob_H": 0.512,
+    "Prob_D": 0.211,
+    "Prob_A": 0.277,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Man City vs Burnley",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.637,
+    "Prob_H": 0.637,
+    "Prob_D": 0.201,
+    "Prob_A": 0.162,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Nott'm Forest vs Sunderland",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.555,
+    "Prob_H": 0.555,
+    "Prob_D": 0.239,
+    "Prob_A": 0.206,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Tottenham vs Wolves",
+    "Date": "2025-09-27",
+    "Final_Pred": "H",
+    "Final_Conf": 0.514,
+    "Prob_H": 0.514,
+    "Prob_D": 0.223,
+    "Prob_A": 0.263,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Aston Villa vs Fulham",
+    "Date": "2025-09-28",
+    "Final_Pred": "H",
+    "Final_Conf": 0.478,
+    "Prob_H": 0.478,
+    "Prob_D": 0.228,
+    "Prob_A": 0.294,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Newcastle vs Arsenal",
+    "Date": "2025-09-28",
+    "Final_Pred": "H",
+    "Final_Conf": 0.406,
+    "Prob_H": 0.406,
+    "Prob_D": 0.241,
+    "Prob_A": 0.352,
+    "Model": "Baseline"
+  },
+  {
+    "Match": "Everton vs West Ham",
+    "Date": "2025-09-29",
+    "Final_Pred": "H",
+    "Final_Conf": 0.526,
+    "Prob_H": 0.526,
+    "Prob_D": 0.207,
+    "Prob_A": 0.267,
+    "Model": "Baseline"
+  }
+]

@@ -1,0 +1,446 @@
+{
+  "prediction_metadata": {
+    "round": 7,
+    "season": "2025-26",
+    "competition": "Premier League",
+    "generation_timestamp": "2025-10-03T10:34:20.492793",
+    "total_matches": 10,
+    "pipeline_version": "Pipeline_Durci_v1.0"
+  },
+  "dual_champion_system": {
+    "system_name": "Dual Champion Ensemble",
+    "version": "1.0.0",
+    "models": {
+      "enhanced_baseline_v24": {
+        "accuracy_validation": 0.517,
+        "role": "balanced_predictor",
+        "weight": 0.5
+      },
+      "cascade_v21_optimized": {
+        "accuracy_validation": 0.517,
+        "role": "draw_specialist",
+        "optimization": "isotonic_calibration",
+        "weight": 0.5
+      }
+    },
+    "ensemble_strategy": "weighted_average_probabilities",
+    "validation_performance": {
+      "individual_enhanced": 0.517,
+      "individual_cascade": 0.517,
+      "expected_ensemble": 0.52
+    },
+    "generation_timestamp": "2025-10-03T10:34:20.492751"
+  },
+  "predictions": [
+    {
+      "match_info": {
+        "home_team": "Arsenal",
+        "away_team": "Man City",
+        "date": "21/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.508651262886674,
+        "probabilities": {
+          "home": 0.508651262886674,
+          "draw": 0.2930204523019251,
+          "away": 0.1983282848114009
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.5991323675418884,
+          "probabilities": {
+            "home": 0.5991323675418884,
+            "draw": 0.15142643818717547,
+            "away": 0.24944119427093606
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "D",
+          "confidence": 0.4346144664166747,
+          "probabilities": {
+            "home": 0.41817015823145953,
+            "draw": 0.4346144664166747,
+            "away": 0.14721537535186574
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Aston Villa",
+        "away_team": "Wolves",
+        "date": "21/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.521743528550644,
+        "probabilities": {
+          "home": 0.521743528550644,
+          "draw": 0.2247568800852221,
+          "away": 0.2534995913641339
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.5068448287166781,
+          "probabilities": {
+            "home": 0.5068448287166781,
+            "draw": 0.114272970323588,
+            "away": 0.3788822009597339
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "H",
+          "confidence": 0.5366422283846098,
+          "probabilities": {
+            "home": 0.5366422283846098,
+            "draw": 0.3352407898468562,
+            "away": 0.12811698176853398
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Brighton",
+        "away_team": "Nott'm Forest",
+        "date": "22/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.521743528550644,
+        "probabilities": {
+          "home": 0.521743528550644,
+          "draw": 0.2247568800852221,
+          "away": 0.2534995913641339
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.5068448287166781,
+          "probabilities": {
+            "home": 0.5068448287166781,
+            "draw": 0.114272970323588,
+            "away": 0.3788822009597339
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "H",
+          "confidence": 0.5366422283846098,
+          "probabilities": {
+            "home": 0.5366422283846098,
+            "draw": 0.3352407898468562,
+            "away": 0.12811698176853398
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Chelsea",
+        "away_team": "West Ham",
+        "date": "21/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.5867637486976593,
+        "probabilities": {
+          "home": 0.5867637486976593,
+          "draw": 0.2212438062487453,
+          "away": 0.19199244505359547
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.6368852690107087,
+          "probabilities": {
+            "home": 0.6368852690107087,
+            "draw": 0.1072468226506344,
+            "away": 0.25586790833865697
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "H",
+          "confidence": 0.5366422283846098,
+          "probabilities": {
+            "home": 0.5366422283846098,
+            "draw": 0.3352407898468562,
+            "away": 0.12811698176853398
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Crystal Palace",
+        "away_team": "Leicester",
+        "date": "22/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.5082617492917363,
+        "probabilities": {
+          "home": 0.5082617492917363,
+          "draw": 0.2724743602966715,
+          "away": 0.2192638904115921
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.4880546755155634,
+          "probabilities": {
+            "home": 0.4880546755155634,
+            "draw": 0.14830283554379825,
+            "away": 0.3636424889406383
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "H",
+          "confidence": 0.5284688230679092,
+          "probabilities": {
+            "home": 0.5284688230679092,
+            "draw": 0.3966458850495448,
+            "away": 0.07488529188254595
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Everton",
+        "away_team": "Bournemouth",
+        "date": "21/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.521743528550644,
+        "probabilities": {
+          "home": 0.521743528550644,
+          "draw": 0.2247568800852221,
+          "away": 0.2534995913641339
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.5068448287166781,
+          "probabilities": {
+            "home": 0.5068448287166781,
+            "draw": 0.114272970323588,
+            "away": 0.3788822009597339
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "H",
+          "confidence": 0.5366422283846098,
+          "probabilities": {
+            "home": 0.5366422283846098,
+            "draw": 0.3352407898468562,
+            "away": 0.12811698176853398
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Ipswich",
+        "away_team": "Southampton",
+        "date": "21/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.4882034590654499,
+        "probabilities": {
+          "home": 0.4882034590654499,
+          "draw": 0.2267210782284793,
+          "away": 0.28507546270607076
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.47963645905561597,
+          "probabilities": {
+            "home": 0.47963645905561597,
+            "draw": 0.09244464976742217,
+            "away": 0.42791889117696186
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "H",
+          "confidence": 0.4967704590752838,
+          "probabilities": {
+            "home": 0.4967704590752838,
+            "draw": 0.36099750668953645,
+            "away": 0.14223203423517972
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Liverpool",
+        "away_team": "Fulham",
+        "date": "21/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.5601683804966896,
+        "probabilities": {
+          "home": 0.5601683804966896,
+          "draw": 0.2892265652609272,
+          "away": 0.15060505424238313
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.5932995230792194,
+          "probabilities": {
+            "home": 0.5932995230792194,
+            "draw": 0.1779766579621809,
+            "away": 0.22872381895859972
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "D",
+          "confidence": 0.5270372379141598,
+          "probabilities": {
+            "home": 0.5270372379141598,
+            "draw": 0.4004764725596735,
+            "away": 0.07248628952616655
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Man United",
+        "away_team": "Tottenham",
+        "date": "29/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.4631794834994092,
+        "probabilities": {
+          "home": 0.4631794834994092,
+          "draw": 0.3028556645230606,
+          "away": 0.2339648519775302
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.49698401699296724,
+          "probabilities": {
+            "home": 0.49698401699296724,
+            "draw": 0.18454907610105492,
+            "away": 0.31846690690597784
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "D",
+          "confidence": 0.4293749500058511,
+          "probabilities": {
+            "home": 0.4293749500058511,
+            "draw": 0.4211622529450663,
+            "away": 0.14946279704908258
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Newcastle",
+        "away_team": "Brentford",
+        "date": "21/09/2025",
+        "round": 7
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.521743528550644,
+        "probabilities": {
+          "home": 0.521743528550644,
+          "draw": 0.2247568800852221,
+          "away": 0.2534995913641339
+        }
+      },
+      "individual_models": {
+        "enhanced_v24": {
+          "prediction": "H",
+          "confidence": 0.5068448287166781,
+          "probabilities": {
+            "home": 0.5068448287166781,
+            "draw": 0.114272970323588,
+            "away": 0.3788822009597339
+          }
+        },
+        "cascade_v21_optimized": {
+          "prediction": "H",
+          "confidence": 0.5366422283846098,
+          "probabilities": {
+            "home": 0.5366422283846098,
+            "draw": 0.3352407898468562,
+            "away": 0.12811698176853398
+          }
+        }
+      },
+      "model_weights": {
+        "enhanced": 0.5,
+        "cascade": 0.5
+      }
+    }
+  ]
+}

@@ -1,3 +1,8 @@
+# Oddsy Production .gitignore
+
+# Research and experimental files (main branch production focus)
+/rest/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -11,10 +16,6 @@ ENV/
 pip-log.txt
 pip-delete-this-directory.txt
 .coverage
-
-# Jupyter Notebooks
-.ipynb_checkpoints/
-*.ipynb
 
 # IDEs
 .vscode/
@@ -31,61 +32,66 @@ pip-delete-this-directory.txt
 ehthumbs.db
 Thumbs.db
 
-# ML Models & Large Files (keep production models)
-models/*.joblib
-!models/v23_retrained_2025_09_11_154613.joblib
-!models/*production*.joblib
-models/*.pkl
-models/*.h5
-models/*.model
-*.weights
+# Node.js (frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Data (keep structure but not actual data files)
-data/raw/*.csv
-data/cleaned/*.csv
-data/processed/*.csv
-!data/raw/.gitkeep
-!data/cleaned/.gitkeep
-!data/processed/.gitkeep
+# Next.js
+.next/
+out/
 
-# Logs
+# Logs and temporary files
 logs/
 *.log
-
-# Evaluation outputs (keep structure)
-evaluation/*.png
-evaluation/*.json
-!evaluation/.gitkeep
-
-# Results and analysis outputs
-results/*/
-predictions/
-temp_analysis/
-test_results/
-tree_visualizations/
-
-# Temporary files
 temp/
 tmp/
 *.tmp
 
-# Configuration secrets (if any)
+# Configuration secrets
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.key
+*.pem
 secrets/
 credentials/
 
-# Database
-*.sql.backup
-database/backups/
+# ML model artifacts (large files - exclude from main branch)
+*.joblib
+*.pkl
+*.model
+*.h5
+*.weights
 
-# Docker
-docker-compose.override.yml
+# Data files (exclude large datasets from main branch)
+data/raw/
+data/cache/
+*.csv.large
+
+# Test results and temporary analysis
+test_results_*/
+temp_analysis/
 
 # Build artifacts
 build/
 dist/
 *.egg-info/
+
+# Monitoring data
+prometheus_data/
+grafana_data/
+
+# Database backups
+*.sql.backup
+database/backups/
+
+# Docker overrides
+docker-compose.override.yml
 
 # CLAUDE.md - INCLUDE in repository
 # This file contains project documentation and should be tracked

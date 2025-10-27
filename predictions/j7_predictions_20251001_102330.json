@@ -1,0 +1,22 @@
+{
+  "timestamp": "20251001_102330",
+  "matchday": "J7",
+  "season": "2025-26",
+  "model_versions": {
+    "baseline": "Champion v2.3",
+    "cascade": "Champion v2.0"
+  },
+  "predictions": [
+    {
+      "HomeTeam": "Bournemouth",
+      "AwayTeam": "Fulham",
+      "Date": "03/10/2025",
+      "Time": "21:00",
+      "market_entropy": 0.9377434573752038,
+      "odds": [
+        1.85,
+        3.8,
+        4.0
+      ],
+      "baseline": {
+        "prediction": 

@@ -1,0 +1,11 @@
+Date,HomeTeam,AwayTeam,Predicted,Prob_Home,Prob_Draw,Prob_Away,Confidence
+2025-09-27,Brentford,Manchester United,H,0.5264,0.1888,0.2848,0.5264
+2025-09-27,Chelsea,Brighton,H,0.3872,0.2264,0.3864,0.3872
+2025-09-27,Crystal Palace,Liverpool,H,0.5286,0.1839,0.2876,0.5286
+2025-09-27,Leeds,Bournemouth,H,0.5530,0.1696,0.2774,0.5530
+2025-09-27,Manchester City,Burnley,H,0.5264,0.1888,0.2848,0.5264
+2025-09-27,Nottingham Forest,Sunderland,H,0.5264,0.1888,0.2848,0.5264
+2025-09-27,Tottenham,Wolves,H,0.5286,0.1839,0.2876,0.5286
+2025-09-28,Aston Villa,Fulham,H,0.5278,0.1854,0.2869,0.5278
+2025-09-28,Newcastle,Arsenal,H,0.5286,0.1839,0.2876,0.5286
+2025-09-29,Everton,West Ham,H,0.3948,0.2154,0.3899,0.3948

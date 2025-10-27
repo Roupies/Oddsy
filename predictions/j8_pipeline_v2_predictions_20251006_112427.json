@@ -1,0 +1,451 @@
+{
+  "pipeline_metadata": {
+    "pipeline_version": "2.0.0",
+    "generation_timestamp": "2025-10-06T11:24:27.709373",
+    "matchday": 8,
+    "total_predictions": 20,
+    "model_ensemble": "pipeline_v2_test"
+  },
+  "predictions": [
+    {
+      "match_info": {
+        "home_team": "Nottingham Forest",
+        "away_team": "Chelsea",
+        "date": "2025-10-18",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "A",
+        "confidence": 0.42000000000000004,
+        "probabilities": {
+          "home": 0.23999999999999996,
+          "draw": 0.33999999999999997,
+          "away": 0.42000000000000004
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5301249648821615,
+        "home_advantage_market": -0.2,
+        "odds_value_home": 0.9333333333333332
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Crystal Palace",
+        "away_team": "Bournemouth",
+        "date": "2025-10-18",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.3823008849557522,
+        "probabilities": {
+          "home": 0.3823008849557522,
+          "draw": 0.3548672566371681,
+          "away": 0.2628318584070797
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.558734661332428,
+        "home_advantage_market": 0.1327433628318584,
+        "odds_value_home": 0.9345132743362832
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Brighton and Hove Albion",
+        "away_team": "Newcastle United",
+        "date": "2025-10-18",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "D",
+        "confidence": 0.354077791718946,
+        "probabilities": {
+          "home": 0.3353826850690088,
+          "draw": 0.354077791718946,
+          "away": 0.3105395232120452
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5755027966003647,
+        "home_advantage_market": 0.027603513174404,
+        "odds_value_home": 0.9316185696361357
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Burnley",
+        "away_team": "Leeds United",
+        "date": "2025-10-18",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "A",
+        "confidence": 0.3806425376169174,
+        "probabilities": {
+          "home": 0.25766571777145175,
+          "draw": 0.36169174461163084,
+          "away": 0.3806425376169174
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5598344743437282,
+        "home_advantage_market": -0.1366409109394062,
+        "odds_value_home": 0.9304595363969091
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Manchester City",
+        "away_team": "Everton",
+        "date": "2025-10-18",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.6179978315865559,
+        "probabilities": {
+          "home": 0.6179978315865559,
+          "draw": 0.2769425370437297,
+          "away": 0.10505963136971448
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.195473062502729,
+        "home_advantage_market": 0.5699313335742682,
+        "odds_value_home": 0.933863389953018
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Sunderland",
+        "away_team": "Wolverhampton Wanderers",
+        "date": "2025-10-18",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "D",
+        "confidence": 0.37969924812030076,
+        "probabilities": {
+          "home": 0.349624060150376,
+          "draw": 0.37969924812030076,
+          "away": 0.2706766917293233
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5752161218083305,
+        "home_advantage_market": 0.087719298245614,
+        "odds_value_home": 0.9323308270676692
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Fulham",
+        "away_team": "Arsenal",
+        "date": "2025-10-18",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "A",
+        "confidence": 0.5298442297400073,
+        "probabilities": {
+          "home": 0.15124644376214752,
+          "draw": 0.3189093264978452,
+          "away": 0.5298442297400073
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.3784847927236126,
+        "home_advantage_market": -0.4206642066420664,
+        "odds_value_home": 0.9242838229909016
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Tottenham Hotspur",
+        "away_team": "Aston Villa",
+        "date": "2025-10-19",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.4078069831306395,
+        "probabilities": {
+          "home": 0.4078069831306395,
+          "draw": 0.3388583758336603,
+          "away": 0.25333464103570025
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5401888732535494,
+        "home_advantage_market": 0.1716359356610435,
+        "odds_value_home": 0.9288936837975676
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Liverpool",
+        "away_team": "Manchester United",
+        "date": "2025-10-19",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.5332355264642817,
+        "probabilities": {
+          "home": 0.5332355264642817,
+          "draw": 0.29932851822593387,
+          "away": 0.16743595530978442
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.3804682817634628,
+        "home_advantage_market": 0.4064439679494414,
+        "odds_value_home": 0.9301997517210248
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "West Ham United",
+        "away_team": "Brentford",
+        "date": "2025-10-20",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "D",
+        "confidence": 0.3556213017751481,
+        "probabilities": {
+          "home": 0.3514792899408284,
+          "draw": 0.3556213017751481,
+          "away": 0.29289940828402355
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5725776834462415,
+        "home_advantage_market": 0.0650887573964497,
+        "odds_value_home": 0.9372781065088756
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Leeds United",
+        "away_team": "West Ham United",
+        "date": "2025-10-24",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.399288256227758,
+        "probabilities": {
+          "home": 0.399288256227758,
+          "draw": 0.34661921708185056,
+          "away": 0.25409252669039145
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.547076620945364,
+        "home_advantage_market": 0.1613285883748517,
+        "odds_value_home": 0.9316725978647687
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Chelsea",
+        "away_team": "Sunderland",
+        "date": "2025-10-25",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.5838323353293414,
+        "probabilities": {
+          "home": 0.5838323353293414,
+          "draw": 0.28682634730538914,
+          "away": 0.12934131736526946
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.2780949347520991,
+        "home_advantage_market": 0.5049900199600799,
+        "odds_value_home": 0.934131736526946
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Newcastle United",
+        "away_team": "Fulham",
+        "date": "2025-10-25",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.5141929275920135,
+        "probabilities": {
+          "home": 0.5141929275920135,
+          "draw": 0.31920856386817414,
+          "away": 0.16659850853981234
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.408177443694301,
+        "home_advantage_market": 0.3862160211691123,
+        "odds_value_home": 0.9255472696656244
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Manchester United",
+        "away_team": "Brighton and Hove Albion",
+        "date": "2025-10-25",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.41635514018691583,
+        "probabilities": {
+          "home": 0.41635514018691583,
+          "draw": 0.3313084112149533,
+          "away": 0.2523364485981308
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5326140636868022,
+        "home_advantage_market": 0.1822429906542055,
+        "odds_value_home": 0.925233644859813
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Brentford",
+        "away_team": "Liverpool",
+        "date": "2025-10-25",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "A",
+        "confidence": 0.5332355264642816,
+        "probabilities": {
+          "home": 0.16743595530978442,
+          "draw": 0.299328518225934,
+          "away": 0.5332355264642816
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.380468281763463,
+        "home_advantage_market": -0.4064439679494412,
+        "odds_value_home": 0.9301997517210248
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Arsenal",
+        "away_team": "Crystal Palace",
+        "date": "2025-10-26",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.5921052631578948,
+        "probabilities": {
+          "home": 0.5921052631578948,
+          "draw": 0.29736842105263156,
+          "away": 0.11052631578947364
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.2490235625006556,
+        "home_advantage_market": 0.5350877192982456,
+        "odds_value_home": 0.9210526315789472
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Aston Villa",
+        "away_team": "Manchester City",
+        "date": "2025-10-26",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "A",
+        "confidence": 0.45599999999999996,
+        "probabilities": {
+          "home": 0.22199999999999995,
+          "draw": 0.32200000000000006,
+          "away": 0.45599999999999996
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.4932050895413738,
+        "home_advantage_market": -0.2599999999999999,
+        "odds_value_home": 0.9373333333333334
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Bournemouth",
+        "away_team": "Nottingham Forest",
+        "date": "2025-10-26",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.45707376058041116,
+        "probabilities": {
+          "home": 0.45707376058041116,
+          "draw": 0.34159613059250304,
+          "away": 0.20133010882708577
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.4890240387565885,
+        "home_advantage_market": 0.2841596130592503,
+        "odds_value_home": 0.939540507859734
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Wolverhampton Wanderers",
+        "away_team": "Burnley",
+        "date": "2025-10-26",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "H",
+        "confidence": 0.42067988668555245,
+        "probabilities": {
+          "home": 0.42067988668555245,
+          "draw": 0.3549575070821529,
+          "away": 0.22436260623229465
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5279471298692098,
+        "home_advantage_market": 0.2181303116147309,
+        "odds_value_home": 0.934844192634561
+      }
+    },
+    {
+      "match_info": {
+        "home_team": "Everton",
+        "away_team": "Tottenham Hotspur",
+        "date": "2025-10-26",
+        "round": 8
+      },
+      "ensemble_prediction": {
+        "predicted_outcome": "D",
+        "confidence": 0.36135163674762405,
+        "probabilities": {
+          "home": 0.33453009503695885,
+          "draw": 0.36135163674762405,
+          "away": 0.3041182682154171
+        }
+      },
+      "market_features": {
+        "market_entropy": 1.5776735533274555,
+        "home_advantage_market": 0.0337909186906019,
+        "odds_value_home": 0.9292502639915524
+      }
+    }
+  ]
+}

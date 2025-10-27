@@ -1,9 +1,0 @@
-{
-  "test_timestamp": "2025_09_06_004720",
-  "baseline_accuracy": 0.5482673267326733,
-  "best_accuracy": 0.5532178217821783,
-  "best_approach": "v2.6 + Form Acceleration",
-  "improvement_pp": 0.4950495049504955,
-  "target_achieved": false,
-  "success_status": "MINOR SUCCESS"
-}

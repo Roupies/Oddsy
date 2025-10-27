@@ -1,0 +1,97 @@
+{
+  "gameweek": 5,
+  "generated_at": "2025-09-21T12:00:00Z",
+  "model": "cascade_champion_v2.0",
+  "matches": {
+    "Burnley_vs_Liverpool": {
+      "prediction": "A",
+      "confidence": 0.6040591937576606,
+      "probabilities": {
+        "home": 0.1908064176232691,
+        "draw": 0.20513438861907032,
+        "away": 0.6040591937576606
+      }
+    },
+    "Man_City_vs_Man_Utd": {
+      "prediction": "H",
+      "confidence": 0.6041571308473023,
+      "probabilities": {
+        "home": 0.6041571308473023,
+        "draw": 0.23146507939107364,
+        "away": 0.16437778976162412
+      }
+    },
+    "Liverpool_vs_Everton": {
+      "prediction": "H",
+      "confidence": 0.41961931993549256,
+      "probabilities": {
+        "home": 0.41961931993549256,
+        "draw": 0.2720406542847783,
+        "away": 0.30834002577972913
+      }
+    },
+    "Brighton_vs_Tottenham": {
+      "prediction": "H",
+      "confidence": 0.38995244604445567,
+      "probabilities": {
+        "home": 0.38995244604445567,
+        "draw": 0.2345328023582015,
+        "away": 0.37551475159734293
+      }
+    },
+    "Burnley_vs_Nottingham_Forest": {
+      "prediction": "H",
+      "confidence": 0.4825916283995137,
+      "probabilities": {
+        "home": 0.4825916283995137,
+        "draw": 0.2330039903738915,
+        "away": 0.28440438122659484
+      }
+    },
+    "West_Ham_vs_Crystal_Palace": {
+      "prediction": "H",
+      "confidence": 0.47218160457584024,
+      "probabilities": {
+        "home": 0.47218160457584024,
+        "draw": 0.22342264106303433,
+        "away": 0.3043957543611255
+      }
+    },
+    "Wolves_vs_Leeds": {
+      "prediction": "A",
+      "confidence": 0.5378567616303964,
+      "probabilities": {
+        "home": 0.17534986151231458,
+        "draw": 0.28679337685728895,
+        "away": 0.5378567616303964
+      }
+    },
+    "Man_Utd_vs_Chelsea": {
+      "prediction": "H",
+      "confidence": 0.46572005763024915,
+      "probabilities": {
+        "home": 0.46572005763024915,
+        "draw": 0.22645762597692784,
+        "away": 0.3078223163928231
+      }
+    },
+    "Fulham_vs_Brentford": {
+      "prediction": "A",
+      "confidence": 0.4961187811009002,
+      "probabilities": {
+        "home": 0.24158907019764506,
+        "draw": 0.26229214870145484,
+        "away": 0.4961187811009002
+      }
+    },
+    "Bournemouth_vs_Newcastle": {
+      "prediction": "A",
+      "confidence": 0.4495957681135132,
+      "probabilities": {
+        "home": 0.2936518262478584,
+        "draw": 0.2567524056386284,
+        "away": 0.4495957681135132
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "timestamp": "20251001_102418",
+  "matchday": "J7",
+  "season": "2025-26",
+  "model_versions": {
+    "baseline": "Champion v2.3",
+    "cascade": "Champion v2.0"
+  },
+  "predictions": [
+    {
+      "HomeTeam": "Bournemouth",
+      "AwayTeam": "Fulham",
+      "Date": "03/10/2025",
+      "Time": "21:00",
+      "market_entropy": 0.9377434573752038,
+      "odds": [
+        1.85,
+        3.8,
+        4.0
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.6096307485935567,
+          "D": 0.2246374907833376,
+          "A": 0.16573176062310582
+        },
+        "confidence": 0.6096307485935567
+      }
+    },
+    {
+      "HomeTeam": "Leeds",
+      "AwayTeam": "Tottenham",
+      "Date": "04/10/2025",
+      "Time": "13:30",
+      "market_entropy": 0.9911403686495642,
+      "odds": [
+        2.7,
+        3.5,
+        2.5
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.4830878631128202,
+          "D": 0.2378445357331986,
+          "A": 0.27906760115398116
+        },
+        "confidence": 0.4830878631128202
+      }
+    },
+    {
+      "HomeTeam": "Arsenal",
+      "AwayTeam": "West Ham",
+      "Date": "04/10/2025",
+      "Time": "16:00",
+      "market_entropy": 0.6021048551932161,
+      "odds": [
+        1.22,
+        6.0,
+        15.0
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.6239184635225138,
+          "D": 0.19076852213417309,
+          "A": 0.18531301434331307
+        },
+        "confidence": 0.6239184635225138
+      }
+    },
+    {
+      "HomeTeam": "Man United",
+      "AwayTeam": "Sunderland",
+      "Date": "04/10/2025",
+      "Time": "16:00",
+      "market_entropy": 0.8176684324023185,
+      "odds": [
+        1.48,
+        4.75,
+        6.0
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.6643791544164814,
+          "D": 0.18450081027889942,
+          "A": 0.15112003530461923
+        },
+        "confidence": 0.6643791544164814
+      }
+    },
+    {
+      "HomeTeam": "Chelsea",
+      "AwayTeam": "Liverpool",
+      "Date": "04/10/2025",
+      "Time": "18:30",
+      "market_entropy": 0.9797349398749003,
+      "odds": [
+        2.87,
+        3.8,
+        2.25
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.4643870248770133,
+          "D": 0.24645952862834564,
+          "A": 0.2891534464946411
+        },
+        "confidence": 0.4643870248770133
+      }
+    },
+    {
+      "HomeTeam": "Aston Villa",
+      "AwayTeam": "Burnley",
+      "Date": "05/10/2025",
+      "Time": "15:00",
+      "market_entropy": 0.885559996969534,
+      "odds": [
+        1.85,
+        4.2,
+        6.0
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.6643791544164814,
+          "D": 0.18450081027889942,
+          "A": 0.15112003530461923
+        },
+        "confidence": 0.6643791544164814
+      }
+    },
+    {
+      "HomeTeam": "Everton",
+      "AwayTeam": "Crystal Palace",
+      "Date": "05/10/2025",
+      "Time": "15:00",
+      "market_entropy": 0.9928966880703706,
+      "odds": [
+        2.5,
+        3.4,
+        2.8
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.4830878631128202,
+          "D": 0.2378445357331986,
+          "A": 0.27906760115398116
+        },
+        "confidence": 0.4830878631128202
+      }
+    },
+    {
+      "HomeTeam": "Newcastle",
+      "AwayTeam": "Nottm Forest",
+      "Date": "05/10/2025",
+      "Time": "15:00",
+      "market_entropy": 0.8768030420670209,
+      "odds": [
+        1.61,
+        4.2,
+        5.0
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.6491415082118969,
+          "D": 0.1922055161788675,
+          "A": 0.15865297560923564
+        },
+        "confidence": 0.6491415082118969
+      }
+    },
+    {
+      "HomeTeam": "Wolverhampton",
+      "AwayTeam": "Brighton",
+      "Date": "05/10/2025",
+      "Time": "15:00",
+      "market_entropy": 0.9484638410696339,
+      "odds": [
+        3.75,
+        3.75,
+        1.9
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.4574476554480518,
+          "D": 0.23530357860640114,
+          "A": 0.307248765945547
+        },
+        "confidence": 0.4574476554480518
+      }
+    },
+    {
+      "HomeTeam": "Brentford",
+      "AwayTeam": "Man City",
+      "Date": "05/10/2025",
+      "Time": "17:30",
+      "market_entropy": 0.8752527027693217,
+      "odds": [
+        4.75,
+        4.5,
+        1.61
+      ],
+      "baseline": {
+        "prediction": 0,
+        "probabilities": {
+          "H": 0.4746540438940304,
+          "D": 0.24141334085607738,
+          "A": 0.2839326152498922
+        },
+        "confidence": 0.4746540438940304
+      }
+    }
+  ]
+}

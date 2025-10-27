@@ -1,0 +1,97 @@
+{
+  "gameweek": 9,
+  "generated_at": "2025-10-24T15:48:52.995677",
+  "model": "enhanced_baseline_v2.4",
+  "matches": {
+    "Leeds_vs_West_Ham": {
+      "prediction": "A",
+      "confidence": 0.4598,
+      "probabilities": {
+        "home": 0.2478,
+        "draw": 0.2924,
+        "away": 0.4598
+      }
+    },
+    "Chelsea_vs_Sunderland": {
+      "prediction": "D",
+      "confidence": 0.3883,
+      "probabilities": {
+        "home": 0.2538,
+        "draw": 0.3883,
+        "away": 0.3579
+      }
+    },
+    "Newcastle_vs_Fulham": {
+      "prediction": "D",
+      "confidence": 0.3638,
+      "probabilities": {
+        "home": 0.2847,
+        "draw": 0.3638,
+        "away": 0.3516
+      }
+    },
+    "Man_Utd_vs_Brighton": {
+      "prediction": "A",
+      "confidence": 0.6326,
+      "probabilities": {
+        "home": 0.1439,
+        "draw": 0.2235,
+        "away": 0.6326
+      }
+    },
+    "Brentford_vs_Liverpool": {
+      "prediction": "A",
+      "confidence": 0.4863,
+      "probabilities": {
+        "home": 0.3078,
+        "draw": 0.2059,
+        "away": 0.4863
+      }
+    },
+    "Arsenal_vs_Crystal_Palace": {
+      "prediction": "A",
+      "confidence": 0.4453,
+      "probabilities": {
+        "home": 0.2809,
+        "draw": 0.2738,
+        "away": 0.4453
+      }
+    },
+    "Aston_Villa_vs_Man_City": {
+      "prediction": "A",
+      "confidence": 0.4126,
+      "probabilities": {
+        "home": 0.2587,
+        "draw": 0.3287,
+        "away": 0.4126
+      }
+    },
+    "Wolves_vs_Burnley": {
+      "prediction": "A",
+      "confidence": 0.4814,
+      "probabilities": {
+        "home": 0.3284,
+        "draw": 0.1902,
+        "away": 0.4814
+      }
+    },
+    "Bournemouth_vs_Nottingham_Forest": {
+      "prediction": "A",
+      "confidence": 0.4366,
+      "probabilities": {
+        "home": 0.241,
+        "draw": 0.3224,
+        "away": 0.4366
+      }
+    },
+    "Everton_vs_Tottenham": {
+      "prediction": "A",
+      "confidence": 0.6561,
+      "probabilities": {
+        "home": 0.1959,
+        "draw": 0.1481,
+        "away": 0.6561
+      }
+    }
+  }
+}
