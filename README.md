@@ -23,16 +23,14 @@ oddsy/                           # 🎯 PRODUCTION CODE (< 50 files)
 ├── backend/                     # FastAPI prediction API
 ├── frontend/                    # Next.js 14 interface  
 ├── predictions/                 # Generated gameweek predictions
+│   ├── gw5/                     # Gameweek 5 predictions
+│   ├── gw7/                     # Gameweek 7 predictions 
+│   ├── gw8/                     # Gameweek 8 predictions
+│   ├── gw9/                     # Gameweek 9 predictions
+│   └── archive/                 # Historical predictions
 ├── config/                      # Team mappings and settings
 ├── requirements.txt             # Production dependencies
-├── run_pipeline.py             # Main prediction pipeline
-├── gameweek_predictions_production.py
-│
-└── rest/                        # 🔬 RESEARCH & DEVELOPMENT
-    ├── legacy/                  # 100+ Python experiments
-    ├── docs/                    # Technical documentation  
-    ├── scripts/                 # Development tools
-    └── archive/                 # Historical versions
+└── run_pipeline.py             # Main prediction pipeline
 ```
 
 ## 🎯 Production Performance
@@ -64,16 +62,15 @@ cd frontend && npm run build
 uvicorn backend.main:app --host 0.0.0.0 --port 8000
 ```
 
-#### 🔬 Research & Experimentation
+#### 📊 Prediction Analysis
 ```bash
-# Access research tools in /rest
-cd rest/legacy/
-python scripts_root/enhanced_calculator_strict_temporal.py
-jupyter notebook
+# View latest predictions
+ls predictions/gw9/              # Most recent gameweek
+cat predictions/gw9/predictions.json
 
-# Browse historical models and data
-ls rest/legacy/models/           # 190M archived ML models
-ls rest/legacy/data/             # Complete datasets
+# Browse historical predictions  
+ls predictions/archive/          # All historical predictions
+ls predictions/gw{5,7,8}/        # Previous gameweeks
 ```
 
 ## 📊 Key Features
@@ -124,29 +121,29 @@ CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
    - Shorter command paths (`npm run dev` vs `cd prod && npm run dev`)
    - New developers immediately see production architecture
 
-3. **🧪 Research Preserved**
-   - Complete experimental history in `/rest`
-   - 18 months of ML research accessible
-   - 100+ prototypes and 190M models archived
+3. **🧪 Predictions Organized**
+   - Historical predictions in `/predictions/archive`
+   - Current gameweek predictions in organized structure
+   - Clean separation of active vs historical data
 
 4. **📁 Logical Organization**
    - Production = Priority 0 (root level)
-   - Research = Priority 1 (organized in `/rest`)
-   - Clear separation without losing accessibility
+   - Predictions = Organized by gameweek
+   - Clean separation of code, data, and predictions
 
 ## 🛠️ Development Tools
 
 ### VS Code Integration
-- **Production Focus:** Root workspace excludes `/rest` by default
-- **Research Access:** Tasks to open `/rest` when needed
+- **Production Focus:** Root workspace for all development
 - **Launch Configs:** Production backend/frontend debugging
 - **Tasks:** Build, test, deploy automation
+- **File Nesting:** Clean explorer with organized predictions
 
-### Automation (in `/rest/scripts`)
+### Prediction Management
 ```bash
-# Access development tools
-ls rest/scripts/
-# sync_prod_changes.sh, migrate_to_prod.py, git_sparse_checkout.sh
+# Access latest predictions
+ls predictions/gw9/              # Current gameweek
+python run_pipeline.py           # Generate new predictions
 ```
 
 ## 📈 Evolution
@@ -157,10 +154,10 @@ ls rest/scripts/
 - Football-Data API integration
 - Production-tested prediction pipeline
 
-### 🗂️ Research Archive (`/rest`)
-- 18 months of ML research and experiments
-- Complete development history and documentation
-- Full experimental toolkit for future innovation
+### 🗂️ Prediction Archive (`/predictions`)
+- Complete gameweek prediction history  
+- Organized by gameweek for easy access
+- Performance tracking and model evolution
 
 ## 🏆 Recognition
 
@@ -168,4 +165,4 @@ ls rest/scripts/
 
 ---
 
-**🎯 Production code at root level, research tools in `/rest` - optimal for both deployment and innovation**
+**🎯 Production code at root level, predictions organized by gameweek - optimal for deployment and analysis**

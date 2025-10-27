@@ -3,26 +3,21 @@
   "mode": "real_pipeline_production",
   "gameweek": 9,
   "metadata": {
-    "season_hash": "2e190d3f495f",
-    "dataset_hash": "92f47d06df0f",
-    "git_sha": "f96a88adfcab",
-    "generated_at": "2025-10-23T20:59:03.674614",
-    "strict_validated": true,
-    "fixtures_count": 10,
+    "season_hash": "epl_2025_26_j9",
+    "generated_at": "2025-10-24T00:03:56.702080",
     "model_version": "enhanced_baseline_v2.4",
-    "features_hash": "92f47d06df0f",
     "pipeline_version": "durci_v1.0",
-    "source_file": "unknown"
+    "source_file": "j9_predictions_v3_j9_20251024_000356.json"
   },
   "fixtures_count": 10,
   "predictions": {
     "Leeds_vs_West Ham": {
-      "prediction": "H",
-      "confidence": 0.367,
+      "prediction": "A",
+      "confidence": 0.4143,
       "probabilities": {
-        "home": 0.367,
-        "draw": 0.2904,
-        "away": 0.3426
+        "home": 0.2632,
+        "draw": 0.3225,
+        "away": 0.4143
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -32,9 +27,9 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.367,
+        "market_confidence": 0.4143,
         "market_entropy": 0.5,
-        "market_favorite": "H",
+        "market_favorite": "A",
         "home_advantage_market": 0.1
       },
       "match_info": {
@@ -44,12 +39,12 @@
       }
     },
     "Chelsea_vs_Sunderland": {
-      "prediction": "D",
-      "confidence": 0.3801,
+      "prediction": "A",
+      "confidence": 0.3711,
       "probabilities": {
-        "home": 0.2601,
-        "draw": 0.3801,
-        "away": 0.3598
+        "home": 0.2723,
+        "draw": 0.3567,
+        "away": 0.3711
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -59,9 +54,9 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.3598,
+        "market_confidence": 0.3711,
         "market_entropy": 0.5,
-        "market_favorite": "D",
+        "market_favorite": "A",
         "home_advantage_market": 0.1
       },
       "match_info": {
@@ -72,11 +67,11 @@
     },
     "Newcastle_vs_Fulham": {
       "prediction": "D",
-      "confidence": 0.3786,
+      "confidence": 0.3865,
       "probabilities": {
-        "home": 0.2709,
-        "draw": 0.3786,
-        "away": 0.3505
+        "home": 0.2648,
+        "draw": 0.3865,
+        "away": 0.3487
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -86,7 +81,7 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.3505,
+        "market_confidence": 0.3487,
         "market_entropy": 0.5,
         "market_favorite": "D",
         "home_advantage_market": 0.1
@@ -99,11 +94,11 @@
     },
     "Man Utd_vs_Brighton": {
       "prediction": "A",
-      "confidence": 0.3883,
+      "confidence": 0.4014,
       "probabilities": {
-        "home": 0.2657,
-        "draw": 0.3461,
-        "away": 0.3883
+        "home": 0.2394,
+        "draw": 0.3592,
+        "away": 0.4014
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -113,7 +108,7 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.3883,
+        "market_confidence": 0.4014,
         "market_entropy": 0.5,
         "market_favorite": "A",
         "home_advantage_market": 0.1
@@ -126,11 +121,11 @@
     },
     "Brentford_vs_Liverpool": {
       "prediction": "A",
-      "confidence": 0.4858,
+      "confidence": 0.4522,
       "probabilities": {
-        "home": 0.243,
-        "draw": 0.2712,
-        "away": 0.4858
+        "home": 0.3039,
+        "draw": 0.2439,
+        "away": 0.4522
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -140,7 +135,7 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.4858,
+        "market_confidence": 0.4522,
         "market_entropy": 0.5,
         "market_favorite": "A",
         "home_advantage_market": 0.1
@@ -153,11 +148,11 @@
     },
     "Arsenal_vs_Crystal Palace": {
       "prediction": "A",
-      "confidence": 0.5563,
+      "confidence": 0.3867,
       "probabilities": {
-        "home": 0.2876,
-        "draw": 0.1561,
-        "away": 0.5563
+        "home": 0.2491,
+        "draw": 0.3642,
+        "away": 0.3867
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -167,7 +162,7 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.5563,
+        "market_confidence": 0.3867,
         "market_entropy": 0.5,
         "market_favorite": "A",
         "home_advantage_market": 0.1
@@ -180,11 +175,11 @@
     },
     "Aston Villa_vs_Man City": {
       "prediction": "A",
-      "confidence": 0.4669,
+      "confidence": 0.3935,
       "probabilities": {
-        "home": 0.41,
-        "draw": 0.1231,
-        "away": 0.4669
+        "home": 0.2985,
+        "draw": 0.308,
+        "away": 0.3935
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -194,7 +189,7 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.4669,
+        "market_confidence": 0.3935,
         "market_entropy": 0.5,
         "market_favorite": "A",
         "home_advantage_market": 0.1
@@ -206,12 +201,12 @@
       }
     },
     "Wolves_vs_Burnley": {
-      "prediction": "H",
-      "confidence": 0.4605,
+      "prediction": "A",
+      "confidence": 0.3935,
       "probabilities": {
-        "home": 0.4605,
-        "draw": 0.168,
-        "away": 0.3716
+        "home": 0.2662,
+        "draw": 0.3403,
+        "away": 0.3935
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -221,9 +216,9 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.4605,
+        "market_confidence": 0.3935,
         "market_entropy": 0.5,
-        "market_favorite": "H",
+        "market_favorite": "A",
         "home_advantage_market": 0.1
       },
       "match_info": {
@@ -234,11 +229,11 @@
     },
     "Bournemouth_vs_Nott'm Forest": {
       "prediction": "A",
-      "confidence": 0.4567,
+      "confidence": 0.5444,
       "probabilities": {
-        "home": 0.3307,
-        "draw": 0.2126,
-        "away": 0.4567
+        "home": 0.1495,
+        "draw": 0.3061,
+        "away": 0.5444
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -248,7 +243,7 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.4567,
+        "market_confidence": 0.5444,
         "market_entropy": 0.5,
         "market_favorite": "A",
         "home_advantage_market": 0.1
@@ -260,12 +255,12 @@
       }
     },
     "Everton_vs_Spurs": {
-      "prediction": "A",
-      "confidence": 0.4848,
+      "prediction": "H",
+      "confidence": 0.4262,
       "probabilities": {
-        "home": 0.2369,
-        "draw": 0.2783,
-        "away": 0.4848
+        "home": 0.4262,
+        "draw": 0.1654,
+        "away": 0.4084
       },
       "model_info": {
         "prediction_mode": "enhanced_baseline_v24",
@@ -275,9 +270,9 @@
         "away_bias_correction": "enabled"
       },
       "market_features": {
-        "market_confidence": 0.4848,
+        "market_confidence": 0.4262,
         "market_entropy": 0.5,
-        "market_favorite": "A",
+        "market_favorite": "H",
         "home_advantage_market": 0.1
       },
       "match_info": {
@@ -286,11 +281,5 @@
         "date": "2025-10-26"
       }
     }
-  },
-  "validation": {
-    "gw_compliant": true,
-    "ko2h_strict": true,
-    "epl_teams_only": true,
-    "json_schema_valid": true
   }
 }
