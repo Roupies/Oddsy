@@ -23,8 +23,11 @@ oddsy/                           # 🎯 PRODUCTION CODE (< 50 files)
 ├── backend/                     # FastAPI prediction API
 ├── frontend/                    # Next.js 14 interface  
 ├── predictions/                 # Generated gameweek predictions
-│   ├── gw9/                     # Current gameweek predictions
-│   └── archive/                 # Historical predictions & gameweeks
+│   ├── gw5.json                 # Gameweek 5 predictions
+│   ├── gw7.json                 # Gameweek 7 predictions
+│   ├── gw8.json                 # Gameweek 8 predictions
+│   ├── gw9.json                 # Gameweek 9 predictions
+│   └── archive/                 # Detailed prediction files
 ├── config/                      # Team mappings and settings
 ├── requirements.txt             # Production dependencies
 └── run_pipeline.py             # Main prediction pipeline
@@ -61,13 +64,13 @@ uvicorn backend.main:app --host 0.0.0.0 --port 8000
 
 #### 📊 Prediction Analysis
 ```bash
-# View current predictions
-ls predictions/gw9/              # Current gameweek
-cat predictions/gw9/predictions.json
+# View gameweek predictions
+cat predictions/gw9.json         # Latest gameweek (GW9)
+cat predictions/gw8.json         # Previous gameweeks
+ls predictions/gw*.json          # All gameweeks
 
-# Browse historical data  
-ls predictions/archive/          # All historical predictions
-ls predictions/archive/gw{5,7,8}/  # Previous gameweeks
+# Browse detailed files
+ls predictions/archive/          # All detailed prediction files
 ```
 
 ## 📊 Key Features
@@ -119,9 +122,9 @@ CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
    - New developers immediately see production architecture
 
 3. **🧪 Predictions Organized**
-   - Current gameweek (GW9) readily accessible
-   - Historical predictions in `/predictions/archive`
-   - Clean separation of active vs historical data
+   - One clean file per gameweek (gw5.json, gw7.json, etc.)
+   - No clutter - just essential predictions
+   - Detailed files archived separately
 
 4. **📁 Logical Organization**
    - Production = Priority 0 (root level)
@@ -138,8 +141,8 @@ CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 ### Prediction Management
 ```bash
-# Access current predictions
-ls predictions/gw9/              # Current gameweek (GW9)
+# Access predictions by gameweek
+cat predictions/gw9.json         # Latest gameweek
 python run_pipeline.py           # Generate new predictions
 ```
 
