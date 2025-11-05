@@ -57,10 +57,14 @@ tmp/
 .env.development.local
 .env.test.local
 .env.production.local
+.env.production
 *.key
 *.pem
 secrets/
 credentials/
+
+# Demo setup instructions (contains passwords)
+SETUP_INSTRUCTIONS.md
 
 # ML model artifacts (large files - exclude from main branch)
 *.joblib

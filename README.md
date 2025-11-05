@@ -9,7 +9,7 @@
 git clone [repo-url]
 cd oddsy
 
-# Start production services
+# Start production services (see SETUP_INSTRUCTIONS.md in /prod for configuration)
 cd prod/backend && python3 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000 &
 cd prod/frontend && npm install && npm run dev
 
@@ -58,7 +58,7 @@ oddsy/                           # Clean 3-directory organization
 
 ### For Jury Presentation
 ```bash
-# Quick demo setup (production ready)
+# Quick demo setup (see /prod/SETUP_INSTRUCTIONS.md for full configuration)
 cd prod/backend && python3 -m uvicorn main:app --reload --host 0.0.0.0 --port 8000 &
 cd prod/frontend && npm run dev
 
