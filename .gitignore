@@ -1,6 +1,7 @@
 # Oddsy Production .gitignore
 
-# Research and experimental files (main branch production focus)
+# Development and experimental files (GitHub demo focuses on /prod only)
+/dev/
 /rest/
 
 # Python

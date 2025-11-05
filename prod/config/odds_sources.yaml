@@ -1,0 +1,53 @@
+# Oddsy Odds Sources Configuration
+# Production configuration for real odds integration
+
+seasons:
+  "2025-26":
+    required_bookmakers:
+      tier1:
+        - bet365
+        - pinnacle
+      tier2:
+        - betfair
+        - william_hill
+      tier3:
+        - ladbrokes
+        - unibet
+    
+    fallback_strategy:
+      mode: intelligent
+      min_bookmakers: 2
+      max_variance: 0.15
+      fallback_order:
+        - tier1
+        - tier2
+        - tier3
+    
+    validation:
+      min_odds: 1.01
+      max_odds: 50.0
+      required_markets:
+        - "1x2"
+        - "over_under_2_5"
+      
+    api_settings:
+      timeout: 30
+      retry_attempts: 3
+      cache_duration: 300  # 5 minutes
+      
+endpoints:
+  the_odds_api:
+    url: "https://api.the-odds-api.com/v4"
+    markets:
+      - "h2h"  # 1x2
+      - "totals"  # over/under
+    regions: "uk"
+    date_format: "iso"
+    
+  betfair:
+    url: "https://api.betfair.com"
+    exchange: true
+    
+  pinnacle:
+    url: "https://api.pinnacle.com"
+    feed_type: "live"

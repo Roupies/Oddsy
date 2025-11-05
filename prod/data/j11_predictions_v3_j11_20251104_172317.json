@@ -1,0 +1,285 @@
+{
+  "api_version": "5.0.0",
+  "mode": "real_pipeline_production",
+  "gameweek": 11,
+  "metadata": {
+    "season_hash": "epl_2025_26_j11",
+    "generated_at": "2025-11-04T17:23:17.859601",
+    "model_version": "enhanced_baseline_v2.4",
+    "pipeline_version": "durci_v1.0",
+    "source_file": "j11_predictions_v3_j11_20251104_172317.json"
+  },
+  "fixtures_count": 10,
+  "predictions": {
+    "Aston Villa_vs_Bournemouth": {
+      "prediction": "A",
+      "confidence": 0.348,
+      "probabilities": {
+        "home": 0.3292,
+        "draw": 0.3227,
+        "away": 0.348
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.348,
+        "market_entropy": 0.5,
+        "market_favorite": "A",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Aston Villa",
+        "away": "Bournemouth",
+        "date": "2025-11-08"
+      }
+    },
+    "Brentford_vs_Newcastle": {
+      "prediction": "D",
+      "confidence": 0.3531,
+      "probabilities": {
+        "home": 0.3425,
+        "draw": 0.3531,
+        "away": 0.3044
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.3044,
+        "market_entropy": 0.5,
+        "market_favorite": "D",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Brentford",
+        "away": "Newcastle",
+        "date": "2025-11-08"
+      }
+    },
+    "Chelsea_vs_Wolves": {
+      "prediction": "H",
+      "confidence": 0.3575,
+      "probabilities": {
+        "home": 0.3575,
+        "draw": 0.296,
+        "away": 0.3464
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.3575,
+        "market_entropy": 0.5,
+        "market_favorite": "H",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Chelsea",
+        "away": "Wolves",
+        "date": "2025-11-08"
+      }
+    },
+    "Crystal Palace_vs_Brighton": {
+      "prediction": "H",
+      "confidence": 0.352,
+      "probabilities": {
+        "home": 0.352,
+        "draw": 0.3342,
+        "away": 0.3138
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.352,
+        "market_entropy": 0.5,
+        "market_favorite": "H",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Crystal Palace",
+        "away": "Brighton",
+        "date": "2025-11-08"
+      }
+    },
+    "Everton_vs_Fulham": {
+      "prediction": "H",
+      "confidence": 0.367,
+      "probabilities": {
+        "home": 0.367,
+        "draw": 0.3226,
+        "away": 0.3104
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.367,
+        "market_entropy": 0.5,
+        "market_favorite": "H",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Everton",
+        "away": "Fulham",
+        "date": "2025-11-08"
+      }
+    },
+    "Man City_vs_Liverpool": {
+      "prediction": "A",
+      "confidence": 0.3828,
+      "probabilities": {
+        "home": 0.2979,
+        "draw": 0.3194,
+        "away": 0.3828
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.3828,
+        "market_entropy": 0.5,
+        "market_favorite": "A",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Man City",
+        "away": "Liverpool",
+        "date": "2025-11-08"
+      }
+    },
+    "Nott'm Forest_vs_Leeds": {
+      "prediction": "H",
+      "confidence": 0.3635,
+      "probabilities": {
+        "home": 0.3635,
+        "draw": 0.303,
+        "away": 0.3335
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.3635,
+        "market_entropy": 0.5,
+        "market_favorite": "H",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Nott'm Forest",
+        "away": "Leeds",
+        "date": "2025-11-08"
+      }
+    },
+    "Sunderland_vs_Arsenal": {
+      "prediction": "A",
+      "confidence": 0.4702,
+      "probabilities": {
+        "home": 0.2156,
+        "draw": 0.3141,
+        "away": 0.4702
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.4702,
+        "market_entropy": 0.5,
+        "market_favorite": "A",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Sunderland",
+        "away": "Arsenal",
+        "date": "2025-11-08"
+      }
+    },
+    "Spurs_vs_Man Utd": {
+      "prediction": "A",
+      "confidence": 0.3848,
+      "probabilities": {
+        "home": 0.3092,
+        "draw": 0.306,
+        "away": 0.3848
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.3848,
+        "market_entropy": 0.5,
+        "market_favorite": "A",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "Spurs",
+        "away": "Man Utd",
+        "date": "2025-11-08"
+      }
+    },
+    "West Ham_vs_Burnley": {
+      "prediction": "H",
+      "confidence": 0.3865,
+      "probabilities": {
+        "home": 0.3865,
+        "draw": 0.3199,
+        "away": 0.2936
+      },
+      "model_info": {
+        "prediction_mode": "enhanced_baseline_v24",
+        "enhanced_metadata": {},
+        "model_version": "v2.4",
+        "accuracy_improvement": "baseline_champion",
+        "away_bias_correction": "enabled"
+      },
+      "market_features": {
+        "market_confidence": 0.3865,
+        "market_entropy": 0.5,
+        "market_favorite": "H",
+        "home_advantage_market": 0.1
+      },
+      "match_info": {
+        "home": "West Ham",
+        "away": "Burnley",
+        "date": "2025-11-08"
+      }
+    }
+  }
+}
