@@ -51,6 +51,7 @@ class Settings(BaseSettings):
     USE_REAL_ODDS_API: bool = os.getenv("USE_REAL_ODDS_API", "false").lower() == "true"
     
     class Config:
-        env_file = ".env"
+        env_file = "../.env"
+        extra = "ignore"
 
 settings = Settings()
