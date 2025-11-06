@@ -65,7 +65,7 @@ cd frontend && npm install && npm run dev
 docker-compose up -d postgres pgadmin
 
 # Note: Not required for core functionality
-# pgAdmin: http://localhost:8080 (credentials in .env.example)
+# pgAdmin: http://localhost:8080 (configure credentials in local .env)
 ```
 
 ## 📋 Prerequisites
@@ -83,11 +83,11 @@ docker-compose up -d postgres pgadmin
 ### 1. Environment Setup
 
 ```bash
-# Copy environment template
-cp .env.example .env
+# Create environment file (optional for development)
+cp .env .env.local
 
-# Edit .env with your settings (optional for development)
-nano .env
+# Edit .env.local with your settings if needed
+nano .env.local
 ```
 
 ### 2. Database Setup
@@ -151,7 +151,7 @@ npm run build && npm start
 
 ### pgAdmin Access (When PostgreSQL Active)
 - URL: http://localhost:8080
-- Credentials: See `.env.example` for default values
+- Credentials: Configure in local .env file
 - Database connection details in environment configuration
 
 ## 🔌 API Documentation
@@ -457,15 +457,15 @@ PGPASSWORD=oddsy_password psql -h localhost -U oddsy_user -d oddsy_football -c '
 │   ├── features.json
 │   └── team_mappings.json
 ├── database/                   # PostgreSQL schemas (future)
-├── scripts/                    # Automation tools
-├── ARCHITECTURE.md             # 📊 Detailed technical architecture
+├── scripts/                    # ML pipeline & automation tools
+│   ├── run_pipeline.py        # Main ML pipeline execution
+│   ├── gameweek_predictions_production.py # Gameweek generation
+│   ├── migrate.sh             # Database migrations
+│   └── setup.sh               # Setup automation
 ├── docker-compose.yml          # Optional PostgreSQL
-├── .env.example               # Environment template
 └── README.md                  # This file (current state)
 ```
 
-### 📊 For Detailed Architecture
-See **[ARCHITECTURE.md](./ARCHITECTURE.md)** for comprehensive Mermaid diagrams and technical specifications.
 
 ## 🎯 Key Features
 

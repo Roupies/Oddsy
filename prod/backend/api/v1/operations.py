@@ -156,7 +156,7 @@ async def execute_real_pipeline(task: Dict, gameweek: int):
     
     try:
         # Exécution script pipeline réel
-        pipeline_script = settings.PROJECT_ROOT / "run_pipeline.py"
+        pipeline_script = settings.PROJECT_ROOT / "scripts/run_pipeline.py"
         
         cmd = [
             "python3", str(pipeline_script),
