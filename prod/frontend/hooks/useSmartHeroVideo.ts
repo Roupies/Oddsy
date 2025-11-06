@@ -1,31 +1,80 @@
+/**
+ * Smart Hero Video Hook for Oddsy Frontend
+ * ========================================
+ * 
+ * This hook intelligently selects and preloads the optimal video source
+ * for the hero section based on device capabilities and user preferences.
+ * 
+ * Features:
+ * - Device detection (mobile/tablet/desktop)
+ * - Connection quality assessment
+ * - Reduced motion preference respect
+ * - Battery level awareness
+ * - WebM vs MP4 format selection
+ * - Automatic fallback to poster image
+ */
+
 'use client'
 
+// React hooks for state management and side effects
 import { useState, useEffect, useCallback } from 'react'
 
+/**
+ * Represents a video source with format and quality information
+ */
 interface VideoSource {
-  type: 'webm' | 'mp4' | 'poster'
-  url: string
-  quality: '4k' | '1080p' | '720p' | 'poster'
+  type: 'webm' | 'mp4' | 'poster'          // Video format or poster image
+  url: string                              // Asset URL
+  quality: '4k' | '1080p' | '720p' | 'poster'  // Quality level
 }
 
+/**
+ * Device and connection information for optimization decisions
+ */
 interface DeviceInfo {
-  isMobile: boolean
-  isTablet: boolean
-  isDesktop: boolean
-  connectionType: 'slow' | 'fast' | 'wifi'
-  prefersReducedMotion: boolean
-  isLowPowerMode: boolean
+  isMobile: boolean                        // Mobile device detection
+  isTablet: boolean                        // Tablet device detection
+  isDesktop: boolean                       // Desktop device detection
+  connectionType: 'slow' | 'fast' | 'wifi' // Network connection quality
+  prefersReducedMotion: boolean            // User prefers reduced motion
+  isLowPowerMode: boolean                  // Device in low power mode
 }
 
+/**
+ * Smart hero video hook with device-aware optimization
+ * 
+ * Automatically selects the best video source based on:
+ * - Device type and capabilities
+ * - Network connection quality  
+ * - User accessibility preferences
+ * - Battery status
+ * 
+ * @returns Object with video source, loading state, and utility flags
+ */
 export function useSmartHeroVideo() {
+  // Video source state - null until optimal source is determined
   const [videoSource, setVideoSource] = useState<VideoSource | null>(null)
+  // Loading state during source selection and preload
   const [isLoading, setIsLoading] = useState(true)
+  // Error state if video fails to load
   const [hasError, setHasError] = useState(false)
+  // Device information for optimization decisions
   const [deviceInfo, setDeviceInfo] = useState<DeviceInfo | null>(null)
 
-  // Device and connection detection
+  /**
+   * Detect device type and capabilities
+   * 
+   * Uses user agent parsing and navigator APIs to determine:
+   * - Device category (mobile/tablet/desktop)
+   * - Network connection quality
+   * - User motion preferences
+   * - Low power mode indicators
+   * 
+   * @returns Complete device information object
+   */
   const detectDevice = useCallback((): DeviceInfo => {
     const userAgent = navigator.userAgent
+    // Device type detection via user agent patterns
     const isMobile = /iPhone|iPad|iPod|Android/i.test(userAgent)
     const isTablet = /iPad|Android(?=.*Tablet)/i.test(userAgent)
     const isDesktop = !isMobile && !isTablet

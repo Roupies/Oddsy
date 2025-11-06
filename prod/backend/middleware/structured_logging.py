@@ -1,44 +1,86 @@
 #!/usr/bin/env python3
 """
-Structured Logging Middleware pour API v5.3
+Structured Logging Middleware for API v5.3
 ===========================================
 
-Middleware pour logs JSON structurés avec correlation-ID,
-métriques de performance et observabilité production.
+Middleware for structured JSON logging with correlation IDs,
+performance metrics, and production observability features.
+
+Features:
+- Correlation ID tracking across requests
+- Structured JSON log format
+- Performance timing and categorization
+- Client information extraction
+- Cache hit/miss tracking
+- Rate limiting awareness
+- Error context preservation
 """
 
-import json
-import time
-import uuid
-import logging
-from datetime import datetime
-from typing import Dict, Any, Optional
-from fastapi import Request, Response
-from fastapi.responses import JSONResponse
+# Standard library imports
+import json                 # JSON serialization for structured logs
+import time                # High-precision timing
+import uuid                # Unique identifier generation
+import logging            # Python logging framework
+from datetime import datetime  # Timestamp generation
+from typing import Dict, Any, Optional  # Type annotations
+
+# FastAPI framework imports
+from fastapi import Request, Response  # HTTP request/response objects
+from fastapi.responses import JSONResponse  # JSON response construction
 
 
 class StructuredLogger:
-    """Logger structuré pour production avec correlation tracking"""
+    """Structured logger for production with correlation tracking
+    
+    Provides centralized logging functionality with:
+    - Consistent JSON log format
+    - Request correlation tracking
+    - Performance metrics collection
+    - Client information extraction
+    - Cache and rate limiting awareness
+    """
     
     def __init__(self, service_name: str = "oddsy-api"):
+        """Initialize structured logger for a service
+        
+        Args:
+            service_name: Name of the service for log identification
+        """
         self.service_name = service_name
         self.logger = logging.getLogger(f'StructuredLogger.{service_name}')
         
-        # Configuration du handler JSON si pas déjà fait
+        # Configure JSON handler if not already set up
         if not self.logger.handlers:
             handler = logging.StreamHandler()
-            # Pas de formatter ici, on le fait manuellement pour plus de contrôle
+            # Use raw formatter - we handle JSON formatting manually for better control
             handler.setFormatter(logging.Formatter('%(message)s'))
             self.logger.addHandler(handler)
             self.logger.setLevel(logging.INFO)
     
     def _generate_correlation_id(self) -> str:
-        """Génère un correlation ID unique"""
+        """Generate unique correlation ID for request tracking
+        
+        Creates a short, unique identifier that can be used to trace
+        a single request across multiple services and log entries.
+        
+        Returns:
+            Short correlation ID string (e.g., 'req_a1b2c3d4e5f6')
+        """
         return f"req_{uuid.uuid4().hex[:12]}"
     
     def _extract_client_info(self, request: Request) -> Dict[str, Any]:
-        """Extrait les informations client de la requête"""
-        # IP client avec gestion des proxies
+        """Extract client information from HTTP request
+        
+        Gathers client details including IP address (with proxy awareness),
+        user agent, and other HTTP headers useful for analytics and debugging.
+        
+        Args:
+            request: FastAPI Request object
+            
+        Returns:
+            Dictionary with client information
+        """
+        # Extract client IP with proxy support (X-Forwarded-For, X-Real-IP)
         client_ip = (
             request.headers.get("X-Forwarded-For", "").split(",")[0].strip() or
             request.headers.get("X-Real-IP") or
@@ -74,7 +116,17 @@ class StructuredLogger:
         return cache_info
     
     def _categorize_endpoint(self, path: str) -> Dict[str, str]:
-        """Catégorise l'endpoint pour les métriques"""
+        """Categorize API endpoint for metrics and monitoring
+        
+        Maps request paths to endpoint categories and API versions
+        for structured metrics collection and performance monitoring.
+        
+        Args:
+            path: HTTP request path
+            
+        Returns:
+            Dictionary with endpoint_type and api_version
+        """
         if path.startswith("/api/v5/gameweeks"):
             if "/latest" in path:
                 return {"endpoint_type": "gameweek_latest", "api_version": "v5"}

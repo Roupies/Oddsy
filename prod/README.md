@@ -6,48 +6,77 @@
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Frontend      │───▶│    Backend      │───▶│   PostgreSQL    │
-│   Next.js 14   │    │   FastAPI       │    │   Database      │
-│   TypeScript    │    │   Python 3.11  │    │   + pgAdmin     │
+│   Frontend      │───▶│    Backend      │───▶│   JSON Files    │
+│   Next.js 14   │    │   FastAPI       │    │  (Atomic I/O)   │
+│   TypeScript    │    │   Python 3.11  │    │   + ISR Cache   │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
+                                                       │
+                                               ┌───────▼─────────┐
+                                               │   PostgreSQL    │
+                                               │   (Future/Off)  │
+                                               └─────────────────┘
 ```
 
-### Technology Stack
-- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
-- **Backend**: FastAPI, Python 3.11, async/await
-- **Database**: PostgreSQL 16 with pgAdmin 4
-- **AI Model**: Enhanced Baseline v3.0 (51.3% accuracy)
-- **Pipeline**: Pipeline Durci v1.0 with anti-data leakage
-- **Infrastructure**: Docker Compose, healthchecks
+## 🛠️ Technology Stack
 
-## 🚀 Quick Start (TL;DR)
+### Primary Architecture
+- **Backend**: FastAPI (Python 3.11+), atomic file operations
+- **Frontend**: Next.js 14 (React 19, TypeScript), ISR performance  
+- **ML Pipeline**: Enhanced Baseline v3.0 (51.3% validated accuracy)
+- **Storage**: JSON files with atomic writes (production-ready)
+- **Infrastructure**: Docker Compose, structured logging, rate limiting
 
+### Future-Ready Components (Dormant)
+- **Database**: PostgreSQL 16 (configured, inactive, ready for scaling)
+- **Admin**: pgAdmin 4 (optional, for future DB management)
+
+## ✨ Recent Improvements (Technical Maturity)
+
+- ✅ **English Documentation**: All code commented professionally throughout codebase
+- ✅ **Dual API Architecture**: v1 (health/operations) + v5 (predictions) for clear separation  
+- ✅ **Atomic Operations**: Crash-safe file handling with atomic writes
+- ✅ **Format Evolution**: v3 predictions with full backward compatibility
+- ✅ **Codebase Cleanup**: Removed empty directories, optimized project structure
+- ✅ **Production Readiness**: Rate limiting, structured logging, correlation IDs
+- ✅ **Type Safety**: Zod validation schemas with runtime type checking
+- ✅ **Performance**: ISR caching, 5-minute revalidation, efficient data flow
+
+## 🚀 Quick Start
+
+### Minimal Setup (Recommended for Demo)
 ```bash
-# 1. Database
-docker-compose up -d postgres pgadmin
-
-# 2. Backend  
+# 1. Backend (File-based, no DB required)
 cd backend && python3 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 
-# 3. Frontend
+# 2. Frontend  
 cd frontend && npm install && npm run dev
+
+# 3. Access
+# ✅ Frontend: http://localhost:3000
+# ✅ Backend API: http://localhost:8000/api/system/docs
+# ✅ Health Check: http://localhost:8000/api/system/health/live
 ```
 
-**URLs:**
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:8000
-- API Documentation: http://localhost:8000/api/system/docs
-- Health Check: http://localhost:8000/api/system/health/ready
-- pgAdmin: http://localhost:8080 (admin@oddsy.local / admin_password)
+### Advanced Setup (Optional PostgreSQL Testing)
+```bash
+# Optional: Future database features
+docker-compose up -d postgres pgadmin
+
+# Note: Not required for core functionality
+# pgAdmin: http://localhost:8080 (credentials in .env.example)
+```
 
 ## 📋 Prerequisites
 
-- **Docker & Docker Compose** (for PostgreSQL)
-- **Python 3.11+** (for backend)
-- **Node.js 18+** (for frontend)
-- **PostgreSQL client** (optional, for direct DB access)
+### Required
+- **Python 3.11+** (for FastAPI backend)
+- **Node.js 18+** (for Next.js frontend)
+
+### Optional (Future Features)
+- **Docker & Docker Compose** (for PostgreSQL when scaling)
+- **PostgreSQL client** (for direct DB access when activated)
 
 ## 🔧 Detailed Setup
 
@@ -105,62 +134,64 @@ npm run dev
 npm run build && npm start
 ```
 
-## 🗄️ Database Schema
+## 💾 Data Storage Architecture
 
-### Core Tables
-- **predictions**: Model predictions with probabilities
-- **fixtures**: EPL fixtures with real kickoff times
-- **teams**: Team information and statistics
+### Current: File-Based JSON (Production-Ready)
+- **Location**: `data/predictions/j{round}_predictions_v3_*.json`
+- **Features**: Atomic writes, crash-safe, ISR-optimized
+- **Performance**: 5min cache, real-time updates
+- **Format**: v3 prediction schema with v5 API compatibility
+- **Calendar**: `data/EPL_25_26_Full_Calendar.csv` (fixture data)
 
-### pgAdmin Access
+### Future: PostgreSQL Integration (Ready but Inactive)
+- **Status**: Schema designed, migrations ready in `database/` directory
+- **Purpose**: Horizontal scaling, complex queries, analytics
+- **Activation**: Available when scaling requirements emerge
+- **Connection**: Pre-configured in `docker-compose.yml`
+
+### pgAdmin Access (When PostgreSQL Active)
 - URL: http://localhost:8080
-- Email: admin@oddsy.local
-- Password: admin_password
-
-**Connect to Database:**
-- Host: postgres (or localhost if connecting externally)
-- Port: 5432
-- Database: oddsy_football
-- Username: oddsy_user
-- Password: oddsy_password
+- Credentials: See `.env.example` for default values
+- Database connection details in environment configuration
 
 ## 🔌 API Documentation
 
-### API Architecture
+### Dual API Architecture
 
-**Deux surfaces API claires pour le jury :**
-- `/api/system` - Health, metrics, pipeline operations
-- `/api/gameweeks` - Fixtures, predictions, latest data
-
-*Note: Anciens noms `/api/v1` et `/api/v5` supportés en parallèle pour compatibilité.*
+**Clean separation for evaluation:**
+- **v1 API** (`/api/v1` & `/api/system`) - Health, metrics, pipeline operations
+- **v5 API** (`/api/v5` & `/api/gameweeks`) - Predictions, fixtures, ML data
 
 ### Core Endpoints
 
-#### Gameweeks & Predictions
+#### Predictions & Data (v5 API)
 ```bash
 # Get latest gameweek
-GET /api/gameweeks/latest
+GET /api/v5/gameweeks/latest
 
-# Get gameweek predictions  
-GET /api/gameweeks/{gameweek}/predictions
+# Get gameweek predictions (v3 format)
+GET /api/v5/gameweeks/{gameweek}/predictions
 
 # Get fixture data with real kickoff times
-GET /api/gameweeks/{gameweek}/fixtures
+GET /api/v5/gameweeks/{gameweek}/fixtures
+
+# Available gameweeks
+GET /api/v5/gameweeks/available
 ```
 
-#### System & Health
+#### System & Health (v1 API)
 ```bash
 # Health check
-GET /api/system/health/live
+GET /api/v1/health/live
 
-# Readiness probe (vérifie DB + répertoires runtime)
-GET /api/system/health/ready
+# Readiness probe (checks file access)
+GET /api/v1/health/ready
 
 # System metrics
-GET /api/system/health/metrics
+GET /api/v1/health/metrics
 
 # Pipeline status
-GET /api/system/pipeline/status
+GET /api/v1/pipeline/status
 ```
 
 ### Response Format
@@ -199,29 +230,35 @@ Confidence Intervals: 51.3% ± 5.7%
 
 ## 🛠️ Services Architecture
 
+### File-Based Storage Service
+- **Atomic writes**: Crash-safe JSON operations
+- **Prediction files**: `j{round}_predictions_v3_*.json` format
+- **Calendar data**: `EPL_25_26_Full_Calendar.csv` for fixtures
+- **Performance**: Direct file access, no DB overhead
+
 ### Fixture Service
-- Reads EPL_25_26_Full_Calendar.csv
-- Provides real kickoff times in UTC
-- Maps team name variations
+- Reads EPL calendar CSV with real kickoff times
+- Maps team name variations for consistency
+- Converts UTC to local time for display
 - Endpoint: `/api/v5/gameweeks/{gw}/fixtures`
 
 ### Prediction Service
-- Model inference with Enhanced Baseline v3.0
+- Loads v3 prediction files with Enhanced Baseline v3.0
 - Probability validation (sum ≈ 1.0)
-- Confidence scoring (high/medium/low)
+- Confidence scoring and market analysis
 - Endpoint: `/api/v5/gameweeks/{gw}/predictions`
 
 ### Cache Service
-- 5-minute revalidation for predictions
-- 1-hour cache for historical data
-- Intelligent cache invalidation
-- Next.js ISR integration
+- **ISR**: 5-minute revalidation for predictions
+- **Static**: 1-hour cache for historical data
+- **Intelligent**: File modification-based invalidation
+- **Next.js**: Integrated with React Query
 
 ### Validation Services
-- Coverage validation (10 matches per gameweek)
-- Probability validation (probabilities sum to 1.0)
-- Data integrity checks
-- Anti-leakage verification
+- **Coverage**: 10 matches per gameweek validation
+- **Integrity**: Atomic file operations, data consistency
+- **Format**: v3 schema validation with Zod
+- **Anti-leakage**: Temporal validation in ML pipeline
 
 ## 🐳 Docker Deployment
 
@@ -274,14 +311,14 @@ curl http://localhost:8000/api/v1/pipeline/status
 
 #### Backend won't start
 ```bash
-# Check database connection
-docker-compose logs postgres
-
-# Test database connectivity
-PGPASSWORD=oddsy_password psql -h localhost -U oddsy_user -d oddsy_football -c '\l'
+# Check file permissions
+ls -la data/predictions/
 
 # Check backend logs
 cd backend && uvicorn main:app --reload --log-level debug
+
+# Verify data directory exists
+mkdir -p data/predictions data/fixtures
 ```
 
 #### Frontend can't reach API
@@ -296,16 +333,29 @@ cat frontend/.env.local | grep NEXT_PUBLIC_API_URL
 cd frontend && rm -rf .next && npm run dev
 ```
 
-#### Database connection issues
+#### File-based storage issues
 ```bash
-# Check PostgreSQL status
+# Check data directory permissions
+chmod 755 data/
+chmod 644 data/predictions/*.json
+
+# Verify prediction files exist
+ls -la data/predictions/j*_predictions_v3_*.json
+
+# Check atomic write operations
+tail -f backend/logs/structured.log | grep "atomic"
+```
+
+#### Optional: PostgreSQL (when activated)
+```bash
+# Check PostgreSQL status (if using)
 docker-compose ps postgres
 
 # View PostgreSQL logs
 docker-compose logs postgres
 
-# Restart database
-docker-compose restart postgres
+# Test connection (use credentials from .env)
+psql -h localhost -U oddsy_user -d oddsy_football -c '\l'
 ```
 
 #### Ports already in use
@@ -381,36 +431,41 @@ curl http://localhost:3000 | grep "Oddsy"
 PGPASSWORD=oddsy_password psql -h localhost -U oddsy_user -d oddsy_football -c 'SELECT NOW();'
 ```
 
-## 📁 Project Structure
+## 📁 Project Structure (Post-Cleanup)
 
 ```
 /prod/
-├── backend/              # FastAPI application
-│   ├── api/             # API routes (v1, v5)
-│   ├── services/        # Business logic services
-│   ├── core/            # Configuration, exceptions
-│   ├── requirements.txt # Python dependencies
-│   └── Dockerfile       # Backend container
-├── frontend/            # Next.js application
-│   ├── app/            # App Router pages
-│   ├── components/     # React components
-│   ├── hooks/          # Custom React hooks
-│   ├── lib/            # Utilities and API clients
-│   ├── package.json    # Node.js dependencies
-│   └── Dockerfile      # Frontend container
-├── database/           # Database scripts and migrations
-│   └── migration_scripts/
-├── data/               # Critical data files
+├── backend/                    # FastAPI application (Python 3.11+)
+│   ├── api/v1/                # Health, pipeline operations
+│   ├── api/v5/                # Predictions, gameweeks
+│   ├── services/              # Business logic services
+│   ├── core/                  # Configuration, exceptions
+│   ├── middleware/            # Rate limiting, logging
+│   ├── requirements.txt       # Python dependencies
+│   └── main.py               # FastAPI entry point
+├── frontend/                   # Next.js 14 application
+│   ├── app/                  # App Router pages
+│   ├── components/           # React components
+│   ├── hooks/                # Custom React hooks
+│   ├── lib/                  # API clients, utilities
+│   ├── package.json          # Node.js dependencies
+│   └── tailwind.config.js    # Styling configuration
+├── data/                       # File-based storage (current)
 │   ├── EPL_25_26_Full_Calendar.csv
-│   └── j11_predictions_*.json
-├── scripts/            # Deployment and maintenance
-│   ├── setup.sh        # Complete setup automation
-│   ├── migrate.sh      # Database migrations
-│   └── deploy.sh       # Production deployment
-├── docker-compose.yml  # Full stack orchestration
-├── .env.example       # Environment template
-└── README.md          # This file
+│   └── j*_predictions_v3_*.json
+├── config/                     # ML pipeline configuration
+│   ├── features.json
+│   └── team_mappings.json
+├── database/                   # PostgreSQL schemas (future)
+├── scripts/                    # Automation tools
+├── ARCHITECTURE.md             # 📊 Detailed technical architecture
+├── docker-compose.yml          # Optional PostgreSQL
+├── .env.example               # Environment template
+└── README.md                  # This file (current state)
 ```
+
+### 📊 For Detailed Architecture
+See **[ARCHITECTURE.md](./ARCHITECTURE.md)** for comprehensive Mermaid diagrams and technical specifications.
 
 ## 🎯 Key Features
 

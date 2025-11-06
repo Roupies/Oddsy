@@ -1,25 +1,45 @@
 #!/usr/bin/env python3
 """
-Atomic File Writer pour API v5.3
+Atomic File Writer for API v5.3
 ================================
 
-Service d'écriture atomique pour garantir l'intégrité des artefacts
-en cas de crash système ou interruption du processus.
+Provides crash-safe atomic file writing services to guarantee data integrity
+of critical artifacts during system crashes or process interruptions.
+
+Features:
+- Atomic write operations using temp files and rename
+- File integrity verification with checksums
+- Automatic backup creation
+- Directory synchronization for metadata durability
+- Comprehensive error handling and reporting
+
+Usage:
+    writer = AtomicFileWriter()
+    report = writer.write_json_atomic(data, 'output.json')
 """
 
-import os
-import json
-import hashlib
-import tempfile
-import logging
-from pathlib import Path
-from typing import Any, Dict, Optional, Union
-from datetime import datetime
-import uuid
+# Standard library imports for file operations and utilities
+import os                    # Operating system interface
+import json                  # JSON serialization
+import hashlib              # Cryptographic hash functions
+import tempfile             # Temporary file creation
+import logging              # Structured logging
+from pathlib import Path    # Object-oriented path handling
+from typing import Any, Dict, Optional, Union  # Type annotations
+from datetime import datetime  # Date/time operations
+import uuid                 # UUID generation for unique filenames
 
 
 class AtomicWriteError(Exception):
-    """Exception spécialisée pour les erreurs d'écriture atomique"""
+    """Specialized exception for atomic write errors
+    
+    Provides detailed error information including context and diagnostic data
+    to help with debugging file operation failures.
+    
+    Attributes:
+        message: Human-readable error description
+        details: Dictionary with diagnostic information
+    """
     def __init__(self, message: str, details: Dict[str, Any] = None):
         self.message = message
         self.details = details or {}
@@ -27,14 +47,26 @@ class AtomicWriteError(Exception):
 
 
 class AtomicFileWriter:
-    """Service d'écriture atomique crash-safe pour artefacts critiques"""
+    """Crash-safe atomic file writing service for critical artifacts
+    
+    Provides atomic file operations that guarantee data integrity even in case of:
+    - System crashes during write operations
+    - Process termination or interruption
+    - Disk space exhaustion
+    - Permission errors
+    
+    All write operations are performed atomically using the standard
+    technique of write-to-temp-file then rename, which is atomic on
+    most filesystems.
+    """
     
     def __init__(self, verify_writes: bool = True):
         """
-        Initialise le writer atomique
+        Initialize the atomic writer service
         
         Args:
-            verify_writes: Si True, vérifie l'intégrité après écriture
+            verify_writes: If True, verify file integrity after write operations
+                          using checksum comparison
         """
         self.verify_writes = verify_writes
         self.logger = logging.getLogger('AtomicFileWriter')

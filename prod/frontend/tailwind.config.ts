@@ -1,17 +1,31 @@
+/**
+ * Tailwind CSS Configuration for Oddsy Frontend
+ * =============================================
+ * 
+ * Comprehensive Tailwind configuration featuring:
+ * - EPL brand colors (purple, green, pink)
+ * - Editorial design system with neutral palette
+ * - Custom animations and keyframes for interactions
+ * - Typography scale for sports content
+ * - Glassmorphism effects and shadows
+ */
+
+// Tailwind CSS configuration type definition
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  // File patterns to scan for Tailwind classes
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './hooks/**/*.{js,ts,jsx,tsx}',
-    './lib/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',     // Next.js pages directory
+    './components/**/*.{js,ts,jsx,tsx,mdx}', // React components
+    './app/**/*.{js,ts,jsx,tsx,mdx}',       // Next.js app directory
+    './hooks/**/*.{js,ts,jsx,tsx}',         // Custom React hooks
+    './lib/**/*.{js,ts,jsx,tsx}',           // Utility libraries
   ],
   theme: {
     extend: {
       colors: {
-        // Editorial neutral palette
+        // Editorial neutral palette - comprehensive grayscale for typography and backgrounds
         neutral: {
           50: '#fafafa',
           100: '#f5f5f5',
@@ -26,6 +40,7 @@ const config: Config = {
           950: '#0a0a0a', // Deep black for editorial backgrounds
         },
         // EPL Brand Colors - Extended Palette
+        // Primary EPL purple - official brand color
         'epl-purple': {
           DEFAULT: '#37003c',
           light: '#4a0050',
@@ -41,6 +56,7 @@ const config: Config = {
           800: '#3f2048',
           900: '#37003c',
         },
+        // EPL secondary green - accent and success states
         'epl-green': {
           DEFAULT: '#00ff87',
           light: '#33ff9f',
@@ -56,6 +72,7 @@ const config: Config = {
           800: '#00cc6c',
           900: '#00b359',
         },
+        // EPL tertiary pink - highlights and calls-to-action
         'epl-pink': {
           DEFAULT: '#e90052',
           light: '#ed3370',
